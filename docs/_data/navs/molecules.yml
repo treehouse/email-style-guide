@@ -1,0 +1,20 @@
+filename: molecules
+name: Molecules
+pages:
+  - slug: /typography.html
+    name: Header
+
+  - slug: /cta.html
+    name: Footer
+
+  - slug: /imagery.html
+    name: Color Section
+
+  - slug: /Horizontal Rule.html
+    name: Two Column
+
+  - slug: /color.html
+    name: Responsive
+
+  - slug: /colors.html
+    name: Spacing

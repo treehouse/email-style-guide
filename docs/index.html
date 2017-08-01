@@ -1,0 +1,321 @@
+---
+layout: default
+title: Atmosphere
+---
+
+<h2 class="p-t-2-xs p-b-1-xs" id="purpose">Purpose</h2>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h3 class="p-b-2-xs">Why do we have an email style guide?</h3>
+    <p><span class="bold">Consistency</span> It gives us well defined documentation so everyone who touches emails at Treehouse (and outside agencies we work with) will be on the same page. A consistent email design language which aligns with our brand allows our users to become immersed in the full Treehouse experience. Currently, there are <a href="https://teamtreehouse.invisionapp.com/d/main/#/projects/boards/5407180" target="_blank">inconsistencies</a> in our emails, and this style guide defines the look and feel of our emails going forward.</p>
+    <p class="p-t-2-xs"><span class="bold">Efficiency</span> Email design is stereotypically a messy, painful experience. This guide takes the guesswork out of email design to make it an easier process. With the templates and reusable components, you no longer have to reinvent the wheel as you embark on creating an email. Common patterns are already defined, and all you have to do is replace the content. Also, there's no more fighting with inline styles, as the CSS is contained in a central place. And to top it all off, you're able to start with a stable foundation that has already been thoroughly tested in our top <a href="#support">email clients</a>. Email clients render emails in inconsistent and surprising ways, but no worries—the messy, dirty debugging process has already been done. All this to say—projects will get done quicker than ever, with easy-to-reuse code and less cursing of antiquated email clients.</p>
+  </div>
+  <div class="col col-100-xs col-100-md col-50-lg">
+    <h3 class="p-b-2-xs">How do I use the guide?</h3>
+    <p class="p-b-2-xs"><span class="bold">Where to start</span> Whether you're a marketer, designer, developer, salesperson, or agency, this guide is a resource for building emails at Treehouse. There are a few routes you can take, depending on the type of email you're sending and your desire to work within a WYSIWYG editor or with code. The chart below is a guide which helps walk you through the process. It'll help you determine if the email you're creating should belong in Intercom, MailChimp, Marketo, or Mandrill. Specific instructions for how to create it (in the ESP or outside the ESP) follow.</p>
+  </div>
+  <div class="col col-100-xs p-t-4-xs">
+    <h3 class="p-b-2-xs">How is it organized?</h3>
+    <p class="p-b-2-xs">The email style guide provides guidelines for the visual alignment of our emails. It uses <a href="https://treehouse.github.io/" target="_blank">Leap</a> as a guide when possible and deviates from it to address the specific needs of emails. The guide is organized with Atomic Design in mind. There are four main sections: <span class="italic">Atmosphere</span>, <span class="italic">Atoms</span>, <span class="italic">Molecules</span>, and <span class="italic">Templates</span>.</p>
+    <ul>
+      <li class="p-tb-1-xs"><span class="italic">Atmosphere</span> is the intangible logic that orchestrates the design system. It is broken down into three items:
+        <ul>
+          <li class="p-t-1-xs"><span class="italic">Vocabulary</span>: Represents what the element is called. It’s name.</li>
+          <li class="p-t-1-xs"><span class="italic">Syntax</span>: Speaks to how to use the element, and how it might relate to any other elements</li>
+          <li class="p-t-1-xs"><span class="italic">Semantics</span>: Addresses why the element is the way it is and what it should communicate to our users</li>
+        </ul>
+      </li>
+      <li class="p-tb-1-xs"><span class="italic">Atoms</span> are individual pieces of <span class="italic">Molecules</span>.</li>
+      <li class="p-tb-1-xs"><span class="italic">Molecules</span> are groupings of <span class="italic">Atoms</span> and are common UI patterns which are repeatable across emails</li>
+      <li class="p-t-1-xs"><span class="italic">Templates</span> are full examples of common email layouts which can be duplicated and reused.</li>
+    </ul>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <h3 class="p-b-1-xs">Primary points of interest, by role</h3>
+  <ul>
+    <li class="p-tb-1-xs"><span class="bold">Designers, Developers</span>: <a href="#fe">Front End Guidelines</a>, <a href="#support">Email Client Support</a>, <a href="#templates">Templates</a></li>
+    <li><span class="bold">Marketers, Salespeople, other internal people</span>: <a href="#mailchimp">MailChimp</a>, <a href="#intercom">Intercom</a>, <a href="">Marketo (coming soon)</a>, <a href="#copy">Copy</a>, <a href="#templates">Templates</a></li>
+    <li class="p-tb-1-xs"><span class="bold">Agencies</span>: Everything</li>
+  </ul>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-100-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h2 class="p-b-1-xs" id="process">Process</h2>
+    <p class="p-b-2-xs">Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu. </p>
+    <ol>
+      <li class="p-b-2-xs">Choose the right Email Service Provider (ESP)
+        <ul>
+          <li class="p-t-1-xs"><a href="https://www.mailchimp.com" target="_blank">MailChimp</a></li>
+          <li class="p-t-1-xs"><a href="https://www.intercom.com" target="_blank">Intercom</a></li>
+          <li class="p-t-1-xs"><a href="https://www.mandrill.com" target="_blank">Mandrill</a></li>
+          <li class="p-t-1-xs"><a href="https://www.marketo.com" target="_blank">Marketo</a></li>
+        </ul>
+      </li>
+      <li class="p-b-2-xs">If applicable, use templates and components from the <a href="https://github.com/treehouse/email-templates" target="_blank">GitHub repository</a></li>
+      <li class="p-b-2-xs">Test
+        <ul>
+          <li class="p-t-1-xs">Instructions</li>
+          <li class="p-t-1-xs"><a href="https://www.campaignmonitor.com/css/">CSS Support Guide for Email Clients</a></li>
+          <li class="p-t-1-xs">Logins for Test Emails</li>
+          <li class="p-t-1-xs"><a href="https://litmus.com" target="_blank">Litmus.com</a></li>
+        </ul>
+      </li>
+      <li>Update the communications spreadsheet</li>
+    </ol>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h2 class="p-b-1-xs" id="fe">Frontend Guidelines</h2>
+    <ul>
+      <li class="p-b-1-xs">Use <a href="https://treehouse.github.io/project-leap/index" target="_blank">Leap</a> classes as much as possible. <span class="italic">Note</span>: Some Leap classes have been modified so they're optimized for email. For example, we use pixels instead of ems for text size in emails.</li>
+      <li class="p-b-1-xs">Don't write inline CSS. MailChimp and Intercom will automatically inline your CSS as they process the email.</li>
+      <li class="p-b-1-xs">In the case of using Litmus for testing, first use MailChimp's <a href="https://templates.mailchimp.com/resources/inline-css/" target="_blank">CSS Inliner tool</a> to inline the CSS. Then paste that code into the Litmus tool.</li>
+      <li>Refer to Campaign Monitor's <a href="https://www.campaignmonitor.com/css/" target="_blank">table of CSS support</a> and MailChimp's <a href="https://templates.mailchimp.com/resources/email-client-css-support/" target="_blank">Email Client CSS Support</a> resource for email clients</li>
+    </ul>
+  </div>
+  <div class="col col-100-xs col-100-md col-50-lg p-t-4-xs">
+    <ul>
+      <li class="p-b-1-xs">If you aren't uploading images via the Composer, upload images to <a href="https://s3.amazonaws.com" target="_blank">S3</a>. Use https for images to avoid any mixed content warnings.</li>
+      <li class="p-b-1-xs">Try to keep your images as small as possible (maximum 1MB in size). Downloading large images will provide a sub-optimal experience to users, especially those who are viewing your email on mobile devices, as images may take a long time to appear.</li>
+    </ul>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h2 class="p-b-1-xs" id="support">Email Client Support</h2>
+    <p class="p-b-1-xs">We target support for our top 10 email clients according to MailChimp. In the Notes column, we specify the configurations we're able to test on Litmus. While the mobile Gmail app doesn't appear in our top 10 stats, we've included it here given our high percentage of Gmail desktop users and the bug in iOS reporting (see note below).</p>
+    <p class="text-6-xs"><span class="italic">Note</span>: iOS and Mail stats might be deceptively high. iOS devices and Mail both have images turned on by default, so they're always downloaded when an email is opened (including the one pixel image MailChimp uses to track opens). Most other clients have images turned off by default, which can result in an inflated percentage of iPhone users showing up in the stats.</p>
+  </div>
+  <div class="col col-100-xs col-100-md col-50-lg p-t-4-xs">
+    <table class="table-border-rows text-6-xs">
+      <tbody>
+        <tr class="p-1-xs">
+          <th class="col-25-xs">Email Client</th>
+          <th class="col-25-xs">Device Type</th>
+          <th class="col-25-xs">Percentage</th>
+          <th class="col-25-xs">Notes</th>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Gmail</td>
+          <td>Desktop (web)</td>
+          <td>50.3%</td>
+          <td>Chrome, Firefox, Explorer</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>iPhone</td>
+          <td>Mobile</td>
+          <td>25.5%</td>
+          <td>iPhone 6 (iOS 8), iPhone6 Plus (iOS 8), iPhone6s (iOS 9), iPhone 6s Plus (iOS 9), iPhone 7 (iOS 10.2), iPhone 7 Plus (iOS 10.2), iPad (Retina, iOS 10.2)</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Apple Mail</td>
+          <td>Mobile</td>
+          <td>11.8%</td>
+          <td>Apple Mail 10 (OS X 10.2)</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Chrome</td>
+          <td>Mobile</td>
+          <td>3.6%</td>
+          <td></td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Hotmail</td>
+          <td>Desktop (web)</td>
+          <td>1.9%</td>
+          <td>Now Outlook.com</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Yahoo</td>
+          <td>Desktop (web)</td>
+          <td>1.6%</td>
+          <td>Chrome, Firefox, Explorer</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Outlook 2016</td>
+          <td>Desktop (app)</td>
+          <td>1.5%</td>
+          <td></td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Android Webview</td>
+          <td>Mobile</td>
+          <td>0.6%</td>
+          <td></td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Android</td>
+          <td>Mobile</td>
+          <td>0.5%</td>
+          <td>Android 4.4, Android 6.0</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Outlook 2013</td>
+          <td>Desktop (app)</td>
+          <td>0.5%</td>
+          <td>Win 7</td>
+        </tr>
+        <tr class="p-1-xs">
+          <td>Gmail</td>
+          <td>Mobile</td>
+          <td>N/A</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--<h2 class="p-b-1-xs" id="communications">Communications Spreadsheet</h2>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-100-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <p>Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu.</p>
+  </div>
+</div>-->
+<div class="col-container col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs p-r-3-md p-r-3-lg">
+    <h2 class="p-b-1-xs" id="mailchimp">MailChimp</h2>
+    <p class="p-b-5-xs">Emails can be made within MailChimp or created outside of MailChimp and imported.</p>
+  </div>
+  <div class="col col-100-xs p-b-5-xs">
+    <h3 class="p-b-1-xs">Editing within MailChimp</h3>
+    <p class="p-b-2-xs">As you're setting up a campaign, you'll get to the Template section. Choose the "Saved Templates" option. Choose the template that's appropriate for your content.</p>
+    <img src="img/mailchimp/saved-templates.png" class="w-fit-xs" alt="Saved Template">
+    <p class="p-tb-2-xs">Hover over the content to see the editable sections.</p>
+    <img src="img/mailchimp/edit.png" class="w-fit-xs" alt="Editable">
+    <p class="p-t-2-xs p-b-1-xs"><span class="bold">Up-Down Arrows</span>: Click and drag to rearrange the section</p>
+    <p class="p-b-1-xs"><span class="bold">Plus Arrow</span>: Click to repeat the section</p>
+    <p class="p-b-1-xs"><span class="bold">Minus Arrow</span>: Click to delete the section</p>
+    <p class="p-b-1-xs"><span class="bold">Edit</span>: Click to edit the section</p>
+    <p class="p-tb-1-xs">The initial edit view is ideal for making simple text changes.</p>
+    <img src="img/mailchimp/edit-WYSIWYG.png" class="w-fit-xs" alt="Edit - WYSIWYG">
+    <p class="p-tb-1-xs">For further changes, it's often easiest to edit from the code view (click the <code>&lt;&gt;</code> icon).</p>
+    <img src="img/mailchimp/edit-code.png" class="w-fit-xs" alt="Edit - Code">
+  </div>
+  <div class="col col-100-xs col-100-md col-50-lg">
+    <h3 class="p-b-1-xs">Editing outside of MailChimp</h3>
+    <p class="p-b-2-xs">Emails written in MailChimp's template language make them editable in the MailChimp Editor</p>
+    <p class="p-b-1-xs"><a href="http://kb.mailchimp.com/templates/code/getting-started-with-mailchimps-template-language" target="_blank">Getting Started with MailChimp's Template Language</a></p>
+    <p><a href="http://kb.mailchimp.com/templates/code/how-to-import-a-custom-html-template" target="_blank">How to Import a Custom HTML Template</a></p>
+  </div>
+</div>
+<div class="border-b-light-xs p-b-5-xs m-b-5-xs">
+  <h2 class="p-b-1-xs" id="intercom">Intercom</h2>
+  <p class="p-b-3-xs">These components are readily available within Intercom if you chose the custom template. These are baked into the template and can be inserted using the Intercom Composer. Due to the limitations of Intercom's Composer, some elements are easier to add than others, as explained below.</p>
+  <h3 class="p-b-1-xs">Editing within Intercom</h3>
+  <p class="p-b-2-xs">As you're setting up the email, choose "Basic Treehouse Template" from the Email Template dropdown.</p>
+  <div class="text-center-xs">
+    <img src="img/intercom/template.png" class="w-fit-xs" alt="Template">
+  </div>
+  <p class="p-t-5-xs p-b-1-xs">The composer allows you to add components via a menu. As you hover over the white part of the email, a box with a plus sign appears. Click that and you'll see the menu (shown below). The sections below explain what can be added via this menu.</p>
+  <div class="text-center-xs">
+    <img src="img/intercom/insert-button.png" class="w-fit-xs" alt="Intercom Composer Insert Button">
+  </div>
+  <div class="col-container p-t-5-xs">
+    <div class="col col-100-xs col-100-md col-50-lg">
+      <p class="bold p-b-1-xs">Ready-to-go: buttons, images, and paragraphs</p>
+        <ul>
+          <li class="p-b-1-xs"><span class="bold">Button</span>: Insert via the "Insert button" button.
+            <p class="text-6-xs p-t-05-xs"><span class="italic">Note</span>: This shows the extra large button (solid green). If you want a different button, use the code below in a template outside of Intercom.</p>
+          </li>
+          <li class="p-b-1-xs"><span class="bold">Images</span>: Insert via the "Insert image" button.
+            <p class="text-6-xs p-t-05-xs"><span class="italic">Note</span>: This adds images within the white container's padding on the left and right.</p>
+          </li>
+          <li class="p-b-1-xs"><span class="bold">Paragraphs</span>: Just start typing into the Composer.</li>
+        </ul>
+    </div>
+    <div class="col col-100-xs col-100-md col-50-lg">
+      <p class="bold p-b-1-xs">Add via HTML: other elements</p>
+        <ul>
+          <li class="p-b-1-xs"><span class="bold">HR</span>: Insert via the "Insert HTML" button and paste in the HTML code.</li>
+          <li class="p-b-1-xs"><span class="bold">Headings</span>: Insert via the "Insert HTML" button and paste in the HTML code.</li>
+          <li class="p-b-1-xs"><span class="bold">Bold Text</span>: Insert via the "Insert HTML" button and paste in the HTML code.</li>
+          <li class="p-b-1-xs"><span class="bold">Link - Blue</span>: Insert via the "Insert HTML" button and paste in the HTML code.</li>
+          <li class="p-b-1-xs"><span class="bold">Link - Gray</span>: Insert via the "Insert HTML" button and paste in the HTML code.</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+<h2 class="p-b-1-xs" id="copy">Copy</h2>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-45-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h3 class="p-b-1-xs">Voice / Tone</h3>
+    <p>Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu.</p>
+  </div>
+  <div class="email-example col col-100-xs col-100-md col-50-lg">
+    <h4 class="p-b-1-xs">Best Pracitices</h4>
+    <ul class="p-b-1-xs">
+      <li class="p-b-1-xs"><span class="bold">Write preheader text</span>. Preheaders are email descriptions that some clients show near subject lines in email previews. Clients pull this description from the first chunk of text found in the email. To customize the preheader, add a hidden element at the top of the body content. Include an incentive for the user to open the email. There's a <a href="https://litmus.com/blog/the-ultimate-guide-to-preview-text-support" target="_blank">range</a> of character limits in preheaders, but it's advisable to keep it within 40-50 characters.
+      </li>
+      <li class="p-b-1-xs"><span class="bold">Plan plain-text emails</span>. MailChimp automatically creates these from your HTML version. To preview, you can use this <a href="https://templates.mailchimp.com/resources/html-to-text/" target="_blank">HTML to Text Email Converter</a> tool.</li>
+      <li><span class="bold">Have consistent signatures</span>. Explain here.</li>
+    </ul>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h3 class="p-b-1-xs">Transactional vs. promotional</h3>
+    <p>Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu. </p>
+  </div>
+  <div class="email-example col col-100-xs col-100-md col-50-lg">
+    <h4 class="p-b-1-xs">Best Pracitices</h4>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ul>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h3 class="p-b-1-xs">Personal Emails</h3>
+    <p>Emails from a specific person vs. the company. Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu.</p>
+  </div>
+  <div class="email-example col col-100-xs col-100-md col-50-lg">
+    <h4 class="p-b-1-xs">Best Pracitices</h4>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ul>
+  </div>
+</div>
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <h3 class="p-b-1-xs">Length Guidelines</h3>
+    <p>Max length (esp. on mobile). Nunc vulputate nisl sit amet lobortis aliquam. Praesent mauris erat, tempor viverra ante eu, posuere pretium arcu. Fusce ac auctor risus. Pellentesque sit amet nulla nibh. Vestibulum id feugiat metus. Vivamus in enim eu enim rhoncus ornare. Suspendisse at venenatis nunc, ut congue arcu. </p>
+  </div>
+  <div class="email-example col col-100-xs col-100-md col-50-lg">
+    <h4 class="p-b-1-xs">Best Pracitices</h4>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+    </ul>
+  </div>
+</div>
+
+<div class="border-b-light-xs p-b-5-xs m-b-5-xs">
+  <h2 class="p-b-1-xs" id="accessibility">Accessibility</h2>
+  <p class="p-b-3-xs">We want to make our emails easy to read for a wide, diverse audience. </p>
+  <h3 class="p-b-1-xs">Color Ratios</h3>
+  <p class="p-b-2-xs">Be mindful of the contrast between the text colors and background colors. Our templates already pass WCAG AA and AAA guidelines. They should suit your needs, but if you build on them use WebAIM's <a href="http://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a> to be sure you have proper contrast.</p>
+  <h3 class="p-b-1-xs">Text Hierarchy</h3>
+  <p class="p-b-2-xs">Screen reader users rely on HTML heading elements to navigate pages and determine content hierarchy. Be sure to use header tags to denote headers and subheaders.</p>
+  <h3 class="p-b-1-xs">Image Text Alternates</h3>
+  <p class="p-b-2-xs">For all images, include <code>alt="A description of the image"</code>. Purely decorative or utilitarian images should have an empty alt attribute (<code>alt=""</code>) to inform screen readers that the image should be ignored. Other images should have alt attributes that explain the meaning of the image.</p>
+  <h3 class="p-b-1-xs">Link Text</h3>
+  <p class="p-b-2-xs">The text you use in a link is important and helps screen readers navigate the page. Instead of generic "click here" text, use descriptive text links that state the purpose of the link.</p>
+  <h3 class="p-b-1-xs">Text-Only Option</h3>
+  <p class="p-b-2-xs">Provide a text-only version of the email so that the user can determine which version is the most comfortable format to read.</p>
+  <h3 class="p-b-1-xs">Hide Presentation-Only Content</h3>
+  <p class="p-b-2-xs">Tables are a crucial way to consistently display emails across the spectrum of email clients. However, screen readers can get bogged down by navigating through the copious nests of tables that emails often contain. To communicate that a table is only being used for presentation purposes, use <code>role="presentation" aria-hidden="true"</code> so the screen reader can pass by it. For tables that are displaying tabular content that's meant to be digested, don't use these attributes. It’s also recommended to use the HTML attribute role=”presentation” on any image with an empty ALT attribute to avoid the name for the image being read.</p>
+</div>
