@@ -2,8 +2,9 @@
 */.DS_Store
 
 docs/_site/
-docs/.sass-cache/
-docs/.jekyll-metadata
 
-bower_components
-node_modules
+.sass-cache/
+.jekyll-metadata
+
+bower_components/
+node_modules/
