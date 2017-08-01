@@ -1,0 +1,18 @@
+{
+  "name": "email-style-guide",
+  "description": "Treehouse email style guide",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "project-leap": "leap#^0.8.6"
+  }
+}

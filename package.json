@@ -1,0 +1,9 @@
+{
+  "name": "email-style-guide",
+  "description": "Treehouse email style guide",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0"
+  },
+  "license": "MIT"
+}
