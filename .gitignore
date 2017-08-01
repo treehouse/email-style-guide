@@ -1,3 +1,9 @@
-_site/
-.sass-cache/
-.jekyll-metadata
+.DS_Store
+*/.DS_Store
+
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-metadata
+
+bower_components
+node_modules
