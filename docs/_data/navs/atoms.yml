@@ -4,7 +4,7 @@ pages:
   - slug: /atoms/typography.html
     name: Typography
 
-  - slug: /atoms/cta.html
+  - slug: /atoms/ctas.html
     name: CTAs
 
   - slug: /atoms/imagery.html
