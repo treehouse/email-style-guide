@@ -1,7 +1,7 @@
 
 <li class="guide-navigation-item">
-  <a href="getting-started.html" {% if page.url == "/" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
-    Atmosphere
+  <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+    Getting Started
   </a>
 </li>
 {% for p in site.data.navs %}

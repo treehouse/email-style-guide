@@ -1,0 +1,27 @@
+filename: atmosphere
+name: Atmosphere
+pages:
+  - slug: /atmosphere/purpose.html
+    name: Purpose
+
+  - slug: /atmosphere/process.html
+    name: Process
+
+  - slug: /atmosphere/frontend_guidelines.html
+    name: Frontend Guidelines
+
+  - slug: /atmosphere/email_client_support.html
+    name: Email Client Support
+
+  - slug: /atmosphere/mailchimp.html
+    name: Mailchimp
+
+  - slug: /atmosphere/intercom.html
+    name: Intercom
+
+  - slug: /atmosphere/copy.html
+    name: Copy
+
+  - slug: /atmosphere/accessibility.html
+    name: Accessibility
+

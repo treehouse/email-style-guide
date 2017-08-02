@@ -1,0 +1,21 @@
+---
+layout: default
+title: Frontend Guidelines
+---
+
+<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
+  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
+    <ul>
+      <li class="p-b-1-xs">Use <a href="https://treehouse.github.io/project-leap/index" target="_blank">Leap</a> classes as much as possible. <span class="italic">Note</span>: Some Leap classes have been modified so they're optimized for email. For example, we use pixels instead of ems for text size in emails.</li>
+      <li class="p-b-1-xs">Don't write inline CSS. MailChimp and Intercom will automatically inline your CSS as they process the email.</li>
+      <li class="p-b-1-xs">In the case of using Litmus for testing, first use MailChimp's <a href="https://templates.mailchimp.com/resources/inline-css/" target="_blank">CSS Inliner tool</a> to inline the CSS. Then paste that code into the Litmus tool.</li>
+      <li>Refer to Campaign Monitor's <a href="https://www.campaignmonitor.com/css/" target="_blank">table of CSS support</a> and MailChimp's <a href="https://templates.mailchimp.com/resources/email-client-css-support/" target="_blank">Email Client CSS Support</a> resource for email clients</li>
+    </ul>
+  </div>
+  <div class="col col-100-xs col-100-md col-50-lg p-t-4-xs">
+    <ul>
+      <li class="p-b-1-xs">If you aren't uploading images via the Composer, upload images to <a href="https://s3.amazonaws.com" target="_blank">S3</a>. Use https for images to avoid any mixed content warnings.</li>
+      <li class="p-b-1-xs">Try to keep your images as small as possible (maximum 1MB in size). Downloading large images will provide a sub-optimal experience to users, especially those who are viewing your email on mobile devices, as images may take a long time to appear.</li>
+    </ul>
+  </div>
+</div>

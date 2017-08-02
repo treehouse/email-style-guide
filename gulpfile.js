@@ -8,7 +8,7 @@ var folder = {
   src: 'src/',
   dest: 'dist/',
   docsSrc: 'docs/src/',
-  docsDest: 'docs/dist/',
+  docsDest: 'docs/',
 };
 
 gulp.task('css', function() {
@@ -20,7 +20,7 @@ gulp.task('css', function() {
     precision: 3
   };
 
-  gulp.src(src)
+  return gulp.src(src)
     .pipe(sass(sassOpts)
     .on('error', sass.logError))
     .pipe(gulp.dest(dest));
@@ -32,11 +32,11 @@ gulp.task('docs:css', function() {
   var dest = folder.docsDest + 'css/';
   var sassOpts = {
     outputStyle: 'expanded',
-    includePaths: ['bower_components/project-leap/_sass', 'src/sass'],
+    includePaths: ['bower_components/project-leap/_sass', 'src/sass', 'docs/src/sass'],
     precision: 3
   };
 
-  gulp.src(src)
+  return gulp.src(src)
     .pipe(sass(sassOpts)
     .on('error', sass.logError))
     .pipe(gulp.dest(dest));
