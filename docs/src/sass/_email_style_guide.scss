@@ -1,0 +1,86 @@
+body {
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif; }
+
+a {
+  font-weight: bold; }
+
+.logo {
+  width: 191px !important; }
+
+.template-img {
+  background-position: 0 0;
+  background-size: cover;
+  height: 200px; }
+
+.template-img-all {
+  background-image: url("../img/templates/all.png"); }
+
+.template-img-content-announcement {
+  background-image: url("../img/templates/content-announcement.png"); }
+
+.template-img-b2b-newsletter {
+  background-image: url("../img/templates/b2b-newsletter.png"); }
+
+.template-img-title {
+  top: 200px; }
+
+.email-style-guide .template-action-img {
+  width: 32px;
+  opacity: 0.5; }
+.email-style-guide-nav {
+  overflow: hidden;
+  overflow-y: auto; }
+  .email-style-guide-nav h3 {
+    color: #fff; }
+  .email-style-guide-nav .list-unstyled {
+    background-color: #4f5a64; }
+    .email-style-guide-nav .list-unstyled a {
+      color: #fff;
+      font-weight: normal; }
+      .email-style-guide-nav .list-unstyled a:hover {
+        background-color: #3f4850; }
+      .email-style-guide-nav .list-unstyled a:active {
+        background-color: #465059; }
+.email-style-guide-main {
+  margin-left: 15%; }
+
+.icon-library-img {
+  width: 100px; }
+
+.icon-library-copy {
+  width: 20px;
+  opacity: 0.5; }
+
+.error {
+  color: #ed5a5a; }
+
+.success {
+  color: #36b55c; }
+
+.guide-color-item > span {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Monaco, monospace; }
+.guide-color-item > span em {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Helvetica, Arial, sans-serif; }
+.guide-color-item .text-bg-white {
+  border: solid 1px #edeff0; }
+  .guide-color-item .text-bg-white span {
+    color: #40484a; }
+  .guide-color-item .text-bg-white em {
+    color: #7b8b8e; }
+
+.guide-colors-topic .guide-color-item span:first-child {
+  border-radius: 4px 4px 0 0; }
+.guide-colors-topic .guide-color-item span:last-child {
+  border-radius: 0 0 4px 4px; }
+
+.guide-colors-gray .guide-color-item span:first-child {
+  border-radius: 4px 4px 0 0; }
+.guide-colors-gray .guide-color-item span:last-child {
+  border-radius: 0 0 4px 4px; }
+
+.guide-colors-text .guide-color-item span:first-child {
+  border-radius: 4px 4px 0 0; }
+.guide-colors-text .guide-color-item span:last-child {
+  border-radius: 0 0 4px 4px; }
