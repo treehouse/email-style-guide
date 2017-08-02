@@ -1,0 +1,159 @@
+---
+layout: default
+title: Footer
+---
+
+
+      <div class="border-light-xs p-3-xs round">
+        <h4 class="p-b-3-xs">Atmosphere</h4>
+        <h5 class="p-b-1-xs">Vocabulary</h5>
+        <p class="p-b-2-xs">Footer</p>
+        <h5 class="p-tb-1-xs">Syntax</h5>
+        <p class="p-b-1-xs">This appears at the bottom of every email.</p>
+        <h5 class="p-tb-1-xs">Semantics</h5>
+        <p>The footer provides copyright information, key links for easy access, and links to our social media accounts. The reply address is there in case the user wants to get in touch with us. The account management links - "Manage Email Notifications" and "Unsubscribe" are a requirement so the user can be in control of their email communications.</p>
+      </div>
+      <div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-0-md p-r-3-lg code-example">
+          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="footer-code">
+            <li><a href="#footer-code-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            <li><a href="#footer-code-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+          </ul>
+          <div id="footer-code" class="tabgroup">
+            <div id="footer-code-html">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-html">&lt;table class="footer flexible" border="0" cellpadding="0" cellspacing="0"&gt;
+    &lt;tr height="15"&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class="contact-info"&gt;
+          &lt;p&gt;&copy; Treehouse Island Inc&lt;/p&gt;
+          &lt;p&gt;
+            &lt;a href="mailto:hello@teamtreehouse.com" class="bold"&gt;hello@teamtreehouse.com&lt;/a&gt;  &lt;span class="pipe"&gt;|&lt;/span&gt;  &lt;a href="https://teamtreehouse.com/account/notifications" class="bold"&gt;Manage Email Notifications&lt;/a&gt;  &lt;span class="pipe"&gt;|&lt;/span&gt;  &lt;a href="{{ unsubscribe_url }}" class="bold"&gt;Unsubscribe&lt;/a&gt;
+          &lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;table class="footer flexible" border="0" cellpadding="0" cellspacing="0"&gt;
+    &lt;tr height="15"&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;a href="https://twitter.com/treehouse"&gt;&lt;img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/bce53974-061a-46a1-9647-6f70da557c75.png" alt="Treehouse on Twitter"&gt;&lt;/a&gt;
+        &lt;a href="http://www.youtube.com/user/gotreehouse"&gt;&lt;img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/cb5184a8-e1d0-46f7-a1b6-bd00b175c264.png" alt="Treehouse on YouTube"&gt;&lt;/a&gt;
+        &lt;a href="https://www.facebook.com/TeamTreehouse"&gt;&lt;img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/5b19282b-85d5-4da1-9199-958dbc95a71f.png" alt="Treehouse on Facebook"&gt;&lt;/a&gt;
+        &lt;a href="https://plus.google.com/110278003536476194286/posts"&gt;&lt;img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/d3e43873-dc7e-4cdb-b960-e57a1873bce0.png" alt="Treehouse on Google+"&gt;&lt;/a&gt;
+        &lt;a href="http://instagram.com/teamtreehouse"&gt;&lt;img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/e0df2140-1a53-4702-bab7-c7dd6faea532.png" alt="Treehouse on Instagram"&gt;&lt;a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr height="30"&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;</code></pre>
+              </div>
+            </div>
+            <div id="footer-code-css">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-css">.footer {
+    width: 100%;
+    text-align: center;
+  }
+  .pipe {
+    color: #b7c0c7;
+  }
+  .social {
+    width: 39px;
+    height: 42px;
+  }</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-lr-3-xs p-b-3-xs bg-gray-light email-example">
+          <div class="text-bg-white p-5-xs round-b">
+          </div>
+          <div class="footer text-center-xs ">
+            <p class="text-color-light p-t-4-xs p-b-1-xs">&copy; Treehouse Island Inc</p>
+            <div class="text-color-light p-b-5-xs">
+              <a href="mailto:hello@teamtreehouse.com" class="text-color-light">hello@teamtreehouse.com</a> | <a href="#" class="text-color-light">Manage Email Notifications</a> | <a href="#" class="text-color-light">Unsubscribe</a>
+            </div>
+            <div class="text-color-light">
+              <a href="https://twitter.com/treehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/bce53974-061a-46a1-9647-6f70da557c75.png" alt="Treehouse on Twitter"></a>
+              <a href="http://www.youtube.com/user/gotreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/cb5184a8-e1d0-46f7-a1b6-bd00b175c264.png" alt="Treehouse on YouTube"></a>
+              <a href="https://www.facebook.com/TeamTreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/5b19282b-85d5-4da1-9199-958dbc95a71f.png" alt="Treehouse on Facebook"></a>
+              <a href="https://plus.google.com/110278003536476194286/posts"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/d3e43873-dc7e-4cdb-b960-e57a1873bce0.png" alt="Treehouse on Google+"></a>
+              <a href="http://instagram.com/teamtreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/e0df2140-1a53-4702-bab7-c7dd6faea532.png" alt="Treehouse on Instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="p-tb-3-xs" id="colored-section">Signature</h2>
+      <div class="border-light-xs p-3-xs round">
+        <h4 class="p-b-3-xs">Atmosphere</h4>
+        <h5 class="p-b-1-xs">Vocabulary</h5>
+        <p class="p-b-2-xs">Signature</p>
+        <h5 class="p-tb-1-xs">Syntax</h5>
+        <p class="p-b-1-xs">This appears at the bottom of the white section in every email. For emails sent from a specific person, use the Personal one. For emails sent from Treehouse, use the Generic one.</p>
+        <h5 class="p-tb-1-xs">Semantics</h5>
+        <p>The signature is a friendly way to end an email. If signed with an individual's name, it gives the email a personable feel and creates a sense of familiarity with the person.</p>
+      </div>
+      <p class="p-tb-3-xs">NOTE TO SELF: Add this to template.</p>
+      <div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs">
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-t-05-xs p-r-0-xs p-r-0-md p-r-3-lg code-example">
+          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="signature">
+            <li><a href="#signature-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            <li><a href="#signature-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+          </ul>
+          <div id="signature" class="tabgroup">
+            <div id="signature-html">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-html">&lt;table border="0" cellpadding="0" cellspacing="0" width="100%"&gt;
+  &lt;tr>
+    &lt;td colspan="2"&gt;
+      &lt;p class="m-t-0-xs">Questions? Hit reply and we're happy to chat.&lt;/p&gt;
+      &lt;p class="p-t-2-xs m-b-0-xs">Cheers,&lt;/p&gt;
+    &lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td class="p-r-3-xs" width="80"&gt;
+      &lt;a href="https://www.youtube.com/watch?v=7MmH7fdwyVk" target="_blank"&gt;&lt;img src="img/templates/author-faye@2x.png" width="80" height="80" alt="Faye Bridges"&gt;</a&gt;
+    &lt;/td>
+    &lt;td>
+      &lt;span class="block-xs p-b-1-xs">Faye Bridge&lt;/span&gt;
+      &lt;span class="text-color-light text-6-xs">Treehouse Blog Editor&lt;/span&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+              </div>
+            </div>
+            <div id="signature-css">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-css">&lt;code&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+          <div class="text-bg-white h-full-xs round">
+            <div class="p-5-xs text-center-xs">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td colspan="2">
+                    <p class="m-t-0-xs">Questions? Hit reply and we're happy to chat.</p>
+                    <p class="p-t-2-xs m-b-0-xs">Cheers,</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-r-3-xs" width="80">
+                    <a href="https://www.youtube.com/watch?v=7MmH7fdwyVk" target="_blank"><img src="img/templates/author-faye@2x.png" width="80" height="80" alt="Faye Bridges"></a>
+                  </td>
+                  <td>
+                    <span class="block-xs p-b-1-xs">Faye Bridge</span>
+                    <span class="text-color-light text-6-xs">Treehouse Blog Editor</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

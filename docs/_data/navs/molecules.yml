@@ -1,20 +1,17 @@
 filename: molecules
 name: Molecules
 pages:
-  - slug: /typography.html
+  - slug: /molecules/header.html
     name: Header
 
-  - slug: /cta.html
+  - slug: /molecules/footer.html
     name: Footer
 
-  - slug: /imagery.html
-    name: Color Section
+  - slug: /molecules/callout.html
+    name: Callout
 
-  - slug: /Horizontal Rule.html
+  - slug: /molecules/two_column.html
     name: Two Column
 
-  - slug: /color.html
+  - slug: /molecules/responsive.html
     name: Responsive
-
-  - slug: /colors.html
-    name: Spacing

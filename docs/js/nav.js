@@ -37,8 +37,11 @@ var isAtom = pageName == "atoms/typography" ||
              pageName == "atoms/color" ||
              pageName == "atoms/spacing";
 
-var isModule = pageName == "alert-banner" ||
-               pageName == "control-bar";
+var isMolecule = pageName == "molecules/header" ||
+                 pageName == "molecules/footer" ||
+                 pageName == "molecules/callout" ||
+                 pageName == "molecules/two_column" ||
+                 pageName == "molecules/responsive";
 
 if (isAtmosphere) {
   nav[0].classList.toggle('guide-navigation-item-parent--active');
@@ -48,7 +51,7 @@ else if (isAtom) {
   nav[1].classList.toggle('guide-navigation-item-parent--active');
   nav[1].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
 }
-else if (isModule) {
+else if (isMolecule) {
   nav[2].classList.toggle('guide-navigation-item-parent--active');
   nav[2].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
 }
