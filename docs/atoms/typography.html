@@ -1,0 +1,369 @@
+---
+layout: default
+title: Typography
+---
+
+<div class="col-container">
+  <div class="col col-100-xs">
+    <h3 class="p-b-3-xs">Font Stack</h3>
+    <div class="border-light-xs p-3-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Font Stack</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Headings all make use of Arial Rounded MT Bold (which is the tortured cousin of Gotham Round) first, then Helvetica Rounded. The fallback fonts for headings are Arial, and Sans-serif. For Paragraph text we use the standard sans-serif font stack which begins with Arial. This ensure optimal readability for text in our emails.</p>
+      <p class="p-b-1-xs">Although Gotham Rounded is the typeface for our brand, it's not possible to use this custom font in emails. Instead, we're able to use a font stack which begins with Arial Rounded MT Bold. We use this for headings. It is a similar rounded sans-serif font which is compatible with 95.14% of Mac users and 59.53% of Windows users (<a href="http://www.cssfontstack.com/Arial-Rounded-MT-Bold" target="_blank">Source</a>). The remaining fonts service the users that don't have this initial font.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>We use this font stack because it provides the optimal level of readability and provides a bit of brand reinforcement.</p>
+    </div>
+    <h4 class="p-t-3-xs">Examples</h4>
+    <div class="p-t-1-xs"><code>h1, h2, h3, h4, h5, h6</code></div>
+    <div class="guide-code m-b-3-xs">
+      <pre><code class="language-html">font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;</code></pre>
+    </div>
+
+     <p class="p-tb-1-xs">For body text, we use a standard sans-serif font stack which begins with Arial.</p>
+
+    <div><code>p</code></div>
+    <div class="guide-code m-b-3-xs">
+      <pre><code class="language-html">font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; </code></pre>
+    </div>
+  </div>
+</div>
+<h3 class="p-tb-3-xs">Headings</h3>
+<div class="border-light-xs p-3-xs m-b-5-xs">
+  <h4 class="p-b-3-xs">Atmosphere</h4>
+  <h5 class="p-b-1-xs">Vocabulary</h5>
+  <p class="p-b-2-xs">Headings</p>
+  <h5 class="p-tb-1-xs">Syntax</h5>
+  <p class="p-b-1-xs">We use headings to emphasize the most important ideas in an email. We do not use them for long sentences or paragraphs. They should be easy to read and help users quickly identify if an email or section of content is something they are interested in reading. Headings are also ranked in order of importance. So an H1 is should represent the most important item in an email. An H6 the opposite.</p>
+  <h5 class="p-tb-1-xs">Semantics</h5>
+  <p>Headings in emails allow us to add rhythm and order to our content, especially if an email contains a handful of ideas it needs to communicate. We use headings to greet our readers or identify sections of content.</p>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs">
+  <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+    <h4 class="p-t-1-xs">h1</h4>
+    <div class="border-light-xs p-3-xs m-t-2-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Heading 1, H1</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Use H1s in greetings of emails (Hey Mike!) or to set the context of the email. You should never have more than a single H1 in an email.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>H1s are going to be the largest sized type in an email layout. The size and boldness of the element will draw the user’s eye and attention.</p>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-t-05-xs p-r-0-xs p-r-0-md p-r-3-lg code-example">
+    <code>h1</code> <em class="m-l-05-xs">36px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h1">
+      <li><a href="#h1-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h1-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h1" class="tabgroup">
+      <div id="h1-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h1-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h1 {font-size: 36px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h1>Heading 1</h1>
+    </div>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs">
+  <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+    <h4 class="p-t-1-xs">h2</h4>
+    <div class="border-light-xs p-3-xs m-t-2-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Heading 2, H2</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Use H2s to label a section content that contains multiple sub sections. While you can use multiple H2s inside of an email, it should be dependant upon having more than one section of content you need to label. H2’s should sparingly be used for entire sentences.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>H2s are going to be the second largest sized type in the email layout. While they are not as large as H1s, their size and boldness will still command the user eye and attention. If you use an H2 it should mean that there are going to be multiple sections of content that relate back to it.</p>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>h2</code> <em class="m-l-05-xs">28px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h2">
+      <li><a href="#h2-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h2-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h2" class="tabgroup">
+      <div id="h2-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h2-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h2 {font-size: 28px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h2>Heading 2</h2>
+    </div>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs">
+  <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+    <h4 class="p-t-1-xs">h3</h4>
+    <div class="border-light-xs p-3-xs m-t-2-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Heading 3, H3</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Use H3s to provide insight into blocks of content like paragraphs, lists, etc. H3s will likely be the most commonly used form of heading in an email.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>H3s are going to be closer in size to our email paragraph styles because that is what they are visually meant to pair with. Because of that, they will work well to provide readers a visual anchor point for written text.</p>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>h3</code> <em class="m-l-05-xs">20px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h3">
+      <li><a href="#h3-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h3-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h3" class="tabgroup">
+      <div id="h3-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h3-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h3 {font-size: 20px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h3>Heading 3</h3>
+    </div>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs">
+  <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+    <h4 class="p-t-1-xs">h4</h4>
+    <div class="border-light-xs p-3-xs m-t-2-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Heading 4, H4</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Use H4s within content areas. Unlike an H3, the H4 should be used when you need to break down a section of content, and it doesn't make sense to create an entirely new section. You should never use an H4 as a heading for an entire section. H4 should be used when an H3 serves at the header for a section of content and you need to organize the content further. Do not use H4s to bold content inline.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>H4s are the exact same size as paragraph text. They are this way so that they lend themselves to organizing the lowest level of content. When you use an H4 is means you have a heading for the main section of content already, and you need to provide another level of organization.</p>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>h4</code> <em class="m-l-05-xs">18px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h4">
+      <li><a href="#h4-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h4-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h4" class="tabgroup">
+      <div id="h4-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h4-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h4 {font-size: 18px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h4>Heading 4</h4>
+    </div>
+  </div>
+</div>
+<!--<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs">
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>h5</code> <em class="m-l-05-xs">16px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h5">
+      <li><a href="#h5-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h5-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h5" class="tabgroup">
+      <div id="h5-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h5-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h5 {font-size: 16px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h5>Heading 5</h5>
+    </div>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>h6</code> <em class="m-l-05-xs">14px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="h6">
+      <li><a href="#h6-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#h6-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="h6" class="tabgroup">
+      <div id="h6-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+        </div>
+      </div>
+      <div id="h6-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">h6 {font-size: 14px;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <h6>Heading 6</h6>
+    </div>
+  </div>
+</div>-->
+<h3 class="p-t-3-xs">Paragraph Tags</h3>
+<div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+  <div class="border-light-xs p-3-xs m-t-2-xs round">
+    <h4 class="p-b-3-xs">Atmosphere</h4>
+    <h5 class="p-b-1-xs">Vocabulary</h5>
+    <p class="p-b-2-xs">Paragraph, p, p tag</p>
+    <h5 class="p-tb-1-xs">Syntax</h5>
+    <p class="p-b-1-xs">We use paragraph tags for words, sentences, paragraphs. This is basically the bread and butter of communication design. A good rule of thumb, if you aren’t sure if it should be a headline, it probably works inside a paragraph.</p>
+    <h5 class="p-tb-1-xs">Semantics</h5>
+    <p>We use paragraph tags to house paragraphs. Pretty simple. The size and color of our paragraph tags is setup to maintain a certain level of legibility and ease.</p>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-b-2-xs m-b-2-xs">
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>p</code> <em class="m-l-05-xs">16px</em>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="body">
+      <li><a href="#body-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#body-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="body" class="tabgroup">
+      <div id="body-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;p&gt;Treehouse is an online school that teaches you code&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div id="body-css">
+        <div class="guide-code m-b-3-xs">
+          <pre>
+            <code class="language-css">
+              p {
+                font-size: 16px
+                line-height: 180%
+              }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <p>Treehouse is an online school that teaches you code</p>
+    </div>
+  </div>
+</div>
+
+<h3 class="p-tb-3-xs">Text Emphasis</h3>
+<div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+  <h4 class="p-t-1-xs">Bold</h4>
+  <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+    <div class="border-light-xs p-3-xs m-t-2-xs round">
+      <h4 class="p-b-3-xs">Atmosphere</h4>
+      <h5 class="p-b-1-xs">Vocabulary</h5>
+      <p class="p-b-2-xs">Bold, Strong, Strong tag</p>
+      <h5 class="p-tb-1-xs">Syntax</h5>
+      <p class="p-b-1-xs">Bold or Strong tags should be used to make body text stand out.</p>
+      <h5 class="p-tb-1-xs">Semantics</h5>
+      <p>We use bold tags to emphasize text or section content so that it's easier to parse.</p>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>.bold</code>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="bold">
+      <li><a href="#bold-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#bold-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="bold" class="tabgroup">
+      <div id="bold-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;p class="bold"&gt;Treehouse is an online school that teaches you code&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div id="bold-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">.bold {font-weight: bold;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <p><span class="bold">Treehouse</span> is an online school that teaches you code</p>
+    </div>
+  </div>
+</div>
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+<h4>Italic</h4>
+<div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+  <div class="border-light-xs p-3-xs m-t-2-xs round">
+    <h4 class="p-b-3-xs">Atmosphere</h4>
+    <h5 class="p-b-1-xs">Vocabulary</h5>
+    <p class="p-b-2-xs">Italics, Text Emphasis, em tag</p>
+    <h5 class="p-tb-1-xs">Syntax</h5>
+    <p class="p-b-1-xs">Italics should be used in the contents of another body content type, whether that be headings or paragraph tags. It should not be used on it’s own or outside of those contexts.</p>
+    <h5 class="p-tb-1-xs">Semantics</h5>
+    <p>We use italics and emphasis tags to do just that. Emphasize.</p>
+  </div>
+</div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+    <code>.italic</code>
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="italic">
+      <li><a href="#italic-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+      <li><a href="#italic-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+    </ul>
+    <div id="italic" class="tabgroup">
+      <div id="italic-html">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-html">&lt;p class="italic"&gt;Treehouse is an online school that teaches you code&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div id="italic-css">
+        <div class="guide-code m-b-3-xs">
+          <pre><code class="language-css">.italic {font-style: italic;}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+    <div class="text-bg-white p-5-xs h-full-xs round">
+      <p><span class="italic">Treehouse</span> is an online school that teaches you code</p>
+    </div>
+  </div>
+</div>

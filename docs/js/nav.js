@@ -30,17 +30,12 @@ var isAtmosphere = pageName == "atmosphere/purpose" ||
                    pageName == "atmosphere/copy" ||
                    pageName == "atmosphere/accessibility";
 
-var isAtom = pageName == "typography" ||
-             pageName == "grid" ||
-             pageName == "block-grid" ||
-             pageName == "layout" ||
-             pageName == "flexbox" ||
-             pageName == "buttons" ||
-             pageName == "colors" ||
-             pageName == "borders" ||
-             pageName == "forms" ||
-             pageName == "icons" ||
-             pageName == "tables";
+var isAtom = pageName == "atoms/typography" ||
+             pageName == "atoms/ctas" ||
+             pageName == "atoms/imagery" ||
+             pageName == "atoms/horizontal_rule" ||
+             pageName == "atoms/color" ||
+             pageName == "atoms/spacing";
 
 var isModule = pageName == "alert-banner" ||
                pageName == "control-bar";

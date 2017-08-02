@@ -10186,6 +10186,39 @@ body {
   font-weight: bold;
 }
 
+.code-example {
+  min-width: 0;
+}
+
+.tabgroup pre[class*="language-"] {
+  margin: 0 !important;
+}
+
+.tabs li {
+  float: left;
+  width: 15%;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #7b8b8e;
+}
+
+.tabs a:hover {
+  color: #4b5658;
+}
+
+.tabs a.active {
+  color: #40484a;
+  border-bottom: 1px solid;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 code {
   color: #e3116c;
 }
