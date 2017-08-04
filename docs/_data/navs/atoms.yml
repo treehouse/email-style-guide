@@ -1,0 +1,20 @@
+filename: atoms
+name: Atoms
+pages:
+  - slug: /atoms/typography.html
+    name: Typography
+
+  - slug: /atoms/ctas.html
+    name: CTAs
+
+  - slug: /atoms/imagery.html
+    name: Imagery
+
+  - slug: /atoms/horizontal_rule.html
+    name: Horizontal Rule
+
+  - slug: /atoms/color.html
+    name: Color
+
+  - slug: /atoms/spacing.html
+    name: Spacing

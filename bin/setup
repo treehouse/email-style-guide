@@ -1,0 +1,36 @@
+#!/bin/sh
+
+echo ""
+echo " email-style-guide"
+echo ""
+
+#
+# Check for yarn
+#
+if test ! $(which yarn)
+then
+  echo "  - yarn not found. Attempting to install yarn..."
+  brew update
+  brew install yarn
+else
+  echo "  + yarn found."
+fi
+
+#
+# Install npm packages (with yarn)
+#
+echo "  + Installing npm packages (with yarn)."
+yarn install &>/dev/null
+
+#
+# Install bower packages
+#
+echo "  + Installing bower packages."
+yarn run bower install &>/dev/null
+
+#
+# Install gems
+#
+echo "  + Installing gems."
+bundle check 2>/dev/null 1>/dev/null || bundle install --quiet
+

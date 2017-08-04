@@ -1,0 +1,20 @@
+---
+layout: default
+title: Accessibility
+---
+
+<div class="border-b-light-xs p-b-5-xs m-b-5-xs">
+  <p class="p-b-3-xs">We want to make our emails easy to read for a wide, diverse audience. </p>
+  <h3 class="p-b-1-xs">Color Ratios</h3>
+  <p class="p-b-2-xs">Be mindful of the contrast between the text colors and background colors. Our templates already pass WCAG AA and AAA guidelines. They should suit your needs, but if you build on them use WebAIM's <a href="http://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a> to be sure you have proper contrast.</p>
+  <h3 class="p-b-1-xs">Text Hierarchy</h3>
+  <p class="p-b-2-xs">Screen reader users rely on HTML heading elements to navigate pages and determine content hierarchy. Be sure to use header tags to denote headers and subheaders.</p>
+  <h3 class="p-b-1-xs">Image Text Alternates</h3>
+  <p class="p-b-2-xs">For all images, include <code>alt="A description of the image"</code>. Purely decorative or utilitarian images should have an empty alt attribute (<code>alt=""</code>) to inform screen readers that the image should be ignored. Other images should have alt attributes that explain the meaning of the image.</p>
+  <h3 class="p-b-1-xs">Link Text</h3>
+  <p class="p-b-2-xs">The text you use in a link is important and helps screen readers navigate the page. Instead of generic "click here" text, use descriptive text links that state the purpose of the link.</p>
+  <h3 class="p-b-1-xs">Text-Only Option</h3>
+  <p class="p-b-2-xs">Provide a text-only version of the email so that the user can determine which version is the most comfortable format to read.</p>
+  <h3 class="p-b-1-xs">Hide Presentation-Only Content</h3>
+  <p class="p-b-2-xs">Tables are a crucial way to consistently display emails across the spectrum of email clients. However, screen readers can get bogged down by navigating through the copious nests of tables that emails often contain. To communicate that a table is only being used for presentation purposes, use <code>role="presentation" aria-hidden="true"</code> so the screen reader can pass by it. For tables that are displaying tabular content that's meant to be digested, don't use these attributes. It’s also recommended to use the HTML attribute role=”presentation” on any image with an empty ALT attribute to avoid the name for the image being read.</p>
+</div>

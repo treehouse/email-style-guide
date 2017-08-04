@@ -1,0 +1,632 @@
+---
+layout: default
+title: Imagery
+---
+
+      <h3 class="p-t-2-xs">Guidelines</h3>
+      <p>Words words words about when to use a photo vs. an image vs. a GIF vs. a video</p>
+      <h3 class="p-tb-2-xs">Best Practices</h3>
+      <ul>
+        <li class="p-b-1-xs"><span class="bold">Keep the aspect ratio</span>. Don't warp the images. Constrain proportions to retain the aspect ratio of the original image.</li>
+        <li class="p-b-1-xs"><span class="bold">Make it retina-ready</span>. Save images at 2x. This ensures retina-ready images. The images will be scaled down to fit.</li>
+        <li class="p-b-1-xs"><span class="bold">Don't use background images</span>. They don't work in Microsoft Outlook or in Gmail.</li>
+        <li class="p-b-1-xs"><span class="bold">Plan for text-only emails</span>. Prepare for the emails to be viewed without images. Include alt text that describes the image. Clients such as Outlook, AOL, and Yahoo have images blocked by default, and in other clients users can turn this on in their preferences.</li>
+        <li class="p-b-1-xs"><span class="bold">Images can be links</span></li>
+        <li class="p-b-1-xs"><span class="bold">Keep images under x</span>. Large file sizes take too long to load.</li>
+        <li class="p-b-1-xs"><span class="bold">Don't put text in images</span>. Text is put outside images in order to gain control over readability at small screen sizes.</li>
+      </ul>
+      <h4 class="p-t-3-xs">Photography</h4>
+      <h5 class="p-t-2-xs p-b-1-xs">Choosing the Right Photography</h5>
+      <p class="p-tb-1-xs"><span class="bold">In-House Photography</span> We have some photography that has been made for us. (Note to self: pull images from <a href="https://teamtreehouse.invisionapp.com/boards/7G1SJ2H93XUMC/" target="_blank">InVision Photography board</a> and Google Drive folder)</p>
+      <p class="p-tb-1-xs"><span class="bold">Stock Photography</span> Stock photography is another option.</p>
+      <p class="p-t-1-xs"><span class="bold">Creative Commons Photography</span> If using photos that require attribution, such as some Creative Commons photos, follow the attribution guidelines.</p>
+
+      <div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-tb-4-xs">
+        <h3>Full Width</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">Full Width Image</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">Full width photographs span the width of the white section.</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>These are used when you want a section of content to stand out as a featured section.</p>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="image-full">
+            <li><a href="#image-full-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            <li><a href="#image-full-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+          </ul>
+          <div id="image-full" class="tabgroup">
+            <div id="image-full-html">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-html">&lt;td class="text-center-xs image-full" align="center"&gt;
+          &lt;img width="600" src="image-full.png" alt="Placeholder"&gt;
+      &lt;/td&gt;</code></pre>
+              </div>
+            </div>
+            <div id="image-full-css">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-css">.image-full img {
+        width: 600px;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+        text-align: center;
+  }</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+          <div class="text-bg-white p-tb-5-xs h-full-xs round">
+            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-b-4-xs">
+        <h3>Inline</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">Inline Image</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">Inline images sit within the width of the white section, but show padding on the left and right side.</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>These are used to reinforce or expand upon the supporting text.</p>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="image-inline">
+            <li><a href="#image-inline-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            <li><a href="#image-inline-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+          </ul>
+          <div id="image-inline" class="tabgroup">
+            <div id="image-inline-html">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-html">&lt;img src="image-full.png" alt="Placeholder"&gt;&lt;/img&gt;</code></pre>
+              </div>
+            </div>
+            <div id="image-inline-css">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-css">img {
+        width: 100%;
+        max-width: 512px;
+      }</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+          <div class="text-bg-white p-5-xs h-full-xs round">
+            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+        <h3>Attribution</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">Attribution, Image Source, Image Credit</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">Attribution lines sit below the right bottom corner of the image.</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>Some images we use require attribution. The attribution line conveys the image source without competing with the other content in the email.</p>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="attribution">
+            <li><a href="#attribution-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            <li><a href="#attribution-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
+          </ul>
+          <div id="attribution" class="tabgroup">
+            <div id="attribution-html">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-html">&lt;span class="block-xs text-color-light p-t-2-xs text-7-xs text-right-xs">Photo by Daria Nepriakhina / CC0&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+            <div id="attribution-css">
+              <div class="guide-code m-b-3-xs">
+                <pre><code class="language-css">.attribution {
+  opacity: .6;
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+          <div class="text-bg-white p-5-xs h-full-xs round">
+            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
+            <span class="block-xs text-color-light p-t-2-xs text-7-xs text-right-xs">Photo by Daria Nepriakhina / CC0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+        <h3>Illustrations</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">x</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">x</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>x</p>
+          </div>
+        </div>
+        <p>Words words words</p>
+      </div>
+
+      <div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-tb-2-xs">
+        <h3>GIFs</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">x</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">x</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>x</p>
+          </div>
+        </div>
+        <p>Create a fallback for non-supported animated GIFs. Be aware that some clients won't show animated GIFs. Instead, they only show the first frame, so make sure that image makes sense in your layout. Clients that don't support animated GIFs include Outlook (2007, 2010 and 2013) and Windows Phone 7.</p>
+      </div>
+
+      <div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-tb-2-xs">
+        <h3>Videos</h3>
+        <div class="flex-basis-100-xs p-t-05-xs p-b-3-xs">
+          <div class="border-light-xs p-3-xs m-t-2-xs round">
+            <h4 class="p-b-3-xs">Atmosphere</h4>
+            <h5 class="p-b-1-xs">Vocabulary</h5>
+            <p class="p-b-2-xs">x</p>
+            <h5 class="p-tb-1-xs">Syntax</h5>
+            <p class="p-b-1-xs">x</p>
+            <h5 class="p-tb-1-xs">Semantics</h5>
+            <p>x</p>
+          </div>
+        </div>
+        <p>Don't embed videos directly into emails since that isn't widely supported across email clients. Instead, include a video still and then link that picture to the video so that the video plays in a new tab.</p>
+        <p class="p-t-1-xs"><span class="bold">Include videos in emails by generating a video still with a play button overlay. Then link it to the video.</p>
+        <p class="p-t-1-xs">You can use <a href="youtubescreenshot.com.png" target="_blank">youtubescreenshot.com</a> to easily generate a video still. Choose a moment in the video that features people (ideally) or a catchy visual that represents the gist of the video. Don't choose a frame that includes text.</p>
+        <div class="text-center-xs p-tb-2-xs col-100-xs col-100-md col-50-lg m-auto-xs">
+          <img src="{{ site.baseurl }}/img/video/youtubescreenshot.com.png" class="w-fit-xs" alt="youtubescreenshot.com">
+        </div>
+        <p class="p-t-1-xs">Add the video still to the video template (Note to self: Add this) and save it. Add it as a regular inline image and wrap it in a link to the video.</p>
+        <div class="text-center-xs m-tb-3-xs p-3-xs bg-gray-light round">
+          <p class="text-left-xs"><span class="success bold">Do</span></p>
+          <div class="p-t-2-xs">
+            <img src="{{ site.baseurl }}/img/video/video-this-week-at-treehouse-img.png" class="w-fit-xs" alt="Correct - Video Link">
+          </div>
+        </div>
+      </div>
+        <!--<p class="p-t-1-xs"><span class="bold">If using MailChimp's Drag and Drop Editor</span>, you can use the Video Content Block. MailChimp will automatically pull an image from the video and apply a play button overlay. If there's text or other content in the video still that conflicts with the white play button they overlay, replace it with a different image.</p>
+        <div class="text-center-xs m-tb-3-xs p-3-xs bg-gray-light round">
+          <p class="text-left-xs"><span class="error bold">Don't Do</span> - MailChimp's Drag-and-Drop auto-generated white play button over white text</p>
+          <div class="p-t-2-xs">
+            <img src="{{ site.baseurl }}/img/video/mailchimp-video-this-week-at-treehouse-dont-do.png" class="w-fit-xs" alt="This Week at Treehouse Video - Don't Do">
+          </div>
+        </div>
+        <p>If that's the case, replace the image with a pre-made video still from the Content Manager. If it's a "This week at Treehouse" video, use <a href="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/e5408879-26e2-4c57-9aa9-a356774eaeff.png" target="_blank">video-this-week-at-treehouse.png</a>. For all other videos, you can use <a href="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/e8c81d5b-4494-42ed-937a-beee2c02e6f2.png" target="_blank">video-generic.png</a>.</p>
+        <div class="text-center-xs p-tb-2-xs">
+          <img src="{{ site.baseurl }}/img/video/mailchimp-video-replace-image.png" class="w-fit-xs" alt="MailChimp Replace Video Image">
+        </div>
+        <div class="text-center-xs p-3-xs bg-gray-light round">
+          <p class="text-left-xs"><span class="success bold">Do</span> - replace image still for videos with conflicting text</p>
+          <div class="p-t-2-xs">
+            <img src="{{ site.baseurl }}/img/video/mailchimp-video-this-week-at-treehouse.png" class="w-fit-xs" alt="This Week at Treehouse Video">
+          </div>
+        </div>
+        <div class="text-center-xs m-tb-3-xs p-3-xs bg-gray-light round">
+          <p class="text-left-xs"><span class="success bold">Do</span> - use auto-generated images for videos without conflicting text</p>
+          <div class="p-t-2-xs">
+            <img src="{{ site.baseurl }}/img/video/mailchimp-video-auto-generated.png" class="w-fit-xs" alt="MailChimp Auto-Generated">
+          </div>
+        </div>
+        <p class="p-tb-2-xs"><span class="bold">If using a MailChimp Code-Your-Own template</span>, (<span class="italic">hint</span>: That's one that doesn't have the Content and Design panel on the right)</span>, you can use the Video Merge Tag. MailChimp will automatically pull an image from the video and apply a play button overlay (note how it looks different from the Drag-and-Drop style). If there's text or other content in the video still that conflicts with the white play button they overlay, add a graphic with a link to the video instead.</p>
+        <p class="p-b-2-xs">To link to the correct video, edit the $vid= section of the tag with YouTube's unique ID. It's found at end of the URL. For example, <code>7MmH7fdwyVk</code> is the ID for this video: <code>https://www.youtube.com/watch?v=7MmH7fdwyVk</code></p>
+
+        <div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+          <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
+            <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="image-full">
+              <li><a href="#image-full-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
+            </ul>
+            <div id="image-full" class="tabgroup">
+              <div id="image-full-html">
+                <div class="guide-code m-b-3-xs">
+                  <pre><code class="language-html">&lt;table align="center"&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*|YOUTUBE:[$vid=lt7M6IOyjWk, $ratings=N, $views=N, $border=N, $title=N, $trim_border=N]|*&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
+            <div class="text-bg-white p-5-xs h-full-xs round">
+            <img src="{{ site.baseurl }}/img/video/mailchimp-video-this-week-at-treehouse-code-your-own.png" class="w-fit-xs" alt="MailChimp Auto-Generated in Code Your Own">
+            </div>
+          </div>
+        </div>-->
+
+        <!--Refer to Email on Acid's <a href="https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/" target="_blank">guide</a>.-->
+
+      <h3 class="p-t-4-xs p-b-2-xs">Icons</h3>
+      <h4 class="p-b-1-xs">Topics</h4>
+      <div class="flex-block-xs flex-wrap-xs border-t-light-xs p-tb-2-xs m-b-2-xs">
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/android.png" class="icon-library-img" alt="Android">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Android</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/apis.png" class="icon-library-img" alt="APIs">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">APIs</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/business.png" class="icon-library-img" alt="Business">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Business</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/csharp.png" class="icon-library-img" alt="C#">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">C#</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/css.png" class="icon-library-img" alt="CSS">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">CSS</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/data-analysis.png" class="icon-library-img" alt="Data Analysis">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Data Analysis</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/databases.png" class="icon-library-img" alt="Databases">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Databases</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-2-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/design.png" class="icon-library-img" alt="Design">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Design</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/development-tools.png" class="icon-library-img" alt="Development Tools">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Development Tools</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/digital-literacy.png" class="icon-library-img" alt="Digital Literacy">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Digital Literacy</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/game-development.png" class="icon-library-img" alt="Game Development">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Game Development</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/go.png" class="icon-library-img" alt="Go">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Go</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/html.png" class="icon-library-img" alt="HTML">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">HTML</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/ios.png" class="icon-library-img" alt="iOS">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">iOS</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/java.png" class="icon-library-img" alt="Java">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Java</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/javascript.png" class="icon-library-img" alt="JavaScript">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">JavaScript</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/php.png" class="icon-library-img" alt="PHP">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">PHP</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-2-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/python.png" class="icon-library-img" alt="Python">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Python</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/ruby.png" class="icon-library-img" alt="Ruby">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Ruby</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/security.png" class="icon-library-img" alt="Security">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Security</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/vr.png" class="icon-library-img" alt="Virtual Reality">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Virtual Reality</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/topics/wordpress.png" class="icon-library-img" alt="WordPress">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">WordPress</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+      </div>
+      <h4 class="p-b-1-xs">Concepts</h4>
+      <div class="flex-block-xs flex-wrap-xs border-t-light-xs p-tb-2-xs m-b-2-xs">
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-2-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/accessibility.png" class="icon-library-img" alt="Accessibility">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Accessibility</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/analytics.png" class="icon-library-img" alt="Analytics">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Analytics</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/testing.png" class="icon-library-img" alt="Testing">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Data Science</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/settings.png" class="icon-library-img" alt="Settings">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Settings</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/events.png" class="icon-library-img" alt="Events">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Events</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/featured-student.png" class="icon-library-img" alt="Featured Student">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Featured Student</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/getting-started.png" class="icon-library-img" alt="Getting Started">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Getting Started</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-2-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/information-architecture.png" class="icon-library-img" alt="Information Architecture">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Information Architecture</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/inside-treehouse.png" class="icon-library-img" alt="Inside Treehouse">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Inside Treehouse</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/discover.png" class="icon-library-img" alt="Discover">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Discover</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/interview.png" class="icon-library-img" alt="Interviews">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Interviews</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/kids.png" class="icon-library-img" alt="Kids">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Kids</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/learn-to-code.png" class="icon-library-img" alt="Learn to Code">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Learn to Code</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/marketing.png" class="icon-library-img" alt="Marketing">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Marketing</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/course.png" class="icon-library-img" alt="Featured Student">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">New Course</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/announcement.png" class="icon-library-img" alt="Announcement">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Announcement</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/productivity.png" class="icon-library-img" alt="Productivity">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Productivity</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/project-showcase.png" class="icon-library-img" alt="Project Showcase">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Project Showcase</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/q-a.png" class="icon-library-img" alt="Q&A">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Q&amp;A</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/seo.png" class="icon-library-img" alt="SEO">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">SEO</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/profile.png" class="icon-library-img" alt="Profile">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Profile</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/learning.png" class="icon-library-img" alt="Learning">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Learning</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/icon-library/concepts/learning.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/gear-check.png" class="icon-library-img" alt="Gear Check">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Gear Check</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/tech-news.png" class="icon-library-img" alt="Tech News">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Tech News</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/treehouse-show.png" class="icon-library-img" alt="Treehouse Show">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Treehouse Show</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/tutorial.png" class="icon-library-img" alt="Tutorial">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Tutorial</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-2-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/ui.png" class="icon-library-img" alt="UI">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">UI</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/ux.png" class="icon-library-img" alt="UX">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">UX</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+        <div class="flex-basis-50-xs flex-basis-33-md flex-basis-20-lg p-b-3-xs h-full-xs round text-center-xs inline-block-xs">
+          <img src="{{ site.baseurl }}/img/icons/icon-library/concepts/video-production.png" class="icon-library-img" alt="Video Production">
+          <p class="p-t-1-xs">
+            <span class="text-6-xs">Video Production</span>
+            <a href=""><img src="{{ site.baseurl }}/img/icons/copy.png" class="icon-library-copy"></a>
+          </p>
+        </div>
+      </div>

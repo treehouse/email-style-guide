@@ -1,0 +1,17 @@
+filename: molecules
+name: Molecules
+pages:
+  - slug: /molecules/header.html
+    name: Header
+
+  - slug: /molecules/footer.html
+    name: Footer
+
+  - slug: /molecules/callout.html
+    name: Callout
+
+  - slug: /molecules/two_column.html
+    name: Two Column
+
+  - slug: /molecules/responsive.html
+    name: Responsive
