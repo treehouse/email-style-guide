@@ -46,8 +46,7 @@ gulp.task('docs:css', () => {
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('./bin/jekyll', ['serve',
     '--source', dir.docs,
-    '--destination', dir.siteRoot,
-    '--incremental'
+    '--destination', dir.siteRoot
   ]);
 
   const logger = (buffer) => {

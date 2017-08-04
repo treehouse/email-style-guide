@@ -4,6 +4,11 @@
     Getting Started
   </a>
 </li>
+<li class="guide-navigation-item">
+  <a href="{{ site.baseurl }}/example_templates.html" {% if page.url == "/example_templates.html" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+    Example Templates
+  </a>
+</li>
 {% for p in site.data.navs %}
   {% assign nav = p[1] %}
   <li class="guide-navigation-item guide-navigation-item-parent">
