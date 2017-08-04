@@ -20,7 +20,7 @@ $ bin/setup
 ### Start Jekyll
 
 ```
-$ yarn run serve
+$ yarn run gulp serve
 ```
 
 Now point your browser at: http://localhost:4000/email-style-guide/
