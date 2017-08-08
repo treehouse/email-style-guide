@@ -10351,6 +10351,3753 @@ a {
   clear: both;
 }
 
+.email-example body {
+  background-color: red;
+}
+
+.email-example *, .email-example :after, .email-example :before {
+  box-sizing: border-box;
+}
+
+.email-example html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.email-example body {
+  margin: 0;
+}
+
+.email-example article, .email-example aside, .email-example details, .email-example figcaption, .email-example figure, .email-example footer, .email-example header, .email-example hgroup, .email-example main, .email-example menu, .email-example nav, .email-example section, .email-example summary {
+  display: block;
+}
+
+.email-example audio, .email-example canvas, .email-example progress, .email-example video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.email-example audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.email-example [hidden], .email-example template {
+  display: none;
+}
+
+.email-example a {
+  background-color: transparent;
+}
+
+.email-example a:active, .email-example a:hover {
+  outline: 0;
+}
+
+.email-example abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+.email-example b, .email-example strong {
+  font-weight: bold;
+}
+
+.email-example dfn {
+  font-style: italic;
+}
+
+.email-example h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.email-example mark {
+  background: #ff0;
+  color: #000;
+}
+
+.email-example small {
+  font-size: 80%;
+}
+
+.email-example sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.email-example sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.email-example sub {
+  bottom: -0.25em;
+}
+
+.email-example img {
+  border: 0;
+}
+
+.email-example svg:not(:root) {
+  overflow: hidden;
+}
+
+.email-example figure {
+  margin: 1em 40px;
+}
+
+.email-example hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.email-example pre {
+  overflow: auto;
+}
+
+.email-example code, .email-example kbd, .email-example pre, .email-example samp {
+  font-family: Monaco, monospace;
+  font-size: 16px;
+}
+
+.email-example button, .email-example input, .email-example optgroup, .email-example select, .email-example textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.email-example button {
+  overflow: visible;
+  text-transform: none;
+}
+
+.email-example select {
+  text-transform: none;
+}
+
+.email-example button, .email-example html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.email-example input[type="reset"], .email-example input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.email-example button[disabled], .email-example html input[disabled] {
+  cursor: default;
+}
+
+.email-example button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.email-example input {
+  line-height: normal;
+}
+
+.email-example input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.email-example input[type="checkbox"], .email-example input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.email-example input[type="number"]::-webkit-inner-spin-button, .email-example input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.email-example input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.email-example input[type="search"]::-webkit-search-cancel-button, .email-example input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.email-example fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.email-example legend {
+  border: 0;
+  padding: 0;
+}
+
+.email-example textarea {
+  overflow: auto;
+}
+
+.email-example optgroup {
+  font-weight: bold;
+}
+
+.email-example table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.email-example td, .email-example th {
+  padding: 0;
+}
+
+@media screen {
+  .email-example .border-xs {
+    border: solid 1px #e8ebed !important;
+  }
+  .email-example .border-t-xs {
+    border-top: solid 1px #e8ebed !important;
+  }
+  .email-example .border-b-xs {
+    border-bottom: solid 1px #e8ebed !important;
+  }
+  .email-example .border-l-xs {
+    border-left: solid 1px #e8ebed !important;
+  }
+  .email-example .border-r-xs {
+    border-right: solid 1px #e8ebed !important;
+  }
+  .email-example .border-dark-xs {
+    border: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-t-dark-xs {
+    border-top: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-b-dark-xs {
+    border-bottom: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-l-dark-xs {
+    border-left: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-r-dark-xs {
+    border-right: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-mid-xs {
+    border: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-t-mid-xs {
+    border-top: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-b-mid-xs {
+    border-bottom: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-l-mid-xs {
+    border-left: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-r-mid-xs {
+    border-right: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-light-xs {
+    border: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-t-light-xs {
+    border-top: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-b-light-xs {
+    border-bottom: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-l-light-xs {
+    border-left: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-r-light-xs {
+    border-right: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-none-xs {
+    border: none !important;
+  }
+  .email-example .border-none-t-xs {
+    border-top: none !important;
+  }
+  .email-example .border-none-b-xs {
+    border-bottom: none !important;
+  }
+  .email-example .border-none-l-xs {
+    border-left: none !important;
+  }
+  .email-example .border-none-r-xs {
+    border-right: none !important;
+  }
+  .email-example .round {
+    border-radius: 4px !important;
+  }
+  .email-example .round-t {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .email-example .round-b {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .email-example .round-l {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .email-example .round-r {
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .email-example .circle {
+    border-radius: 9999px !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .border-sm {
+    border: solid 1px #e8ebed !important;
+  }
+  .email-example .border-t-sm {
+    border-top: solid 1px #e8ebed !important;
+  }
+  .email-example .border-b-sm {
+    border-bottom: solid 1px #e8ebed !important;
+  }
+  .email-example .border-l-sm {
+    border-left: solid 1px #e8ebed !important;
+  }
+  .email-example .border-r-sm {
+    border-right: solid 1px #e8ebed !important;
+  }
+  .email-example .border-dark-sm {
+    border: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-t-dark-sm {
+    border-top: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-b-dark-sm {
+    border-bottom: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-l-dark-sm {
+    border-left: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-r-dark-sm {
+    border-right: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-mid-sm {
+    border: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-t-mid-sm {
+    border-top: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-b-mid-sm {
+    border-bottom: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-l-mid-sm {
+    border-left: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-r-mid-sm {
+    border-right: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-light-sm {
+    border: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-t-light-sm {
+    border-top: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-b-light-sm {
+    border-bottom: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-l-light-sm {
+    border-left: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-r-light-sm {
+    border-right: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-none-sm {
+    border: none !important;
+  }
+  .email-example .border-none-t-sm {
+    border-top: none !important;
+  }
+  .email-example .border-none-b-sm {
+    border-bottom: none !important;
+  }
+  .email-example .border-none-l-sm {
+    border-left: none !important;
+  }
+  .email-example .border-none-r-sm {
+    border-right: none !important;
+  }
+  .email-example .round {
+    border-radius: 4px !important;
+  }
+  .email-example .round-t {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .email-example .round-b {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .email-example .round-l {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .email-example .round-r {
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .email-example .circle {
+    border-radius: 9999px !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .border-md {
+    border: solid 1px #e8ebed !important;
+  }
+  .email-example .border-t-md {
+    border-top: solid 1px #e8ebed !important;
+  }
+  .email-example .border-b-md {
+    border-bottom: solid 1px #e8ebed !important;
+  }
+  .email-example .border-l-md {
+    border-left: solid 1px #e8ebed !important;
+  }
+  .email-example .border-r-md {
+    border-right: solid 1px #e8ebed !important;
+  }
+  .email-example .border-dark-md {
+    border: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-t-dark-md {
+    border-top: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-b-dark-md {
+    border-bottom: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-l-dark-md {
+    border-left: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-r-dark-md {
+    border-right: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-mid-md {
+    border: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-t-mid-md {
+    border-top: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-b-mid-md {
+    border-bottom: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-l-mid-md {
+    border-left: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-r-mid-md {
+    border-right: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-light-md {
+    border: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-t-light-md {
+    border-top: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-b-light-md {
+    border-bottom: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-l-light-md {
+    border-left: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-r-light-md {
+    border-right: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-none-md {
+    border: none !important;
+  }
+  .email-example .border-none-t-md {
+    border-top: none !important;
+  }
+  .email-example .border-none-b-md {
+    border-bottom: none !important;
+  }
+  .email-example .border-none-l-md {
+    border-left: none !important;
+  }
+  .email-example .border-none-r-md {
+    border-right: none !important;
+  }
+  .email-example .round {
+    border-radius: 4px !important;
+  }
+  .email-example .round-t {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .email-example .round-b {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .email-example .round-l {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .email-example .round-r {
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .email-example .circle {
+    border-radius: 9999px !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .border-lg {
+    border: solid 1px #e8ebed !important;
+  }
+  .email-example .border-t-lg {
+    border-top: solid 1px #e8ebed !important;
+  }
+  .email-example .border-b-lg {
+    border-bottom: solid 1px #e8ebed !important;
+  }
+  .email-example .border-l-lg {
+    border-left: solid 1px #e8ebed !important;
+  }
+  .email-example .border-r-lg {
+    border-right: solid 1px #e8ebed !important;
+  }
+  .email-example .border-dark-lg {
+    border: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-t-dark-lg {
+    border-top: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-b-dark-lg {
+    border-bottom: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-l-dark-lg {
+    border-left: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-r-dark-lg {
+    border-right: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-mid-lg {
+    border: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-t-mid-lg {
+    border-top: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-b-mid-lg {
+    border-bottom: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-l-mid-lg {
+    border-left: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-r-mid-lg {
+    border-right: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-light-lg {
+    border: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-t-light-lg {
+    border-top: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-b-light-lg {
+    border-bottom: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-l-light-lg {
+    border-left: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-r-light-lg {
+    border-right: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-none-lg {
+    border: none !important;
+  }
+  .email-example .border-none-t-lg {
+    border-top: none !important;
+  }
+  .email-example .border-none-b-lg {
+    border-bottom: none !important;
+  }
+  .email-example .border-none-l-lg {
+    border-left: none !important;
+  }
+  .email-example .border-none-r-lg {
+    border-right: none !important;
+  }
+  .email-example .round {
+    border-radius: 4px !important;
+  }
+  .email-example .round-t {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .email-example .round-b {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .email-example .round-l {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .email-example .round-r {
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .email-example .circle {
+    border-radius: 9999px !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .border-xl {
+    border: solid 1px #e8ebed !important;
+  }
+  .email-example .border-t-xl {
+    border-top: solid 1px #e8ebed !important;
+  }
+  .email-example .border-b-xl {
+    border-bottom: solid 1px #e8ebed !important;
+  }
+  .email-example .border-l-xl {
+    border-left: solid 1px #e8ebed !important;
+  }
+  .email-example .border-r-xl {
+    border-right: solid 1px #e8ebed !important;
+  }
+  .email-example .border-dark-xl {
+    border: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-t-dark-xl {
+    border-top: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-b-dark-xl {
+    border-bottom: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-l-dark-xl {
+    border-left: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-r-dark-xl {
+    border-right: solid 1px #b7c0c7 !important;
+  }
+  .email-example .border-mid-xl {
+    border: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-t-mid-xl {
+    border-top: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-b-mid-xl {
+    border-bottom: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-l-mid-xl {
+    border-left: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-r-mid-xl {
+    border-right: solid 1px #d4d9dd !important;
+  }
+  .email-example .border-light-xl {
+    border: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-t-light-xl {
+    border-top: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-b-light-xl {
+    border-bottom: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-l-light-xl {
+    border-left: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-r-light-xl {
+    border-right: solid 1px #f0f2f4 !important;
+  }
+  .email-example .border-none-xl {
+    border: none !important;
+  }
+  .email-example .border-none-t-xl {
+    border-top: none !important;
+  }
+  .email-example .border-none-b-xl {
+    border-bottom: none !important;
+  }
+  .email-example .border-none-l-xl {
+    border-left: none !important;
+  }
+  .email-example .border-none-r-xl {
+    border-right: none !important;
+  }
+  .email-example .round {
+    border-radius: 4px !important;
+  }
+  .email-example .round-t {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .email-example .round-b {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .email-example .round-l {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .email-example .round-r {
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .email-example .circle {
+    border-radius: 9999px !important;
+  }
+}
+
+.email-example .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border-radius: 4px;
+  border: solid 2px #5fcf80;
+  color: #5fcf80;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 36px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 10px 0 0;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  vertical-align: baseline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-example .button:hover, .email-example .button:active, .email-example .button:focus {
+  color: #34ad58;
+  border-color: #34ad58;
+}
+
+.email-example .button:hover svg, .email-example .button:active svg, .email-example .button:focus svg {
+  fill: #34ad58;
+}
+
+.email-example .button:last-child {
+  margin-right: 0;
+}
+
+.email-example .button svg {
+  fill: #5fcf80;
+}
+
+.email-example .button--primary {
+  background-color: #5fcf80 !important;
+  border-color: #5fcf80 !important;
+  color: #fff !important;
+}
+
+.email-example .button--primary svg {
+  fill: #fff !important;
+}
+
+.email-example .button--primary:hover, .email-example .button--primary:active, .email-example .button--primary:focus {
+  background-color: #3ac162 !important;
+  border-color: #3ac162 !important;
+  color: #fff !important;
+}
+
+.email-example .button--secondary {
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #576366 !important;
+}
+
+.email-example .button--secondary svg {
+  fill: #576366 !important;
+}
+
+.email-example .button--secondary:hover, .email-example .button--secondary:active, .email-example .button--secondary:focus {
+  border-color: #bdc6cb !important;
+  color: #505b5e !important;
+}
+
+.email-example .button--alert {
+  background-color: transparent !important;
+  border-color: #ed5a5a !important;
+  color: #ed5a5a !important;
+}
+
+.email-example .button--alert svg {
+  fill: #ed5a5a !important;
+}
+
+.email-example .button--alert:hover, .email-example .button--alert:active, .email-example .button--alert:focus {
+  border-color: #cb1616 !important;
+  color: #cb1616 !important;
+}
+
+.email-example .button--disabled {
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #7b8b8e !important;
+}
+
+.email-example .button--disabled svg {
+  fill: #7b8b8e !important;
+}
+
+.email-example .button--disabled:hover, .email-example .button--disabled:active, .email-example .button--disabled:focus {
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #7b8b8e !important;
+}
+
+.email-example .button--disabled:hover svg, .email-example .button--disabled:active svg, .email-example .button--disabled:focus svg {
+  fill: #576366 !important;
+}
+
+.email-example .button--inverse {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 0.88 !important;
+}
+
+.email-example .button--inverse svg {
+  fill: #fff !important;
+}
+
+.email-example .button--inverse:hover, .email-example .button--inverse:active, .email-example .button--inverse:focus {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.email-example .button--inverse-primary {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: 0.88;
+}
+
+.email-example .button--inverse-primary svg {
+  fill: #4b5658 !important;
+}
+
+.email-example .button--inverse-primary:hover, .email-example .button--inverse-primary:active, .email-example .button--inverse-primary:focus {
+  opacity: 1 !important;
+}
+
+.email-example .button--inverse-disabled {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 0.15 !important;
+}
+
+.email-example .button--inverse-disabled:hover, .email-example .button--inverse-disabled:active, .email-example .button--inverse-disabled:focus {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 0.15 !important;
+}
+
+.email-example .button--inverse-primary-disabled {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: 0.15 !important;
+}
+
+.email-example .button--inverse-primary-disabled:hover, .email-example .button--inverse-primary-disabled:active, .email-example .button--inverse-primary-disabled:focus {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: 0.15 !important;
+}
+
+.email-example .button--inline {
+  margin-top: 24px !important;
+  padding: 0 26px !important;
+  height: 47px !important;
+  line-height: 43px !important;
+}
+
+@media screen {
+  .email-example .button--xlarge-xs {
+    font-size: 18px !important;
+    height: 58px !important;
+    line-height: 54px !important;
+    padding: 0 28px !important;
+  }
+  .email-example .button--xlarge-xs.square {
+    width: 58px !important;
+  }
+  .email-example .button--large-xs {
+    font-size: 16px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    padding: 0 22px !important;
+  }
+  .email-example .button--large-xs.square {
+    width: 50px !important;
+  }
+  .email-example .button--large-xs svg {
+    top: -2px;
+  }
+  .email-example .button--normal-xs {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    padding: 0 15px !important;
+  }
+  .email-example .button--normal-xs.square {
+    width: 40px !important;
+  }
+  .email-example .button--small-xs {
+    font-size: 12px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+  }
+  .email-example .button--small-xs.square {
+    width: 34px !important;
+  }
+  .email-example .button--xsmall-xs {
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 26px !important;
+    padding: 0 10px !important;
+  }
+  .email-example .button--xsmall-xs.square {
+    width: 30px !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .button--xlarge-sm {
+    font-size: 18px !important;
+    height: 58px !important;
+    line-height: 54px !important;
+    padding: 0 28px !important;
+  }
+  .email-example .button--xlarge-sm.square {
+    width: 58px !important;
+  }
+  .email-example .button--large-sm {
+    font-size: 16px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    padding: 0 22px !important;
+  }
+  .email-example .button--large-sm.square {
+    width: 50px !important;
+  }
+  .email-example .button--large-sm svg {
+    top: -2px;
+  }
+  .email-example .button--normal-sm {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    padding: 0 15px !important;
+  }
+  .email-example .button--normal-sm.square {
+    width: 40px !important;
+  }
+  .email-example .button--small-sm {
+    font-size: 12px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+  }
+  .email-example .button--small-sm.square {
+    width: 34px !important;
+  }
+  .email-example .button--xsmall-sm {
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 26px !important;
+    padding: 0 10px !important;
+  }
+  .email-example .button--xsmall-sm.square {
+    width: 30px !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .button--xlarge-md {
+    font-size: 18px !important;
+    height: 58px !important;
+    line-height: 54px !important;
+    padding: 0 28px !important;
+  }
+  .email-example .button--xlarge-md.square {
+    width: 58px !important;
+  }
+  .email-example .button--large-md {
+    font-size: 16px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    padding: 0 22px !important;
+  }
+  .email-example .button--large-md.square {
+    width: 50px !important;
+  }
+  .email-example .button--large-md svg {
+    top: -2px;
+  }
+  .email-example .button--normal-md {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    padding: 0 15px !important;
+  }
+  .email-example .button--normal-md.square {
+    width: 40px !important;
+  }
+  .email-example .button--small-md {
+    font-size: 12px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+  }
+  .email-example .button--small-md.square {
+    width: 34px !important;
+  }
+  .email-example .button--xsmall-md {
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 26px !important;
+    padding: 0 10px !important;
+  }
+  .email-example .button--xsmall-md.square {
+    width: 30px !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .button--xlarge-lg {
+    font-size: 18px !important;
+    height: 58px !important;
+    line-height: 54px !important;
+    padding: 0 28px !important;
+  }
+  .email-example .button--xlarge-lg.square {
+    width: 58px !important;
+  }
+  .email-example .button--large-lg {
+    font-size: 16px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    padding: 0 22px !important;
+  }
+  .email-example .button--large-lg.square {
+    width: 50px !important;
+  }
+  .email-example .button--large-lg svg {
+    top: -2px;
+  }
+  .email-example .button--normal-lg {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    padding: 0 15px !important;
+  }
+  .email-example .button--normal-lg.square {
+    width: 40px !important;
+  }
+  .email-example .button--small-lg {
+    font-size: 12px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+  }
+  .email-example .button--small-lg.square {
+    width: 34px !important;
+  }
+  .email-example .button--xsmall-lg {
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 26px !important;
+    padding: 0 10px !important;
+  }
+  .email-example .button--xsmall-lg.square {
+    width: 30px !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .button--xlarge-xl {
+    font-size: 18px !important;
+    height: 58px !important;
+    line-height: 54px !important;
+    padding: 0 28px !important;
+  }
+  .email-example .button--xlarge-xl.square {
+    width: 58px !important;
+  }
+  .email-example .button--large-xl {
+    font-size: 16px !important;
+    height: 50px !important;
+    line-height: 46px !important;
+    padding: 0 22px !important;
+  }
+  .email-example .button--large-xl.square {
+    width: 50px !important;
+  }
+  .email-example .button--large-xl svg {
+    top: -2px;
+  }
+  .email-example .button--normal-xl {
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+    padding: 0 15px !important;
+  }
+  .email-example .button--normal-xl.square {
+    width: 40px !important;
+  }
+  .email-example .button--small-xl {
+    font-size: 12px !important;
+    height: 34px !important;
+    line-height: 30px !important;
+    padding: 0 12px !important;
+  }
+  .email-example .button--small-xl.square {
+    width: 34px !important;
+  }
+  .email-example .button--xsmall-xl {
+    font-size: 12px !important;
+    height: 30px !important;
+    line-height: 26px !important;
+    padding: 0 10px !important;
+  }
+  .email-example .button--xsmall-xl.square {
+    width: 30px !important;
+  }
+}
+
+.email-example .button--topic-html {
+  border-color: #39ADD1 !important;
+  color: #39ADD1 !important;
+}
+
+.email-example .button--topic-html svg {
+  fill: #39ADD1 !important;
+}
+
+.email-example .button--topic-html:hover, .email-example .button--topic-html:active, .email-example .button--topic-html:focus {
+  border-color: #298fae !important;
+  color: #298fae !important;
+}
+
+.email-example .button--topic-html:hover svg, .email-example .button--topic-html:active svg, .email-example .button--topic-html:focus svg {
+  fill: #298fae !important;
+}
+
+.email-example .button--topic-html.button--primary {
+  background-color: #39ADD1 !important;
+  border-color: #39ADD1 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-html.button--primary:hover, .email-example .button--topic-html.button--primary:active, .email-example .button--topic-html.button--primary:focus {
+  background-color: #298fae !important;
+  border-color: #298fae !important;
+}
+
+.email-example .button--topic-html.button--primary:hover svg, .email-example .button--topic-html.button--primary:active svg, .email-example .button--topic-html.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-css {
+  border-color: #3079AB !important;
+  color: #3079AB !important;
+}
+
+.email-example .button--topic-css svg {
+  fill: #3079AB !important;
+}
+
+.email-example .button--topic-css:hover, .email-example .button--topic-css:active, .email-example .button--topic-css:focus {
+  border-color: #255d83 !important;
+  color: #255d83 !important;
+}
+
+.email-example .button--topic-css:hover svg, .email-example .button--topic-css:active svg, .email-example .button--topic-css:focus svg {
+  fill: #255d83 !important;
+}
+
+.email-example .button--topic-css.button--primary {
+  background-color: #3079AB !important;
+  border-color: #3079AB !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-css.button--primary:hover, .email-example .button--topic-css.button--primary:active, .email-example .button--topic-css.button--primary:focus {
+  background-color: #255d83 !important;
+  border-color: #255d83 !important;
+}
+
+.email-example .button--topic-css.button--primary:hover svg, .email-example .button--topic-css.button--primary:active svg, .email-example .button--topic-css.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-js {
+  border-color: #c25975 !important;
+  color: #c25975 !important;
+}
+
+.email-example .button--topic-js svg {
+  fill: #c25975 !important;
+}
+
+.email-example .button--topic-js:hover, .email-example .button--topic-js:active, .email-example .button--topic-js:focus {
+  border-color: #aa3e5b !important;
+  color: #aa3e5b !important;
+}
+
+.email-example .button--topic-js:hover svg, .email-example .button--topic-js:active svg, .email-example .button--topic-js:focus svg {
+  fill: #aa3e5b !important;
+}
+
+.email-example .button--topic-js.button--primary {
+  background-color: #c25975 !important;
+  border-color: #c25975 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-js.button--primary:hover, .email-example .button--topic-js.button--primary:active, .email-example .button--topic-js.button--primary:focus {
+  background-color: #aa3e5b !important;
+  border-color: #aa3e5b !important;
+}
+
+.email-example .button--topic-js.button--primary:hover svg, .email-example .button--topic-js.button--primary:active svg, .email-example .button--topic-js.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-ruby {
+  border-color: #e15258 !important;
+  color: #e15258 !important;
+}
+
+.email-example .button--topic-ruby svg {
+  fill: #e15258 !important;
+}
+
+.email-example .button--topic-ruby:hover, .email-example .button--topic-ruby:active, .email-example .button--topic-ruby:focus {
+  border-color: #d9272e !important;
+  color: #d9272e !important;
+}
+
+.email-example .button--topic-ruby:hover svg, .email-example .button--topic-ruby:active svg, .email-example .button--topic-ruby:focus svg {
+  fill: #d9272e !important;
+}
+
+.email-example .button--topic-ruby.button--primary {
+  background-color: #e15258 !important;
+  border-color: #e15258 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-ruby.button--primary:hover, .email-example .button--topic-ruby.button--primary:active, .email-example .button--topic-ruby.button--primary:focus {
+  background-color: #d9272e !important;
+  border-color: #d9272e !important;
+}
+
+.email-example .button--topic-ruby.button--primary:hover svg, .email-example .button--topic-ruby.button--primary:active svg, .email-example .button--topic-ruby.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-business {
+  border-color: #F9845B !important;
+  color: #F9845B !important;
+}
+
+.email-example .button--topic-business svg {
+  fill: #F9845B !important;
+}
+
+.email-example .button--topic-business:hover, .email-example .button--topic-business:active, .email-example .button--topic-business:focus {
+  border-color: #f75f2a !important;
+  color: #f75f2a !important;
+}
+
+.email-example .button--topic-business:hover svg, .email-example .button--topic-business:active svg, .email-example .button--topic-business:focus svg {
+  fill: #f75f2a !important;
+}
+
+.email-example .button--topic-business.button--primary {
+  background-color: #F9845B !important;
+  border-color: #F9845B !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-business.button--primary:hover, .email-example .button--topic-business.button--primary:active, .email-example .button--topic-business.button--primary:focus {
+  background-color: #f75f2a !important;
+  border-color: #f75f2a !important;
+}
+
+.email-example .button--topic-business.button--primary:hover svg, .email-example .button--topic-business.button--primary:active svg, .email-example .button--topic-business.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-wordpress {
+  border-color: #838CC7 !important;
+  color: #838CC7 !important;
+}
+
+.email-example .button--topic-wordpress svg {
+  fill: #838CC7 !important;
+}
+
+.email-example .button--topic-wordpress:hover, .email-example .button--topic-wordpress:active, .email-example .button--topic-wordpress:focus {
+  border-color: #606bb7 !important;
+  color: #606bb7 !important;
+}
+
+.email-example .button--topic-wordpress:hover svg, .email-example .button--topic-wordpress:active svg, .email-example .button--topic-wordpress:focus svg {
+  fill: #606bb7 !important;
+}
+
+.email-example .button--topic-wordpress.button--primary {
+  background-color: #838CC7 !important;
+  border-color: #838CC7 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-wordpress.button--primary:hover, .email-example .button--topic-wordpress.button--primary:active, .email-example .button--topic-wordpress.button--primary:focus {
+  background-color: #606bb7 !important;
+  border-color: #606bb7 !important;
+}
+
+.email-example .button--topic-wordpress.button--primary:hover svg, .email-example .button--topic-wordpress.button--primary:active svg, .email-example .button--topic-wordpress.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-php {
+  border-color: #7D669E !important;
+  color: #7D669E !important;
+}
+
+.email-example .button--topic-php svg {
+  fill: #7D669E !important;
+}
+
+.email-example .button--topic-php:hover, .email-example .button--topic-php:active, .email-example .button--topic-php:focus {
+  border-color: #645180 !important;
+  color: #645180 !important;
+}
+
+.email-example .button--topic-php:hover svg, .email-example .button--topic-php:active svg, .email-example .button--topic-php:focus svg {
+  fill: #645180 !important;
+}
+
+.email-example .button--topic-php.button--primary {
+  background-color: #7D669E !important;
+  border-color: #7D669E !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-php.button--primary:hover, .email-example .button--topic-php.button--primary:active, .email-example .button--topic-php.button--primary:focus {
+  background-color: #645180 !important;
+  border-color: #645180 !important;
+}
+
+.email-example .button--topic-php.button--primary:hover svg, .email-example .button--topic-php.button--primary:active svg, .email-example .button--topic-php.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-ios {
+  border-color: #53BBB4 !important;
+  color: #53BBB4 !important;
+}
+
+.email-example .button--topic-ios svg {
+  fill: #53BBB4 !important;
+}
+
+.email-example .button--topic-ios:hover, .email-example .button--topic-ios:active, .email-example .button--topic-ios:focus {
+  border-color: #3e9d97 !important;
+  color: #3e9d97 !important;
+}
+
+.email-example .button--topic-ios:hover svg, .email-example .button--topic-ios:active svg, .email-example .button--topic-ios:focus svg {
+  fill: #3e9d97 !important;
+}
+
+.email-example .button--topic-ios.button--primary {
+  background-color: #53BBB4 !important;
+  border-color: #53BBB4 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-ios.button--primary:hover, .email-example .button--topic-ios.button--primary:active, .email-example .button--topic-ios.button--primary:focus {
+  background-color: #3e9d97 !important;
+  border-color: #3e9d97 !important;
+}
+
+.email-example .button--topic-ios.button--primary:hover svg, .email-example .button--topic-ios.button--primary:active svg, .email-example .button--topic-ios.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-android {
+  border-color: #5cb860 !important;
+  color: #5cb860 !important;
+}
+
+.email-example .button--topic-android svg {
+  fill: #5cb860 !important;
+}
+
+.email-example .button--topic-android:hover, .email-example .button--topic-android:active, .email-example .button--topic-android:focus {
+  border-color: #449d48 !important;
+  color: #449d48 !important;
+}
+
+.email-example .button--topic-android:hover svg, .email-example .button--topic-android:active svg, .email-example .button--topic-android:focus svg {
+  fill: #449d48 !important;
+}
+
+.email-example .button--topic-android.button--primary {
+  background-color: #5cb860 !important;
+  border-color: #5cb860 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-android.button--primary:hover, .email-example .button--topic-android.button--primary:active, .email-example .button--topic-android.button--primary:focus {
+  background-color: #449d48 !important;
+  border-color: #449d48 !important;
+}
+
+.email-example .button--topic-android.button--primary:hover svg, .email-example .button--topic-android.button--primary:active svg, .email-example .button--topic-android.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-design {
+  border-color: #e59a13 !important;
+  color: #e59a13 !important;
+}
+
+.email-example .button--topic-design svg {
+  fill: #e59a13 !important;
+}
+
+.email-example .button--topic-design:hover, .email-example .button--topic-design:active, .email-example .button--topic-design:focus {
+  border-color: #b67a0f !important;
+  color: #b67a0f !important;
+}
+
+.email-example .button--topic-design:hover svg, .email-example .button--topic-design:active svg, .email-example .button--topic-design:focus svg {
+  fill: #b67a0f !important;
+}
+
+.email-example .button--topic-design.button--primary {
+  background-color: #e59a13 !important;
+  border-color: #e59a13 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-design.button--primary:hover, .email-example .button--topic-design.button--primary:active, .email-example .button--topic-design.button--primary:focus {
+  background-color: #b67a0f !important;
+  border-color: #b67a0f !important;
+}
+
+.email-example .button--topic-design.button--primary:hover svg, .email-example .button--topic-design.button--primary:active svg, .email-example .button--topic-design.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-devtools {
+  border-color: #637a91 !important;
+  color: #637a91 !important;
+}
+
+.email-example .button--topic-devtools svg {
+  fill: #637a91 !important;
+}
+
+.email-example .button--topic-devtools:hover, .email-example .button--topic-devtools:active, .email-example .button--topic-devtools:focus {
+  border-color: #4e6173 !important;
+  color: #4e6173 !important;
+}
+
+.email-example .button--topic-devtools:hover svg, .email-example .button--topic-devtools:active svg, .email-example .button--topic-devtools:focus svg {
+  fill: #4e6173 !important;
+}
+
+.email-example .button--topic-devtools.button--primary {
+  background-color: #637a91 !important;
+  border-color: #637a91 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-devtools.button--primary:hover, .email-example .button--topic-devtools.button--primary:active, .email-example .button--topic-devtools.button--primary:focus {
+  background-color: #4e6173 !important;
+  border-color: #4e6173 !important;
+}
+
+.email-example .button--topic-devtools.button--primary:hover svg, .email-example .button--topic-devtools.button--primary:active svg, .email-example .button--topic-devtools.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-java {
+  border-color: #2c9676 !important;
+  color: #2c9676 !important;
+}
+
+.email-example .button--topic-java svg {
+  fill: #2c9676 !important;
+}
+
+.email-example .button--topic-java:hover, .email-example .button--topic-java:active, .email-example .button--topic-java:focus {
+  border-color: #206f57 !important;
+  color: #206f57 !important;
+}
+
+.email-example .button--topic-java:hover svg, .email-example .button--topic-java:active svg, .email-example .button--topic-java:focus svg {
+  fill: #206f57 !important;
+}
+
+.email-example .button--topic-java.button--primary {
+  background-color: #2c9676 !important;
+  border-color: #2c9676 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-java.button--primary:hover, .email-example .button--topic-java.button--primary:active, .email-example .button--topic-java.button--primary:focus {
+  background-color: #206f57 !important;
+  border-color: #206f57 !important;
+}
+
+.email-example .button--topic-java.button--primary:hover svg, .email-example .button--topic-java.button--primary:active svg, .email-example .button--topic-java.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-python {
+  border-color: #f092b0 !important;
+  color: #f092b0 !important;
+}
+
+.email-example .button--topic-python svg {
+  fill: #f092b0 !important;
+}
+
+.email-example .button--topic-python:hover, .email-example .button--topic-python:active, .email-example .button--topic-python:focus {
+  border-color: #ea6590 !important;
+  color: #ea6590 !important;
+}
+
+.email-example .button--topic-python:hover svg, .email-example .button--topic-python:active svg, .email-example .button--topic-python:focus svg {
+  fill: #ea6590 !important;
+}
+
+.email-example .button--topic-python.button--primary {
+  background-color: #f092b0 !important;
+  border-color: #f092b0 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-python.button--primary:hover, .email-example .button--topic-python.button--primary:active, .email-example .button--topic-python.button--primary:focus {
+  background-color: #ea6590 !important;
+  border-color: #ea6590 !important;
+}
+
+.email-example .button--topic-python.button--primary:hover svg, .email-example .button--topic-python.button--primary:active svg, .email-example .button--topic-python.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-diglit {
+  border-color: #c38cd4 !important;
+  color: #c38cd4 !important;
+}
+
+.email-example .button--topic-diglit svg {
+  fill: #c38cd4 !important;
+}
+
+.email-example .button--topic-diglit:hover, .email-example .button--topic-diglit:active, .email-example .button--topic-diglit:focus {
+  border-color: #b067c6 !important;
+  color: #b067c6 !important;
+}
+
+.email-example .button--topic-diglit:hover svg, .email-example .button--topic-diglit:active svg, .email-example .button--topic-diglit:focus svg {
+  fill: #b067c6 !important;
+}
+
+.email-example .button--topic-diglit.button--primary {
+  background-color: #c38cd4 !important;
+  border-color: #c38cd4 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-diglit.button--primary:hover, .email-example .button--topic-diglit.button--primary:active, .email-example .button--topic-diglit.button--primary:focus {
+  background-color: #b067c6 !important;
+  border-color: #b067c6 !important;
+}
+
+.email-example .button--topic-diglit.button--primary:hover svg, .email-example .button--topic-diglit.button--primary:active svg, .email-example .button--topic-diglit.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-gamedev {
+  border-color: #20898c !important;
+  color: #20898c !important;
+}
+
+.email-example .button--topic-gamedev svg {
+  fill: #20898c !important;
+}
+
+.email-example .button--topic-gamedev:hover, .email-example .button--topic-gamedev:active, .email-example .button--topic-gamedev:focus {
+  border-color: #176062 !important;
+  color: #176062 !important;
+}
+
+.email-example .button--topic-gamedev:hover svg, .email-example .button--topic-gamedev:active svg, .email-example .button--topic-gamedev:focus svg {
+  fill: #176062 !important;
+}
+
+.email-example .button--topic-gamedev.button--primary {
+  background-color: #20898c !important;
+  border-color: #20898c !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-gamedev.button--primary:hover, .email-example .button--topic-gamedev.button--primary:active, .email-example .button--topic-gamedev.button--primary:focus {
+  background-color: #176062 !important;
+  border-color: #176062 !important;
+}
+
+.email-example .button--topic-gamedev.button--primary:hover svg, .email-example .button--topic-gamedev.button--primary:active svg, .email-example .button--topic-gamedev.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-csharp {
+  border-color: #9e4d83 !important;
+  color: #9e4d83 !important;
+}
+
+.email-example .button--topic-csharp svg {
+  fill: #9e4d83 !important;
+}
+
+.email-example .button--topic-csharp:hover, .email-example .button--topic-csharp:active, .email-example .button--topic-csharp:focus {
+  border-color: #7c3c67 !important;
+  color: #7c3c67 !important;
+}
+
+.email-example .button--topic-csharp:hover svg, .email-example .button--topic-csharp:active svg, .email-example .button--topic-csharp:focus svg {
+  fill: #7c3c67 !important;
+}
+
+.email-example .button--topic-csharp.button--primary {
+  background-color: #9e4d83 !important;
+  border-color: #9e4d83 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-csharp.button--primary:hover, .email-example .button--topic-csharp.button--primary:active, .email-example .button--topic-csharp.button--primary:focus {
+  background-color: #7c3c67 !important;
+  border-color: #7c3c67 !important;
+}
+
+.email-example .button--topic-csharp.button--primary:hover svg, .email-example .button--topic-csharp.button--primary:active svg, .email-example .button--topic-csharp.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-databases {
+  border-color: #eb7728 !important;
+  color: #eb7728 !important;
+}
+
+.email-example .button--topic-databases svg {
+  fill: #eb7728 !important;
+}
+
+.email-example .button--topic-databases:hover, .email-example .button--topic-databases:active, .email-example .button--topic-databases:focus {
+  border-color: #cd5e13 !important;
+  color: #cd5e13 !important;
+}
+
+.email-example .button--topic-databases:hover svg, .email-example .button--topic-databases:active svg, .email-example .button--topic-databases:focus svg {
+  fill: #cd5e13 !important;
+}
+
+.email-example .button--topic-databases.button--primary {
+  background-color: #eb7728 !important;
+  border-color: #eb7728 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-databases.button--primary:hover, .email-example .button--topic-databases.button--primary:active, .email-example .button--topic-databases.button--primary:focus {
+  background-color: #cd5e13 !important;
+  border-color: #cd5e13 !important;
+}
+
+.email-example .button--topic-databases.button--primary:hover svg, .email-example .button--topic-databases.button--primary:active svg, .email-example .button--topic-databases.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-virtual-reality {
+  border-color: #95D26C !important;
+  color: #95D26C !important;
+}
+
+.email-example .button--topic-virtual-reality svg {
+  fill: #95D26C !important;
+}
+
+.email-example .button--topic-virtual-reality:hover, .email-example .button--topic-virtual-reality:active, .email-example .button--topic-virtual-reality:focus {
+  border-color: #79c645 !important;
+  color: #79c645 !important;
+}
+
+.email-example .button--topic-virtual-reality:hover svg, .email-example .button--topic-virtual-reality:active svg, .email-example .button--topic-virtual-reality:focus svg {
+  fill: #79c645 !important;
+}
+
+.email-example .button--topic-virtual-reality.button--primary {
+  background-color: #95D26C !important;
+  border-color: #95D26C !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-virtual-reality.button--primary:hover, .email-example .button--topic-virtual-reality.button--primary:active, .email-example .button--topic-virtual-reality.button--primary:focus {
+  background-color: #79c645 !important;
+  border-color: #79c645 !important;
+}
+
+.email-example .button--topic-virtual-reality.button--primary:hover svg, .email-example .button--topic-virtual-reality.button--primary:active svg, .email-example .button--topic-virtual-reality.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-apis {
+  border-color: #993c50 !important;
+  color: #993c50 !important;
+}
+
+.email-example .button--topic-apis svg {
+  fill: #993c50 !important;
+}
+
+.email-example .button--topic-apis:hover, .email-example .button--topic-apis:active, .email-example .button--topic-apis:focus {
+  border-color: #742e3d !important;
+  color: #742e3d !important;
+}
+
+.email-example .button--topic-apis:hover svg, .email-example .button--topic-apis:active svg, .email-example .button--topic-apis:focus svg {
+  fill: #742e3d !important;
+}
+
+.email-example .button--topic-apis.button--primary {
+  background-color: #993c50 !important;
+  border-color: #993c50 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-apis.button--primary:hover, .email-example .button--topic-apis.button--primary:active, .email-example .button--topic-apis.button--primary:focus {
+  background-color: #742e3d !important;
+  border-color: #742e3d !important;
+}
+
+.email-example .button--topic-apis.button--primary:hover svg, .email-example .button--topic-apis.button--primary:active svg, .email-example .button--topic-apis.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-go {
+  border-color: #375eab !important;
+  color: #375eab !important;
+}
+
+.email-example .button--topic-go svg {
+  fill: #375eab !important;
+}
+
+.email-example .button--topic-go:hover, .email-example .button--topic-go:active, .email-example .button--topic-go:focus {
+  border-color: #2b4984 !important;
+  color: #2b4984 !important;
+}
+
+.email-example .button--topic-go:hover svg, .email-example .button--topic-go:active svg, .email-example .button--topic-go:focus svg {
+  fill: #2b4984 !important;
+}
+
+.email-example .button--topic-go.button--primary {
+  background-color: #375eab !important;
+  border-color: #375eab !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-go.button--primary:hover, .email-example .button--topic-go.button--primary:active, .email-example .button--topic-go.button--primary:focus {
+  background-color: #2b4984 !important;
+  border-color: #2b4984 !important;
+}
+
+.email-example .button--topic-go.button--primary:hover svg, .email-example .button--topic-go.button--primary:active svg, .email-example .button--topic-go.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-data-analysis {
+  border-color: #645a7e !important;
+  color: #645a7e !important;
+}
+
+.email-example .button--topic-data-analysis svg {
+  fill: #645a7e !important;
+}
+
+.email-example .button--topic-data-analysis:hover, .email-example .button--topic-data-analysis:active, .email-example .button--topic-data-analysis:focus {
+  border-color: #4c4560 !important;
+  color: #4c4560 !important;
+}
+
+.email-example .button--topic-data-analysis:hover svg, .email-example .button--topic-data-analysis:active svg, .email-example .button--topic-data-analysis:focus svg {
+  fill: #4c4560 !important;
+}
+
+.email-example .button--topic-data-analysis.button--primary {
+  background-color: #645a7e !important;
+  border-color: #645a7e !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-data-analysis.button--primary:hover, .email-example .button--topic-data-analysis.button--primary:active, .email-example .button--topic-data-analysis.button--primary:focus {
+  background-color: #4c4560 !important;
+  border-color: #4c4560 !important;
+}
+
+.email-example .button--topic-data-analysis.button--primary:hover svg, .email-example .button--topic-data-analysis.button--primary:active svg, .email-example .button--topic-data-analysis.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-security {
+  border-color: #C66C5D !important;
+  color: #C66C5D !important;
+}
+
+.email-example .button--topic-security svg {
+  fill: #C66C5D !important;
+}
+
+.email-example .button--topic-security:hover, .email-example .button--topic-security:active, .email-example .button--topic-security:focus {
+  border-color: #b24f3e !important;
+  color: #b24f3e !important;
+}
+
+.email-example .button--topic-security:hover svg, .email-example .button--topic-security:active svg, .email-example .button--topic-security:focus svg {
+  fill: #b24f3e !important;
+}
+
+.email-example .button--topic-security.button--primary {
+  background-color: #C66C5D !important;
+  border-color: #C66C5D !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-security.button--primary:hover, .email-example .button--topic-security.button--primary:active, .email-example .button--topic-security.button--primary:focus {
+  background-color: #b24f3e !important;
+  border-color: #b24f3e !important;
+}
+
+.email-example .button--topic-security.button--primary:hover svg, .email-example .button--topic-security.button--primary:active svg, .email-example .button--topic-security.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.email-example .button--topic-undefined {
+  border-color: #717b85 !important;
+  color: #717b85 !important;
+}
+
+.email-example .button--topic-undefined svg {
+  fill: #717b85 !important;
+}
+
+.email-example .button--topic-undefined:hover, .email-example .button--topic-undefined:active, .email-example .button--topic-undefined:focus {
+  border-color: #5a6269 !important;
+  color: #5a6269 !important;
+}
+
+.email-example .button--topic-undefined:hover svg, .email-example .button--topic-undefined:active svg, .email-example .button--topic-undefined:focus svg {
+  fill: #5a6269 !important;
+}
+
+.email-example .button--topic-undefined.button--primary {
+  background-color: #717b85 !important;
+  border-color: #717b85 !important;
+  color: #fff !important;
+}
+
+.email-example .button--topic-undefined.button--primary:hover, .email-example .button--topic-undefined.button--primary:active, .email-example .button--topic-undefined.button--primary:focus {
+  background-color: #5a6269 !important;
+  border-color: #5a6269 !important;
+}
+
+.email-example .button--topic-undefined.button--primary:hover svg, .email-example .button--topic-undefined.button--primary:active svg, .email-example .button--topic-undefined.button--primary:focus svg {
+  fill: #fff !important;
+}
+
+.split-button .email-example .button {
+  float: left;
+  z-index: 1;
+  margin: 0 !important;
+  border-radius: 4px 0 0 4px;
+  padding: 0 20px;
+}
+
+.split-button .email-example .button:hover, .split-button .email-example .button:active, .split-button .email-example .button:focus {
+  z-index: 2;
+}
+
+.split-button .email-example .button.button--primary {
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
+.split-button .email-example .button + .button {
+  border-radius: 0 4px 4px 0;
+  margin-left: -2px !important;
+}
+
+.split-button .email-example .button + .button.button--primary {
+  border-left-color: rgba(0, 0, 0, 0.1);
+}
+
+.email-example .split-button {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.email-example .split-button:before, .email-example .split-button:after {
+  content: " ";
+  display: table;
+}
+
+.email-example .split-button:after {
+  clear: both;
+}
+
+@media screen {
+  .email-example .m-0-xs {
+    margin: 0px !important;
+  }
+  .email-example .m-1-xs {
+    margin: 5px !important;
+  }
+  .email-example .m-2-xs {
+    margin: 10px !important;
+  }
+  .email-example .m-3-xs {
+    margin: 15px !important;
+  }
+  .email-example .m-4-xs {
+    margin: 20px !important;
+  }
+  .email-example .m-5-xs {
+    margin: 25px !important;
+  }
+  .email-example .m-t-0-xs {
+    margin-top: 0px !important;
+  }
+  .email-example .m-t-1-xs {
+    margin-top: 5px !important;
+  }
+  .email-example .m-t-2-xs {
+    margin-top: 10px !important;
+  }
+  .email-example .m-t-3-xs {
+    margin-top: 15px !important;
+  }
+  .email-example .m-t-4-xs {
+    margin-top: 20px !important;
+  }
+  .email-example .m-t-5-xs {
+    margin-top: 25px !important;
+  }
+  .email-example .m-b-0-xs {
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-b-1-xs {
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-b-2-xs {
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-b-3-xs {
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-b-4-xs {
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-b-5-xs {
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-l-0-xs {
+    margin-left: 0px !important;
+  }
+  .email-example .m-l-1-xs {
+    margin-left: 5px !important;
+  }
+  .email-example .m-l-2-xs {
+    margin-left: 10px !important;
+  }
+  .email-example .m-l-3-xs {
+    margin-left: 15px !important;
+  }
+  .email-example .m-l-4-xs {
+    margin-left: 20px !important;
+  }
+  .email-example .m-l-5-xs {
+    margin-left: 25px !important;
+  }
+  .email-example .m-r-0-xs {
+    margin-right: 0px !important;
+  }
+  .email-example .m-r-1-xs {
+    margin-right: 5px !important;
+  }
+  .email-example .m-r-2-xs {
+    margin-right: 10px !important;
+  }
+  .email-example .m-r-3-xs {
+    margin-right: 15px !important;
+  }
+  .email-example .m-r-4-xs {
+    margin-right: 20px !important;
+  }
+  .email-example .m-r-5-xs {
+    margin-right: 25px !important;
+  }
+  .email-example .m-lr-0-xs {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .email-example .m-lr-1-xs {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .email-example .m-lr-2-xs {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .email-example .m-lr-3-xs {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .email-example .m-lr-4-xs {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .email-example .m-lr-5-xs {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .email-example .m-tb-0-xs {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-tb-1-xs {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-tb-2-xs {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-tb-3-xs {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-tb-4-xs {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-tb-5-xs {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-auto-xs {
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .m-0-sm {
+    margin: 0px !important;
+  }
+  .email-example .m-1-sm {
+    margin: 5px !important;
+  }
+  .email-example .m-2-sm {
+    margin: 10px !important;
+  }
+  .email-example .m-3-sm {
+    margin: 15px !important;
+  }
+  .email-example .m-4-sm {
+    margin: 20px !important;
+  }
+  .email-example .m-5-sm {
+    margin: 25px !important;
+  }
+  .email-example .m-t-0-sm {
+    margin-top: 0px !important;
+  }
+  .email-example .m-t-1-sm {
+    margin-top: 5px !important;
+  }
+  .email-example .m-t-2-sm {
+    margin-top: 10px !important;
+  }
+  .email-example .m-t-3-sm {
+    margin-top: 15px !important;
+  }
+  .email-example .m-t-4-sm {
+    margin-top: 20px !important;
+  }
+  .email-example .m-t-5-sm {
+    margin-top: 25px !important;
+  }
+  .email-example .m-b-0-sm {
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-b-1-sm {
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-b-2-sm {
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-b-3-sm {
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-b-4-sm {
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-b-5-sm {
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-l-0-sm {
+    margin-left: 0px !important;
+  }
+  .email-example .m-l-1-sm {
+    margin-left: 5px !important;
+  }
+  .email-example .m-l-2-sm {
+    margin-left: 10px !important;
+  }
+  .email-example .m-l-3-sm {
+    margin-left: 15px !important;
+  }
+  .email-example .m-l-4-sm {
+    margin-left: 20px !important;
+  }
+  .email-example .m-l-5-sm {
+    margin-left: 25px !important;
+  }
+  .email-example .m-r-0-sm {
+    margin-right: 0px !important;
+  }
+  .email-example .m-r-1-sm {
+    margin-right: 5px !important;
+  }
+  .email-example .m-r-2-sm {
+    margin-right: 10px !important;
+  }
+  .email-example .m-r-3-sm {
+    margin-right: 15px !important;
+  }
+  .email-example .m-r-4-sm {
+    margin-right: 20px !important;
+  }
+  .email-example .m-r-5-sm {
+    margin-right: 25px !important;
+  }
+  .email-example .m-lr-0-sm {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .email-example .m-lr-1-sm {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .email-example .m-lr-2-sm {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .email-example .m-lr-3-sm {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .email-example .m-lr-4-sm {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .email-example .m-lr-5-sm {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .email-example .m-tb-0-sm {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-tb-1-sm {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-tb-2-sm {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-tb-3-sm {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-tb-4-sm {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-tb-5-sm {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-auto-sm {
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .m-0-md {
+    margin: 0px !important;
+  }
+  .email-example .m-1-md {
+    margin: 5px !important;
+  }
+  .email-example .m-2-md {
+    margin: 10px !important;
+  }
+  .email-example .m-3-md {
+    margin: 15px !important;
+  }
+  .email-example .m-4-md {
+    margin: 20px !important;
+  }
+  .email-example .m-5-md {
+    margin: 25px !important;
+  }
+  .email-example .m-t-0-md {
+    margin-top: 0px !important;
+  }
+  .email-example .m-t-1-md {
+    margin-top: 5px !important;
+  }
+  .email-example .m-t-2-md {
+    margin-top: 10px !important;
+  }
+  .email-example .m-t-3-md {
+    margin-top: 15px !important;
+  }
+  .email-example .m-t-4-md {
+    margin-top: 20px !important;
+  }
+  .email-example .m-t-5-md {
+    margin-top: 25px !important;
+  }
+  .email-example .m-b-0-md {
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-b-1-md {
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-b-2-md {
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-b-3-md {
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-b-4-md {
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-b-5-md {
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-l-0-md {
+    margin-left: 0px !important;
+  }
+  .email-example .m-l-1-md {
+    margin-left: 5px !important;
+  }
+  .email-example .m-l-2-md {
+    margin-left: 10px !important;
+  }
+  .email-example .m-l-3-md {
+    margin-left: 15px !important;
+  }
+  .email-example .m-l-4-md {
+    margin-left: 20px !important;
+  }
+  .email-example .m-l-5-md {
+    margin-left: 25px !important;
+  }
+  .email-example .m-r-0-md {
+    margin-right: 0px !important;
+  }
+  .email-example .m-r-1-md {
+    margin-right: 5px !important;
+  }
+  .email-example .m-r-2-md {
+    margin-right: 10px !important;
+  }
+  .email-example .m-r-3-md {
+    margin-right: 15px !important;
+  }
+  .email-example .m-r-4-md {
+    margin-right: 20px !important;
+  }
+  .email-example .m-r-5-md {
+    margin-right: 25px !important;
+  }
+  .email-example .m-lr-0-md {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .email-example .m-lr-1-md {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .email-example .m-lr-2-md {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .email-example .m-lr-3-md {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .email-example .m-lr-4-md {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .email-example .m-lr-5-md {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .email-example .m-tb-0-md {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-tb-1-md {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-tb-2-md {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-tb-3-md {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-tb-4-md {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-tb-5-md {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-auto-md {
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .m-0-lg {
+    margin: 0px !important;
+  }
+  .email-example .m-1-lg {
+    margin: 5px !important;
+  }
+  .email-example .m-2-lg {
+    margin: 10px !important;
+  }
+  .email-example .m-3-lg {
+    margin: 15px !important;
+  }
+  .email-example .m-4-lg {
+    margin: 20px !important;
+  }
+  .email-example .m-5-lg {
+    margin: 25px !important;
+  }
+  .email-example .m-t-0-lg {
+    margin-top: 0px !important;
+  }
+  .email-example .m-t-1-lg {
+    margin-top: 5px !important;
+  }
+  .email-example .m-t-2-lg {
+    margin-top: 10px !important;
+  }
+  .email-example .m-t-3-lg {
+    margin-top: 15px !important;
+  }
+  .email-example .m-t-4-lg {
+    margin-top: 20px !important;
+  }
+  .email-example .m-t-5-lg {
+    margin-top: 25px !important;
+  }
+  .email-example .m-b-0-lg {
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-b-1-lg {
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-b-2-lg {
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-b-3-lg {
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-b-4-lg {
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-b-5-lg {
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-l-0-lg {
+    margin-left: 0px !important;
+  }
+  .email-example .m-l-1-lg {
+    margin-left: 5px !important;
+  }
+  .email-example .m-l-2-lg {
+    margin-left: 10px !important;
+  }
+  .email-example .m-l-3-lg {
+    margin-left: 15px !important;
+  }
+  .email-example .m-l-4-lg {
+    margin-left: 20px !important;
+  }
+  .email-example .m-l-5-lg {
+    margin-left: 25px !important;
+  }
+  .email-example .m-r-0-lg {
+    margin-right: 0px !important;
+  }
+  .email-example .m-r-1-lg {
+    margin-right: 5px !important;
+  }
+  .email-example .m-r-2-lg {
+    margin-right: 10px !important;
+  }
+  .email-example .m-r-3-lg {
+    margin-right: 15px !important;
+  }
+  .email-example .m-r-4-lg {
+    margin-right: 20px !important;
+  }
+  .email-example .m-r-5-lg {
+    margin-right: 25px !important;
+  }
+  .email-example .m-lr-0-lg {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .email-example .m-lr-1-lg {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .email-example .m-lr-2-lg {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .email-example .m-lr-3-lg {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .email-example .m-lr-4-lg {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .email-example .m-lr-5-lg {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .email-example .m-tb-0-lg {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-tb-1-lg {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-tb-2-lg {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-tb-3-lg {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-tb-4-lg {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-tb-5-lg {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-auto-lg {
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .m-0-xl {
+    margin: 0px !important;
+  }
+  .email-example .m-1-xl {
+    margin: 5px !important;
+  }
+  .email-example .m-2-xl {
+    margin: 10px !important;
+  }
+  .email-example .m-3-xl {
+    margin: 15px !important;
+  }
+  .email-example .m-4-xl {
+    margin: 20px !important;
+  }
+  .email-example .m-5-xl {
+    margin: 25px !important;
+  }
+  .email-example .m-t-0-xl {
+    margin-top: 0px !important;
+  }
+  .email-example .m-t-1-xl {
+    margin-top: 5px !important;
+  }
+  .email-example .m-t-2-xl {
+    margin-top: 10px !important;
+  }
+  .email-example .m-t-3-xl {
+    margin-top: 15px !important;
+  }
+  .email-example .m-t-4-xl {
+    margin-top: 20px !important;
+  }
+  .email-example .m-t-5-xl {
+    margin-top: 25px !important;
+  }
+  .email-example .m-b-0-xl {
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-b-1-xl {
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-b-2-xl {
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-b-3-xl {
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-b-4-xl {
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-b-5-xl {
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-l-0-xl {
+    margin-left: 0px !important;
+  }
+  .email-example .m-l-1-xl {
+    margin-left: 5px !important;
+  }
+  .email-example .m-l-2-xl {
+    margin-left: 10px !important;
+  }
+  .email-example .m-l-3-xl {
+    margin-left: 15px !important;
+  }
+  .email-example .m-l-4-xl {
+    margin-left: 20px !important;
+  }
+  .email-example .m-l-5-xl {
+    margin-left: 25px !important;
+  }
+  .email-example .m-r-0-xl {
+    margin-right: 0px !important;
+  }
+  .email-example .m-r-1-xl {
+    margin-right: 5px !important;
+  }
+  .email-example .m-r-2-xl {
+    margin-right: 10px !important;
+  }
+  .email-example .m-r-3-xl {
+    margin-right: 15px !important;
+  }
+  .email-example .m-r-4-xl {
+    margin-right: 20px !important;
+  }
+  .email-example .m-r-5-xl {
+    margin-right: 25px !important;
+  }
+  .email-example .m-lr-0-xl {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .email-example .m-lr-1-xl {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .email-example .m-lr-2-xl {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .email-example .m-lr-3-xl {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .email-example .m-lr-4-xl {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .email-example .m-lr-5-xl {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .email-example .m-tb-0-xl {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .email-example .m-tb-1-xl {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .email-example .m-tb-2-xl {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .email-example .m-tb-3-xl {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .email-example .m-tb-4-xl {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .email-example .m-tb-5-xl {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  .email-example .m-auto-xl {
+    margin: 0 auto !important;
+  }
+}
+
+@media screen {
+  .email-example .p-0-xs {
+    padding: 0px !important;
+  }
+  .email-example .p-1-xs {
+    padding: 5px !important;
+  }
+  .email-example .p-2-xs {
+    padding: 10px !important;
+  }
+  .email-example .p-3-xs {
+    padding: 15px !important;
+  }
+  .email-example .p-4-xs {
+    padding: 20px !important;
+  }
+  .email-example .p-5-xs {
+    padding: 25px !important;
+  }
+  .email-example .p-t-0-xs {
+    padding-top: 0px !important;
+  }
+  .email-example .p-t-1-xs {
+    padding-top: 5px !important;
+  }
+  .email-example .p-t-2-xs {
+    padding-top: 10px !important;
+  }
+  .email-example .p-t-3-xs {
+    padding-top: 15px !important;
+  }
+  .email-example .p-t-4-xs {
+    padding-top: 20px !important;
+  }
+  .email-example .p-t-5-xs {
+    padding-top: 25px !important;
+  }
+  .email-example .p-b-0-xs {
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-b-1-xs {
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-b-2-xs {
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-b-3-xs {
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-b-4-xs {
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-b-5-xs {
+    padding-bottom: 25px !important;
+  }
+  .email-example .p-l-0-xs {
+    padding-left: 0px !important;
+  }
+  .email-example .p-l-1-xs {
+    padding-left: 5px !important;
+  }
+  .email-example .p-l-2-xs {
+    padding-left: 10px !important;
+  }
+  .email-example .p-l-3-xs {
+    padding-left: 15px !important;
+  }
+  .email-example .p-l-4-xs {
+    padding-left: 20px !important;
+  }
+  .email-example .p-l-5-xs {
+    padding-left: 25px !important;
+  }
+  .email-example .p-r-0-xs {
+    padding-right: 0px !important;
+  }
+  .email-example .p-r-1-xs {
+    padding-right: 5px !important;
+  }
+  .email-example .p-r-2-xs {
+    padding-right: 10px !important;
+  }
+  .email-example .p-r-3-xs {
+    padding-right: 15px !important;
+  }
+  .email-example .p-r-4-xs {
+    padding-right: 20px !important;
+  }
+  .email-example .p-r-5-xs {
+    padding-right: 25px !important;
+  }
+  .email-example .p-lr-0-xs {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .email-example .p-lr-1-xs {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .email-example .p-lr-2-xs {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .email-example .p-lr-3-xs {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .email-example .p-lr-4-xs {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .email-example .p-lr-5-xs {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .email-example .p-tb-0-xs {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-tb-1-xs {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-tb-2-xs {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-tb-3-xs {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-tb-4-xs {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-tb-5-xs {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .p-0-sm {
+    padding: 0px !important;
+  }
+  .email-example .p-1-sm {
+    padding: 5px !important;
+  }
+  .email-example .p-2-sm {
+    padding: 10px !important;
+  }
+  .email-example .p-3-sm {
+    padding: 15px !important;
+  }
+  .email-example .p-4-sm {
+    padding: 20px !important;
+  }
+  .email-example .p-5-sm {
+    padding: 25px !important;
+  }
+  .email-example .p-t-0-sm {
+    padding-top: 0px !important;
+  }
+  .email-example .p-t-1-sm {
+    padding-top: 5px !important;
+  }
+  .email-example .p-t-2-sm {
+    padding-top: 10px !important;
+  }
+  .email-example .p-t-3-sm {
+    padding-top: 15px !important;
+  }
+  .email-example .p-t-4-sm {
+    padding-top: 20px !important;
+  }
+  .email-example .p-t-5-sm {
+    padding-top: 25px !important;
+  }
+  .email-example .p-b-0-sm {
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-b-1-sm {
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-b-2-sm {
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-b-3-sm {
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-b-4-sm {
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-b-5-sm {
+    padding-bottom: 25px !important;
+  }
+  .email-example .p-l-0-sm {
+    padding-left: 0px !important;
+  }
+  .email-example .p-l-1-sm {
+    padding-left: 5px !important;
+  }
+  .email-example .p-l-2-sm {
+    padding-left: 10px !important;
+  }
+  .email-example .p-l-3-sm {
+    padding-left: 15px !important;
+  }
+  .email-example .p-l-4-sm {
+    padding-left: 20px !important;
+  }
+  .email-example .p-l-5-sm {
+    padding-left: 25px !important;
+  }
+  .email-example .p-r-0-sm {
+    padding-right: 0px !important;
+  }
+  .email-example .p-r-1-sm {
+    padding-right: 5px !important;
+  }
+  .email-example .p-r-2-sm {
+    padding-right: 10px !important;
+  }
+  .email-example .p-r-3-sm {
+    padding-right: 15px !important;
+  }
+  .email-example .p-r-4-sm {
+    padding-right: 20px !important;
+  }
+  .email-example .p-r-5-sm {
+    padding-right: 25px !important;
+  }
+  .email-example .p-lr-0-sm {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .email-example .p-lr-1-sm {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .email-example .p-lr-2-sm {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .email-example .p-lr-3-sm {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .email-example .p-lr-4-sm {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .email-example .p-lr-5-sm {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .email-example .p-tb-0-sm {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-tb-1-sm {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-tb-2-sm {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-tb-3-sm {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-tb-4-sm {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-tb-5-sm {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .p-0-md {
+    padding: 0px !important;
+  }
+  .email-example .p-1-md {
+    padding: 5px !important;
+  }
+  .email-example .p-2-md {
+    padding: 10px !important;
+  }
+  .email-example .p-3-md {
+    padding: 15px !important;
+  }
+  .email-example .p-4-md {
+    padding: 20px !important;
+  }
+  .email-example .p-5-md {
+    padding: 25px !important;
+  }
+  .email-example .p-t-0-md {
+    padding-top: 0px !important;
+  }
+  .email-example .p-t-1-md {
+    padding-top: 5px !important;
+  }
+  .email-example .p-t-2-md {
+    padding-top: 10px !important;
+  }
+  .email-example .p-t-3-md {
+    padding-top: 15px !important;
+  }
+  .email-example .p-t-4-md {
+    padding-top: 20px !important;
+  }
+  .email-example .p-t-5-md {
+    padding-top: 25px !important;
+  }
+  .email-example .p-b-0-md {
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-b-1-md {
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-b-2-md {
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-b-3-md {
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-b-4-md {
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-b-5-md {
+    padding-bottom: 25px !important;
+  }
+  .email-example .p-l-0-md {
+    padding-left: 0px !important;
+  }
+  .email-example .p-l-1-md {
+    padding-left: 5px !important;
+  }
+  .email-example .p-l-2-md {
+    padding-left: 10px !important;
+  }
+  .email-example .p-l-3-md {
+    padding-left: 15px !important;
+  }
+  .email-example .p-l-4-md {
+    padding-left: 20px !important;
+  }
+  .email-example .p-l-5-md {
+    padding-left: 25px !important;
+  }
+  .email-example .p-r-0-md {
+    padding-right: 0px !important;
+  }
+  .email-example .p-r-1-md {
+    padding-right: 5px !important;
+  }
+  .email-example .p-r-2-md {
+    padding-right: 10px !important;
+  }
+  .email-example .p-r-3-md {
+    padding-right: 15px !important;
+  }
+  .email-example .p-r-4-md {
+    padding-right: 20px !important;
+  }
+  .email-example .p-r-5-md {
+    padding-right: 25px !important;
+  }
+  .email-example .p-lr-0-md {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .email-example .p-lr-1-md {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .email-example .p-lr-2-md {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .email-example .p-lr-3-md {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .email-example .p-lr-4-md {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .email-example .p-lr-5-md {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .email-example .p-tb-0-md {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-tb-1-md {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-tb-2-md {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-tb-3-md {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-tb-4-md {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-tb-5-md {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .p-0-lg {
+    padding: 0px !important;
+  }
+  .email-example .p-1-lg {
+    padding: 5px !important;
+  }
+  .email-example .p-2-lg {
+    padding: 10px !important;
+  }
+  .email-example .p-3-lg {
+    padding: 15px !important;
+  }
+  .email-example .p-4-lg {
+    padding: 20px !important;
+  }
+  .email-example .p-5-lg {
+    padding: 25px !important;
+  }
+  .email-example .p-t-0-lg {
+    padding-top: 0px !important;
+  }
+  .email-example .p-t-1-lg {
+    padding-top: 5px !important;
+  }
+  .email-example .p-t-2-lg {
+    padding-top: 10px !important;
+  }
+  .email-example .p-t-3-lg {
+    padding-top: 15px !important;
+  }
+  .email-example .p-t-4-lg {
+    padding-top: 20px !important;
+  }
+  .email-example .p-t-5-lg {
+    padding-top: 25px !important;
+  }
+  .email-example .p-b-0-lg {
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-b-1-lg {
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-b-2-lg {
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-b-3-lg {
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-b-4-lg {
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-b-5-lg {
+    padding-bottom: 25px !important;
+  }
+  .email-example .p-l-0-lg {
+    padding-left: 0px !important;
+  }
+  .email-example .p-l-1-lg {
+    padding-left: 5px !important;
+  }
+  .email-example .p-l-2-lg {
+    padding-left: 10px !important;
+  }
+  .email-example .p-l-3-lg {
+    padding-left: 15px !important;
+  }
+  .email-example .p-l-4-lg {
+    padding-left: 20px !important;
+  }
+  .email-example .p-l-5-lg {
+    padding-left: 25px !important;
+  }
+  .email-example .p-r-0-lg {
+    padding-right: 0px !important;
+  }
+  .email-example .p-r-1-lg {
+    padding-right: 5px !important;
+  }
+  .email-example .p-r-2-lg {
+    padding-right: 10px !important;
+  }
+  .email-example .p-r-3-lg {
+    padding-right: 15px !important;
+  }
+  .email-example .p-r-4-lg {
+    padding-right: 20px !important;
+  }
+  .email-example .p-r-5-lg {
+    padding-right: 25px !important;
+  }
+  .email-example .p-lr-0-lg {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .email-example .p-lr-1-lg {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .email-example .p-lr-2-lg {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .email-example .p-lr-3-lg {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .email-example .p-lr-4-lg {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .email-example .p-lr-5-lg {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .email-example .p-tb-0-lg {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-tb-1-lg {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-tb-2-lg {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-tb-3-lg {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-tb-4-lg {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-tb-5-lg {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .p-0-xl {
+    padding: 0px !important;
+  }
+  .email-example .p-1-xl {
+    padding: 5px !important;
+  }
+  .email-example .p-2-xl {
+    padding: 10px !important;
+  }
+  .email-example .p-3-xl {
+    padding: 15px !important;
+  }
+  .email-example .p-4-xl {
+    padding: 20px !important;
+  }
+  .email-example .p-5-xl {
+    padding: 25px !important;
+  }
+  .email-example .p-t-0-xl {
+    padding-top: 0px !important;
+  }
+  .email-example .p-t-1-xl {
+    padding-top: 5px !important;
+  }
+  .email-example .p-t-2-xl {
+    padding-top: 10px !important;
+  }
+  .email-example .p-t-3-xl {
+    padding-top: 15px !important;
+  }
+  .email-example .p-t-4-xl {
+    padding-top: 20px !important;
+  }
+  .email-example .p-t-5-xl {
+    padding-top: 25px !important;
+  }
+  .email-example .p-b-0-xl {
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-b-1-xl {
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-b-2-xl {
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-b-3-xl {
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-b-4-xl {
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-b-5-xl {
+    padding-bottom: 25px !important;
+  }
+  .email-example .p-l-0-xl {
+    padding-left: 0px !important;
+  }
+  .email-example .p-l-1-xl {
+    padding-left: 5px !important;
+  }
+  .email-example .p-l-2-xl {
+    padding-left: 10px !important;
+  }
+  .email-example .p-l-3-xl {
+    padding-left: 15px !important;
+  }
+  .email-example .p-l-4-xl {
+    padding-left: 20px !important;
+  }
+  .email-example .p-l-5-xl {
+    padding-left: 25px !important;
+  }
+  .email-example .p-r-0-xl {
+    padding-right: 0px !important;
+  }
+  .email-example .p-r-1-xl {
+    padding-right: 5px !important;
+  }
+  .email-example .p-r-2-xl {
+    padding-right: 10px !important;
+  }
+  .email-example .p-r-3-xl {
+    padding-right: 15px !important;
+  }
+  .email-example .p-r-4-xl {
+    padding-right: 20px !important;
+  }
+  .email-example .p-r-5-xl {
+    padding-right: 25px !important;
+  }
+  .email-example .p-lr-0-xl {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .email-example .p-lr-1-xl {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .email-example .p-lr-2-xl {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .email-example .p-lr-3-xl {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .email-example .p-lr-4-xl {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .email-example .p-lr-5-xl {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .email-example .p-tb-0-xl {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .email-example .p-tb-1-xl {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .email-example .p-tb-2-xl {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .email-example .p-tb-3-xl {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+  .email-example .p-tb-4-xl {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .email-example .p-tb-5-xl {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+.email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
+  color: #40484a;
+  display: block;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.3 !important;
+  text-rendering: optimizeLegibility;
+}
+
+.email-example h0 {
+  font-size: 48px !important;
+}
+
+.email-example h1 {
+  font-size: 36px !important;
+}
+
+.email-example h2 {
+  font-size: 28px !important;
+}
+
+.email-example h3 {
+  font-size: 20px !important;
+}
+
+.email-example h4 {
+  font-size: 18px !important;
+}
+
+.email-example h5 {
+  font-size: 16px !important;
+}
+
+.email-example h6 {
+  font-size: 14px !important;
+}
+
+@media screen {
+  .email-example .text-0-xs {
+    font-size: 48px !important;
+  }
+  .email-example .text-1-xs {
+    font-size: 36px !important;
+  }
+  .email-example .text-2-xs {
+    font-size: 28px !important;
+  }
+  .email-example .text-3-xs {
+    font-size: 20px !important;
+  }
+  .email-example .text-4-xs {
+    font-size: 18px !important;
+  }
+  .email-example .text-5-xs {
+    font-size: 16px !important;
+  }
+  .email-example .text-6-xs {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .text-0-sm {
+    font-size: 48px !important;
+  }
+  .email-example .text-1-sm {
+    font-size: 36px !important;
+  }
+  .email-example .text-2-sm {
+    font-size: 28px !important;
+  }
+  .email-example .text-3-sm {
+    font-size: 20px !important;
+  }
+  .email-example .text-4-sm {
+    font-size: 18px !important;
+  }
+  .email-example .text-5-sm {
+    font-size: 16px !important;
+  }
+  .email-example .text-6-sm {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .text-0-md {
+    font-size: 48px !important;
+  }
+  .email-example .text-1-md {
+    font-size: 36px !important;
+  }
+  .email-example .text-2-md {
+    font-size: 28px !important;
+  }
+  .email-example .text-3-md {
+    font-size: 20px !important;
+  }
+  .email-example .text-4-md {
+    font-size: 18px !important;
+  }
+  .email-example .text-5-md {
+    font-size: 16px !important;
+  }
+  .email-example .text-6-md {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .text-0-lg {
+    font-size: 48px !important;
+  }
+  .email-example .text-1-lg {
+    font-size: 36px !important;
+  }
+  .email-example .text-2-lg {
+    font-size: 28px !important;
+  }
+  .email-example .text-3-lg {
+    font-size: 20px !important;
+  }
+  .email-example .text-4-lg {
+    font-size: 18px !important;
+  }
+  .email-example .text-5-lg {
+    font-size: 16px !important;
+  }
+  .email-example .text-6-lg {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .text-0-xl {
+    font-size: 48px !important;
+  }
+  .email-example .text-1-xl {
+    font-size: 36px !important;
+  }
+  .email-example .text-2-xl {
+    font-size: 28px !important;
+  }
+  .email-example .text-3-xl {
+    font-size: 20px !important;
+  }
+  .email-example .text-4-xl {
+    font-size: 18px !important;
+  }
+  .email-example .text-5-xl {
+    font-size: 16px !important;
+  }
+  .email-example .text-6-xl {
+    font-size: 14px !important;
+  }
+}
+
+.email-example hr {
+  height: 0;
+  margin: 30px 0;
+  border-top: 1px solid #f0f2f4;
+}
+
+.email-example p {
+  color: #576366;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.email-example .regular {
+  font-weight: normal !important;
+}
+
+.email-example strong,
+.email-example .bold {
+  font-weight: 500 !important;
+}
+
+.email-example em,
+.email-example .italic {
+  font-style: italic !important;
+}
+
+.email-example .caps {
+  text-transform: uppercase;
+}
+
+.email-example a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+}
+
+.email-example a:hover, .email-example a:active, .email-example a:focus {
+  color: #326e99;
+}
+
+.email-example code {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.email-example address {
+  font-size: 0.875rem;
+}
+
+@media screen {
+  .email-example .text-left-xs {
+    text-align: left !important;
+  }
+  .email-example .text-right-xs {
+    text-align: right !important;
+  }
+  .email-example .text-center-xs {
+    text-align: center !important;
+  }
+  .email-example .text-justify-xs {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-example .text-left-sm {
+    text-align: left !important;
+  }
+  .email-example .text-right-sm {
+    text-align: right !important;
+  }
+  .email-example .text-center-sm {
+    text-align: center !important;
+  }
+  .email-example .text-justify-sm {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .email-example .text-left-md {
+    text-align: left !important;
+  }
+  .email-example .text-right-md {
+    text-align: right !important;
+  }
+  .email-example .text-center-md {
+    text-align: center !important;
+  }
+  .email-example .text-justify-md {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .email-example .text-left-lg {
+    text-align: left !important;
+  }
+  .email-example .text-right-lg {
+    text-align: right !important;
+  }
+  .email-example .text-center-lg {
+    text-align: center !important;
+  }
+  .email-example .text-justify-lg {
+    text-align: justify !important;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .email-example .text-left-xl {
+    text-align: left !important;
+  }
+  .email-example .text-right-xl {
+    text-align: right !important;
+  }
+  .email-example .text-center-xl {
+    text-align: center !important;
+  }
+  .email-example .text-justify-xl {
+    text-align: justify !important;
+  }
+}
+
+.email-example ul,
+.email-example ol {
+  color: #576366;
+  margin: 0;
+  padding: 0 0 0 2rem;
+}
+
+.email-example .list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+.email-example html {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: text-colors(dark);
+  background-color: #edeff0;
+}
+
+.email-example body {
+  margin: 0px;
+  padding: 0px;
+  background: #edeff0;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+}
+
+.email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.email-example table[align="center"] {
+  margin: 0 auto;
+}
+
+.email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.email-example h1, .email-example .text-1-xs {
+  font-size: 36px !important;
+}
+
+.email-example h2, .email-example .text-2-xs {
+  font-size: 28px !important;
+}
+
+.email-example h3, .email-example .text-3-xs {
+  font-size: 20px !important;
+}
+
+.email-example h4, .email-example .text-4-xs {
+  font-size: 18px !important;
+}
+
+.email-example h5, .email-example .text-5-xs {
+  font-size: 16px !important;
+}
+
+.email-example h6, .email-example .text-6-xs {
+  font-size: 14px !important;
+}
+
+.email-example .text-7-xs {
+  font-size: 12px !important;
+}
+
+.email-example .footer p {
+  font-size: 12px !important;
+}
+
+.email-example .footer a {
+  font-size: 12px !important;
+}
+
+.email-example a {
+  font-weight: bold;
+}
+
+.email-example p {
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.email-example .bold {
+  font-weight: bold !important;
+}
+
+.email-example a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-example .text-color-light {
+  color: #4f5b5d !important;
+}
+
+.email-example .col-20-xs {
+  width: 20%;
+}
+
+.email-example hr {
+  padding: 0;
+  margin: 8px 0 8px 0;
+  border: none;
+  width: 100%;
+  height: 1px;
+  color: #edeff0;
+  background-color: #edeff0;
+}
+
+.email-example .attribution {
+  opacity: 0.6;
+}
+
 code {
   color: #e3116c;
 }
