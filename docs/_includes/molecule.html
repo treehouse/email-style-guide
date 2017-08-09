@@ -1,0 +1,43 @@
+<div class="border-light-xs p-3-xs round">
+  <h4 class="p-b-3-xs">Atmosphere</h4>
+  <p>{{ include.atmosphere }}</p>
+
+  <h5 class="p-b-1-xs">Vocabulary</h5>
+  <p class="p-b-2-xs">{{ include.vocabulary }}</p>
+
+  <h5 class="p-tb-1-xs">Syntax</h5>
+  <p class="p-b-1-xs">{{ include.syntax }}</p>
+
+  <h5 class="p-tb-1-xs">Semantics</h5>
+  <p>{{ include.semantics }}</p>
+</div>
+
+<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-2-xs">
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-0-md p-r-3-lg code-example">
+    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="{{ include.name }}-code">
+      <li>
+        <a href="#{{ include.name }}-code-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a>
+      </li>
+      <li>
+        <a href="#{{ include.name }}-code-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a>
+      </li>
+    </ul>
+    <div id="{{ include.name }}-code" class="tabgroup">
+      <div id="{{ include.name }}-code-html">
+        <div class="guide-code m-b-3-xs">
+          {% capture code %}{% include_relative {{ include.html }} %}{% endcapture %}
+          <pre><code class="language-html">{{ code | xml_escape }}</code></pre>
+        </div>
+      </div>
+      <div id="{{ include.name }}-code-css">
+        <div class="guide-code m-b-3-xs">
+          {% capture code %}{% include_relative {{ include.css }} %}{% endcapture %}
+          <pre><code class="language-css">{{ code }}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include_relative {{ include.example }} %}
+
+</div>
