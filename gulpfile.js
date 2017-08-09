@@ -16,6 +16,7 @@ const dir = {
 gulp.task('css', () => {
   const src = dir.src + 'sass/email-style.sass';
   const dest = dir.dest + 'css/';
+  const docsDest = dir.docs + 'css/';
 
   const sassOpts = {
     outputStyle: 'expanded',
@@ -29,7 +30,8 @@ gulp.task('css', () => {
   gulp.src(src)
     .pipe(sass(sassOpts)
     .on('error', sass.logError))
-    .pipe(gulp.dest(dest));
+    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(docsDest));
 });
 
 gulp.task('docs:css', () => {
@@ -73,8 +75,8 @@ gulp.task('jekyll', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch(dir.src + '**/*.sass', ['css'])
-  gulp.watch(dir.docsSrc + '**/*.sass', ['docs:css'])
+  gulp.watch(dir.src + 'sass/**/*', ['css'])
+  gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
 });
 
 gulp.task('default', ['src', 'docs', 'jekyll']);

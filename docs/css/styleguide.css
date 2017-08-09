@@ -10410,20 +10410,40 @@ h1, h2, h3, h4 {
   color: #40484a;
 }
 
-h1, esg-h1 {
+h1, .esg-h1 {
   font-size: 36px !important;
 }
 
-h2, esg-h2 {
+h2, .esg-h2 {
   font-size: 28px !important;
 }
 
-h3, esg-h3 {
+h3, .esg-h3 {
   font-size: 20px !important;
 }
 
-h4, esg-h4 {
+h4, .esg-h4 {
   font-size: 18px !important;
+}
+
+h5, .esg-h5 {
+  font-size: 16px !important;
+}
+
+p, .esg-p {
+  font-size: 16px;
+  line-height: 180%;
+}
+
+table[align="center"], .esg-table {
+  margin: 0 auto;
+}
+
+a, esg-a, .esg-link {
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 code {
