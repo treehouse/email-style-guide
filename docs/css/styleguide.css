@@ -10351,10 +10351,6 @@ a {
   clear: both;
 }
 
-.email-example body {
-  background-color: red;
-}
-
 .email-example *, .email-example :after, .email-example :before {
   box-sizing: border-box;
 }
@@ -14014,38 +14010,6 @@ a {
   margin: 0 auto;
 }
 
-.email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-}
-
-.email-example h1, .email-example .text-1-xs {
-  font-size: 36px !important;
-}
-
-.email-example h2, .email-example .text-2-xs {
-  font-size: 28px !important;
-}
-
-.email-example h3, .email-example .text-3-xs {
-  font-size: 20px !important;
-}
-
-.email-example h4, .email-example .text-4-xs {
-  font-size: 18px !important;
-}
-
-.email-example h5, .email-example .text-5-xs {
-  font-size: 16px !important;
-}
-
-.email-example h6, .email-example .text-6-xs {
-  font-size: 14px !important;
-}
-
-.email-example .text-7-xs {
-  font-size: 12px !important;
-}
-
 .email-example .footer p {
   font-size: 12px !important;
 }
@@ -14058,12 +14022,6 @@ a {
   font-weight: bold;
 }
 
-.email-example p {
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 180%;
-}
-
 .email-example .bold {
   font-weight: bold !important;
 }
@@ -14074,14 +14032,6 @@ a {
   transition: color 300ms 0s ease;
   text-decoration: none;
   font-weight: bold;
-}
-
-.email-example .text-color-light {
-  color: #4f5b5d !important;
-}
-
-.email-example .col-20-xs {
-  width: 20%;
 }
 
 .email-example hr {
