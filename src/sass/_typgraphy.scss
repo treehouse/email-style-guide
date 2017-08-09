@@ -1,0 +1,26 @@
+h1, h2, h3, h4 {
+    font-family: $font-family;
+    color: map-get( $text-colors, dark )
+}
+// text sizes for each header
+@for $num from 1 through 5 {
+  h#{$num}, .#{$esg-prefix}-h#{$num} {
+    font-size: text-size($num) !important;
+  }
+}
+
+p, .#{$esg-prefix}-p {
+  font-size: map-get( $text-size, 5 );
+  line-height: 180%;
+}
+
+table[align="center"], .#{$esg-prefix}-table {
+  margin: 0 auto;
+}
+a, #{$esg-prefix}-a, .#{$esg-prefix}-link {
+  color: map-get( $ui-colors, blue);
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
+}

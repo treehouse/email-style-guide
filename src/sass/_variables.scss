@@ -1,3 +1,43 @@
+$esg-version: "0.0.1";
+$esg-prefix: "esg";
+
+// Type Variables
+$font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+
+// Brand Colors
+$brand-colors: (
+  "green": #5fcf80,
+  "gray":  #3e474f
+);
+
+// Text Colors
+$text-colors: (
+  "dark":     #40484a,
+  "medium":   #4b5658,
+  "base":     #576366,
+  "light":    #7b8b8e,
+  "white":    #fff
+);
+
+// Gray Colors
+$gray-colors: (
+  "gray-darker":  #2d3339,
+  "gray-dark":    #3f4850,
+  "gray":         #c6ccd2,
+  "gray-light":   #edeff0,
+  "gray-lighter": #f9fafa
+);
+
+// UI Colors
+$ui-colors: (
+  "blue":         #3f8abf,
+  "green":        #36b55c,
+  "yellow":       #ffd466,
+  "orange":       #ff9f1f,
+  "red":          #ed5a5a
+);
+
+
 $spacing: (
   0: 0px,
   1: 5px,
@@ -13,6 +53,5 @@ $text-size: (
   2: 28px,
   3: 20px,
   4: 18px,
-  5: 16px,
-  6: 14px
+  5: 16px
 );

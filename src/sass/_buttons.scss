@@ -1,0 +1,39 @@
+.#{$esg-prefix}-button {
+  box-sizing: border-box;
+  color: map-get( $text-colors, white);
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: map-get( $text-size, 5 );
+  text-transform: capitalize;
+  background: map-get( $brand-colors, green);
+  margin: 0;
+  padding: 18px;
+  font-weight: bold;
+  border: 1px solid map-get( $brand-colors, green);
+  font-family: $font-family;
+  height: inherit;
+  line-height: inherit;
+  &-wrap {
+    box-sizing: border-box;
+    border-collapse: separate !important;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    width: auto;
+    &-centered {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-inner {
+      box-sizing: border-box;
+      vertical-align: top;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-radius: 5px;
+      background: #5fcf80;
+      text-align: center;
+    }
+  }
+}
