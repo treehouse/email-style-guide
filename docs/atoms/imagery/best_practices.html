@@ -9,19 +9,10 @@
   <li class="p-b-1-xs"><span class="bold">Don't put text in images</span>. Text is put outside images in order to gain control over readability at small screen sizes.</li>
 </ul>
 
-<div class="flex-block-xs flex-wrap-xs p-b-2-xs">
-  <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs">
-    <p class="bold m-b-2-xs">Do</p>
-    <div class="bg-gray-light round p-3-xs m-r-2-xs">
-      <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
-      <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-    </div>
-  </div>
-  <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs p-l-2-xs">
-    <p class="bold m-b-2-xs">Don't</p>
-    <div class="bg-gray-light round p-3-xs">
-      <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
-      <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-    </div>
-  </div>
-</div>
+{% include do_vs_dont.html
+ do_text = "Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit."
+ do_image = "/img/image-full.png"
+ dont_text = "Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit."
+ dont_image = "/img/image-full.png"
+%}
+
