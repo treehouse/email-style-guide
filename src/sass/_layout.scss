@@ -46,29 +46,28 @@
 
 
 /* Wrapper */
-
-.wrap {
+.#{$esg-prefix}-wrap {
   height: 100% !important;
   margin: 0;
   padding: 0;
   width: 100% !important;
-}
-.wrap-inner {
-  vertical-align: top;
-  padding-bottom: 15px;
-  border-collapse: collapse;
-}
-.wrap-inner-table {
-  width: 90%;
-  max-width: 600px;
-  margin-right: 5%;
-  margin-left: 5%;
-  display: block;
-}
-.wrap-inner-table-wrap {
-  vertical-align: top;
-  border-collapse: collapse;
-}
-.wrap-inner-table-wrap-inner {
-  width: 100%;
+  &-inner {
+    vertical-align: top;
+    padding-bottom: 15px;
+    border-collapse: collapse;
+    &-table {
+      width: 90%;
+      max-width: 600px;
+      margin-right: 5%;
+      margin-left: 5%;
+      display: block;
+      &-wrap {
+        vertical-align: top;
+        border-collapse: collapse;
+        &-inner {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
