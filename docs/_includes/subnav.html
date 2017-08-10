@@ -3,7 +3,7 @@
     <ul class="subnav list-unstyled">
       {% for p in page.subnav %}
         <li class="subnav-item">
-          <a class="subnav-link" href="#{{ p }}">{{ p }}</a>
+          <a class="subnav-link" href="#{{ p | downcase | replace:' ','-' }}">{{ p }}</a>
         </li>
       {% endfor %}
     </ul>
