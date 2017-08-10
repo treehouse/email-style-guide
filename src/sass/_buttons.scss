@@ -31,8 +31,7 @@
       vertical-align: top;
       mso-table-lspace: 0pt;
       mso-table-rspace: 0pt;
-      border-radius: 5px;
-      background: #5fcf80;
+      background: map-get( $brand-colors, green);
       text-align: center;
     }
   }
