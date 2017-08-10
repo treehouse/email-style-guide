@@ -1,34 +1,37 @@
 ---
 layout: default
 title: Footer
+subnav:
+  - Default
+  - Signature
 ---
+<div class="p-b-2-xs">
+  <h3 class="p-b-2-xs" id="Guidelines">Guidelines</h3>
+  <p>TODO</p>
+</div>
 
-{% capture footer_semantics %}
+{% capture default_semantics %}
   The footer provides copyright information, key links for easy access, and links to our social media accounts. The reply address is there in case the user wants to get in touch with us. The account management links - "Manage Email Notifications" and "Unsubscribe" are a requirement so the user can be in control of their email communications.
 {% endcapture %}
 
-{% include molecule.html
-  name = "footer"
+{% include section.html
+  id = "default"
+  title = "Default"
   vocabulary = "Footer"
   syntax = "This appears at the bottom of every email."
-  semantics = footer_semantics
-  html = "code/footer.html"
-  css = "code/footer.css"
-  example = "examples/footer.html"
+  semantics = default_semantics
+  html = "footer/code/default.html"
+  css = "footer/code/default.css"
+  example = "footer/examples/default.html"
 %}
 
-<h2 class="p-tb-3-xs" id="colored-section">Signature</h2>
-
-{% capture footer_semantics %}
-  The footer provides copyright information, key links for easy access, and links to our social media accounts. The reply address is there in case the user wants to get in touch with us. The account management links - "Manage Email Notifications" and "Unsubscribe" are a requirement so the user can be in control of their email communications.
-{% endcapture %}
-
-{% include molecule.html
-  name = "signature"
+{% include section.html
+  id = "signature"
+  title = "Signature"
   vocabulary = "Signature"
   syntax = "This appears at the bottom of the white section in every email. For emails sent from a specific person, use the Personal one. For emails sent from Treehouse, use the Generic one."
   semantics = "The signature is a friendly way to end an email. If signed with an individual's name, it gives the email a personable feel and creates a sense of familiarity with the person."
-  html = "code/signature.html"
-  css = "code/signature.css"
-  example = "examples/signature.html"
+  html = "footer/code/signature.html"
+  css = "footer/code/signature.css"
+  example = "footer/examples/signature.html"
 %}
