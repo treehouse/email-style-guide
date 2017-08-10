@@ -2,8 +2,6 @@
 layout: default
 title: Imagery
 subnav:
-  - Guidelines
-  - Best Practices
   - Full Width
   - Inline
   - Attribution
@@ -13,285 +11,122 @@ subnav:
   - Videos
   - Icons
 ---
-      <h3 class="p-b-2-xs" id="Guidelines">Guidelines</h3>
-      <p>Words words words about when to use a photo vs. an image vs. a GIF vs. a video</p>
-      <h3 class="p-tb-2-xs" id="bestpractices-section">Best Practices</h3>
-      <ul>
-        <li class="p-b-1-xs"><span class="bold">Keep the aspect ratio</span>. Don't warp the images. Constrain proportions to retain the aspect ratio of the original image.</li>
-        <li class="p-b-1-xs"><span class="bold">Make it retina-ready</span>. Save images at 2x. This ensures retina-ready images. The images will be scaled down to fit.</li>
-        <li class="p-b-1-xs"><span class="bold">Don't use background images</span>. They don't work in Microsoft Outlook or in Gmail.</li>
-        <li class="p-b-1-xs"><span class="bold">Plan for text-only emails</span>. Prepare for the emails to be viewed without images. Include alt text that describes the image. Clients such as Outlook, AOL, and Yahoo have images blocked by default, and in other clients users can turn this on in their preferences.</li>
-        <li class="p-b-1-xs"><span class="bold">Images can be links</span></li>
-        <li class="p-b-1-xs"><span class="bold">Keep images under x</span>. Large file sizes take too long to load.</li>
-        <li class="p-b-1-xs"><span class="bold">Don't put text in images</span>. Text is put outside images in order to gain control over readability at small screen sizes.</li>
-      </ul>
+<h3 class="p-b-2-xs" id="Guidelines">Guidelines</h3>
+<p>Words words words about when to use a photo vs. an image vs. a GIF vs. a video</p>
+<h3 class="p-tb-2-xs" id="bestpractices-section">Best Practices</h3>
+<ul>
+  <li class="p-b-1-xs"><span class="bold">Keep the aspect ratio</span>. Don't warp the images. Constrain proportions to retain the aspect ratio of the original image.</li>
+  <li class="p-b-1-xs"><span class="bold">Make it retina-ready</span>. Save images at 2x. This ensures retina-ready images. The images will be scaled down to fit.</li>
+  <li class="p-b-1-xs"><span class="bold">Don't use background images</span>. They don't work in Microsoft Outlook or in Gmail.</li>
+  <li class="p-b-1-xs"><span class="bold">Plan for text-only emails</span>. Prepare for the emails to be viewed without images. Include alt text that describes the image. Clients such as Outlook, AOL, and Yahoo have images blocked by default, and in other clients users can turn this on in their preferences.</li>
+  <li class="p-b-1-xs"><span class="bold">Images can be links</span></li>
+  <li class="p-b-1-xs"><span class="bold">Keep images under x</span>. Large file sizes take too long to load.</li>
+  <li class="p-b-1-xs"><span class="bold">Don't put text in images</span>. Text is put outside images in order to gain control over readability at small screen sizes.</li>
+</ul>
 
-      <div class="flex-block-xs flex-wrap-xs p-b-2-xs">
-        <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs">
-          <p class="bold m-b-2-xs">Do</p>
-          <div class="bg-gray-light round p-3-xs m-r-2-xs">
-            <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-        <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs p-l-2-xs">
-          <p class="bold m-b-2-xs">Don't</p>
-          <div class="bg-gray-light round p-3-xs">
-            <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Full Width">Full Width</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">Full Width Image</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">Full width photographs span the width of the white section.</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>These are used when you want a section of content to stand out as a featured section.</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-tb-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg m-t-3-xs code-example">
-          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="image-full">
-            <li><a href="#image-full-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
-            <li><a href="#image-full-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
-          </ul>
-          <div id="image-full" class="tabgroup">
-            <div id="image-full-html">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-html">&lt;td class="text-center-xs image-full" align="center"&gt;
-          &lt;img width="600" src="image-full.png" alt="Placeholder"&gt;
-      &lt;/td&gt;</code></pre>
-              </div>
-            </div>
-            <div id="image-full-css">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-css">.image-full img {
-        width: 600px;
-        min-width: 100%;
-        max-width: 100%;
-        height: auto;
-        border: 0;
-        line-height: 100%;
-        outline: none;
-        text-decoration: none;
-        text-align: center;
-  }</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Inline">Inline</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">Inline Image</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">Inline images sit within the width of the white section, but show padding on the left and right side.</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>These are used to reinforce or expand upon the supporting text.</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg m-t-3-xs code-example">
-          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="image-inline">
-            <li><a href="#image-inline-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
-            <li><a href="#image-inline-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
-          </ul>
-          <div id="image-inline" class="tabgroup">
-            <div id="image-inline-html">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-html">&lt;img src="image-full.png" alt="Placeholder"&gt;&lt;/img&gt;</code></pre>
-              </div>
-            </div>
-            <div id="image-inline-css">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-css">img {
-        width: 100%;
-        max-width: 512px;
-      }</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Attribution">Attribution</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">Attribution, Image Source, Image Credit</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">Attribution lines sit below the right bottom corner of the image.</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>Some images we use require attribution. The attribution line conveys the image source without competing with the other content in the email.</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-            <span class="block-xs text-color-light p-t-2-xs text-7-xs text-right-xs">Photo by Daria Nepriakhina / CC0</span>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg m-t-3-xs code-example">
-          <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="attribution">
-            <li><a href="#attribution-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
-            <li><a href="#attribution-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
-          </ul>
-          <div id="attribution" class="tabgroup">
-            <div id="attribution-html">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-html">&lt;span class="block-xs text-color-light p-t-2-xs text-7-xs text-right-xs">Photo by Daria Nepriakhina / CC0&lt;/span&gt;</code></pre>
-              </div>
-            </div>
-            <div id="attribution-css">
-              <div class="guide-code m-b-3-xs">
-                <pre><code class="language-css">.attribution {
-  opacity: .6;
-}</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Photography">Photography</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">Full Width Image</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">Full width photographs span the width of the white section.</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>These are used when you want a section of content to stand out as a featured section.</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-tb-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-100-lg">
-          <h4 class="p-t-5-xs p-b-1-xs">Choosing the Right Photography</h5>
-          <ul>
-            <li class="p-b-1-xs"><span class="bold">In-House Photography</span>. We have some photography that has been made for us. (Note to self: pull images from <a href="https://teamtreehouse.invisionapp.com/boards/7G1SJ2H93XUMC/" target="_blank">InVision Photography board</a> and Google Drive folder)</li>
-            <li class="p-b-1-xs"><span class="bold">Stock Photography</span>. Stock photography is another option.</li>
-            <li><span class="bold">Creative Commons Photography</span>. If using photos that require attribution, such as some Creative Commons photos, follow the attribution guidelines.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Illustrations">Illustrations</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">x</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">x</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>x</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="GIFs">GIFs</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">x</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">x</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>Note: Create a fallback for non-supported animated GIFs. Be aware that some clients won't show animated GIFs. Instead, they only show the first frame, so make sure that image makes sense in your layout. Clients that don't support animated GIFs include Outlook (2007, 2010 and 2013) and Windows Phone 7.</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
-          </div>
-        </div>
-      </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Videos">Videos</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">x</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">x</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>x</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            <img class="w-full-xs" src="{{ site.baseurl }}/img/video/video-this-week-at-treehouse-img.png" alt="Correct - Video Link">
-          </div>
-        </div>
-        <div class="flex-basis-100-xs p-r-2-xs">
-          <h5 class="p-t-4-xs p-b-1-xs">Guidelines</h5>
-          <ul>
-            <li class="p-b-1-xs"><span class="bold">Don't embed videos directly into emails</span>. Embedded videos aren't widely supported across email clients. Instead, include a video still and then link that picture to the video so that the video plays in a new tab.</li>
-            <li class="p-b-1-xs"><span class="bold">Use linked inline image</span>. Add the video still as a regular inline image and wrap it in a link to the video.</li>
-            <li class="p-b-1-xs"><span class="bold">Make it look like an app video</span>. Video previews should look like the videos in the Treehouse library. Don't use video previews automatically generated by MailChimp or other ESPs.</li>
-            <li class="p-b-1-xs"><span class="bold">Choose eye-catching video stills</span>. Choose a video still that doesn't have any text in it and ideally features a person. People are more attracted to images with people.</li>
-            <li><span class="bold">Use this handy tool</span>. You can use <a href="http://www.youtubescreenshot.com" target="_blank">youtubescreenshot.com</a> to easily generate a video still. Choose a moment in the video that features people (ideally) or a catchy visual that represents the gist of the video. Don't choose a frame that includes text.</li>
-          </ul>
-      </div>
+<div class="flex-block-xs flex-wrap-xs p-b-2-xs">
+  <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs">
+    <p class="bold m-b-2-xs">Do</p>
+    <div class="bg-gray-light round p-3-xs m-r-2-xs">
+      <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
+      <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
     </div>
-
-      <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs m-b-4-xs">
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
-          <h3 id="Icons">Icons</h3>
-          <div class="m-t-3-xs round">
-            <h5 class="p-b-1-xs">Vocabulary</h5>
-            <p class="p-b-2-xs">x</p>
-            <h5 class="p-tb-1-xs">Syntax</h5>
-            <p class="p-b-1-xs">x</p>
-            <h5 class="p-tb-1-xs">Semantics</h5>
-            <p>x</p>
-          </div>
-        </div>
-        <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs m-t-5-xs bg-gray-light email-example">
-          <div class="text-bg-white p-5-xs h-full-xs round">
-            Add example here
-          </div>
-        </div>
-        <div class="flex-basis-100-xs p-r-2-xs">
-          <h5 class="p-t-4-xs p-b-1-xs">Guidelines</h5>
-          <ul>
-            <li class="p-b-1-xs"><span class="bold">X</span>. Words words words.</li>
-            <li class="p-b-1-xs"><span class="bold">X</span>. Words words words.</li>
-            <li><span class="bold">X</span>. Words words words.</li>
-          </ul>
-      </div>
+  </div>
+  <div class="flex-basis-50-xs p-t-05-xs p-b-3-xs p-l-2-xs">
+    <p class="bold m-b-2-xs">Don't</p>
+    <div class="bg-gray-light round p-3-xs">
+      <p class="p-b-2-xs">Cras neque massa, ullamcorper dapibus auctor at, condi rhoncus elit.</p>
+      <img class="w-full-xs" src="{{ site.baseurl }}/img/image-full.png" alt="Placeholder">
     </div>
+  </div>
+</div>
+
+
+{% include section.html
+  id = "image-full"
+  title = "Full Width"
+  vocabulary = "Full Width Image"
+  syntax = "Full width photographs span the width of the white section."
+  semantics = "These are used when you want a section of content to stand out as a featured section."
+  html = "imagery/code/full_width.html"
+  css = "imagery/code/full_width.css"
+  example = "imagery/examples/full_width.html"
+%}
+
+{% include section.html
+  id = "image-inline"
+  title = "Inline"
+  vocabulary = "Inline Image"
+  syntax = "Inline images sit within the width of the white section, but show padding on the left and right side."
+  semantics = "These are used to reinforce or expand upon the supporting text."
+  html = "imagery/code/inline.html"
+  css = "imagery/code/inline.css"
+  example = "imagery/examples/inline.html"
+%}
+
+{% include section.html
+  id = "attribution"
+  title = "Attribution"
+  vocabulary = "Attribution, Image Source, Image Credit"
+  syntax = "Attribution lines sit below the right bottom corner of the image."
+  semantics = "Some images we use require attribution. The attribution line conveys the image source without competing with the other content in the email."
+  html = "imagery/code/attribution.html"
+  css = "imagery/code/attribution.css"
+  example = "imagery/examples/attribution.html"
+%}
+
+{% include section.html
+  id = "photography"
+  classes = "m-b-4-xs"
+  title = "Photography"
+  vocabulary = "Full Width Image"
+  syntax = "Full width photographs span the width of the white section."
+  semantics = "These are used when you want a section of content to stand out as a featured section."
+  example = "imagery/examples/photography.html"
+  guidelines = "imagery/guidelines/photography.html"
+%}
+
+{% include section.html
+  id = "illustrations"
+  classes = "m-b-4-xs"
+  title = "Illustrations"
+  vocabulary = "TODO"
+  syntax = "TODO"
+  semantics = "TODO"
+  example = "imagery/examples/illustrations.html"
+%}
+
+{% include section.html
+  id = "gifs"
+  classes = "m-b-4-xs"
+  title = "GIFs"
+  vocabulary = "TODO"
+  syntax = "TODO"
+  semantics = "Note: Create a fallback for non-supported animated GIFs. Be aware that some clients won't show animated GIFs. Instead, they only show the first frame, so make sure that image makes sense in your layout. Clients that don't support animated GIFs include Outlook (2007, 2010 and 2013) and Windows Phone 7."
+  example = "imagery/examples/gifs.html"
+%}
+
+{% include section.html
+  id = "vidoes"
+  classes = "m-b-4-xs"
+  title = "Videos"
+  vocabulary = "TODO"
+  syntax = "TODO"
+  semantics = "TODO"
+  example = "imagery/examples/videos.html"
+  guidelines = "imagery/guidelines/videos.html"
+%}
+
+{% include section.html
+  id = "icons"
+  classes = "m-b-4-xs"
+  title = "Icons"
+  vocabulary = "TODO"
+  syntax = "TODO"
+  semantics = "TODO"
+  example = "imagery/examples/icons.html"
+%}
+
 
       <h4 class="p-t-3-xs p-b-1-xs">Topics</h4>
       <div class="flex-block-xs flex-wrap-xs border-t-light-xs p-tb-2-xs m-b-2-xs">

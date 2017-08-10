@@ -1,0 +1,11 @@
+.image-full img {
+  width: 600px;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
