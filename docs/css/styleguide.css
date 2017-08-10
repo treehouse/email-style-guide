@@ -9867,6 +9867,7 @@ table td {
 .guide-navigation-link {
   display: block;
   padding: 0.5rem 2rem;
+  font-weight: normal;
 }
 
 .guide-navigation-link-child {
@@ -10349,6 +10350,465 @@ a {
   content: "";
   display: table;
   clear: both;
+}
+
+.email-example html {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
+  background-color: #edeff0;
+}
+
+.email-example body {
+  margin: 0px;
+  padding: 0px;
+  background: #edeff0;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+}
+
+.email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+.email-example h1, .email-example .text-1-xs {
+  font-size: 36px !important;
+}
+
+.email-example h2, .email-example .text-2-xs {
+  font-size: 28px !important;
+}
+
+.email-example h3, .email-example .text-3-xs {
+  font-size: 20px !important;
+}
+
+.email-example h4, .email-example .text-4-xs {
+  font-size: 18px !important;
+}
+
+.email-example h5, .email-example .text-5-xs {
+  font-size: 16px !important;
+}
+
+.email-example h6, .email-example .text-6-xs {
+  font-size: 14px !important;
+}
+
+.email-example .text-7-xs {
+  font-size: 12px !important;
+}
+
+.email-example .footer p {
+  font-size: 12px !important;
+}
+
+.email-example .footer a {
+  font-size: 12px !important;
+}
+
+.email-example a {
+  font-weight: bold;
+}
+
+.email-example p {
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.email-example .bold {
+  font-weight: bold !important;
+}
+
+.email-example a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-example .text-color-light {
+  color: #4f5b5d !important;
+}
+
+.email-example .m-0-xs {
+  margin: 0 !important;
+}
+
+.email-example .m-1-xs {
+  margin: 5px !important;
+}
+
+.email-example .m-2-xs {
+  margin: 10px !important;
+}
+
+.email-example .m-3-xs {
+  margin: 15px !important;
+}
+
+.email-example .m-4-xs {
+  margin: 20px !important;
+}
+
+.email-example .m-5-xs {
+  margin: 25px !important;
+}
+
+.email-example .m-t-0-xs {
+  margin-top: 0px !important;
+}
+
+.email-example .m-t-1-xs {
+  margin-top: 5px !important;
+}
+
+.email-example .m-t-2-xs {
+  margin-top: 10px !important;
+}
+
+.email-example .m-t-3-xs {
+  margin-top: 15px !important;
+}
+
+.email-example .m-t-4-xs {
+  margin-top: 20px !important;
+}
+
+.email-example .m-t-5-xs {
+  margin-top: 25px !important;
+}
+
+.email-example .m-r-0-xs {
+  margin-right: 0px !important;
+}
+
+.email-example .m-r-1-xs {
+  margin-right: 5px !important;
+}
+
+.email-example .m-r-2-xs {
+  margin-right: 10px !important;
+}
+
+.email-example .m-r-3-xs {
+  margin-right: 15px !important;
+}
+
+.email-example .m-r-4-xs {
+  margin-right: 20px !important;
+}
+
+.email-example .m-r-5-xs {
+  margin-right: 25px !important;
+}
+
+.email-example .m-b-0-xs {
+  margin-bottom: 0px !important;
+}
+
+.email-example .m-b-1-xs {
+  margin-bottom: 5px !important;
+}
+
+.email-example .m-b-2-xs {
+  margin-bottom: 10px !important;
+}
+
+.email-example .m-b-3-xs {
+  margin-bottom: 15px !important;
+}
+
+.email-example .m-b-4-xs {
+  margin-bottom: 20px !important;
+}
+
+.email-example .m-b-5-xs {
+  margin-bottom: 25px !important;
+}
+
+.email-example .m-l-0-xs {
+  margin-left: 0px !important;
+}
+
+.email-example .m-l-1-xs {
+  margin-left: 5px !important;
+}
+
+.email-example .m-l-2-xs {
+  margin-left: 10px !important;
+}
+
+.email-example .m-l-3-xs {
+  margin-left: 15px !important;
+}
+
+.email-example .m-l-4-xs {
+  margin-left: 20px !important;
+}
+
+.email-example .m-l-5-xs {
+  margin-left: 25px !important;
+}
+
+.email-example .m-tb-0-xs {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.email-example .m-tb-1-xs {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.email-example .m-tb-2-xs {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.email-example .m-tb-3-xs {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.email-example .m-tb-4-xs {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.email-example .m-tb-5-xs {
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+}
+
+.email-example .m-lr-0-xs {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.email-example .m-lr-1-xs {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.email-example .m-lr-2-xs {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.email-example .m-lr-3-xs {
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.email-example .m-lr-4-xs {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.email-example .m-lr-5-xs {
+  margin-left: 25px !important;
+  margin-right: 25px !important;
+}
+
+.email-example .p-0-xs {
+  padding: 0 !important;
+}
+
+.email-example .p-1-xs {
+  padding: 5px !important;
+}
+
+.email-example .p-2-xs {
+  padding: 10px !important;
+}
+
+.email-example .p-3-xs {
+  padding: 15px !important;
+}
+
+.email-example .p-4-xs {
+  padding: 20px !important;
+}
+
+.email-example .p-5-xs {
+  padding: 25px !important;
+}
+
+.email-example .p-t-0-xs {
+  padding-top: 0px !important;
+}
+
+.email-example .p-t-1-xs {
+  padding-top: 5px !important;
+}
+
+.email-example .p-t-2-xs {
+  padding-top: 10px !important;
+}
+
+.email-example .p-t-3-xs {
+  padding-top: 15px !important;
+}
+
+.email-example .p-t-4-xs {
+  padding-top: 20px !important;
+}
+
+.email-example .p-t-5-xs {
+  padding-top: 25px !important;
+}
+
+.email-example .p-r-0-xs {
+  padding-right: 0px !important;
+}
+
+.email-example .p-r-1-xs {
+  padding-right: 5px !important;
+}
+
+.email-example .p-r-2-xs {
+  padding-right: 10px !important;
+}
+
+.email-example .p-r-3-xs {
+  padding-right: 15px !important;
+}
+
+.email-example .p-r-4-xs {
+  padding-right: 20px !important;
+}
+
+.email-example .p-r-5-xs {
+  padding-right: 25px !important;
+}
+
+.email-example .p-b-0-xs {
+  padding-bottom: 0px !important;
+}
+
+.email-example .p-b-1-xs {
+  padding-bottom: 5px !important;
+}
+
+.email-example .p-b-2-xs {
+  padding-bottom: 10px !important;
+}
+
+.email-example .p-b-3-xs {
+  padding-bottom: 15px !important;
+}
+
+.email-example .p-b-4-xs {
+  padding-bottom: 20px !important;
+}
+
+.email-example .p-b-5-xs {
+  padding-bottom: 25px !important;
+}
+
+.email-example .p-l-0-xs {
+  padding-left: 0px !important;
+}
+
+.email-example .p-l-1-xs {
+  padding-left: 5px !important;
+}
+
+.email-example .p-l-2-xs {
+  padding-left: 10px !important;
+}
+
+.email-example .p-l-3-xs {
+  padding-left: 15px !important;
+}
+
+.email-example .p-l-4-xs {
+  padding-left: 20px !important;
+}
+
+.email-example .p-l-5-xs {
+  padding-left: 25px !important;
+}
+
+.email-example .p-tb-0-xs {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.email-example .p-tb-1-xs {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.email-example .p-tb-2-xs {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.email-example .p-tb-3-xs {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.email-example .p-tb-4-xs {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.email-example .p-tb-5-xs {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+.email-example .p-lr-0-xs {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.email-example .p-lr-1-xs {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.email-example .email-example .p-lr-2-xs {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.email-example .p-lr-3-xs {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.email-example .p-lr-4-xs {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.email-example .p-lr-5-xs {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.email-example .col-20-xs {
+  width: 20%;
+}
+
+.email-example hr {
+  padding: 0;
+  margin: 8px 0 8px 0;
+  border: none;
+  width: 100%;
+  height: 1px;
+  color: #edeff0;
+  background-color: #edeff0;
+}
+
+.email-example .attribution {
+  opacity: 0.6;
 }
 
 code {
