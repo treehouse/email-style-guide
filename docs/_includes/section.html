@@ -1,17 +1,31 @@
-<div class="flex-block-xs flex-wrap-xs flex-justify-end-xs border-t-light-xs p-t-5-xs {{ include.classes }}">
-  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-2-xs">
+<div class="flex-block-xs flex-wrap-xs flex-justify-end-xs {{ include.classes }}">
+  {% capture atmosphere_width %}
+    {%- if include.example or (include.html and include.css) -%}
+      50
+    {%- else -%}
+      100
+    {%- endif -%}
+  {% endcapture %}
+
+  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-{{atmosphere_width}}-lg p-r-2-xs">
     {% if include.title %}
-      <h3 id="{{ include.id }}">{{ include.title }}</h3>
+      <h3 class="m-b-3-xs" id="{{ include.id }}">{{ include.title }}</h3>
     {% endif %}
-    <div class="m-t-3-xs round">
-      <h5 class="p-b-1-xs">Vocabulary</h5>
-      <p class="p-b-2-xs">{{ include.vocabulary }}</p>
+    <div class="round">
+      {% if include.vocabulary %}
+        <h5 class="p-b-1-xs">Vocabulary</h5>
+        <p class="p-b-2-xs">{{ include.vocabulary }}</p>
+      {% endif %}
 
-      <h5 class="p-tb-1-xs">Syntax</h5>
-      <p class="p-b-1-xs">{{ include.syntax }}</p>
+      {% if include.syntax %}
+        <h5 class="p-b-1-xs">Syntax</h5>
+        <p class="p-b-2-xs">{{ include.syntax }}</p>
+      {% endif %}
 
-      <h5 class="p-tb-1-xs">Semantics</h5>
-      <p>{{ include.semantics}}</p>
+      {% if include.semantics %}
+        <h5 class="p-b-1-xs">Semantics</h5>
+        <p>{{ include.semantics}}</p>
+      {% endif %}
     </div>
   </div>
 
