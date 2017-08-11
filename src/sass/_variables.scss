@@ -47,6 +47,17 @@ $spacing: (
   5: 25px
 );
 
+// Spacing Sides
+$spacing-sides: (
+  all: all,
+  t:   top,
+  b:   bottom,
+  l:   left,
+  r:   right,
+  lr:  null,
+  tb:  null
+);
+
 $text-size: (
   0: 48px,
   1: 36px,
