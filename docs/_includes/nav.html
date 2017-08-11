@@ -9,8 +9,9 @@
     Example Templates
   </a>
 </li>
-{% for p in site.data.navs %}
-  {% assign nav = p[1] %}
+
+{% for name in site.nav_order %}
+  {% assign nav = site.data.navs[name] %}
   <li class="guide-navigation-item guide-navigation-item-parent">
     <a href="javascript:void(0)" class="guide-navigation-link">
       {{ nav.name }}
@@ -27,4 +28,3 @@
     </ul>
   </li>
 {% endfor %}
-
