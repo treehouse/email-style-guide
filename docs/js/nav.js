@@ -31,7 +31,7 @@ var isAtmosphere = pageName == "atmosphere/purpose" ||
                    pageName == "atmosphere/accessibility";
 
 var isAtom = pageName == "atoms/typography" ||
-             pageName == "atoms/ctas" ||
+             pageName == "atoms/links" ||
              pageName == "atoms/imagery" ||
              pageName == "atoms/horizontal_rule" ||
              pageName == "atoms/color" ||
