@@ -1,3 +1,18 @@
+<!--
+  Render a section for an atom or molecule.
+
+  id         - A unique id for the section (Optional).
+  classes    - CSS classes that will be applied to the top-level element (Optional).
+  title      - The section title (Optional).
+  vocabulary - Common vocabulary used for the atom or molecule (Optional).
+  syntax     - How the atom or molecule is generally used (Optional).
+  semantics  - Additional semantic info for the atom or molecule (Optional).
+  html       - The relative path to a file containing example HTML code (Optional).
+  css        - The relative path to a file containing example CSS code (Optional).
+  example    - The relative path to a file containing an renderered example (Optional).
+  guidelines - The relative path to a file containing additional guidelines (Optional).
+-->
+
 <div class="flex-block-xs flex-wrap-xs flex-justify-end-xs {{ include.classes }}">
   {% capture atmosphere_width %}
     {%- if include.example or include.html or include.css -%}
