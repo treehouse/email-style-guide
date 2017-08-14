@@ -5,6 +5,8 @@ const sass = require('gulp-sass');
 const child = require('child_process');
 const gulpUtil = require('gulp-util');
 
+const inlineCss = require('gulp-inline-css');
+
 const dir = {
   src: 'src/',
   dest: 'dist/',
@@ -25,6 +27,15 @@ gulp.task('css', () => {
   gulp.src(src)
     .pipe(sass(sassOpts)
     .on('error', sass.logError))
+    .pipe(gulp.dest(dest));
+});
+
+gulp.task('templates', () => {
+  const src = dir.src + 'templates/**/*.html';
+  const dest = dir.dest + 'templates/';
+
+  return gulp.src(src)
+    .pipe(inlineCss())
     .pipe(gulp.dest(dest));
 });
 
@@ -69,6 +80,6 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['src', 'docs', 'jekyll']);
-gulp.task('src', ['css']);
+gulp.task('src', ['css', 'templates']);
 gulp.task('docs', ['docs:css']);
 gulp.task('serve', ['jekyll', 'watch']);
