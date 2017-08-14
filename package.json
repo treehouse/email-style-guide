@@ -10,5 +10,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
   },
+  "scripts": {
+    "build": "gulp src",
+    "serve": "gulp serve"
+  },
   "license": "MIT"
 }
