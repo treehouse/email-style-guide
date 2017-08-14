@@ -76,6 +76,7 @@ gulp.task('jekyll', () => {
 
 gulp.task('watch', () => {
   gulp.watch(dir.src + 'sass/**/*', ['css'])
+  gulp.watch(dir.src + 'templates/**/*.html', ['templates'])
   gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
 });
 
