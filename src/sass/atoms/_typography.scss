@@ -1,6 +1,12 @@
+// Local Text Alignment Variables
+$text-alignments: left, right, center, justify
+
+
+
+// Headings shared
 h1, h2, h3, h4 {
     font-family: $font-family;
-    color: map-get( $text-colors, dark )
+    color: map-get($text-colors, dark )
 }
 // text sizes for each header
 @for $num from 1 through 5 {
@@ -9,18 +15,79 @@ h1, h2, h3, h4 {
   }
 }
 
+
+
+// General Text Styles
 p, .#{$esg-prefix}-p {
-  font-size: map-get( $text-size, 5 );
+  font-size: map-get($text-size, 5 );
   line-height: 180%;
 }
+
+
 
 table[align="center"], .#{$esg-prefix}-table {
   margin: 0 auto;
 }
+
 a, #{$esg-prefix}-a, .#{$esg-prefix}-link {
-  color: map-get( $ui-colors, blue);
+  color: map-get($ui-colors, blue);
   cursor: pointer;
   transition: color 300ms 0s ease;
   text-decoration: none;
   font-weight: bold;
+  @include selected {
+    color: darken(ui-color(blue), 10%);
+  }
+}
+
+.#{$esg-prefix}-regular {
+  font-weight: normal !important;
+}
+
+strong,
+.#{$esg-prefix}-bold {
+  font-weight: $bold !important;
+}
+
+em,
+.#{$esg-prefix}-italic {
+  font-style: italic !important;
+}
+
+.#{$esg-prefix}-caps {
+  text-transform: uppercase;
+}
+
+code, .#{$esg-prefix}-code {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+address, .#{$esg-prefix}-address {
+  font-size: 0.875rem;
+}
+
+
+// List styles
+ul,
+ol {
+  color: map-get($text-color, base);
+  margin: 0;
+  padding: 0 0 0 2rem;
+}
+.#{$esg-prefix}-list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+// Creates the text align styles for each alignment style
+@mixin text-align-styles($suffix) {
+  // Iterate through align types and create the classes
+  @each $type in $text-alignments {
+    .text-#{$type}-#{$suffix} {
+      text-align: #{$type} !important;
+    }
+  }
 }
