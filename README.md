@@ -20,15 +20,15 @@ $ bin/setup
 ### Start Jekyll
 
 ```
-$ yarn run gulp serve
+$ yarn serve
 ```
 
 Now point your browser at: http://localhost:4000/email-style-guide/
 
 ### Building Assets
 
-Running `yarn run serve` will automatically build assets when they change.  If you need to manually update assets in `src` or `docs/src`:
+Running `yarn serve` will automatically build assets when they change.  If you need to manually update assets in `src` or `docs/src`:
 
 ```
-$ yarn run gulp
+$ yarn build
 ```

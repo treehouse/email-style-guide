@@ -11,7 +11,7 @@
     "gulp-util": "^3.0.8"
   },
   "scripts": {
-    "build": "gulp src",
+    "build": "gulp src docs",
     "serve": "gulp serve"
   },
   "license": "MIT"
