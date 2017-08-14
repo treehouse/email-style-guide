@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="email-example">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>*|SUBJECT|*</title>
+
+  <style type="text/css">
+    html {
+      -webkit-tap-highlight-color: transparent;
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
+      color: #40484a;
+      background-color: #edeff0;
+    }
+    .email-example body {
+      margin: 0px;
+      padding: 0px;
+      background: #edeff0;
+      width: 100% !important;
+      -webkit-text-size-adjust: none;
+    }
+    .email-example h1, .email-example h2, .email-example h3, .email-example h4, .email-example h5, .email-example h6 {
+      font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    }
+    h1, .text-1-xs {
+      font-size: 36px !important
+    }
+    h2, .text-2-xs {
+      font-size: 28px !important
+    }
+    h3, .text-3-xs {
+      font-size: 20px !important
+    }
+    h4, .text-4-xs {
+      font-size: 18px !important
+    }
+    h5, .text-5-xs {
+      font-size: 16px !important
+    }
+    h6, .text-6-xs {
+      font-size: 14px !important
+    }
+    .text-7-xs {
+      font-size: 12px !important
+    }
+    .block-xs {
+      display: block;
+    }
+    .inline-xs {
+      display: inline;
+    }
+    .inline-block-xs {
+      display: inline-block;
+    }
+    .border-t-light-xs {
+      border-top: solid 1px #f0f2f4 !important;
+    }
+    .border-b-light-xs {
+      border-bottom: solid 1px #f0f2f4 !important;
+    }
+    p {
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
+      font-size: 16px;
+      line-height: 180%;
+    }
+    table[align="center"] {
+      margin: 0 auto;
+    }
+    a {
+      color: #3f8abf;
+      cursor: pointer;
+      transition: color 300ms 0s ease;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .round-t {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .text-color-dark {
+      color: #40484a;
+    }
+    .text-color-medium {
+      color: #4b5658;
+    }
+    .text-color-base {
+      color: #576366;
+    }
+    .text-color-light {
+      color: #7b8b8e; /* or 4f5b5d for accessibility */
+    }
+    .text-color-white {
+      color: #fff;
+    }
+    .text-bg-dark {
+      background-color: #40484a;
+    }
+    .text-bg-medium {
+      background-color: #4b5658;
+    }
+    .text-bg-base {
+      background-color: #576366;
+    }
+    .text-bg-light {
+      background-color: #7b8b8e;
+    }
+    .text-bg-white {
+      background-color: #fff;
+    }
+    .bg-gray-light {
+      background-color: #edeff0;
+    }
+    .bg-gray-lighter {
+      background-color: #f9fafa;
+    }
+    .bg-blue {
+      background-color: #3f8abf;
+    }
+    .brand-bg-green {
+      background-color: #5fcf80;
+    }
+    .brand-bg-grey {
+      background-color: #3e474f;
+    }
+    .m-0-xs {
+      margin: 0;
+    }
+    .m-1-xs {
+      margin: 5px;
+    }
+    .m-2-xs {
+      margin: 10px;
+    }
+    .m-3-xs {
+      margin: 15px;
+    }
+    .m-4-xs {
+      margin: 20px;
+    }
+    .m-5-xs {
+      margin: 25px;
+    }
+    .p-0-xs {
+      padding: 0;
+    }
+    .p-1-xs {
+      padding: 5px;
+    }
+    .p-2-xs {
+      padding: 10px;
+    }
+    .p-3-xs {
+      padding: 15px;
+    }
+    .p-4-xs {
+      padding: 20px;
+    }
+    .p-5-xs {
+      padding: 25px;
+    }
+    .p-0-xs {
+      padding: 0;
+    }
+    .m-t-0-xs {
+      margin-top: 0px;
+    }
+    .m-t-1-xs {
+      margin-top: 5px;
+    }
+    .m-t-2-xs {
+      margin-top: 10px;
+    }
+    .m-t-3-xs {
+      margin-top: 15px;
+    }
+    .m-t-4-xs {
+      margin-top: 20px;
+    }
+    .m-t-5-xs {
+      margin-top: 25px;
+    }
+    .m-r-0-xs {
+      margin-right: 0px;
+    }
+    .m-r-1-xs {
+      margin-right: 5px;
+    }
+    .m-r-2-xs {
+      margin-right: 10px;
+    }
+    .m-r-3-xs {
+      margin-right: 15px;
+    }
+    .m-r-4-xs {
+      margin-right: 20px;
+    }
+    .m-r-5-xs {
+      margin-right: 25px;
+    }
+    .m-b-0-xs {
+      margin-bottom: 0px;
+    }
+    .m-b-1-xs {
+      margin-bottom: 5px;
+    }
+    .m-b-2-xs {
+      margin-bottom: 10px;
+    }
+    .m-b-3-xs {
+      margin-bottom: 15px;
+    }
+    .m-b-4-xs {
+      margin-bottom: 20px;
+    }
+    .m-b-5-xs {
+      margin-bottom: 25px;
+    }
+    .m-l-0-xs {
+      margin-left: 0px;
+    }
+    .m-l-1-xs {
+      margin-left: 5px;
+    }
+    .m-l-2-xs {
+      margin-left: 10px;
+    }
+    .m-l-3-xs {
+      margin-left: 15px;
+    }
+    .m-l-4-xs {
+      margin-left: 20px;
+    }
+    .m-l-5-xs {
+      margin-left: 25px;
+    }
+    .p-t-0-xs {
+      padding-top: 0px;
+    }
+    .p-t-1-xs {
+      padding-top: 5px;
+    }
+    .p-t-2-xs {
+      padding-top: 10px;
+    }
+    .p-t-3-xs {
+      padding-top: 15px;
+    }
+    .p-t-4-xs {
+      padding-top: 20px;
+    }
+    .p-t-5-xs {
+      padding-top: 25px;
+    }
+    .p-r-0-xs {
+      padding-right: 0px;
+    }
+    .p-r-1-xs {
+      padding-right: 5px;
+    }
+    .p-r-2-xs {
+      padding-right: 10px;
+    }
+    .p-r-3-xs {
+      padding-right: 15px;
+    }
+    .p-r-4-xs {
+      padding-right: 20px;
+    }
+    .p-r-5-xs {
+      padding-right: 25px;
+    }
+    .p-r-7per-xs {
+      padding-right: 7%;
+    }
+    .p-b-0-xs {
+      padding-bottom: 0px;
+    }
+    .p-b-1-xs {
+      padding-bottom: 5px;
+    }
+    .p-b-2-xs {
+      padding-bottom: 10px;
+    }
+    .p-b-3-xs {
+      padding-bottom: 15px;
+    }
+    .p-b-4-xs {
+      padding-bottom: 20px;
+    }
+    .p-b-5-xs {
+      padding-bottom: 25px;
+    }
+    .p-l-0-xs {
+      padding-left: 0px;
+    }
+    .p-l-1-xs {
+      padding-left: 5px;
+    }
+    .p-l-2-xs {
+      padding-left: 10px;
+    }
+    .p-l-3-xs {
+      padding-left: 15px;
+    }
+    .p-l-4-xs {
+      padding-left: 20px;
+    }
+    .p-l-5-xs {
+      padding-left: 25px;
+    }
+    .text-center-xs {
+      text-align: center;
+    }
+    .text-left-xs {
+      text-align: left;
+    }
+    .text-right-xs {
+      text-align: right;
+    }
+    hr {
+      padding: 0;
+      margin: 8px 0 8px 0;
+      border: none;
+      width: 100%;
+      height: 1px;
+      color: #edeff0;
+      background-color: #edeff0;
+    }
+    .wrap {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+    .wrap-inner {
+      vertical-align: top;
+      padding-bottom: 15px;
+      border-collapse: collapse;
+    }
+    .wrap-inner-table {
+      width: 90%;
+      max-width: 600px !important;
+      margin-right: 5%;
+      margin-left: 5%;
+      display: block;
+    }
+    .wrap-inner-table-wrap {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .wrap-inner-table-wrap-inner {
+      width: 100%;
+    }
+    .wrap-logo {
+      width: 192px;
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .logo {
+      width: 191px;
+      height: 44px;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 600px !important;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #ffffff;
+      text-align: left;
+      color: #40484a;
+    }
+    /*.container img {
+      max-width: 512px;
+    }*/
+    .container-inner {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .blog-featured {
+      padding-left: 7%;
+      padding-right: 7%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .blog-title {
+      padding-left: 7%;
+      padding-right: 7%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .blog-date {
+      padding-right: 7%;
+      padding-top: 3%;
+      text-align: right;
+    }
+    .article-primary {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-right: 7%;
+      padding-left: 7%;
+      vertical-align: top;
+      line-height: 100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    .article-secondary {
+      vertical-align: top;
+      line-height: 100%;
+      padding-top: 5%;
+      padding-right: 7%;
+      padding-left: 7%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    .article-primary h1, .article-secondary h2 {
+      line-height: 130%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .article-primary h2, .article-secondary h2 {
+      line-height: 150%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .body {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-top: 7%;
+      padding-bottom: 7%;
+    }
+    .body-p-t-0 {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-bottom: 7%;
+    }
+    .body-p-b-0 {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-top: 7%;
+    }
+    .body-p-lr {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+    }
+    .text-left-xs {
+      text-align: left;
+    }
+    .grey {
+      background-color: #edeff0;
+    }
+    .bg-gray-darker {
+      background-color: #2d3339;
+    }
+    .background {
+      background-color: #edeff0;
+      text-align: center;
+    }
+    li {
+      line-height: 170%;
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+      padding-bottom: 15px;
+    }
+    li:last-of-type {
+      padding-bottom: 0;
+    }
+    .outer {
+      table-layout: fixed;
+    }
+    .first-paragraph {
+      margin-top: 0;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .image-link a {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .w-full-xs {
+      width: 100%;
+    }
+    .image-full img {
+      width: 600px;
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+    }
+    .link-arrow {
+      width: 7px;
+      height: 11px;
+    }
+    .contact-info p {
+      text-align: center;
+      color: #7b8b8e;
+      font-size: 12px;
+    }
+    .pipe {
+      color: #b7c0c7;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+    }
+    .social {
+      width: 39px;
+      height: 42px;
+    }
+    .col-50-xs {
+      width: 50%;
+    }
+    .col-33-xs {
+      width: 50%;
+    }
+    .border-t-mid-xs {
+      border-top: solid 1px #d4d9dd;
+    }
+/* Buttons */
+    .button-wrap {
+      box-sizing: border-box;
+      border-collapse: separate !important;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: auto;
+    }
+    .button-wrap-centered {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button-wrap-inner {
+      box-sizing: border-box;
+      vertical-align: top;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-radius: 5px;
+      background-color: #5fcf80;
+      text-align: center;
+    }
+    .button {
+      box-sizing: border-box; color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: capitalize;
+      background-color: #5fcf80;
+      margin: 0;
+      padding: 18px;
+      font-weight: normal;
+      border: 1px solid #5fcf80;
+      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }
+    .author-photo {
+      width: 80px;
+      height: 80px;
+    }
+    @media only screen and (max-width: 480px) {
+      .wrap-inner-table {
+        width: 100% !important;
+      }
+      .flexible {
+        /*width: 100% !important;*/
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      .logo {
+        padding-left: 15% !important;
+        width: 149px !important;
+        height: 34px !important;
+      }
+      .footer {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+      }
+      .blog-intro {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      .title {
+        padding-left: 15%
+      }
+      .date {
+        padding-right: 15%
+      }
+      .browser-link {
+        padding-right: 15%
+      }
+      img.round-t {
+        border-radius: 0;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      h5, h6 {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+  <center>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="grey wrap">
+      <tr>
+        <td align="center" class="wrap-inner">
+          <!-- // BEGIN CONTAINER -->
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap" colspan="2">
+                  <!-- // BEGIN PREHEADER -->
+                  <table border="0" cellpadding="0" cellspacing="0" class="wrap-inner-table-wrap-inner">
+                    <tr>
+                      <td align="left" width="191" class="wrap-logo p-t-4-xs p-b-4-xs">
+                        <a href="http://teamtreehouse.com"><img class="logo" width="191" height="44" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/c2498666-423f-4b0b-b06e-619d44d9cc4b.png" alt="Treehouse"></a>
+                      </td>
+                      <td class="text-right-xs p-t-2-xs">
+                        <a href="#" class="text-color-light text-7-xs browser-link">View in browser</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- END PREHEADER \\ -->
+                </td>
+              </tr>
+              <tr>
+                <td class="p-t-5-xs p-b-5-xs col-50-xs border-t-mid-xs">
+                  <p class="m-t-0-xs m-b-0-xs text-color-light text-6-xs title">Blog Newsletter</p>
+                </td>
+                <td class="p-t-5-xs p-b-5-xs col-50-xs text-right-xs border-t-mid-xs">
+                  <p class="m-t-0-xs m-b-0-xs text-color-light text-6-xs date" mc:edit="date">June 2017</p>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" bgcolor="#edeff0" class="background" colspan="3">
+                <!-- Content Begin -->
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                      <td align="center" class="container-inner">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td colspan="2" class="text-center-xs image-full" align="center">
+                              <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank">
+                                <img src="http://blog.teamtreehouse.com/wp-content/uploads/2017/06/shutterstock_594167273.jpg" class="round-t" alt="Typing on Laptop" mc:edit="featured-image">
+                              </a>
+                            </td>
+                          </tr>
+                          <!-- // END BODY HEADER-->
+
+                          <!-- BEGIN BODY CONTENT -->
+                          <tr mc:hideable>
+                            <td colspan="2" class="body-p-lr" mc:edit="attribution">
+                              <span class="block-xs text-color-light text-7-xs text-right-xs p-t-2-xs">Photo by Daria Nepriakhina / CC0</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="body-p-lr" mc:edit="featured">
+                              <span class="block-xs text-color-light text-5-xs p-t-4-xs">Most Popular Story</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="body-p-lr" mc:edit="title1">
+                              <h2>
+                                <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="text-color-dark" target="_blank">Full-time Athlete and Freelance Developer: Elliott Davidson’s Story</a>
+                              </h2>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="body-p-t-0">
+                              <p class="m-t-0-xs p-b-1-xs m-r-0-xs m-l-0-xs" mc:edit="description1">
+                                Coding started as a hobby for Elliott Davidson and led him to chose to study web design and development at university. Elliott needed to fit learning to code into his busy daily routine as a full-time athlete and soon found himself learning more effectively through Treehouse's flexible online courses and decided to drop out of university.
+                              </p>
+                              <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                <tr>
+                                  <td valign="top" class="button-wrap-inner">
+                                    <a href="#" class="button" mc:edit="button1">Read Elliot's Full Interview</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td class="bg-gray-light" height="15">
+                </td>
+              </tr>
+            </table>
+
+
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                      <td align="center" class="container-inner">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td colspan="2" class="body p-t-4-xs p-b-4-xs">
+                                <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank"><img src="http://blog.teamtreehouse.com/wp-content/uploads/2017/06/shutterstock_602721068.jpg" class="w-full-xs" alt="Typing on Laptop with Typewriter" mc:edit="inline-image"></a>
+                                <h2 mc:edit="title2">
+                                  <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="text-color-dark" target="_blank">Why Developers Should Focus on Accessibility</a>
+                                </h2>
+                                <p class="p-b-3-xs m-r-0-xs m-l-0-xs" mc:edit="description2">
+                                  For the majority of you reading this, a world without technology is now unimaginable. It’s at the forefront of our personal lives, essential in our work lives and supports us – in ways we no longer notice – in our day-to-day lives. As technology has evolved, it has also been adopted by a wider audience. these shifts in tech adoption by a wider audience are enabled by one key factor: Accessibility.
+                                </p>
+                                <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                  <tr>
+                                    <td valign="top" class="button-wrap-inner">
+                                      <a href="#" class="button" mc:edit="button2">Learn About Accessibility</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            <table>
+              <tr>
+                <td class="bg-gray-light" height="15">
+                </td>
+              </tr>
+            </table>
+
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                      <td align="center" class="container-inner">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                              <td colspan="2" class="body p-t-4-xs p-b-4-xs">
+                                <h3 class="m-t-0-xs" mc:edit="article-title">Catch up on more blog content</h3>
+                                <ul class="m-b-0-xs">
+                                  <li mc:repeatable><a href="http://blog.teamtreehouse.com/understanding-team-goals-for-internal-training-programs?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank"  mc:edit="article-list1">Understanding team goals for internal training programs</a></li>
+                                  <li mc:repeatable><a href="http://blog.teamtreehouse.com/educate-yourself-episode-15?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank" mc:edit="article-list2">Educate Yourself Show: Mike Lewis shares his story building when to jump</a></li>
+                                  <li mc:repeatable><a href="http://blog.teamtreehouse.com/create-customized-learning-paths-with-custom-tracks?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank" mc:edit="article-list3">Introducing Treehouse Custom Tracks</a></li>
+                                  <li mc:repeatable><a href="http://blog.teamtreehouse.com/defeat-the-talent-gap-retrain-employees-with-technical-skills?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank" mc:edit="article-list4">Defeat the talent gap: Retrain employees with technical skills</a></li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            <table>
+              <tr>
+                <td class="bg-gray-light" height="15">
+                </td>
+              </tr>
+            </table>
+
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                      <td class="body p-b-5-xs">
+                        <h1 mc:edit class="m-t-0-xs" mc:edit="whats-new-title">
+                          New Learning Content
+                        </h1>
+                        <p class="m-t-0-xs m-r-0-xs m-l-0-xs" mc:edit="whats-new-content">
+                         Each week we add to the growing Treehouse Library of courses and workshops. Here's a roundup of <a href="http://blog.teamtreehouse.com/new-upcoming-course-highlights-text-editors-express-basics?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank">what's new</a>.
+                        </p>
+                        <!--<table align="center">
+                          <tbody>
+                            <tr>
+                              <td>*|YOUTUBE:[$vid=lt7M6IOyjWk, $ratings=N, $views=N, $border=N, $title=N, $trim_border=N]|*</td>
+                            </tr>
+                          </tbody>
+                        </table>-->
+                        <a href="https://www.youtube.com/watch?v=7MmH7fdwyVk" target="_blank"><img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/9fb3ccff-3d70-4d60-a999-4817ee2c4fe1.png" class="w-full-xs" alt="This Week at Treehouse" mc:edit="whats-new-video"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td class="bg-gray-light" height="15">
+                </td>
+              </tr>
+            </table>
+
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff">
+                    <tr>
+                      <td class="body-p-b-0 p-b-3-xs">
+                        <h1 class="m-t-0-xs" mc:edit="get-started-title">
+                          Ready to code?
+                        </h1>
+                        <a href="https://teamtreehouse.com/subscribe/plans?trial=yes&ref_evt=nav-trial&cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank"><img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/5741c58f-05b6-4231-b7cb-7c5a8ce44e2b.png" class="w-full-xs" alt="Start Coding" mc:edit="get-started-image"></a>
+                        <p mc:edit="get-started-description">Treehouse offers a 7-day free trial to our course library! Choose from 1,000s of hours of content, from JavaScript to Python to iOS.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="body-p-t-0">
+                        <table class="w-full-xs">
+                          <tr>
+                            <td class="inline-block-xs">
+                              <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                <tr>
+                                  <td valign="top" class="button-wrap-inner">
+                                    <a href="https://teamtreehouse.com/subscribe/plans?trial=yes&ref_evt=nav-trial&cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank" class="button" mc:edit="get-started-button">Start a free trial</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="inline-block-xs p-l-3-xs">
+                              <p class="m-t-0-xs m-b-0-xs" mc:edit="get-started-link">or explore the <a href="http://teamtreehouse.com/library?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank">Treehouse Library</a></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td class="bg-gray-light" height="15">
+                </td>
+              </tr>
+            </table>
+
+            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="center" class="wrap-inner-table-wrap">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                      <td class="body w-full-xs" colspan="2">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td colspan="2" style="width:600px" mc:edit="sign-off">
+                              <p class="m-t-0-xs">Questions? Hit reply and we're happy to chat.</p>
+                              <p>Cheers,</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-r-3-xs" width="80" height="80">
+                              <img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/649c6942-371d-4611-991a-28db260056e5.png" alt="Faye Bridges" class="author-photo" mc:edit="author-photo">
+                            </td>
+                            <td mc:edit="author-name">
+                              <span class="block-xs p-b-1-xs">Faye Bridge</span>
+                              <span class="text-color-light text-6-xs">Treehouse Blog Editor</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Content End -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Footer Begin -->
+            <table class="footer flexible" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="15"></td>
+              </tr>
+              <tr>
+                <td class="contact-info">
+                    <p>&copy; Treehouse Island Inc</p>
+                    <p>
+                      <a href="mailto:hello@teamtreehouse.com" class="bold text-color-light">hello@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="https://teamtreehouse.com/account/notifications" class="bold text-color-light">Manage Email Notifications</a>  <span class="pipe">|</span>  <a href="{{ unsubscribe_url }}" class="bold text-color-light">Unsubscribe</a>
+                    </p>
+                </td>
+              </tr>
+            </table>
+            <table class="footer flexible" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="15"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://twitter.com/treehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/bce53974-061a-46a1-9647-6f70da557c75.png" alt="Treehouse on Twitter"></a>
+                  <a href="http://www.youtube.com/user/gotreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/cb5184a8-e1d0-46f7-a1b6-bd00b175c264.png" alt="Treehouse on YouTube"></a>
+                  <a href="https://www.facebook.com/TeamTreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/5b19282b-85d5-4da1-9199-958dbc95a71f.png" alt="Treehouse on Facebook"></a>
+                  <a href="https://plus.google.com/110278003536476194286/posts"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/d3e43873-dc7e-4cdb-b960-e57a1873bce0.png" alt="Treehouse on Google+"></a>
+                  <a href="http://instagram.com/teamtreehouse"><img width="39" height="42" class="social" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/e0df2140-1a53-4702-bab7-c7dd6faea532.png" alt="Treehouse on Instagram"></a>
+                </td>
+              </tr>
+              <tr>
+                <td height="30"></td>
+              </tr>
+            </table>
+            <!-- Footer End -->
+          </td>
+        </tr>
+    </table>
+  </center>
+</body>
+</html>
