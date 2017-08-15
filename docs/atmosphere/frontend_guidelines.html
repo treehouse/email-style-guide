@@ -3,19 +3,46 @@ layout: default
 title: Frontend Guidelines
 ---
 
-<div class="col col-100-xs border-b-light-xs p-b-5-xs m-b-5-xs">
-  <div class="col col-100-xs col-100-md col-50-lg p-r-0-xs p-r-3-md p-r-3-lg">
-    <ul>
-      <li class="p-b-1-xs">Use <a href="https://treehouse.github.io/project-leap/index" target="_blank">Leap</a> classes as much as possible. <span class="italic">Note</span>: Some Leap classes have been modified so they're optimized for email. For example, we use pixels instead of ems for text size in emails.</li>
-      <li class="p-b-1-xs">Don't write inline CSS. MailChimp and Intercom will automatically inline your CSS as they process the email.</li>
-      <li class="p-b-1-xs">In the case of using Litmus for testing, first use MailChimp's <a href="https://templates.mailchimp.com/resources/inline-css/" target="_blank">CSS Inliner tool</a> to inline the CSS. Then paste that code into the Litmus tool.</li>
-      <li>Refer to Campaign Monitor's <a href="https://www.campaignmonitor.com/css/" target="_blank">table of CSS support</a> and MailChimp's <a href="https://templates.mailchimp.com/resources/email-client-css-support/" target="_blank">Email Client CSS Support</a> resource for email clients</li>
-    </ul>
-  </div>
-  <div class="col col-100-xs col-100-md col-50-lg p-t-4-xs">
-    <ul>
-      <li class="p-b-1-xs">If you aren't uploading images via the Composer, upload images to <a href="https://s3.amazonaws.com" target="_blank">S3</a>. Use https for images to avoid any mixed content warnings.</li>
-      <li class="p-b-1-xs">Try to keep your images as small as possible (maximum 1MB in size). Downloading large images will provide a sub-optimal experience to users, especially those who are viewing your email on mobile devices, as images may take a long time to appear.</li>
-    </ul>
-  </div>
-</div>
+<h2>Frontend Guidelines</h2>
+
+<p class="m-t-2-xs">
+  <span class="bold">Write good code</span>: Review these Frontend Guidelines to get a sense of the best practices and get a feel for how the code is structured. Play close attention to the Cross-Email Client Guidelines which will help you develop the most bullet-proof email as possible.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Don't write inline CSS</span>: During development, don't torture yourself by using inlined CSS. Be sure you process it in an inliner right before you test the email though, as some email clients only accept inlined CSS.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Use well supported CSS</span>: Wherever possible, use CSS that's well supported across email clients, particularly the ones that are in our <a href="email_client_support.html">Email Client Support chart</a>. Campaign Monitor has a great <a href="http://campaignmonitor.com/css/" target="_blank">chart</a> that displays the CSS support across email clients.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Make it accessible</span>: Be mindful of providing the <a href="accessibility.html">Accessibility</a> affordances.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Validate HTML</span>: Run your code through <a href="https://validator.w3.org/" target="_blank">W3C's HTML Validator</a>. The easiest way is to validate it by direct input. Paste all the email code in the text box, click Check, then review the errors. When working with often complicated email code full of nested tables, it's easy to forget a closing tag which can really mess up your layout in some email clients. Pass it through this tool to check for errors. Note: Disregard errors that relate to the ESP templating syntax.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Review the Cross-Email Client Guidelines</span>: We have Cross-Email Client Guidelines that set you up for success. Refer to the <a href="email_client_support.html">Email Client Support chart</a> to identify the top clients we support.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Compress HTML</span>: In an effort to get email size as small as possible, compress the HTML. Smaller emails mean they load faster and avoid being clipped by email clients when they surpass file size maximums (Gmail's max is 102KB). Luckily, image sizes aren't included in this- only the text, full URLs, and HTML is counted.
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Upload images wisely</span>: Ideally, upload images to the ESP that's housing the email. Alternatively, if you're using Mandrill or otherwise need a space to store images, you can upload them to S3. Ask Engineering for access or assistence. Use https for images to avoid any mixed content warnings.
+
+</p>
+
+<p class="m-t-2-xs">
+  <span class="bold">Test it</span>: Developing emails that render well across email clients is a tricky beast. Luckily, our templates have been thoroughly tested to ensure you're being set up for success. That being said, as emails are being tweaked there's always the chance that it could look amiss in a given browser on a certain OS. The goal with testing is to catch these before emails are sent out so that we can confidently send high quality, high performing, on-brand emails. Email on Acid is a handy tool for testing emails across email clients. Use the profile named "Treehouse Email Client Matrix" to test the email against the email clients defined in our <a href="email_client_support.html">Email Client Support chart</a>.
+</p>
+
+<h3 class="m-t-3-xs">Tips for ensuring consistent rendering across email clients</h3>
+<p class="m-t-2-xs">
+  <span class="bold">Insert tip here</span>: x
+</p>
