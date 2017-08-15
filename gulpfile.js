@@ -35,11 +35,13 @@ gulp.task('css', () => {
 gulp.task('templates', () => {
   const src = dir.src + 'templates/**/*.html';
   const dest = dir.dest + 'templates/';
+  const docsDest = dir.docs + 'templates/';
 
   return gulp.src(src)
     .pipe(inlineCss())
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(dest));
+    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(docsDest));
 });
 
 gulp.task('docs:css', () => {
