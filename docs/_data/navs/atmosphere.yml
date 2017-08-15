@@ -4,8 +4,8 @@ pages:
   - slug: /atmosphere/purpose.html
     name: Purpose
 
-  - slug: /atmosphere/process.html
-    name: Process
+  - slug: /atmosphere/principles.html
+    name: Principles
 
   - slug: /atmosphere/frontend_guidelines.html
     name: Frontend Guidelines
@@ -15,6 +15,9 @@ pages:
 
   - slug: /atmosphere/mailchimp.html
     name: Mailchimp
+
+  - slug: /atmosphere/marketo.html
+    name: Marketo
 
   - slug: /atmosphere/intercom.html
     name: Intercom

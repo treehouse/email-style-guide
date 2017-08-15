@@ -1,17 +1,36 @@
 filename: molecules
 name: Molecules
 pages:
-  - slug: /molecules/header.html
-    name: Header
 
-  - slug: /molecules/footer.html
-    name: Footer
+  - slug: /molecules/article.html
+    name: Article
 
   - slug: /molecules/callout.html
     name: Callout
 
-  - slug: /molecules/two_column.html
-    name: Two Column
+  - slug: /molecules/content-delivery.html
+    name: Content Delivery
+
+  - slug: /molecules/event.html
+    name: Event
+
+  - slug: /molecules/footer.html
+    name: Footer
+
+  - slug: /molecules/header.html
+    name: Header
+
+  - slug: /molecules/hero.html
+    name: Hero
+
+  - slug: /molecules/learning-content-list.html
+    name: Learning Content List
 
   - slug: /molecules/responsive.html
     name: Responsive
+
+  - slug: /molecules/signature.html
+    name: Signature
+
+  - slug: /molecules/two_column.html
+    name: Two Column

@@ -6,6 +6,7 @@ subnav:
   - Headings
   - Paragraph
   - Bold
+  - Italic
 ---
 
 {% include section.html
@@ -88,4 +89,16 @@ subnav:
   html = "typography/code/bold.html"
   css = "typography/code/bold.css"
   example = "typography/examples/bold.html"
+%}
+
+{% include section.html
+  id = "italic"
+  classes = "border-t-light-xs p-t-5-xs"
+  title = "Italic"
+  vocabulary = "Italic, Italics, Text Emphasis, em tag"
+  syntax = "Italic text should be used in the contents of another body content type, whether that be headings or paragraph tags. It should not be used on it’s own or outside of those contexts."
+  semantics = "We use italic text and emphasis tags to do just that. Emphasize."
+  html = "typography/code/italic.html"
+  css = "typography/code/italic.css"
+  example = "typography/examples/italic.html"
 %}
