@@ -1,5 +1,5 @@
 // Local Text Alignment Variables
-$text-alignments: left, right, center, justify
+$text-alignments: left, right, center, justify;
 
 
 
@@ -23,8 +23,6 @@ p, .#{$esg-prefix}-p {
   line-height: 180%;
 }
 
-
-
 table[align="center"], .#{$esg-prefix}-table {
   margin: 0 auto;
 }
@@ -35,9 +33,9 @@ a, #{$esg-prefix}-a, .#{$esg-prefix}-link {
   transition: color 300ms 0s ease;
   text-decoration: none;
   font-weight: bold;
-  @include selected {
-    color: darken(ui-color(blue), 10%);
-  }
+  // @include selected {
+  //   color: darken(ui-color(blue), 10%);
+  // }
 }
 
 .#{$esg-prefix}-regular {
@@ -68,10 +66,11 @@ address, .#{$esg-prefix}-address {
 }
 
 
+
 // List styles
 ul,
 ol {
-  color: map-get($text-color, base);
+  color: map-get($text-colors, base);
   margin: 0;
   padding: 0 0 0 2rem;
 }
@@ -82,12 +81,9 @@ ol {
 
 
 
-// Creates the text align styles for each alignment style
-@mixin text-align-styles($suffix) {
-  // Iterate through align types and create the classes
-  @each $type in $text-alignments {
-    .text-#{$type}-#{$suffix} {
-      text-align: #{$type} !important;
-    }
+// Iterate through align types and create the classes
+@each $type in $text-alignments {
+  .#{$esg-prefix}-text-#{$type} {
+    text-align: #{$type} !important;
   }
 }

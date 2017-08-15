@@ -2,81 +2,72 @@
 $border-types: (top: t, bottom: b, left: l, right: r);
 $border-values: normal, dark, mid, light;
 
-// Creates the style declarations for each border type and value
-@mixin border-style($suffix) {
-  // Iterate through each value in $border-values
-  @each $value in $border-values {
+// Iterate through each value in $border-values
+@each $value in $border-values {
+  // We don't want a modifier on the normal style,
+  // so we need a conditional to control that
+  @if $value == normal {
+    .#{$esg-prefix}-border {
+      border: solid 1px border-var($value) !important;
+    }
+  }
+  @else {
+    .#{$esg-prefix}-border-#{$value} {
+      border: solid 1px border-var($value) !important;
+    }
+  }
+
+  // Iterate through each type in $border-types
+  @each $border, $shorthand in $border-types {
     // We don't want a modifier on the normal style,
     // so we need a conditional to control that
     @if $value == normal {
-      .#{$esg-prefix}-border-#{$suffix} {
-        border: solid 1px border-var($value) !important;
+      .#{$esg-prefix}-border-#{$shorthand} {
+        border-#{$border}: solid 1px border-var($value) !important;
       }
     }
     @else {
-      .#{$esg-prefix}-border-#{$value}-#{$suffix} {
-        border: solid 1px border-var($value) !important;
-      }
-    }
-
-    // Iterate through each type in $border-types
-    @each $border, $shorthand in $border-types {
-      // We don't want a modifier on the normal style,
-      // so we need a conditional to control that
-      @if $value == normal {
-        .#{$esg-prefix}-border-#{$shorthand}-#{$suffix} {
-          border-#{$border}: solid 1px border-var($value) !important;
-        }
-      }
-      @else {
-        .border-#{$shorthand}-#{$value}-#{$suffix} {
-          border-#{$border}: solid 1px border-var($value) !important;
-        }
+      .#{$esg-prefix}border-#{$shorthand}-#{$value} {
+        border-#{$border}: solid 1px border-var($value) !important;
       }
     }
   }
 }
 
-// Creates border none classes
-@mixin border-none($suffix) {
-  // Create style for border none on all sides
-  .#{$esg-prefix}-border-none-#{$suffix} {
-    border: none !important;
-  }
+// Create style for border none on all sides
+.#{$esg-prefix}-border-none {
+  border: none !important;
+}
 
-  // Iterate through border sides and create border none styles
-  @each $border, $shorthand in $border-types {
-    .#{$esg-prefix}-border-none-#{$shorthand}-#{$suffix} {
-      border-#{$border}: none !important;
-    }
+// Iterate through border sides and create border none styles
+@each $border, $shorthand in $border-types {
+  .#{$esg-prefix}-border-none-#{$shorthand} {
+    border-#{$border}: none !important;
   }
 }
 
-// Creates border radius classes
-@mixin border-radius {
-  // Create style for border radius classes
-  .#{$esg-prefix}-round {
-    border-radius: $border-radius !important;
+// Create style for border radius classes
+.#{$esg-prefix}-round {
+  border-radius: $border-radius !important;
 
-    &-t {
-      border-radius: $border-radius $border-radius 0 0 !important;
-    }
-
-    &-b {
-      border-radius: 0 0 $border-radius $border-radius !important;
-    }
-
-    &-l {
-      border-radius: $border-radius 0 0 $border-radius !important;
-    }
-
-    &-r {
-      border-radius: 0 $border-radius $border-radius 0 !important;
-    }
+  &-t {
+    border-radius: $border-radius $border-radius 0 0 !important;
   }
 
-  // Create the circle class
-  .#{$esg-prefix}-circle {
-    border-radius: 9999px !important;
+  &-b {
+    border-radius: 0 0 $border-radius $border-radius !important;
   }
+
+  &-l {
+    border-radius: $border-radius 0 0 $border-radius !important;
+  }
+
+  &-r {
+    border-radius: 0 $border-radius $border-radius 0 !important;
+  }
+}
+
+// Create the circle class
+.#{$esg-prefix}-circle {
+  border-radius: 9999px !important;
 }

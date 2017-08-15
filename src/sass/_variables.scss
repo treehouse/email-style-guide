@@ -4,6 +4,8 @@ $esg-prefix: "esg";
 // Type Variables
 $font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 
+$bold: 500;
+
 // Brand Colors
 $brand-colors: (
   "green": #5fcf80,
@@ -37,6 +39,119 @@ $ui-colors: (
   "red":          #ed5a5a
 );
 
+// Topic Colors
+$topic-colors: (
+  "html": (
+    light:  #62bedb,
+    base:     #39ADD1,
+    dark:   #298fae,
+  ),
+  "css": (
+    light:  #4494ca,
+    base:     #3079AB,
+    dark:   #255d83,
+  ),
+  "js": (
+    light:  #d07e94,
+    base:     #c25975,
+    dark:   #aa3e5b,
+  ),
+  "ruby": (
+    light:  #e97d82,
+    base:     #e15258,
+    dark:   #d9272e,
+  ),
+  "business": (
+    light:  #fba98c,
+    base:     #F9845B,
+    dark:   #f75f2a,
+  ),
+  "wordpress": (
+    light:  #a6add7,
+    base:     #838CC7,
+    dark:   #606bb7,
+  ),
+  "php": (
+    light:  #9885b2,
+    base:     #7D669E,
+    dark:   #645180,
+  ),
+  "ios": (
+    light:  #78c9c4,
+    base:     #53BBB4,
+    dark:   #3e9d97,
+  ),
+  "android": (
+    light:  #80c783,
+    base:     #5cb860,
+    dark:   #449d48,
+  ),
+  "design": (
+    light:  #efaf3c,
+    base:     #e59a13,
+    dark:   #b67a0f,
+  ),
+  "devtools": (
+    light:  #7f94a8,
+    base:     #637a91,
+    dark:   #4e6173,
+  ),
+  "java": (
+    light:  #38bd95,
+    base:     #2c9676,
+    dark:   #206f57,
+  ),
+  "python": (
+    light:  #f6bfd0,
+    base:     #f092b0,
+    dark:   #ea6590,
+  ),
+  "diglit": (
+    light:  #d6b1e2,
+    base:     #c38cd4,
+    dark:   #b067c6,
+  ),
+  "gamedev": (
+    light:  #29b2b6,
+    base:     #20898c,
+    dark:   #176062,
+  ),
+  "csharp": (
+    light:  #b6689c,
+    base:     #9e4d83,
+    dark:   #7c3c67,
+  ),
+  "databases": (
+    light:  #ef9557,
+    base:     #eb7728,
+    dark:   #cd5e13,
+  ),
+  "virtual-reality": (
+    light:  #b5e296,
+    base:     #95D26C,
+    dark:   #6c9e4a,
+  ),
+  "apis": (
+    light:  #c36479,
+    base:     #993c50,
+    dark:   #712e3d,
+  ),
+  "data-analysis": (
+    light:  #8d81ab,
+    base:   #645a7e,
+    dark:   #4f4667,
+  ),
+  "security": (
+    light:  #D1897D,
+    base:   #C66C5D,
+    dark:   #955146,
+  ),
+  "undefined": (
+    light:  #8c959d,
+    base:     #717b85,
+    dark:   #5a6269,
+  )
+);
 
 $spacing: (
   0: 0px,
