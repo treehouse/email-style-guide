@@ -47,7 +47,7 @@ $ yarn build
 
 **Previewing**
 
-After you've added a template, you can prevew it with Jekyll. Start the server if you haven't done so already:
+After you've added a template, you can preview it with Jekyll. Start the server if you haven't done so already:
 
 ```
 $ yarn serve
@@ -56,4 +56,3 @@ $ yarn serve
 Now, say you just added a template in: `src/templates/b2b/newsletter-08-2017.html`
 
 Open your browser to: http://localhost:4000/email-style-guide/templates/b2b/newsletter-08-2017.html and you should see a preview there.
-
