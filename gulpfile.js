@@ -57,6 +57,15 @@ gulp.task('docs:css', () => {
     .pipe(gulp.dest(dest));
 });
 
+gulp.task('docs:templates', () => {
+  const src = dir.docsSrc + 'templates/**/*.html';
+  const dest = dir.docs + 'templates/examples/';
+
+  return gulp.src(src)
+    .pipe(inlineCss())
+    .pipe(gulp.dest(dest));
+});
+
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('./bin/jekyll', ['serve',
     '--source', dir.docs,
@@ -85,5 +94,5 @@ gulp.task('watch', () => {
 
 gulp.task('default', ['src', 'docs', 'jekyll']);
 gulp.task('src', ['css', 'templates']);
-gulp.task('docs', ['docs:css']);
+gulp.task('docs', ['docs:css', 'docs:templates']);
 gulp.task('serve', ['jekyll', 'watch']);
