@@ -23,7 +23,7 @@ $ bin/setup
 $ yarn serve
 ```
 
-Open your browser at: http://localhost:4000/email-style-guide/
+Open your browser to: http://localhost:4000/email-style-guide/
 
 ### Building Assets
 
