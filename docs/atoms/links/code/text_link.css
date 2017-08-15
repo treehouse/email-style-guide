@@ -1,0 +1,10 @@
+a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:active, a:focus {
+  color: #326e99;
+}

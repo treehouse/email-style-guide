@@ -1,0 +1,17 @@
+<!--
+  Render a introduction for a group of atoms or molecules.
+
+  guidelines - Guidelines on how to use the atoms or molecules.
+  best_practices - The relative path to a file containing additional best practices (Optional).
+-->
+
+
+<div class="p-b-2-xs">
+  <h3 class="p-b-2-xs" id="Guidelines">Guidelines</h3>
+  <p>{{ include.guidelines }}</p>
+
+  {% if include.best_practices %}
+    <h3 class="p-tb-2-xs" id="bestpractices-section">Best Practices</h3>
+    {% include_relative {{include.best_practices}} %}
+  {% endif %}
+</div>

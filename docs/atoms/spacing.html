@@ -3,74 +3,11 @@ layout: default
 title: Spacing
 ---
 
-<div class="col-container col-100-xs col-gutters border-b-light-xs p-b-5-xs m-b-5-xs">
-  <div class="col col-100-xs p-r-3-md p-r-3-lg">
-    <div class="border-light-xs p-3-xs round">
-      <h4 class="p-b-3-xs">Atmosphere</h4>
-      <h5 class="p-b-1-xs">Vocabulary</h5>
-      <p class="p-b-2-xs">Spacing, Padding, White Space</p>
-      <h5 class="p-tb-1-xs">Syntax</h5>
-      <p class="p-b-1-xs">Spacing is crucial for displaying content in an organized, breathable manner.</p>
-      <h5 class="p-tb-1-xs">Semantics</h5>
-      <p>Use spacing to inform the hierarchy of content. Information that's related to each other should be closer together; disparate information should be further apart. Spacing should be consistent so the email flows in a digestible, predictable manner.</p>
-    </div>
-    <p class="p-tb-3-xs">Adding space to an email is similar to using Leap. The naming scheme is the same, but for emails the spacing is defined in pixels instead of rem. Email clients use different baselines for rem, which results in an inconsistent handling of spacing across clients. Pixels are rendered the same across the board - hooray! The range is in 5 pixel increments, from 0 - 25 pixels.</p>
-  </div>
-  <div class="col col-100-xs col-100-md col-50-lg">
-    <h3 class="p-b-1-xs">Uniform Spacing</h3>
-    <p class="p-b-2-xs">These classes are used to apply equal spacing around the entire element.</p>
-    <div class="col-container col-gutters m-b-2-xs">
-      <div class="col col-30-md">
-        <p><strong>Margin</strong></p>
-        <ul class="list-unstyled">
-          <li><code>.m-0-xs</code></li>
-          <li><code>.m-1-xs</code></li>
-          <li><code>.m-2-xs</code></li>
-          <li><code>.m-3-xs</code></li>
-          <li><code>.m-4-xs</code></li>
-          <li><code>.m-5-xs</code></li>
-        </ul>
-      </div>
-      <div class="col col-30-md">
-        <p><strong>Padding</strong></p>
-        <ul class="list-unstyled">
-          <li><code>.p-0-xs</code></li>
-          <li><code>.p-1-xs</code></li>
-          <li><code>.p-2-xs</code></li>
-          <li><code>.p-3-xs</code></li>
-          <li><code>.p-4-xs</code></li>
-          <li><code>.p-5-xs</code></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col col-100-xs col-100-md col-50-lg">
-    <h3 class="p-b-1-xs">Individual Spacing</h3>
-    <p class="p-b-2-xs">These classes are used to apply spacing to a particular side of an element.</p>
-    <div class="col-container m-b-2-xs">
-      <div class="col col-50-lg">
-        <p><strong>Margin</strong></p>
-        <ul class="list-unstyled">
-          <li><code>.m-t-1-xs</code> <span class="m-l-1-xs">margin-top</span></li>
-          <li><code>.m-b-1-xs</code> <span class="m-l-1-xs">margin-bottom</span></li>
-          <li><code>.m-l-1-xs</code> <span class="m-l-1-xs">margin-left</span></li>
-          <li><code>.m-r-1-xs</code> <span class="m-l-1-xs">margin-right</span></li>
-          <li><code>.m-lr-1-xs</code> <span class="m-l-1-xs">margin left + right</span></li>
-          <li><code>.m-tb-1-xs</code> <span class="m-l-1-xs">margin top + bottom</span></li>
-          <li><code>.m-auto-xs</code> <span class="m-l-1-xs">horizontal center</span></li>
-        </ul>
-      </div>
-      <div class="col col-50-lg">
-        <p><strong>Padding</strong></p>
-        <ul class="list-unstyled">
-          <li><code>.p-t-0-xs</code> <span class="m-l-1-xs">padding-top</span></li>
-          <li><code>.p-b-5-xs</code> <span class="m-l-1-xs">padding-bottom</span></li>
-          <li><code>.p-l-1-xs</code> <span class="m-l-1-xs">padding-left</span></li>
-          <li><code>.p-r-2-xs</code> <span class="m-l-1-xs">padding-right</span></li>
-          <li><code>.p-lr-3-xs</code> <span class="m-l-1-xs">padding left + right</span></li>
-          <li><code>.p-tb-4-xs</code> <span class="m-l-1-xs">padding top + bottom</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+{% include section.html
+  id = "spacing"
+  vocabulary = "Spacing, Padding, White Space"
+  syntax = "Spacing is crucial for displaying content in an organized, breathable manner."
+  semantics = "Use spacing to inform the hierarchy of content. Information that's related to each other should be closer together; disparate information should be further apart. Spacing should be consistent so the email flows in a digestible, predictable manner."
+  guidelines = "spacing/guidelines.html"
+%}
+

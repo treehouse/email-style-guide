@@ -3,68 +3,16 @@ layout: default
 title: Header
 ---
 
-<div class="border-light-xs p-3-xs round">
-  <h4 class="p-b-3-xs">Atmosphere</h4>
-  <h5 class="p-b-1-xs">Vocabulary</h5>
-  <p class="p-b-2-xs">Header</p>
-  <h5 class="p-tb-1-xs">Syntax</h5>
-  <p class="p-b-1-xs">This appears at the top of every email.</p>
-  <h5 class="p-tb-1-xs">Semantics</h5>
-  <p>The header helps set a consistent stage for our emails. Right off the bat, the logo tells the user it's a Treehouse email. The "View in Browser" link provides an easy way to view the email in a browser, in case of email client rendering issues or if the user wishes to share the link to a collegue.</p>
-</div>
+{% capture semantics %}
+  The header helps set a consistent stage for our emails. Right off the bat, the logo tells the user it's a Treehouse email. The "View in Browser" link provides an easy way to view the email in a browser, in case of email client rendering issues or if the user wishes to share the link to a collegue..
+{% endcapture %}
 
-<div class="col col-100-xs">
-<p class="p-b-1-xs"></p>
-<div class="flex-block-xs flex-wrap-xs border-b-light-xs p-tb-2-xs m-b-4-xs">
-  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-0-md p-r-3-lg code-example">
-    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="header-code">
-      <li><a href="#header-code-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
-      <li><a href="#header-code-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
-    </ul>
-    <div id="header-code" class="tabgroup">
-      <div id="header-code-html">
-        <div class="guide-code m-b-3-xs">
-          <pre>
-<code class="language-html">
-  &lt;td align="center" class="wrap-inner-table-wrap"&gt;
-    &lt;table border="0" cellpadding="0" cellspacing="0" class="wrap-inner-table-wrap-inner"&gt;
-      &lt;tr&gt;&gt;
-        &lt;td align="left" width="191" class="wrap-logo p-t-4-xs p-b-4-xs"&gt;
-          &lt;a href="http://teamtreehouse.com">&lt;img class="logo" width="191" height="44" class="logo" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/c2498666-423f-4b0b-b06e-619d44d9cc4b.png" alt="Treehouse"&gt;&lt;/a&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/td&gt;&gt;
-</code>
-          </pre>
-        </div>
-      </div>
-      <div id="header-code-css">
-        <div class="guide-code m-b-3-xs">
-          <pre>
-            <code class="language-css">.wrap-logo {
-              width: 192px;
-              vertical-align: top;
-              border-collapse: collapse;
-            }
-            .logo {
-              width: 191px;
-              height: 44px;
-              border: 0;
-              line-height: 100%;
-              outline: none;
-              text-decoration: none;
-            }</code>
-          </pre>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
-    <img src="{{ site.baseurl }}/img/logo2x.png" alt="Treehouse" class="logo p-b-4-xs">
-    <div class="text-bg-white p-5-xs h-full-xs round">
-    </div>
-  </div>
-</div>
+{% include section.html
+  id = "header"
+  vocabulary = "Header"
+  syntax = "This appears at the top of every email."
+  semantics = semantics
+  html = "header/code.html"
+  css = "header/code.css"
+  example = "header/example.html"
+%}
