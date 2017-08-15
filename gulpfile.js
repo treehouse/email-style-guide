@@ -6,6 +6,8 @@ const child = require('child_process');
 const gulpUtil = require('gulp-util');
 
 const inlineCss = require('gulp-inline-css');
+const htmlmin = require('gulp-htmlmin');
+
 
 const dir = {
   src: 'src/',
@@ -36,6 +38,7 @@ gulp.task('templates', () => {
 
   return gulp.src(src)
     .pipe(inlineCss())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(dest));
 });
 
