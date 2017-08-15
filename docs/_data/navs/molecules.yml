@@ -26,9 +26,6 @@ pages:
   - slug: /molecules/learning-content-list.html
     name: Learning Content List
 
-  - slug: /molecules/responsive.html
-    name: Responsive
-
   - slug: /molecules/signature.html
     name: Signature
 
