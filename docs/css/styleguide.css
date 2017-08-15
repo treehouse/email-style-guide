@@ -10532,16 +10532,18 @@ body {
 
 .esg-button {
   box-sizing: border-box;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
   text-transform: capitalize;
+  background: #5fcf80;
   margin: 0;
   padding: 18px;
   font-weight: bold;
-  border: 1px solid;
+  border: 1px solid #5fcf80;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   height: inherit;
   line-height: inherit;
@@ -10566,6 +10568,7 @@ body {
   vertical-align: top;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
+  background: #5fcf80;
   text-align: center;
 }
 
