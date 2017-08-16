@@ -10536,7 +10536,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
+  display: inline;
   font-size: 16px;
   text-transform: capitalize;
   background: #5fcf80;

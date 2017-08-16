@@ -27,7 +27,7 @@ $border-values: normal, dark, mid, light;
       }
     }
     @else {
-      .#{$esg-prefix}border-#{$shorthand}-#{$value} {
+      .#{$esg-prefix}-border-#{$shorthand}-#{$value} {
         border-#{$border}: solid 1px border-var($value) !important;
       }
     }
