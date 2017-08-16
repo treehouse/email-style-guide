@@ -37,11 +37,16 @@ var isAtom = pageName == "atoms/typography" ||
              pageName == "atoms/color" ||
              pageName == "atoms/spacing";
 
-var isMolecule = pageName == "molecules/header" ||
-                 pageName == "molecules/footer" ||
+var isMolecule = pageName == "molecules/article" ||
                  pageName == "molecules/callout" ||
-                 pageName == "molecules/two_column" ||
-                 pageName == "molecules/responsive";
+                 pageName == "molecules/content-delivery" ||
+                 pageName == "molecules/event" ||
+                 pageName == "molecules/footer" ||
+                 pageName == "molecules/header" ||
+                 pageName == "molecules/hero" ||
+                 pageName == "molecules/learning-content-list" ||
+                 pageName == "molecules/signature" ||
+                 pageName == "molecules/two_column";
 
 if (isAtmosphere) {
   nav[0].classList.toggle('guide-navigation-item-parent--active');
