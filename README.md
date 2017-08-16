@@ -33,6 +33,33 @@ Running `yarn serve` will automatically build assets when they change.  If you n
 $ yarn build
 ```
 
+### Directory Structure
+
+```
+email-style-guide/
+├── src/
+│   ├── sass/
+│   └── templates/
+├── dist/
+│    ├── css/
+│    └── templates/
+├── docs/
+│   ├── src/
+│   └── templates/
+```
+
+#### `src`
+
+The `src` directory is where all source code is stored. Add new templates and styles here.
+
+#### `dist`
+
+The `dist` directory (short for distribution) is where all code is built. Running `yarn build` will generate CSS and HTML templates in this directory.
+
+#### `docs`
+
+The `docs` directory is where the style-guide documentation is stored.  Running `yarn build` will output templates to `docs/templates` for previewing.
+
 ### Creating Templates
 
 Add new templates to `src/templates`
