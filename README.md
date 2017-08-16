@@ -58,7 +58,7 @@ The `dist` directory (short for distribution) is where all code is built. Runnin
 
 #### `docs`
 
-The `docs` directory is where the style-guide documentation is stored.  Running `yarn build` will output templates to `docs/templates` for previewing.
+The `docs` directory is where the style-guide documentation is stored.  Running `yarn build` will output templates to `docs/templates` as well for previewing.
 
 ### Creating Templates
 
