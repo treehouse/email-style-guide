@@ -30,7 +30,7 @@ gulp.task('css', () => {
 
 gulp.task('docs:css', () => {
   const src = dir.docsSrc + 'sass/styleguide.sass';
-  const dest = dir.docs + 'css/';
+  const dest = dir.docs + 'assets/css/';
   const sassOpts = {
     outputStyle: 'expanded',
     includePaths: ['bower_components/project-leap/_sass', 'src/sass', 'docs/src/sass'],
