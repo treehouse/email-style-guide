@@ -10811,6 +10811,10 @@ a {
   opacity: 0.6;
 }
 
+.retina {
+  width: 50%;
+}
+
 code {
   color: #e3116c;
 }
