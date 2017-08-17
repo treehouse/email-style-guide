@@ -79,6 +79,12 @@
       text-align: left;
       border: 0;
     }
+    .round {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
     .round-t {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -421,17 +427,10 @@
     }
     .container {
       max-width: 600px !important;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
       background-color: #ffffff;
       text-align: left;
       color: #40484a;
     }
-    /*.container img {
-      max-width: 512px;
-    }*/
     .container-inner {
       vertical-align: top;
       border-collapse: collapse;
@@ -705,31 +704,27 @@
      text-decoration: inherit !important;
     }
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 600px) {
+      .container, .wrap-inner-table, .footer {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
       .wrap-inner-table {
         width: 100% !important;
       }
-      .flexible, .round-t {
-        margin-left: 0px !important;
-        margin-right: 0px !important;
+      .round, .round-t, img.round-t {
         border-top-left-radius: 0px !important;
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
       }
-      img.round-t {
-        border-radius: 0;
-      }
       .logo {
-        padding-left: 15% !important;
         width: 149px !important;
         height: 34px !important;
       }
-      .title {
-        padding-left: 15%
-      }
-      .date, .browser-link {
-        padding-right: 15%
+      .logo, .browser-link, .title, .date {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
       }
     }
   </style>
