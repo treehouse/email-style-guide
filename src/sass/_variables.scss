@@ -21,6 +21,12 @@ $text-colors: (
   "white":    #ffffff
 );
 
+// Email Button Colors
+$button-colors: (
+  "green": map-get($brand-colors, "green"),
+  "white": map-get($text-colors, "white")
+);
+
 // Gray Colors
 $gray-colors: (
   "gray-darker":  #2d3339,
@@ -182,3 +188,10 @@ $text-size: (
   4: 18px,
   5: 16px
 );
+
+// Global Border Variables
+$border-color-dark:   #b7c0c7;
+$border-color-mid:    #d4d9dd;
+$border-color-normal: #e8ebed;
+$border-color-light:  #f0f2f4;
+$border-radius: 4px;

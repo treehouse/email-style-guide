@@ -49,7 +49,6 @@ $border-values: normal, dark, mid, light;
 // Create style for border radius classes
 .#{$esg-prefix}-round {
   border-radius: $border-radius !important;
-
   &-t {
     border-radius: $border-radius $border-radius 0 0 !important;
   }

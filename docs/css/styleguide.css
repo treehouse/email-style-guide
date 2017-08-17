@@ -10532,18 +10532,15 @@ body {
 
 .esg-button {
   box-sizing: border-box;
-  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   display: inline;
   font-size: 16px;
   text-transform: capitalize;
-  background: #5fcf80;
   margin: 0;
   padding: 15px;
   font-weight: bold;
-  border: 1px solid #5fcf80;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   height: inherit;
   line-height: inherit;
@@ -10557,13 +10554,32 @@ body {
   width: auto;
 }
 
-.esg-button-wrap-inner {
+.esg-button-inner {
   box-sizing: border-box;
   vertical-align: top;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
-  background: #5fcf80;
   text-align: center;
+}
+
+.esg-button-green {
+  background: #5fcf80;
+  border: #5fcf80;
+  color: #ffffff;
+}
+
+.esg-button-green-inner {
+  background: #5fcf80;
+}
+
+.esg-button-white {
+  background: #ffffff;
+  border: #ffffff;
+  color: #5fcf80;
+}
+
+.esg-button-white-inner {
+  background: #ffffff;
 }
 
 .esg-brand-fill-green {
