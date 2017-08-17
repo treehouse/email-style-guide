@@ -86,6 +86,20 @@ subnav:
  dont_image = "/img/examples/dont-bg-colors.png"
 %}
 
+{% include do_vs_dont.html
+ do_text = "Do - Shapes should be solid colors"
+ do_image = "/img/examples/do-solid-shapes.png"
+ dont_text = "Don't - Shapes shouldn't have borders"
+ dont_image = "/img/examples/dont-solid-shapes.png"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Shapes should be round"
+ do_image = "/img/examples/do-shape-edges.png"
+ dont_text = "Don't - Shapes shouldn't have sharp corners"
+ dont_image = "/img/examples/dont-shape-edges.png"
+%}
+
 {% include section.html
   id = "gifs"
   classes = "border-t-light-xs p-tb-5-xs"
