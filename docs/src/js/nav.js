@@ -19,42 +19,11 @@ for (var i = 0; i < nav.length; i++) {
   });
 }
 
-var pageName = document.location.pathname.replace("/email-style-guide/", "").replace(".html", "");
+var child = document.querySelector('.guide-navigation-link-child--active');
+var parent = child.closest('.guide-navigation-item-parent');
 
-var isAtmosphere = pageName == "atmosphere/purpose" ||
-                   pageName == "atmosphere/process" ||
-                   pageName == "atmosphere/frontend_guidelines" ||
-                   pageName == "atmosphere/email_client_support" ||
-                   pageName == "atmosphere/mailchimp" ||
-                   pageName == "atmosphere/intercom" ||
-                   pageName == "atmosphere/copy" ||
-                   pageName == "atmosphere/accessibility";
-
-var isAtom = pageName == "atoms/typography" ||
-             pageName == "atoms/links" ||
-             pageName == "atoms/imagery" ||
-             pageName == "atoms/horizontal_rule" ||
-             pageName == "atoms/color" ||
-             pageName == "atoms/spacing";
-
-var isMolecule = pageName == "molecules/header" ||
-                 pageName == "molecules/footer" ||
-                 pageName == "molecules/callout" ||
-                 pageName == "molecules/two_column" ||
-                 pageName == "molecules/responsive";
-
-if (isAtmosphere) {
-  nav[0].classList.toggle('guide-navigation-item-parent--active');
-  nav[0].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
-}
-else if (isAtom) {
-  nav[1].classList.toggle('guide-navigation-item-parent--active');
-  nav[1].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
-}
-else if (isMolecule) {
-  nav[2].classList.toggle('guide-navigation-item-parent--active');
-  nav[2].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
-}
+parent.classList.toggle('guide-navigation-item-parent--active');
+parent.getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
 
 // Subnav Scrolly Fun
 var subNav = document.querySelector('.subnav-container');
