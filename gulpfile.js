@@ -53,6 +53,16 @@ gulp.task('docs:css', () => {
     .pipe(gulp.dest(dest));
 });
 
+
+gulp.task('docs:js', () => {
+  const src = dir.docsSrc + 'js/*.js';
+  const dest = dir.docs + 'assets/js/';
+
+  return gulp.src(src)
+    .pipe(concat('styleguide.js'))
+    .pipe(gulp.dest(dest));
+});
+
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('./bin/jekyll', ['serve',
     '--source', dir.docs,
