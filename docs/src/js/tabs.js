@@ -1,15 +1,37 @@
-$('.tabgroup > div').hide();
-$('.tabgroup > div:first-of-type').show();
-$('.tabs a').click(function(e) {
-  e.preventDefault();
+function hideElements(collection) {
+  Array.prototype.forEach.call(collection, hideElement);
+}
 
-  var $this = $(this);
-  var tabgroup = '#'+$this.parents('.tabs').data('tabgroup');
-  var others = $this.closest('li').siblings().children('a');
-  var target = $this.attr('href');
+function showElements(collection) {
+  Array.prototype.forEach.call(collection, showElement);
+}
 
-  others.removeClass('active');
-  $this.addClass('active');
-  $(tabgroup).children('div').hide();
-  $(target).show();
-})
+function hideElement(element) {
+  element.style.display = 'none';
+}
+
+function showElement(element) {
+  element.style.display = '';
+}
+
+hideElements(document.querySelectorAll('.tabgroup > div'));
+showElements(document.querySelectorAll('.tabgroup > div:first-of-type'));
+
+var tabs = document.querySelectorAll('.tabs a')
+Array.prototype.forEach.call(tabs, function(tab){
+  tab.addEventListener('click', function(event) {
+    event.preventDefault();
+    var target = event.target;
+    var tabgroup = target.closest('.tabs').dataset.tabgroup;
+
+    var tabs = target.closest('.tabs').querySelectorAll('a');
+    Array.prototype.forEach.call(tabs, function(element) {
+      element.classList.remove('active');
+    });
+
+    target.classList.add('active');
+
+    hideElements(document.querySelectorAll('#' + tabgroup + " > div"));
+    showElement(document.querySelector(target.getAttribute("href")));
+  });
+});

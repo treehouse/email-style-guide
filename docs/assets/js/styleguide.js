@@ -71,18 +71,40 @@ Prism.languages.markup={comment:/<!--[\w\W]*?-->/,prolog:/<\?[\w\W]+?\?>/,doctyp
 Prism.languages.css={comment:/\/\*[\w\W]*?\*\//,atrule:{pattern:/@[\w-]+?.*?(;|(?=\s*\{))/i,inside:{rule:/@[\w-]+/}},url:/url\((?:(["'])(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,selector:/[^\{\}\s][^\{\};]*?(?=\s*\{)/,string:/("|')(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1/,property:/(\b|\B)[\w-]+(?=\s*:)/i,important:/\B!important\b/i,"function":/[-a-z0-9]+(?=\()/i,punctuation:/[(){};:]/},Prism.languages.css.atrule.inside.rest=Prism.util.clone(Prism.languages.css),Prism.languages.markup&&(Prism.languages.insertBefore("markup","tag",{style:{pattern:/(<style[\w\W]*?>)[\w\W]*?(?=<\/style>)/i,lookbehind:!0,inside:Prism.languages.css,alias:"language-css"}}),Prism.languages.insertBefore("inside","attr-value",{"style-attr":{pattern:/\s*style=("|').*?\1/i,inside:{"attr-name":{pattern:/^\s*style/i,inside:Prism.languages.markup.tag.inside},punctuation:/^\s*=\s*['"]|['"]\s*$/,"attr-value":{pattern:/.+/i,inside:Prism.languages.css}},alias:"language-css"}},Prism.languages.markup.tag));
 !function(e){e.languages.sass=e.languages.extend("css",{comment:{pattern:/^([ \t]*)\/[\/*].*(?:(?:\r?\n|\r)\1[ \t]+.+)*/m,lookbehind:!0}}),e.languages.insertBefore("sass","atrule",{"atrule-line":{pattern:/^(?:[ \t]*)[@+=].+/m,inside:{atrule:/(?:@[\w-]+|[+=])/m}}}),delete e.languages.sass.atrule;var a=/((\$[-_\w]+)|(#\{\$[-_\w]+\}))/i,t=[/[+*\/%]|[=!]=|<=?|>=?|\b(?:and|or|not)\b/,{pattern:/(\s+)-(?=\s)/,lookbehind:!0}];e.languages.insertBefore("sass","property",{"variable-line":{pattern:/^[ \t]*\$.+/m,inside:{punctuation:/:/,variable:a,operator:t}},"property-line":{pattern:/^[ \t]*(?:[^:\s]+ *:.*|:[^:\s]+.*)/m,inside:{property:[/[^:\s]+(?=\s*:)/,{pattern:/(:)[^:\s]+/,lookbehind:!0}],punctuation:/:/,variable:a,operator:t,important:e.languages.sass.important}}}),delete e.languages.sass.property,delete e.languages.sass.important,delete e.languages.sass.selector,e.languages.insertBefore("sass","punctuation",{selector:{pattern:/([ \t]*)\S(?:,?[^,\r\n]+)*(?:,(?:\r?\n|\r)\1[ \t]+\S(?:,?[^,\r\n]+)*)*/,lookbehind:!0}})}(Prism);
 
-$('.tabgroup > div').hide();
-$('.tabgroup > div:first-of-type').show();
-$('.tabs a').click(function(e) {
-  e.preventDefault();
+function hideElements(collection) {
+  Array.prototype.forEach.call(collection, hideElement);
+}
 
-  var $this = $(this);
-  var tabgroup = '#'+$this.parents('.tabs').data('tabgroup');
-  var others = $this.closest('li').siblings().children('a');
-  var target = $this.attr('href');
+function showElements(collection) {
+  Array.prototype.forEach.call(collection, showElement);
+}
 
-  others.removeClass('active');
-  $this.addClass('active');
-  $(tabgroup).children('div').hide();
-  $(target).show();
-})
+function hideElement(element) {
+  element.style.display = 'none';
+}
+
+function showElement(element) {
+  element.style.display = '';
+}
+
+hideElements(document.querySelectorAll('.tabgroup > div'));
+showElements(document.querySelectorAll('.tabgroup > div:first-of-type'));
+
+var tabs = document.querySelectorAll('.tabs a')
+Array.prototype.forEach.call(tabs, function(tab){
+  tab.addEventListener('click', function(event) {
+    event.preventDefault();
+    var target = event.target;
+    var tabgroup = target.closest('.tabs').dataset.tabgroup;
+
+    var tabs = target.closest('.tabs').querySelectorAll('a');
+    Array.prototype.forEach.call(tabs, function(element) {
+      element.classList.remove('active');
+    });
+
+    target.classList.add('active');
+
+    hideElements(document.querySelectorAll('#' + tabgroup + " > div"));
+    showElement(document.querySelector(target.getAttribute("href")));
+  });
+});
