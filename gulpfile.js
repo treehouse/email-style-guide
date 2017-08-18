@@ -43,11 +43,11 @@ gulp.task('docs:css', () => {
     precision: 3
   };
 
-  var sassStream = gulp.src(sassSrc)
+  const sassStream = gulp.src(sassSrc)
     .pipe(sass(sassOpts).on('error', sass.logError))
     .pipe(concat('styleguide-files.sass'));
 
-  var cssStream = gulp.src(src)
+  const cssStream = gulp.src(src)
     .pipe(concat('styleguide-files.css'));
 
   return merge(sassStream, cssStream)
