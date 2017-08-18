@@ -5,6 +5,7 @@ const merge = require('merge-stream');
 const sass = require('gulp-sass');
 const minify = require('gulp-minify-css');
 
+const uglify = require('gulp-uglify');
 
 const child = require('child_process');
 const gulpUtil = require('gulp-util');
@@ -63,6 +64,7 @@ gulp.task('docs:js', () => {
 
   return gulp.src(src)
     .pipe(concat('styleguide.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(dest));
 });
 
@@ -93,5 +95,5 @@ gulp.task('watch', () => {
 
 gulp.task('default', ['src', 'docs', 'jekyll']);
 gulp.task('src', ['css']);
-gulp.task('docs', ['docs:css']);
+gulp.task('docs', ['docs:css', 'docs:js']);
 gulp.task('serve', ['jekyll', 'watch']);
