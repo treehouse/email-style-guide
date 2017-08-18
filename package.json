@@ -1,14 +1,13 @@
 {
   "name": "email-style-guide",
   "description": "Treehouse email style guide",
-  "dependencies": {
-    "gulp-minify-css": "^1.2.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "bower": "^1.8.0",
     "child_process": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
     "merge-stream": "^1.0.1"
