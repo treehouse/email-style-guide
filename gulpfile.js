@@ -1,4 +1,6 @@
 const gulp = require('gulp');
+const concat = require('gulp-concat');
+const merge = require('merge-stream');
 
 const sass = require('gulp-sass');
 
@@ -29,7 +31,9 @@ gulp.task('css', () => {
 });
 
 gulp.task('docs:css', () => {
-  const src = dir.docsSrc + 'sass/styleguide.sass';
+  const src = dir.docsSrc + 'css/*.css';
+  const sassSrc = dir.docsSrc + 'sass/styleguide.sass';
+
   const dest = dir.docs + 'assets/css/';
   const sassOpts = {
     outputStyle: 'expanded',
@@ -37,9 +41,15 @@ gulp.task('docs:css', () => {
     precision: 3
   };
 
-  gulp.src(src)
-    .pipe(sass(sassOpts)
-    .on('error', sass.logError))
+  var sassStream = gulp.src(sassSrc)
+    .pipe(sass(sassOpts).on('error', sass.logError))
+    .pipe(concat('styleguide-files.sass'));
+
+  var cssStream = gulp.src(src)
+    .pipe(concat('styleguide-files.css'));
+
+  return merge(sassStream, cssStream)
+    .pipe(concat('styleguide.css'))
     .pipe(gulp.dest(dest));
 });
 
