@@ -3,6 +3,8 @@ const concat = require('gulp-concat');
 const merge = require('merge-stream');
 
 const sass = require('gulp-sass');
+const minify = require('gulp-minify-css');
+
 
 const child = require('child_process');
 const gulpUtil = require('gulp-util');
@@ -50,6 +52,7 @@ gulp.task('docs:css', () => {
 
   return merge(sassStream, cssStream)
     .pipe(concat('styleguide.css'))
+    .pipe(minify())
     .pipe(gulp.dest(dest));
 });
 
