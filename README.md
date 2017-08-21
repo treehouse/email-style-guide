@@ -32,3 +32,10 @@ Running `yarn run serve` will automatically build assets when they change.  If y
 ```
 $ yarn run gulp
 ```
+
+## Releasing
+
+* Bump version
+* Update release notes
+* Create tag + push
+* Push to npm (TDB)
