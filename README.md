@@ -35,7 +35,15 @@ $ yarn run gulp
 
 ## Releasing
 
-* Bump version
-* Update release notes
-* Create tag + push
-* Push to npm (TDB)
+#### Update the release notes
+
+Update `docs/release_notes.html` with the new version number and some notes about the release.
+
+#### Bump the version number
+
+Update the version number, create a git tag, and push.
+
+```
+$ yarn version
+$ git push
+```
