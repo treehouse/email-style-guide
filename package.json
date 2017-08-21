@@ -9,5 +9,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "version": "0.1.0"
 }
