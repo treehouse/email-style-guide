@@ -45,5 +45,5 @@ Update the version number, create a git tag, and push.
 
 ```
 $ yarn version
-$ git push
+$ git push --tags
 ```
