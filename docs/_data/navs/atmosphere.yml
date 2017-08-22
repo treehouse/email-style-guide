@@ -1,8 +1,6 @@
 filename: atmosphere
 name: Atmosphere
 pages:
-  - slug: /atmosphere/purpose.html
-    name: Purpose
 
   - slug: /atmosphere/principles.html
     name: Principles

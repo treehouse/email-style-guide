@@ -1,9 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <style type="text/css">
+
+  /* Email specific */
+
+    /* When an email is pulled into Outlook.com / Hotmail, any style rules present in the email are appended with .ExternalClass. Normalizing a few of these can help create a baseline for you to work from. */
+    .ExternalClass{
+        width:100%;
+    }
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div{
+        line-height: 100%;
+    }
+
+    /* Git rid of spaces around tables added by Outlook.*/
+    table {
+      mso-table-lspace:0pt; 
+      mso-table-rspace:0pt;
+    }
+
+    /* Override Outlook.com turning dates to blue links */
+     * [office365] .outlook-link span {
+      color: #ffffff !important;
+      border-bottom-width:0 !important;
+      border-bottom-style:none !important;
+    }
+    .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
+      border-bottom-width:0 !important;
+      border-bottom-style:none !important;
+    }
+
+    table[align="center"] {
+      margin: 0 auto;
+    }
+
     html {
       -webkit-tap-highlight-color: transparent;
       font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
@@ -15,7 +52,7 @@
       padding: 0px;
       background: #edeff0;
       width: 100% !important;
-      -webkit-text-size-adjust: none;
+      -webkit-text-size-adjust: 100%; /* WebKit text size adjustment */
       font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
     }
     h1, h2, h3, h4, h5, h6 {
@@ -43,6 +80,371 @@
     .text-7-xs {
       font-size: 12px !important
     }
+    .preheader {
+      display:none;
+      font-size:1px;
+      line-height:1px;
+      max-height:0px;
+      max-width:0px;
+      opacity:0;
+      overflow:hidden;
+      mso-hide:all;
+      color: #ffffff !important;
+    }
+    img {
+      border: 0;
+      -ms-interpolation-mode: bicubic; /* Makes images look better in IE */
+    }
+    .image-full {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+    }
+    .image-inline {
+      max-width: 516px;
+      width: 100%;
+      height: auto;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+    }
+    p {
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
+      font-size: 16px;
+      line-height: 180%;
+      text-align: left;
+    }
+    .max-width {
+      max-width: 600px;
+    }
+    a {
+      color: #3f8abf;
+      cursor: pointer;
+      transition: color 300ms 0s ease;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: left;
+      border: 0;
+    }
+    .bg-blue {
+      background-color: #3f8abf;
+    }
+    hr {
+      padding: 0;
+      margin: 8px 0 8px 0;
+      border: none;
+      width: 100%;
+      height: 1px;
+      color: #edeff0;
+      background-color: #edeff0;
+    }
+    .wrap {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+    .wrap-inner {
+      vertical-align: top;
+      padding-bottom: 15px;
+      border-collapse: collapse;
+    }
+    .wrap-inner-table {
+      max-width: 600px !important;
+      display: block;
+      margin: 0 !important;
+    }
+    .wrap-inner-table-wrap {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .wrap-inner-table-wrap-inner {
+      width: 100%;
+    }
+    .wrap-logo {
+      width: 192px;
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .logo {
+      width: 191px;
+      height: 48px;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 600px !important;
+      background-color: #ffffff;
+      text-align: left;
+      color: #40484a;
+    }
+    .container-inner {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .blog-featured {
+      padding-left: 7%;
+      padding-right: 7%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .blog-title {
+      padding-left: 7%;
+      padding-right: 7%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .blog-date {
+      padding-right: 7%;
+      padding-top: 3%;
+      text-align: right;
+    }
+    .article-primary {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      padding-right: 7%;
+      padding-left: 7%;
+      vertical-align: top;
+      line-height: 100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    .article-secondary {
+      vertical-align: top;
+      line-height: 100%;
+      padding-top: 5%;
+      padding-right: 7%;
+      padding-left: 7%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    .article-primary h1, .article-secondary h2 {
+      line-height: 130%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .article-primary h2, .article-secondary h2 {
+      line-height: 150%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .body {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-top: 7%;
+      padding-bottom: 7%;
+    }
+    .body-p-t-0 {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-bottom: 7%;
+    }
+    .body-p-b-0 {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-top: 7%;
+    }
+    .body-p-lr {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-right: 7%;
+      padding-left: 7%;
+    }
+    .text-left-xs {
+      text-align: left;
+    }
+    .grey {
+      background-color: #edeff0;
+    }
+    .bg-gray-darker {
+      background-color: #2d3339;
+    }
+    .background {
+      background-color: #edeff0;
+      text-align: center;
+    }
+    li {
+      line-height: 170%;
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+      padding-bottom: 15px;
+      text-align: left;
+    }
+    li:last-of-type {
+      padding-bottom: 0;
+    }
+    .first-paragraph {
+      margin-top: 0;
+    }
+    .image-link a {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .image-full img {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+    }
+    .link-arrow {
+      width: 7px;
+      height: 11px;
+    }
+    .contact-info p {
+      text-align: center;
+      color: #7b8b8e;
+      font-size: 12px;
+    }
+    .pipe {
+      color: #b7c0c7;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+    }
+    .social {
+      width: 39px;
+      height: 42px;
+    }
+    .spacer {
+      max-width: 600px;
+      border-spacing: 0;
+    }
+    .button-td {
+      border-radius: 5px;
+      background: #5fcf80;
+      text-align: center;
+    }
+    .button-a {
+      background: #5fcf80;
+      border: 18px solid #5fcf80;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.1;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      border-radius: 5px;
+    }
+    /* .button-wrap {
+      box-sizing: border-box;
+      border-collapse: separate !important;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: auto;
+    }
+    .button-wrap-centered {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .button-wrap-inner {
+      box-sizing: border-box;
+      vertical-align: top;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-radius: 5px;
+      background: #5fcf80;
+      text-align: center;
+    }
+    .button {
+      box-sizing: border-box;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: capitalize;
+      background: #5fcf80;
+      margin: 0;
+      padding: 18px;
+      font-weight: normal;
+      border: 1px solid #5fcf80;
+      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }
+    .button-white-wrap-inner {
+      box-sizing: border-box;
+      vertical-align: top;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-radius: 5px;
+      background: #ffffff;
+      text-align: center;
+    }
+    .button-white {
+      box-sizing: border-box;
+      color: #40484a;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: capitalize;
+      background: #ffffff;
+      margin: 0;
+      padding: 18px;
+      font-weight: normal;
+      border: 1px solid #ffffff;
+      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }*/
+    .track {
+      width: 40px;
+    }
+    .content-announcement-text {
+      width: 600px;
+      border-collapse: collapse;
+      border-bottom: 1px solid #e2e5e8;
+    }
+    .content-announcement-icon-wrap-img {
+      width: 50px;
+      height: 50px;
+      border: 0;
+      outline: none;
+    }
+    .regular {
+      font-weight: normal;
+    }
+    .webinar-bg {
+      background-image: url("https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png");
+      background-size: cover;
+    }
+
+    /* Preventing email clients from forcing links to be blue */
+    a[x-apple-data-detectors=true] {
+     color: inherit !important;
+     text-decoration: inherit !important;
+    }
+    a[x-apple-data-detectors=true] {
+     color: inherit !important;
+     text-decoration: inherit !important;
+    }
+
+
+  /* Leap */
     .block-xs {
       display: block;
     }
@@ -57,27 +459,6 @@
     }
     .border-b-light-xs {
       border-bottom: solid 1px #f0f2f4 !important;
-    }
-    img {
-      border: 0;
-    }
-    p {
-      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif; 
-      font-size: 16px;
-      line-height: 180%;
-      text-align: left;
-    }
-    table[align="center"] {
-      margin: 0 auto;
-    }
-    a {
-      color: #3f8abf;
-      cursor: pointer;
-      transition: color 300ms 0s ease;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: left;
-      border: 0;
     }
     .round {
       border-top-left-radius: 5px;
@@ -138,9 +519,6 @@
     .bg-dark-blue {
       background-color: #255D83;
     }
-    .bg-blue {
-      background-color: #3f8abf;
-    }
     .brand-bg-green {
       background-color: #5fcf80;
     }
@@ -173,9 +551,6 @@
     }
     .topic-color-go-base {
       color: #375eab !important;
-    }
-    .round {
-      border-radius: 4px;
     }
     .m-0-xs {
       margin: 0;
@@ -378,217 +753,16 @@
     .text-right-xs {
       text-align: right;
     }
-    hr {
-      padding: 0;
-      margin: 8px 0 8px 0;
-      border: none;
-      width: 100%;
-      height: 1px;
-      color: #edeff0;
-      background-color: #edeff0;
-    }
-    .wrap {
-      height: 100% !important;
-      margin: 0;
-      padding: 0;
-      width: 100% !important;
-    }
-    .wrap-inner {
-      vertical-align: top;
-      padding-bottom: 15px;
-      border-collapse: collapse;
-    }
-    .wrap-inner-table {
-      width: 90%;
-      max-width: 600px !important;
-      margin-right: 5%;
-      margin-left: 5%;
-      display: block;
-    }
-    .wrap-inner-table-wrap {
-      vertical-align: top;
-      border-collapse: collapse;
-    }
-    .wrap-inner-table-wrap-inner {
-      width: 100%;
-    }
-    .wrap-logo {
-      width: 192px;
-      vertical-align: top;
-      border-collapse: collapse;
-    }
-    .logo {
-      width: 191px;
-      height: 48px;
-      border: 0;
-      line-height: 100%;
-      outline: none;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 600px !important;
-      background-color: #ffffff;
-      text-align: left;
-      color: #40484a;
-    }
-    .container-inner {
-      vertical-align: top;
-      border-collapse: collapse;
-    }
-    .blog-featured {
-      padding-left: 7%;
-      padding-right: 7%;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    .blog-title {
-      padding-left: 7%;
-      padding-right: 7%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 5px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    .blog-date {
-      padding-right: 7%;
-      padding-top: 3%;
-      text-align: right;
-    }
-    .article-primary {
-      padding-top: 3%;
-      padding-bottom: 3%;
-      padding-right: 7%;
-      padding-left: 7%;
-      vertical-align: top;
-      line-height: 100%;
-      text-align: left;
-      border-collapse: collapse;
-    }
-    .article-secondary {
-      vertical-align: top;
-      line-height: 100%;
-      padding-top: 5%;
-      padding-right: 7%;
-      padding-left: 7%;
-      text-align: left;
-      border-collapse: collapse;
-    }
-    .article-primary h1, .article-secondary h2 {
-      line-height: 130%;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    .article-primary h2, .article-secondary h2 {
-      line-height: 150%;
-      margin-top: 15px;
-      margin-bottom: 10px;
-    }
-    .body {
-      vertical-align: top;
-      border-collapse: collapse;
-      padding-right: 7%;
-      padding-left: 7%;
-      padding-top: 7%;
-      padding-bottom: 7%;
-    }
-    .body-p-t-0 {
-      vertical-align: top;
-      border-collapse: collapse;
-      padding-right: 7%;
-      padding-left: 7%;
-      padding-bottom: 7%;
-    }
-    .body-p-b-0 {
-      vertical-align: top;
-      border-collapse: collapse;
-      padding-right: 7%;
-      padding-left: 7%;
-      padding-top: 7%;
-    }
-    .body-p-lr {
-      vertical-align: top;
-      border-collapse: collapse;
-      padding-right: 7%;
-      padding-left: 7%;
-    }
-    .text-left-xs {
-      text-align: left;
-    }
-    .grey {
-      background-color: #edeff0;
-    }
-    .bg-gray-darker {
-      background-color: #2d3339;
-    }
-    .background {
-      background-color: #edeff0;
-      text-align: center;
-    }
-    li {
-      line-height: 170%;
-      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-      padding-bottom: 15px;
-      text-align: left;
-    }
-    li:last-of-type {
-      padding-bottom: 0;
-    }
-    .outer {
-      table-layout: fixed;
-    }
-    .first-paragraph {
-      margin-top: 0;
-    }
     .bold {
       font-weight: bold;
     }
     .italic {
       font-style: italic;
     }
-    .image-link a {
-      border: none;
-      margin: 0;
-      padding: 0;
-    }
     .w-full-xs {
       width: 100%;
     }
-    .image-full img {
-      max-width: 600px;
-      width: 100%;
-      height: auto;
-      border: 0;
-      line-height: 100%;
-      outline: none;
-      text-decoration: none;
-      text-align: center;
-    }
-    .link-arrow {
-      width: 7px;
-      height: 11px;
-    }
-    .contact-info p {
-      text-align: center;
-      color: #7b8b8e;
-      font-size: 12px;
-    }
-    .pipe {
-      color: #b7c0c7;
-    }
-    .footer {
-      width: 100%;
-      text-align: center;
-    }
-    .social {
-      width: 39px;
-      height: 42px;
-    }
     .col-50-xs {
-      width: 50%;
-    }
-    .col-33-xs {
       width: 50%;
     }
     .border-t-xs {
@@ -600,72 +774,6 @@
     .border-t-mid-xs {
       border-top: solid 1px #d4d9dd;
     }
-/* Buttons */
-    .button-wrap {
-      box-sizing: border-box;
-      border-collapse: separate !important;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      width: auto;
-    }
-    .button-wrap-centered {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .button-wrap-inner {
-      box-sizing: border-box;
-      vertical-align: top;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      border-radius: 5px;
-      background: #5fcf80;
-      text-align: center;
-    }
-    .button {
-      box-sizing: border-box;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 16px;
-      text-transform: capitalize;
-      background: #5fcf80;
-      margin: 0;
-      padding: 18px;
-      font-weight: normal;
-      border: 1px solid #5fcf80;
-      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-    }
-    .button-white-wrap-inner {
-      box-sizing: border-box;
-      vertical-align: top;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      border-radius: 5px;
-      background: #ffffff;
-      text-align: center;
-    }
-    .button-white {
-      box-sizing: border-box;
-      color: #40484a;
-      text-decoration: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 16px;
-      text-transform: capitalize;
-      background: #ffffff;
-      margin: 0;
-      padding: 18px;
-      font-weight: normal;
-      border: 1px solid #ffffff;
-      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-    }
-    .track {
-      width: 40px;
-    }
     .align-top-xs {
       vertical-align: top;
     }
@@ -675,36 +783,11 @@
     .align-bottom-xs {
       vertical-align: bottom;
     }
-    .content-announcement-text {
-      width: 600px;
-      border-collapse: collapse;
-      border-bottom: 1px solid #e2e5e8;
-    }
-    .content-announcement-icon-wrap-img {
-      width: 50px;
-      height: 50px;
-      border: 0;
-      outline: none;
-    }
-    .regular {
-      font-weight: normal;
-    }
-    .webinar-bg {
-      background-image: url("https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png");
-      background-size: cover;
-    }
-
-    /* Preventing email clients from forcing links to be blue */
-    a[x-apple-data-detectors=true] {
-     color: inherit !important;
-     text-decoration: inherit !important;
-    }
-    a[x-apple-data-detectors=true] {
-     color: inherit !important;
-     text-decoration: inherit !important;
-    }
 
     @media only screen and (max-width: 600px) {
+      .bg-gray-light, html {
+        background-color: #fff !important;
+      }
       .container, .wrap-inner-table, .footer {
         margin-left: 0px !important;
         margin-right: 0px !important;
@@ -720,7 +803,7 @@
       }
       .logo {
         width: 149px !important;
-        height: 37px !important;
+        height: 34px !important;
       }
       .logo, .browser-link, .title, .date {
         padding-left: 7% !important;
@@ -728,20 +811,34 @@
       }
     }
   </style>
-
-
-
 </head>
 
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#edeff0">
   <center>
-    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" class="grey wrap">
+  <!-- Visually Hidden Preheader Text -->
+  <div class="preheader">
+    This is preheader text that will appear in the inbox preview but not the email.
+  </div>
+
+ <!-- Colored table wrap since Yahoo Mail ignores body background color -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#edeff0" class="bg-gray-light">
+    <tr>
+        <td bgcolor="#edeff0" class="bg-gray-light" align="center">
+
+  <div class="email-container m-0-xs max-width">
+  <!-- MSO tags for Desktop Windows Outlook to enforce a 600px width. -->
+  <!--[if mso]>
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+  <tr>
+  <td>
+  <![endif]-->
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="wrap" bgcolor="#edeff0">
       <tr>
         <td align="center" class="wrap-inner">
           <!-- // BEGIN CONTAINER -->
-            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table class="max-width wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
-                <td align="center" class="wrap-inner-table-wrap" colspan="2">
+                <td align="center" class="wrap-inner-table-wrap" colspan="2" width="600">
                   <!-- // BEGIN PREHEADER -->
                   <table border="0" cellpadding="0" cellspacing="0" class="wrap-inner-table-wrap-inner">
                     <tr>
@@ -765,20 +862,20 @@
                 </td>
               </tr>
               <tr>
-                <td align="center" valign="top" bgcolor="#edeff0" class="background" colspan="3">
-                  <table class="flexible" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <td align="center" valign="top" bgcolor="#edeff0" class="background" colspan="2">
+                  <table class="max-width" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td align="center" class="wrap-inner-table-wrap">
-                        <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                      <td align="center" class="wrap-inner-table-wrap" colspan="2">
+                        <table cellpadding="0" cellspacing="0" border="0" class="container round max-width" align="center" bgcolor="#ffffff" width="100%">
                           <tr>
-                            <td align="center" class="container-inner bg-dark-blue webinar-bg round-t">
+                            <td align="center" class="container-inner bg-dark-blue webinar-bg round-t" colspan="2">
                               <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td class="body text-color-white text-center-xs">
+                                    <td class="body text-color-white text-center-xs" colspan="2">
                                       <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/calendar2x.png" width="55" height="55" alt="Calendar">
-                                      <p class="text-5-xs mktEditable text-center-xs" id="webinar-label" mktoName="Webinar - Label">Webinar</p>
-                                      <h2 class="m-t-0-xs mktEditable text-center-xs" id="webinar-title" mktoName="Webinar - Title">How to Build a Successful and Scalable Training Roadmap</h2>
-                                      <p class="mktEditable text-color-white text-center-xs m-0-xs" id="webinar-time" mktoName="Webinar - Time" color="#ffffff">Join us Monday, August 28th at Xpm PST</p>
+                                      <p class="text-color-white text-5-xs mktEditable text-center-xs" id="webinar-label" mktoName="Webinar - Label" color="#ffffff">Webinar</p>
+                                      <h2 class="text-color-white m-t-0-xs mktEditable text-center-xs" id="webinar-title" mktoName="Webinar - Title" color="#ffffff">How to Build a Successful and Scalable Training Roadmap</h2>
+                                      <p class="mktEditable text-color-white text-center-xs m-0-xs" id="webinar-time" mktoName="Webinar - Time" color="#ffffff"><span class="text-color-white outlook-link">Join us Monday, August 28th at Xpm PST</span></p>
                                     </td>
                                 </tr><!--
                                 <tr>
@@ -806,24 +903,26 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="body-p-b-0 round-b">
+                            <td class="body-p-b-0 round-b" colspan="2">
                               <h3 class="m-t-0-xs">Join Us for this Special Training Event</h3>
                               <p class="m-t-0-xs m-b-0-xs mktEditable" id="webinar-description" mktoName="Webinar - Description">Connect with the folks on our Business Team for a special webinar where we'll be discussing specific strategies for building a successful and scalable training roadmap for your organization.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td height="30">
+                            <td height="30" colspan="2">
                             </td>
                           </tr>
                           <tr>
                             <td class="body-p-t-0">
                               <table>
                                 <tr>
-                                  <td>
-                                    <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                  <td colspan="2">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"> <!-- For centered buttons style="margin: auto;"-->
                                       <tr>
-                                        <td valign="top" class="button-wrap-inner">
-                                          <a href="#" class="button mktEditable" id="webinar-button" mktoName="Webinar - Button">Register Now</a>
+                                        <td class="button-td">
+                                          <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="button-a">
+                                            <span class="text-color-white">Register for the Webinar</span>
+                                          </a>
                                         </td>
                                       </tr>
                                     </table>
@@ -840,31 +939,32 @@
               </tr>
             </table>
 
-            <table>
+            <table role="presentation" class="spacer" width="100%">
               <tr>
                 <td class="bg-gray-light" height="15">
                 </td>
               </tr>
             </table>
 
-            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <table class="max-width wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
-                <td align="center" valign="top" bgcolor="#edeff0" class="background" colspan="3">
+                <td align="center" valign="top" bgcolor="#edeff0" class="background">
                 <!-- Content Begin -->
-                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container round max-width" align="center" bgcolor="#ffffff" width="100%">
                     <tr>
                       <td align="center" class="container-inner">
                         <table border="0" cellpadding="0" cellspacing="0">
                           <tr>
-                            <td colspan="2" class="text-center-xs image-full" align="center">
-                              <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/office-inside1.jpg" class="round-t mktoImg" id="featured-img" mktoName="Featured - Image" alt="Team Working Together">
+                            <td class="text-center-xs" align="center">
+                              <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/office-inside1.jpg" width="600" class="round-t mktoImg image-full" id="featured-img" mktoName="Featured - Image" alt="Team Working Together">
                             </td>
                           </tr>
                           <!-- // END BODY HEADER-->
 
                           <!-- BEGIN BODY CONTENT -->
                           <tr>
-                            <td colspan="2" class="body-p-lr">
+                            <td class="body-p-b-0">
                               <h2 class="mktEditable" id="featured-headline" mktoName="Featured - Headline">
                                 Custom Tracks &amp; Departments: Working Together in Harmony
                               </h2>
@@ -874,7 +974,7 @@
                             <td class="body-p-t-0">
                               <table>
                                 <tr>
-                                  <td colspan="2">
+                                  <td>
                                     <p class="m-t-0-xs m-r-0-xs m-l-0-xs mktEditable" id="featured-paragraph" mktoName="Featured - Paragraph">Do you have multiple teams in your account? If so, we'd highly recommend taking advantage of our <a href="http://go.teamtreehouse.com/JW3uK00C1P0st200k000000" target="_blank">Departments Feature</a>, which has several benefits that will save you time and make your account more organized:</p>
                                     <ul class="m-b-4-xs">
                                       <li><span class="bold">Account Management</span>: Appoint one or multiple (there's no limit!) Department Admins to <a href="http://go.teamtreehouse.com/p0000K01uP000DsWku00023" target="_blank">track progress</a> and oversee their specific teams, taking the onus off of you to manage each person</li>
@@ -884,18 +984,20 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td colspan="2" class="p-b-6-xs">
-                                    <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                  <td class="p-b-6-xs">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0"> <!-- For centered buttons style="margin: auto;"-->
                                       <tr>
-                                        <td valign="top" class="button-wrap-inner">
-                                          <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="button mktEditable" id="featured-button" mktoName="Featured - Button">View Your Departments Page</a>
+                                        <td class="button-td">
+                                          <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="button-a mktEditable" id="featured-button" mktoName="Featured - Button">
+                                            <span class="text-color-white">View Your Department Dashboard</span>
+                                          </a>
                                         </td>
                                       </tr>
                                     </table>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="bg-gray-lighter round p-5-xs" colspan="2">
+                                  <td class="bg-gray-lighter round p-5-xs">
                                     <p class="bold m-0-xs mktEditable" id="callout-headline" mktoName="Callout - Headline">Interested in learning more?</p>
                                     <p class="mktEditable" id="callout-description" mktoName="Callout - Description">Reply to this email to reach your Customer Success Manager to discuss best practices and create learning paths for each team with <a href="http://go.teamtreehouse.com/c000300K0usW01kPy00H200" target="_blank">Custom Tracks!</a></p>
                                   </td>
@@ -911,17 +1013,17 @@
               </tr>
             </table>
 
-            <table>
+            <table role="presentation" class="spacer" width="100%">
               <tr>
                 <td class="bg-gray-light" height="15">
                 </td>
               </tr>
             </table>
 
-            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table class="max-width wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
                 <td align="center" class="wrap-inner-table-wrap">
-                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container round max-width" align="center" bgcolor="#ffffff" width="100%">
                     <tr>
                       <td align="center" class="container-inner">
                         <table border="0" cellpadding="0" cellspacing="0">
@@ -945,7 +1047,7 @@
                                     <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" class="p-t-2-xs text-color-dark block-xs mktEditable" id="course1-course" mktoName="Course 1 - Course" target="_blank">HTML Basics</a>
                                   </td>
                                   <td class="align-middle-xs text-right-xs bg-gray-lighter round-r p-4-xs" height="50">
-                                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" target="_blank"><img height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" width="50" alt="Course"></a>
+                                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" target="_blank"><img width="50" height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" alt="Course"></a>
                                   </td>
                                 </tr>
                                 <tr class="mktoModule" id="hr2" mktoName="HR 2">
@@ -964,7 +1066,7 @@
                                     <a href="http://go.teamtreehouse.com/j0CW013uK000000sPkL0200" class="p-t-2-xs text-color-dark block-xs mktEditable" id="course2-course" mktoName="Course 2 - Course" target="_blank">Introduction to Big Data</a>
                                   </td>
                                   <td class="align-middle-xs text-right-xs bg-gray-lighter round-r p-4-xs" height="50">
-                                      <a href="http://go.teamtreehouse.com/j0CW013uK000000sPkL0200" target="_blank"><img height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" width="50" alt="Course"></a>
+                                      <a href="http://go.teamtreehouse.com/j0CW013uK000000sPkL0200" target="_blank"><img width="50" height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" alt="Course"></a>
                                   </td>
                                 </tr>
                                 <tr class="mktoModule" id="hr3" mktoName="HR 3">
@@ -983,7 +1085,7 @@
                                     <a href="http://go.teamtreehouse.com/v0000s2N0kuPK0E1W030000" class="p-t-2-xs text-color-dark block-xs mktEditable" id="course3-course" mktoName="Course 3 - Course" target="_blank">Data Visualization with Excel</a>
                                   </td>
                                   <td class="align-middle-xs text-right-xs bg-gray-lighter round-r p-4-xs" height="50">
-                                      <a href="http://go.teamtreehouse.com/v0000s2N0kuPK0E1W030000" target="_blank"><img height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" width="50" alt="Course"></a>
+                                      <a href="http://go.teamtreehouse.com/v0000s2N0kuPK0E1W030000" target="_blank"><img width="50" height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" alt="Course"></a>
                                   </td>
                                 </tr>
                                 <tr class="mktoModule" id="hr4" mktoName="HR 4">
@@ -1002,7 +1104,7 @@
                                     <a href="http://go.teamtreehouse.com/ZWs0001Fk0000000O30uPK2" class="p-t-2-xs text-color-dark block-xs mktEditable" id="course4-course" mktoName="Course 4 - Course" target="_blank">Data Visualization with Bokeh</a>
                                   </td>
                                   <td class="align-middle-xs text-right-xs bg-gray-lighter round-r p-4-xs" height="50">
-                                      <a href="http://go.teamtreehouse.com/ZWs0001Fk0000000O30uPK2" target="_blank"><img height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" width="50" alt="Course"></a>
+                                      <a href="http://go.teamtreehouse.com/ZWs0001Fk0000000O30uPK2" target="_blank"><img width="50" height="50" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" alt="Course"></a>
                                   </td>
                                 </tr>
                                 <tr class="mktoModule" id="hr5" mktoName="HR 5">
@@ -1017,7 +1119,6 @@
                                   <td class="bg-gray-lighter round p-5-xs" colspan="2">
                                     <p class="bold m-0-xs mktEditable" id="roadmap-headline" mktoName="Roadmap - Headline">See what's in the pipeline</p>
                                     <p class="mktEditable m-b-0-xs" id="roadmap-description" mktoName="Roadmap - Description">Take a gander at our <a href="http://go.teamtreehouse.com/K0000KW00u2Q3Hk0001s0P0" class="mktEditable" id="roadmap-link" mktoName="Roadmap - Link" target="_blank">Content Roadmap</a> to find out about upcoming courses.</p>
-                                    
                                   </td>
                                 </tr>
                               </table>
@@ -1031,50 +1132,52 @@
               </tr>
             </table>
 
-            <table>
+            <table role="presentation" class="spacer" width="100%">
               <tr>
                 <td class="bg-gray-light" height="15">
                 </td>
               </tr>
             </table>
 
-            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table class="max-width wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
                 <td align="center" class="wrap-inner-table-wrap">
-                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                  <table cellpadding="0" cellspacing="0" border="0" class="container round max-width" align="center" bgcolor="#ffffff" width="100%">
                     <tr>
-                      <td align="center" class="container-inner">
+                      <td align="center">
                         <table border="0" cellpadding="0" cellspacing="0">
                           <tr>
-                              <td colspan="2" class="body p-t-4-xs p-b-4-xs">
+                              <td class="body p-t-4-xs p-b-4-xs">
                                 <h2 class="m-t-0-xs mktEditable" id="news-headline" mktoName="News - Headline">Learning &amp; Development News</h2>
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                   <tr>
-                                    <td class="border-t-xs" colspan="2" height="30">
+                                    <td class="border-t-xs" height="30">
                                     </td>
                                   </tr>
                                   <tr>
                                     <td class="p-b-5-xs align-top-xs">
                                       <a href="http://go.teamtreehouse.com/s0P20u100WsG0K000030k0P" target="_blank">
-                                        <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/teamwork.jpg" alt="Teamwork" class="mktoImg w-full-xs" id="news-image" mktoName="News - Image">
+                                        <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/teamwork.jpg" alt="Teamwork" class="mktoImg w-full-xs image-inline" width="516" id="news-image" mktoName="News - Image">
                                       </a>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td class="p-b-1-xs" colspan="2">
+                                    <td class="p-b-1-xs">
                                       <h4 class="m-0-xs text-color-dark mktEditable" id="news-title" mktoName="News - Title"><a href="http://go.teamtreehouse.com/s0P20u100WsG0K000030k0P" class="text-color-dark" target="_blank">Build Engagement and Curiosity Into Your Training Programs</a></h4>
                                       <p class="mktEditable" id="news-description" mktoName="News - Description">Let Emily Schweiss show you how to create a sustainable, thriving culture of learning.</p>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td colspan="2" class="p-b-6-xs">
-                                      <table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
+                                    <td class="p-b-6-xs">
+                                      <table role="presentation" cellspacing="0" cellpadding="0" border="0"> <!-- For centered buttons style="margin: auto;"-->
                                         <tr>
-                                          <td valign="top" class="button-wrap-inner">
-                                            <a href="http://go.teamtreehouse.com/s0P20u100WsG0K000030k0P" class="button mktEditable" id="news-button" mktoName="News - Button" target="_blank">Read the Blog Post</a>
+                                          <td class="button-td">
+                                            <a href="http://go.teamtreehouse.com/s0P20u100WsG0K000030k0P" class="button-a mktEditable" id="news-button" mktoName="News - Button" target="_blank">
+                                              <span class="text-color-white">Read the Blog Post</span>
+                                            </a>
                                           </td>
                                         </tr>
-                                      </table>
+                                    </table>
                                     </td>
                                   </tr>
                                   <!--<tr>
@@ -1090,7 +1193,7 @@
                                     </td>
                                   </tr>-->
                                   <tr>
-                                    <td class="border-t-xs" colspan="2" height="1">
+                                    <td class="border-t-xs" height="1">
                                     </td>
                                   </tr>
                                 </table>
@@ -1104,47 +1207,35 @@
                 </tr>
               </table>
 
-            <table>
+            <table role="presentation" class="spacer" width="100%">
               <tr>
                 <td class="bg-gray-light" height="15">
                 </td>
               </tr>
             </table>
 
-            <table class="flexible wrap-inner-table" border="0" cellpadding="0" cellspacing="0">
+            <table role="presentation" class="max-width wrap-inner-table" border="0" cellpadding="0" cellspacing="0" width="100%">
               <tr>
                 <td align="center" class="wrap-inner-table-wrap">
-                  <table cellpadding="0" cellspacing="0" border="0" class="container flexible" align="center" bgcolor="#ffffff" width="100%">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="container round" align="center" bgcolor="#ffffff" width="100%">
                     <tr>
-                      <td class="body w-full-xs" colspan="2">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <td class="body w-full-xs">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td colspan="2">
+                            <td colspan="2" class="max-width" mc:edit="sign-off">
                               <h3 class="m-t-0-xs mktEditable" id="signature-headline" mktoName="Signature - Headline">How can I help you?</h3>
                               <p class="m-0-xs mktEditable" id="signature-description" mktoName="Signature - Description">I'm excited to partner with you to customize Treehouse for your team. Just respond to this email; I'd love to hear from you!</p>
+                              <p>Cheers,</p>
                             </td>
                           </tr>
                           <tr>
-                            <td height="15">
+                            <td class="p-r-3-xs" width="95">
+                              <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/mattkrzyzynski2x.png" alt="Matt Krzyzynski" width="80" height="80" class="mktoImg author-photo" d="signature-portrait" mktoName="Signature - Portrait">
                             </td>
-                          </tr>
-                          <tr>
-                            <td colspan="2">
-                              <p class="m-0-xs mktEditable" id="signature-sign-off" mktoName="Signature - Sign Off">Cheers,</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td height="15">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="p-r-3-xs" width="80">
-                              <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/mattkrzyzynski2x.png" width="80" height="80" class="mktoImg" id="signature-portrait" mktoName="Signature - Portrait" alt="Matt Krzyzynski">
-                            </td>
-                            <td>
-                              <p class="block-xs p-b-1-xs m-0-xs mktEditable" id="signature-name" mktoName="Signature - Name">Matt Krzyzynski</p>
-                              <p class="text-color-light text-6-xs mktEditable m-0-xs" id="signature-title" mktoName="Signature - Title">Customer Success Manager</p>
-                              <p class="text-color-light text-6-xs block-xs m-0-xs mktEditable" id="signature-department" mktoName="Signature - Department">Treehouse for Business</p>
+                            <td mc:edit="author-name" width="412">
+                              <p class="m-0-xs p-b-1-xs mktEditable" id="signature-name" mktoName="Signature - Name">Matt Krzyzynski</p>
+                              <p class="m-0-xs text-color-light text-6-xs mktEditable" id="signature-title" mktoName="Signature - Title">Customer Success Manager</p>
+                              <p class="m-0-xs text-color-light text-6-xs mktEditable" id="signature-department" mktoName="Signature - Department">Treehouse for Business</p>
                             </td>
                           </tr>
                         </table>
@@ -1160,7 +1251,7 @@
         <tr>
           <td>
             <!-- Footer Begin -->
-            <table class="footer flexible" border="0" cellpadding="0" cellspacing="0">
+            <table class="footer max-width" border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <td height="15"></td>
               </tr>
@@ -1173,7 +1264,7 @@
                 </td>
               </tr>
             </table>
-            <table class="footer flexible" border="0" cellpadding="0" cellspacing="0">
+            <table class="footer max-width" border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <td height="15"></td>
               </tr>
@@ -1193,7 +1284,16 @@
             <!-- Footer End -->
           </td>
         </tr>
-    </table>
+      </table>
+      <!--[if mso]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </div>
+    </td>
+  </tr>
+</table>
   </center>
 </body>
 </html>

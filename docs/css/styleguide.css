@@ -1,3 +1,7 @@
+.retina {
+  width: 50%;
+}
+
 /*! Leap Version 0.8.6 */
 *, :after, :before {
   box-sizing: border-box;
@@ -10809,10 +10813,6 @@ a {
 
 .email-example .attribution {
   opacity: 0.6;
-}
-
-.retina {
-  width: 50%;
 }
 
 code {
