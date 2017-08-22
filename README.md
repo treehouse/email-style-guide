@@ -20,18 +20,69 @@ $ bin/setup
 ### Start Jekyll
 
 ```
-$ yarn run gulp serve
+$ yarn serve
 ```
 
-Now point your browser at: http://localhost:4000/email-style-guide/
+Open your browser to: http://localhost:4000/email-style-guide/
 
 ### Building Assets
 
-Running `yarn run serve` will automatically build assets when they change.  If you need to manually update assets in `src` or `docs/src`:
+Running `yarn serve` will automatically build assets when they change.  If you need to manually update assets in `src` or `docs/src`:
 
 ```
-$ yarn run gulp
+$ yarn build
 ```
+
+### Directory Structure
+
+```
+email-style-guide/
+├── src/
+│   ├── sass/
+│   └── templates/
+├── dist/
+│    ├── css/
+│    └── templates/
+├── docs/
+│   ├── src/
+│   └── templates/
+```
+
+#### `src`
+
+The `src` directory is where all source code is stored. Add new templates and styles here.
+
+#### `dist`
+
+The `dist` directory (short for distribution) is where all code is built. Running `yarn build` will generate CSS and HTML templates in this directory.
+
+#### `docs`
+
+The `docs` directory is where the style-guide documentation is stored.  Running `yarn build` will output templates to `docs/templates` as well for previewing.
+
+### Creating Templates
+
+Add new templates to `src/templates`
+
+**Building**
+
+Build email templates with:
+
+```
+$ yarn build
+```
+
+**Previewing**
+
+After you've added a template, you can preview it with Jekyll. Start the server if you haven't done so already:
+
+```
+$ yarn serve
+```
+
+Now, say you just added a template in: `src/templates/b2b/newsletter-08-2017.html`
+
+Open your browser to: http://localhost:4000/email-style-guide/templates/b2b/newsletter-08-2017.html and you should see a preview there.
 
 ## Releasing
 
