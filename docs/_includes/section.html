@@ -45,7 +45,7 @@
   </div>
 
   {% if include.example %}
-    {% include_relative {{ include.example }} %}
+    {% include_relative _includes/{{ include.example }} %}
   {% endif %}
 
   {% if include.html or include.css %}
@@ -67,7 +67,7 @@
         {% if include.html %}
           <div id="{{ include.id }}-html">
             <div class="guide-code m-b-3-xs">
-              {% capture code %}{% include_relative {{ include.html }} %}{% endcapture %}
+              {% capture code %}{% include_relative _includes/{{ include.html }} %}{% endcapture %}
               <pre><code class="language-html">{{ code | xml_escape }}</code></pre>
             </div>
           </div>
@@ -76,7 +76,7 @@
         {% if include.css %}
           <div id="{{ include.id }}-css">
             <div class="guide-code m-b-3-xs">
-              {% capture css %}{% include_relative {{ include.css }} %}{% endcapture %}
+              {% capture css %}{% include_relative _includes/{{ include.css }} %}{% endcapture %}
               <pre><code class="language-css">{{ css }}</code></pre>
             </div>
         </div>
@@ -86,6 +86,6 @@
   {% endif %}
 
   {% if include.guidelines %}
-    {% include_relative {{ include.guidelines }} %}
+    {% include_relative _includes/{{ include.guidelines }} %}
   {% endif %}
 </div>
