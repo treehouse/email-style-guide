@@ -74,8 +74,13 @@ gulp.task('jekyll', () => {
     '--destination', dir.siteRoot
   ]);
 
-  const logger = (buffer) => {
-    buffer.toString()
+  const handleError = (message) => {
+    logMessage(message);
+    process.exit(1);
+  }
+
+  const logMessage = (message) => {
+    message.toString()
       .split(/\n/)
       .forEach((message) => {
         if(message.length > 0) {
@@ -84,8 +89,8 @@ gulp.task('jekyll', () => {
       });
   };
 
-  jekyll.stdout.on('data', logger);
-  jekyll.stderr.on('data', logger);
+  jekyll.stdout.on('data', logMessage);
+  jekyll.stderr.on('data', handleError);
 });
 
 gulp.task('watch', () => {
