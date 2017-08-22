@@ -19,5 +19,6 @@
     "build": "gulp src docs",
     "serve": "gulp serve"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "version": "0.1.0"
 }

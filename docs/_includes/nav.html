@@ -28,3 +28,10 @@
     </ul>
   </li>
 {% endfor %}
+
+<li class="guide-navigation-item">
+  <a href="{{ site.baseurl }}/release-notes.html" {% if page.url == "/release-notes.html" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+    Release Notes
+  </a>
+</li>
+
