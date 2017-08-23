@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="email-example">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/styleguide.css">
+
+  <style type="text/css">
+    .email-example hr {
+      padding: 0;
+      margin: 8px 0 8px 0;
+      border: none;
+      width: 100%;
+      height: 1px;
+      color: #edeff0;
+      background-color: #edeff0;
+    }
+    .email-example .wrap {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+    .email-example .wrap-inner {
+      vertical-align: top;
+      padding-bottom: 15px;
+      border-collapse: collapse;
+    }
+    .email-example .wrap-inner-table {
+      width: 90%;
+      max-width: 600px !important;
+      margin-right: 5%;
+      margin-left: 5%;
+      display: block;
+    }
+    .email-example .wrap-inner-table-wrap {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .email-example .wrap-inner-table-wrap-inner {
+      width: 100%;
+    }
+    .email-example .wrap-logo {
+      width: 192px;
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+    .email-example .logo {
+      width: 191px;
+      height: 44px;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    .email-example .container {
+      max-width: 600px !important;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #ffffff;
+      text-align: left;
+      color: #40484a;
+    }
+    .email-example .container img {
+      width: 100%;
+      max-width: 512px;
+    }
+    .email-example .container-inner {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-top: 3%;
+    }
+    .email-example .greeting {
+      vertical-align: top;
+      line-height: 100%;
+      padding-right: 7%;
+      padding-left: 7%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    .email-example .greeting h1 {
+      line-height: 130%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .email-example .greeting h2 {
+      line-height: 150%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .email-example .body {
+      vertical-align: top;
+      border-collapse: collapse;
+      padding-top: 3%;
+      padding-right: 7%;
+      padding-left: 7%;
+      padding-bottom: 7%;
+    }
+
+    .email-example .background {
+      background-color: #edeff0;
+      text-align: center;
+    }
+    .email-example li {
+      line-height: 170%;
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    }
+    .email-example .outer {
+      table-layout: fixed;
+    }
+    .email-example .first-paragraph {
+      margin-top: 0;
+    }
+    .email-example .bold {
+      font-weight: bold;
+    }
+    .email-example .italic {
+      font-style: italic;
+    }
+    .email-example .image-link a {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .email-example .image-full img {
+      width: 600px;
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+    }
+    .email-example .contact-info p {
+      text-align: center;
+      color: #7b8b8e;
+      font-size: 12px;
+    }
+    .email-example .contact-info a {
+      color: #8d9aa5
+    }
+    .email-example .pipe {
+      color: #b7c0c7;
+    }
+    .email-example .footer {
+      width: 100%;
+      text-align: center;
+    }
+    .email-example .social {
+      width: 39px;
+      height: 42px;
+    }
+/* Buttons */
+    .email-example .button-wrap {
+      box-sizing: border-box;
+      border-collapse: separate !important;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: auto;
+    }
+    .email-example .button-wrap-centered {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .email-example .button-wrap-inner {
+      box-sizing: border-box;
+      vertical-align: top;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-radius: 5px;
+      background: #5fcf80;
+      text-align: center;
+    }
+    .email-example .button {
+      box-sizing: border-box; color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      text-transform: capitalize;
+      background: #5fcf80;
+      margin: 0;
+      padding: 18px;
+      font-weight: normal;
+      border: 1px solid #5fcf80;
+      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }
+  </style>
+
+  <style type="text/css" data-premailer="ignore">
+    @media only screen and (max-width: 480px) {
+      .wrap-inner-table {
+        width: 100% !important;
+      }
+      .flexible {
+        /*width: 100% !important;*/
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      .logo {
+        padding-left: 12% !important;
+        width: 149px !important;
+        height: 34px !important;
+      }
+      .footer {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      h5, h6 {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+</head>
+
+{{ content }}
+
+</html>
