@@ -97,7 +97,8 @@ $ bin/setup
 And then run:
 
 ```
-$ bin/test
+$ yarn build
+$ yarn test
 ```
 
 ## Releasing
