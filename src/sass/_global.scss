@@ -1,0 +1,14 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+  font-family: $font-family;
+  color: #384047;
+  background-color: #edeff0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #edeff0;
+  width: 100% !important;
+  font-family: $font-family;
+  -webkit-text-size-adjust: none;
+}
