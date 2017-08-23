@@ -12,7 +12,7 @@
     "gulp-util": "^3.0.8"
   },
   "scripts": {
-    "build": "gulp src docs",
+    "build": "gulp src docs jekyll:build",
     "serve": "gulp serve"
   },
   "license": "MIT",
