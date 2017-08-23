@@ -14,7 +14,7 @@ subnav:
   - Concepts
 ---
 {% include intro.html
-  guidelines = "Words words words about when to use a photo vs. an image vs. a GIF vs. a video"
+  guidelines = "Images, icons, and illustrations are valuable components of an email. Using them in the right way will not only help enrich the experience, but it will reinforce the emails value. Make sure they relate to the content they are paired with. Don’t just use them to use them. Have a purpose behind them."
   best_practices = "imagery/best_practices.html"
 %}
 
@@ -66,23 +66,48 @@ subnav:
 %}
 >>>>>>> origin/master
 
+{% capture illustration_syntax %}
+  Illustrations follow Treehouse's <a href="https://teamtreehouse.invisionapp.com/boards/VW34VPQN3RXEY/" target="_blank">Illustration Guidelines</a>. They can be full width or inline. They're used full-width in featured cards, inline in regular cards, or as thumbnails in call out cards.
+{% endcapture %}
+
 {% include section.html
   id = "illustrations"
   classes = "border-t-light-xs p-tb-5-xs"
   title = "Illustrations"
-  vocabulary = "TODO"
-  syntax = "TODO"
-  semantics = "TODO"
+  vocabulary = "Illustrations"
+  syntax = illustration_syntax
+  semantics = "Illustrations are best used to represent abstract ideas or metaphors. They also reinforce our brand."
   example = "imagery/examples/illustrations.html"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Background should have a monochrome color palette."
+ do_image = "/img/examples/do-bg-colors.png"
+ dont_text = "Don't - Background shouldn't have multiple hues."
+ dont_image = "/img/examples/dont-bg-colors.png"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Shapes should be solid colors"
+ do_image = "/img/examples/do-solid-shapes.png"
+ dont_text = "Don't - Shapes shouldn't have borders"
+ dont_image = "/img/examples/dont-solid-shapes.png"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Shapes should be round"
+ do_image = "/img/examples/do-shape-edges.png"
+ dont_text = "Don't - Shapes shouldn't have sharp corners"
+ dont_image = "/img/examples/dont-shape-edges.png"
 %}
 
 {% include section.html
   id = "gifs"
   classes = "border-t-light-xs p-tb-5-xs"
-  title = "GIFs"
-  vocabulary = "TODO"
-  syntax = "TODO"
-  semantics = "Note: Create a fallback for non-supported animated GIFs. Be aware that some clients won't show animated GIFs. Instead, they only show the first frame, so make sure that image makes sense in your layout. Clients that don't support animated GIFs include Outlook (2007, 2010 and 2013) and Windows Phone 7."
+  title = "Animated GIFs"
+  vocabulary = "Animated GIFs, GIFs, animation"
+  syntax = "Animated GIFs"
+  semantics = "Animated GIFs are best used for product walkthroughs and special events or announcements. For the later, they should be produced by the Design or Motion department. Note: Create a fallback for non-supported animated GIFs. Be aware that some clients won't show animated GIFs. Instead, they only show the first frame, so make sure that image makes sense in your layout. Clients that don't support animated GIFs include Outlook (2007, 2010 and 2013) and Windows Phone 7."
   example = "imagery/examples/gifs.html"
 %}
 
@@ -90,20 +115,34 @@ subnav:
   id = "videos"
   classes = "border-t-light-xs p-tb-5-xs"
   title = "Videos"
-  vocabulary = "TODO"
-  syntax = "TODO"
-  semantics = "TODO"
+  vocabulary = "Video"
+  syntax = "Videos appear in their own section, often with an accompanying title, description, and call to action."
+  semantics = "Our product largely uses video as a teaching mechanism, so video plays an important role in our communications as well. Short videos, such as video trailers or teasers are perfect for engaging our email audience."
   example = "imagery/examples/videos.html"
   guidelines = "imagery/guidelines/videos.html"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Use the video preview template"
+ do_image = "/img/examples/do-video-preview.png"
+ dont_text = "Don't - Use another video preview tool (this is MailChimp's auto-generated one)"
+ dont_image = "/img/examples/dont-video-preview.png"
+%}
+
+{% include do_vs_dont.html
+ do_text = "Do - Choose an engaging, text-free video still"
+ do_image = "/img/examples/do-video-still.png"
+ dont_text = "Don't - Use a video still that includes text"
+ dont_image = "/img/examples/dont-video-still.png"
 %}
 
 {% include section.html
   id = "icons"
   classes = "border-t-light-xs p-tb-5-xs"
   title = "Icons"
-  vocabulary = "TODO"
-  syntax = "TODO"
-  semantics = "TODO"
+  vocabulary = "Icons"
+  syntax = "Icons appear in lists or alongside copy, in order to reinforce the meaning of the copy."
+  semantics = "Icons improve the scannability of the email, so users can get the gist of the email without having to read it too closely. They also help relate the email content to the library content by utilizing the same icons across both platforms."
   example = "imagery/examples/icons.html"
 %}
 

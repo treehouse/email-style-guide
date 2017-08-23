@@ -1,3 +1,7 @@
+.retina {
+  width: 50%;
+}
+
 /*! Leap Version 0.8.6 */
 *, :after, :before {
   box-sizing: border-box;
