@@ -25,9 +25,9 @@ $ yarn serve
 
 Open your browser to: http://localhost:4000/email-style-guide/
 
-### Building Assets
+### Building Assets + Docs
 
-Running `yarn serve` will automatically build assets when they change.  If you need to manually update assets in `src` or `docs/src`:
+Running `yarn serve` will automatically build assets when they change.  To build everthing, use:
 
 ```
 $ yarn build
@@ -83,6 +83,22 @@ $ yarn serve
 Now, say you just added a template in: `src/templates/b2b/newsletter-08-2017.html`
 
 Open your browser to: http://localhost:4000/email-style-guide/templates/b2b/newsletter-08-2017.html and you should see a preview there.
+
+## Testing
+
+We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to check the documentation site for broken links, missing images, etc.
+
+Setup the dependencies:
+
+```
+$ bin/setup
+```
+
+And then run:
+
+```
+$ bin/test
+```
 
 ## Releasing
 
