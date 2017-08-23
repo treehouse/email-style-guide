@@ -1,11 +1,11 @@
-html {
+.esg-html {
   -webkit-tap-highlight-color: transparent;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   color: #384047;
   background-color: #edeff0;
 }
 
-body {
+.esg-body {
   margin: 0;
   padding: 0;
   background: #edeff0;
@@ -2211,41 +2211,46 @@ body {
   padding-bottom: 25px !important;
 }
 
-h1, h2, h3, h4 {
+.esg-h1 {
+  font-size: text-size(1) !important;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   color: #40484a;
 }
 
-h1, .esg-h1 {
-  font-size: text-size(1) !important;
-}
-
-h2, .esg-h2 {
+.esg-h2 {
   font-size: text-size(2) !important;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
 }
 
-h3, .esg-h3 {
+.esg-h3 {
   font-size: text-size(3) !important;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
 }
 
-h4, .esg-h4 {
+.esg-h4 {
   font-size: text-size(4) !important;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
 }
 
-h5, .esg-h5 {
+.esg-h5 {
   font-size: text-size(5) !important;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
 }
 
-p, .esg-p {
+.esg-p {
   font-size: 16px;
   line-height: 180%;
 }
 
-table[align="center"], .esg-table {
+.esg-table {
   margin: 0 auto;
 }
 
-a, esg-a, .esg-link {
+esg-a, .esg-link {
   cursor: pointer;
   transition: color 300ms 0s ease;
   text-decoration: none;
@@ -2256,12 +2261,10 @@ a, esg-a, .esg-link {
   font-weight: normal !important;
 }
 
-strong,
 .esg-bold {
   font-weight: 500 !important;
 }
 
-em,
 .esg-italic {
   font-style: italic !important;
 }
@@ -2270,17 +2273,21 @@ em,
   text-transform: uppercase;
 }
 
-code, .esg-code {
+.esg-code {
   font-family: monospace;
   font-size: 16px;
 }
 
-address, .esg-address {
+.esg-address {
   font-size: 14px;
 }
 
-ul,
-ol {
+.esg-attribution {
+  font-size: 12px;
+}
+
+esg-ul,
+esg-ol {
   color: #576366;
   margin: 0;
   padding: 0 0 0 2rem;

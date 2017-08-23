@@ -1,10 +1,10 @@
-html {
+.#{$esg-prefix}-html {
   -webkit-tap-highlight-color: transparent;
   font-family: $font-family;
   color: #384047;
   background-color: #edeff0;
 }
-body {
+.#{$esg-prefix}-body {
   margin: 0;
   padding: 0;
   background: #edeff0;
