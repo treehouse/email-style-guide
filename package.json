@@ -12,6 +12,7 @@
     "gulp-util": "^3.0.8"
   },
   "scripts": {
+    "test": "bin/test",
     "build": "gulp src docs jekyll:build",
     "serve": "gulp serve"
   },
