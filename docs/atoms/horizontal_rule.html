@@ -3,43 +3,10 @@ layout: default
 title: Horizontal Rule
 ---
 
-<p class="p-b-1-xs">Horizontal rules are used to create space between content sections.</p>
-
-<div class="flex-block-xs flex-wrap-xs border-t-light-xs border-b-light-xs p-tb-2-xs m-b-4-xs">
-  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-r-0-xs p-r-3-md p-r-3-lg code-example">
-    <div class="p-t-1-xs"><code>&lt;hr&gt;</code></div>
-    <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="hr">
-      <li><a href="#hr-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a></li>
-      <li><a href="#hr-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a></li>
-    </ul>
-    <div id="hr" class="tabgroup">
-      <div id="hr-html">
-        <div class="guide-code m-b-3-xs">
-          <pre><code class="language-html">&lt;hr noshade color="#edeff0" width="100%" size="1" class="m-tb-2-xs"&gt;</code></pre>
-        </div>
-      </div>
-      <div id="hr-css">
-        <div class="guide-code m-b-3-xs">
-          <pre><code class="language-css">.m-tb-2-xs {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-hr {
-    padding: 0;
-    margin: 8px 0 8px 0;
-    border: none;
-    width: 100%;
-    height: 1px;
-    color: #edeff0;
-    background-color: #edeff0;
-}</code></pre>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg p-3-xs bg-gray-light email-example">
-    <div class="text-bg-white p-5-xs h-full-xs round">
-      <hr>
-    </div>
-  </div>
-</div>
+{% include section.html
+  id = "hr"
+  semantics = "Horizontal rules are used to create space between content sections."
+  html = "hr/code.html"
+  css = "hr/code.css"
+  example = "hr/example.html"
+%}

@@ -1,0 +1,13 @@
+.m-tb-2-xs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+hr {
+  padding: 0;
+  margin: 8px 0 8px 0;
+  border: none;
+  width: 100%;
+  height: 1px;
+  color: #edeff0;
+  background-color: #edeff0;
+}

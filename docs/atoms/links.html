@@ -1,0 +1,36 @@
+---
+layout: default
+title: Links
+subnav:
+  - Text Link
+  - Button
+---
+
+{% include section.html
+  id = "text_link"
+  title = "Text Link"
+  vocabulary = "TODO"
+  syntax = "TODO"
+  semantics = "TODO"
+  html = "links/code/text_link.html"
+  css = "links/code/text_link.css"
+  example = "links/examples/text_link.html"
+%}
+
+{% capture button_syntax %}
+  The solid green button is the default, and it can be centered or left aligned.
+
+  <p class="p-b-2-xs"><span class="italic">Note</span>: If adding to a multi-column layout, you'll need to add <code>colspan=""</code> (add the number of columns you want the button to span in those quotes)</p>
+{% endcapture %}
+
+{% include section.html
+  id = "default"
+  classes = "border-t-light-xs p-t-5-xs"
+  title = "Button"
+  vocabulary = "Button"
+  syntax = button_syntax
+  semantics = "Use the button for primary actions. It makes the Call to Actions (CTA) stand out more than a text link."
+  html = "links/code/button.html"
+  css = "links/code/button.css"
+  example = "links/examples/button.html"
+%}

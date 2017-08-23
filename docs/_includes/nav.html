@@ -5,12 +5,13 @@
   </a>
 </li>
 <li class="guide-navigation-item">
-  <a href="{{ site.baseurl }}/example_templates.html" {% if page.url == "/example_templates.html" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+  <a href="{{ site.baseurl }}/templates" {% if page.url == "/example_templates.html" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
     Example Templates
   </a>
 </li>
-{% for p in site.data.navs %}
-  {% assign nav = p[1] %}
+
+{% for name in site.nav_order %}
+  {% assign nav = site.data.navs[name] %}
   <li class="guide-navigation-item guide-navigation-item-parent">
     <a href="javascript:void(0)" class="guide-navigation-link">
       {{ nav.name }}
@@ -27,4 +28,10 @@
     </ul>
   </li>
 {% endfor %}
+
+<li class="guide-navigation-item">
+  <a href="{{ site.baseurl }}/release-notes.html" {% if page.url == "/release-notes.html" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+    Release Notes
+  </a>
+</li>
 
