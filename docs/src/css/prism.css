@@ -37,7 +37,7 @@ pre[class*="language-"] {
     padding: 1rem;
     margin: 1.5rem 0;
     overflow: auto;
-    background-color: lighten(#edeff0, 3%);
+    background-color: #f5f6f7;
     border-radius: 4px;
 }
 
