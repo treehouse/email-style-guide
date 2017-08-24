@@ -331,6 +331,26 @@
   background-color: ui-color("red") !important;
 }
 
+.esg-fill-white {
+  fill: ui-color("white") !important;
+}
+
+.esg-stroke-white {
+  stroke: ui-color("white") !important;
+}
+
+.esg-color-white {
+  color: ui-color("white") !important;
+}
+
+.esg-border-white {
+  border-color: ui-color("white") !important;
+}
+
+.esg-bg-white {
+  background-color: ui-color("white") !important;
+}
+
 .fill-gray-darker {
   fill: gray-color("gray-darker") !important;
 }
@@ -2341,6 +2361,52 @@ esg-ol {
 }
 
 /* ESG Molecule Classes */
+.container {
+  max-width: 600px !important;
+  background-color: #ffffff;
+  text-align: left;
+  color: #40484a;
+}
+
+.container-inner {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.wrap {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+.wrap-inner {
+  vertical-align: top;
+  padding-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.wrap-inner-table {
+  max-width: 600px !important;
+  display: block;
+  margin: 0 !important;
+}
+
+.wrap-inner-table-wrap {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.wrap-inner-table-wrap-inner {
+  width: 100%;
+}
+
+.wrap-logo {
+  width: 192px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
 .esg-image-full,
 .esg-image-full img, .esg-image-inline {
   width: 100%;

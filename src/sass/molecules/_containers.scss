@@ -1,0 +1,43 @@
+// Container Styles
+.container {
+  max-width: 600px !important;
+  background-color: map-get($ui-colors, "white");
+  text-align: left;
+  color: map-get($text-colors, "dark");
+
+  &-inner {
+    vertical-align: top;
+    border-collapse: collapse;
+  }
+}
+
+
+// Wrap Styles
+.wrap {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+.wrap-inner {
+  vertical-align: top;
+  padding-bottom: 15px;
+  border-collapse: collapse;
+}
+.wrap-inner-table {
+  max-width: 600px !important;
+  display: block;
+  margin: 0 !important;
+}
+.wrap-inner-table-wrap {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+.wrap-inner-table-wrap-inner {
+  width: 100%;
+}
+.wrap-logo {
+  width: 192px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
