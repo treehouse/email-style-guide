@@ -10723,6 +10723,26 @@ a {
   background-color: #ed5a5a !important;
 }
 
+.esg-fill-white {
+  fill: #ffffff !important;
+}
+
+.esg-stroke-white {
+  stroke: #ffffff !important;
+}
+
+.esg-color-white {
+  color: #ffffff !important;
+}
+
+.esg-border-white {
+  border-color: #ffffff !important;
+}
+
+.esg-bg-white {
+  background-color: #ffffff !important;
+}
+
 .fill-gray-darker {
   fill: #2d3339 !important;
 }
@@ -12730,6 +12750,90 @@ esg-ol {
 
 .esg-text-justify {
   text-align: justify !important;
+}
+
+/* ESG Molecule Classes */
+.esg-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.esg-wrapper-item {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.esg-container {
+  max-width: 600px !important;
+  display: block;
+  margin: 0 !important;
+}
+
+.wrap-inner {
+  vertical-align: top;
+  padding-bottom: 15px;
+  border-collapse: collapse;
+}
+
+.wrap-inner-table {
+  max-width: 600px !important;
+  display: block;
+  margin: 0 !important;
+}
+
+.wrap-inner-table-wrap {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.wrap-inner-table-wrap-inner {
+  width: 100%;
+}
+
+.wrap-logo {
+  width: 192px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.card {
+  max-width: 600px !important;
+  background-color: #ffffff;
+  text-align: left;
+  color: #40484a;
+}
+
+.card-inner {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.esg-image-full,
+.esg-image-full img, .esg-image-inline {
+  width: 100%;
+  height: auto;
+  border: 0;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.esg-image-full,
+.esg-image-full img {
+  max-width: 600px;
+}
+
+.esg-image-inline {
+  max-width: 516px;
+}
+
+.esg-image-link {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 code {

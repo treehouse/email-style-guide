@@ -1,23 +1,20 @@
-// Container Styles
-.container {
-  max-width: 600px !important;
-  background-color: map-get($ui-colors, "white");
-  text-align: left;
-  color: map-get($text-colors, "dark");
+// Wrap Styles
+.#{$esg-prefix}-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
 
-  &-inner {
+  &-item {
     vertical-align: top;
     border-collapse: collapse;
   }
 }
 
-
-// Wrap Styles
-.wrap {
-  height: 100% !important;
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
+.#{$esg-prefix}-container {
+    max-width: 600px !important;
+    display: block;
+    margin: 0 !important;
 }
 .wrap-inner {
   vertical-align: top;
@@ -40,4 +37,19 @@
   width: 192px;
   vertical-align: top;
   border-collapse: collapse;
+}
+
+
+
+// Container Styles
+.#{$esg-prefix}-card {
+  max-width: 600px !important;
+  background-color: map-get($ui-colors, "white");
+  text-align: left;
+  color: map-get($text-colors, "dark");
+
+  &-inner {
+    vertical-align: top;
+    border-collapse: collapse;
+  }
 }

@@ -2361,23 +2361,22 @@ esg-ol {
 }
 
 /* ESG Molecule Classes */
-.container {
-  max-width: 600px !important;
-  background-color: #ffffff;
-  text-align: left;
-  color: #40484a;
+.esg-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
 }
 
-.container-inner {
+.esg-wrapper-item {
   vertical-align: top;
   border-collapse: collapse;
 }
 
-.wrap {
-  height: 100% !important;
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
+.esg-container {
+  max-width: 600px !important;
+  display: block;
+  margin: 0 !important;
 }
 
 .wrap-inner {
@@ -2403,6 +2402,18 @@ esg-ol {
 
 .wrap-logo {
   width: 192px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+.esg-card {
+  max-width: 600px !important;
+  background-color: #ffffff;
+  text-align: left;
+  color: #40484a;
+}
+
+.esg-card-inner {
   vertical-align: top;
   border-collapse: collapse;
 }
