@@ -45,6 +45,7 @@ email-style-guide/
 │    └── templates/
 ├── docs/
 │   ├── src/
+│   ├── assets/
 │   └── templates/
 ```
 
@@ -59,6 +60,10 @@ The `dist` directory (short for distribution) is where all code is built. Runnin
 #### `docs`
 
 The `docs` directory is where the style-guide documentation is stored.  Running `yarn build` will output templates to `docs/templates` as well for previewing.
+
+#### `docs/assets`
+
+The `docs/assets` directory is where all the style-guide documentation assets are stored.  Running `yarn build` will generate CSS and JavaScript in this directory.
 
 ### Creating Templates
 
