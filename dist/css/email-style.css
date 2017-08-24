@@ -2235,10 +2235,36 @@
   color: #40484a;
 }
 
-.esg-h5 {
-  font-size: text-size(5) !important;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  color: #40484a;
+.esg-text-0 {
+  font-size: 48px !important;
+}
+
+.esg-text-1 {
+  font-size: 36px !important;
+}
+
+.esg-text-2 {
+  font-size: 28px !important;
+}
+
+.esg-text-3 {
+  font-size: 20px !important;
+}
+
+.esg-text-4 {
+  font-size: 18px !important;
+}
+
+.esg-text-5 {
+  font-size: 16px !important;
+}
+
+.esg-text-6 {
+  font-size: 14px !important;
+}
+
+.esg-text-7 {
+  font-size: 12px !important;
 }
 
 .esg-p {
@@ -2280,6 +2306,10 @@ esg-a, .esg-link {
 
 .esg-address {
   font-size: 14px;
+}
+
+.esg-attribution {
+  font-size: 12px;
 }
 
 esg-ul,

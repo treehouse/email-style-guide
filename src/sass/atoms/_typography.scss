@@ -3,14 +3,22 @@ $text-alignments: left, right, center, justify;
 
 
 // Headings and text sizes for each header
-@for $num from 1 through 5 {
+@for $num from 1 through 4 {
   .#{$esg-prefix}-h#{$num} {
     font-size: text-size($num) !important;
     font-family: $font-family;
-    color: map-get($text-colors, dark )
+    color: map-get($text-colors, dark );
   }
 }
 
+
+
+// Text Sizing Styles
+@each $size, $number in $text-size {
+  .#{$esg-prefix}-text-#{$size} {
+    font-size: #{$number} !important;
+  }
+}
 
 
 // General Text Styles
@@ -56,7 +64,11 @@ $text-alignments: left, right, center, justify;
 }
 
 .#{$esg-prefix}-address {
-  font-size: 14px;
+  font-size: map-get($text-size, 6);
+}
+
+.#{$esg-prefix}-attribution {
+  font-size: map-get($text-size, 7);
 }
 
 // List styles
