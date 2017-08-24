@@ -1,6 +1,8 @@
 // Imagery Molecule Styles
 .#{$esg-prefix}-image {
+
   &-full,
+  &-full img,
   &-inline {
     width: 100%;
     height: auto;
@@ -10,11 +12,22 @@
     text-decoration: none;
     text-align: center;
   }
-  &-full {
+
+  &-full,
+  &-full img {
     max-width: 600px;
   }
+
   &-inline {
     max-width: 516px;
   }
   // &-attribution -- We elected to put this in the typography file since it's only adjusting sizing
+
+  &-link {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
 }

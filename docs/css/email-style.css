@@ -2341,7 +2341,8 @@ esg-ol {
 }
 
 /* ESG Molecule Classes */
-.esg-image-full, .esg-image-inline {
+.esg-image-full,
+.esg-image-full img, .esg-image-inline {
   width: 100%;
   height: auto;
   border: 0;
@@ -2351,10 +2352,17 @@ esg-ol {
   text-align: center;
 }
 
-.esg-image-full {
+.esg-image-full,
+.esg-image-full img {
   max-width: 600px;
 }
 
 .esg-image-inline {
   max-width: 516px;
+}
+
+.esg-image-link {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
