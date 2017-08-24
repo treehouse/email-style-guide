@@ -25,16 +25,22 @@ const dir = {
 gulp.task('css', () => {
   const src = dir.src + 'sass/email-style.sass';
   const dest = dir.dest + 'css/';
+  const docsDest = dir.docs + 'assets/css/';
+
   const sassOpts = {
     outputStyle: 'expanded',
-    includePaths: ['bower_components/project-leap/_sass'],
+    includePaths: [
+      'bower_components/project-leap/bourbon',
+      'bower_components/project-leap/_sass'
+    ],
     precision: 3
   };
 
   gulp.src(src)
     .pipe(sass(sassOpts)
     .on('error', sass.logError))
-    .pipe(gulp.dest(dest));
+    .pipe(gulp.dest(dest))
+    .pipe(gulp.dest(docsDest));
 });
 
 gulp.task('templates', () => {
@@ -56,7 +62,12 @@ gulp.task('docs:css', () => {
   const dest = dir.docs + 'assets/css/';
   const sassOpts = {
     outputStyle: 'expanded',
-    includePaths: ['bower_components/project-leap/_sass', 'src/sass', 'docs/src/sass'],
+    includePaths: [
+      'bower_components/project-leap/bourbon',
+      'bower_components/project-leap/_sass',
+      'src/sass',
+      'docs/src/sass'
+    ],
     precision: 3
   };
 

@@ -1,0 +1,16 @@
+// Local display variables
+$display-types: block, hide, inline, inline-block;
+
+// Iterate through each type in $display-types
+@each $type in $display-types {
+  .#{$esg-prefix}-#{$type} {
+    // We want to use the class "hide" for display: none,
+    // so we need a conditional to make that happen.
+    @if $type == hide {
+      display: none !important;
+    }
+    @else {
+      display: #{$type} !important;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// Iterate through each value in $spacing-sides
+@each $type, $side in $spacing-sides {
+  // We don't want a modifier on the margin for all sides,
+  // so we need a conditional to control that
+  @if $type == all {
+    // Iterate through each unit inside our $spacing map
+    @each $unit, $value in $spacing {
+      // We don't want a class of "0.5" so we use a conditional to
+      // let us rename is at "05" in this instance
+      @if $unit == 0.5 {
+        .#{$esg-prefix}-m-05-#{$suffix} {
+          margin: #{$value} !important;
+        }
+      }
+      @else {
+        .#{$esg-prefix}-m-#{$unit} {
+          margin: #{$value} !important;
+        }
+      }
+    }
+  }
+  @else {
+    // Iterate through each unit inside our $spacing map
+    @each $unit, $value in $spacing {
+      // We don't want a class of "0.5" so we use a conditional to
+      // let us rename is at "05" in this instance
+      @if $unit == 0.5 {
+        // We need to control printing out two properties for
+        // the lt and tb case and a single for the others
+        @if $type == lr {
+          .#{$esg-prefix}-m-#{$type}-05 {
+            margin-left: #{$value} !important;
+            margin-right: #{$value} !important;
+          }
+        }
+        @else if $type == tb {
+          .#{$esg-prefix}-m-#{$type}-05 {
+            margin-top: #{$value} !important;
+            margin-bottom: #{$value} !important;
+          }
+        }
+        @else {
+          .#{$esg-prefix}-m-#{$type}-05 {
+            margin-#{$side}: #{$value} !important;
+          }
+        }
+      }
+      @else {
+        // We need to control printing out two properties for
+        // the lt and tb case and a single for the others
+        @if $type == lr {
+          .#{$esg-prefix}-m-#{$type}-#{$unit} {
+            margin-left: #{$value} !important;
+            margin-right: #{$value} !important;
+          }
+        }
+        @else if $type == tb {
+          .#{$esg-prefix}-m-#{$type}-#{$unit} {
+            margin-top: #{$value} !important;
+            margin-bottom: #{$value} !important;
+          }
+        }
+        @else {
+          .#{$esg-prefix}-m-#{$type}-#{$unit} {
+            margin-#{$side}: #{$value} !important;
+          }
+        }
+      }
+    }
+  }
+}
