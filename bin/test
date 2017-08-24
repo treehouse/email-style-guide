@@ -1,3 +1,3 @@
 #!/bin/sh
 
-bin/htmlproofer --url-ignore '/$^/,/invisionapp/,#,{{ unsubscribe_url }}' --url-swap \/email-style-guide: docs/_site
+bin/htmlproofer --check-html --url-ignore '/$^/,/invisionapp/,#,{{ unsubscribe_url }}' --url-swap \/email-style-guide: docs/_site
