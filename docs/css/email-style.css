@@ -2341,3 +2341,20 @@ esg-ol {
 }
 
 /* ESG Molecule Classes */
+.esg-image-full, .esg-image-inline {
+  width: 100%;
+  height: auto;
+  border: 0;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.esg-image-full {
+  max-width: 600px;
+}
+
+.esg-image-inline {
+  max-width: 516px;
+}
