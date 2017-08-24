@@ -1,0 +1,11 @@
+.esg-m-0 {
+  margin: 0px;
+}
+
+.esg-text-color-light {
+  color: text-color("light");
+}
+
+.esg-text-7 {
+  font-size: 12px;
+}
