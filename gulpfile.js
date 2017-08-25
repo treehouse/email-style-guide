@@ -129,6 +129,7 @@ gulp.task('watch', () => {
   gulp.watch(dir.src + 'sass/**/*', ['css'])
   gulp.watch(dir.src + 'templates/**/*.html', ['templates'])
   gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
+  gulp.watch(dir.docsSrc + 'js/**/*', ['docs:js'])
 });
 
 gulp.task('default', ['src', 'docs', 'jekyll:build']);
