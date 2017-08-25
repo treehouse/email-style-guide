@@ -423,10 +423,6 @@ address {
   font-size: 0.875rem;
 }
 
-.retina {
-  width: 50%;
-}
-
 @media screen {
   .text-left-xs {
     text-align: left !important;
@@ -10536,34 +10532,20 @@ a {
 }
 
 .esg-button {
-  box-sizing: border-box;
+  background: #5fcf80;
+  border: 18px solid #5fcf80;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
   text-decoration: none;
+  display: block;
   border-radius: 5px;
-  cursor: pointer;
-  display: inline;
-  font-size: 16px;
-  text-transform: capitalize;
-  margin: 0;
-  padding: 15px;
-  font-weight: bold;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  height: inherit;
-  line-height: inherit;
 }
 
 .esg-button-wrap {
-  box-sizing: border-box;
-  border-collapse: separate !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-  width: auto;
-}
-
-.esg-button-inner {
-  box-sizing: border-box;
-  vertical-align: top;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
+  border-radius: 5px;
+  background: #5fcf80;
   text-align: center;
 }
 
@@ -12427,6 +12409,13 @@ a {
   margin-bottom: 25px !important;
 }
 
+.esg-body {
+  padding-bottom: 7%;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 7%;
+}
+
 .esg-p-0 {
   padding: 0px !important;
 }
@@ -12734,6 +12723,33 @@ esg-ol {
 
 .esg-text-justify {
   text-align: justify !important;
+}
+
+/* ESG Molecule Classes */
+.esg-image-full,
+.esg-image-full img, .esg-image-inline {
+  width: 100%;
+  height: auto;
+  border: 0;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.esg-image-full,
+.esg-image-full img {
+  max-width: 600px;
+}
+
+.esg-image-inline {
+  max-width: 516px;
+}
+
+.esg-image-link {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 code {

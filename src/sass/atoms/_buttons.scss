@@ -1,37 +1,21 @@
 // Basic Button Styling with colors extracted
 .#{$esg-prefix}-button {
-  box-sizing: border-box;
+  background: #5fcf80;
+  border: 18px solid #5fcf80;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
   text-decoration: none;
+  display: block;
   border-radius: 5px;
-  cursor: pointer;
-  display: inline;
-  font-size: map-get($text-size, 5 );
-  text-transform: capitalize;
-  margin: 0;
-  padding: 15px;
-  font-weight: bold;
-  font-family: $font-family;
-  height: inherit;
-  line-height: inherit;
   // Since buttons need both pareny and child tags to work effectively we define this wrap class for the parent, typically an achor tag
   &-wrap {
-    box-sizing: border-box;
-    border-collapse: separate !important;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    width: auto;
-  }
-  // and this inner class for the child element, typically a span tag
-  &-inner {
-    box-sizing: border-box;
-    vertical-align: top;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
+    border-radius: 5px;
+    background: #5fcf80;
     text-align: center;
   }
 }
-
-
 
 // Loop through the different button colors we want to support
 @each $color-name, $color in $button-colors {
