@@ -91,7 +91,14 @@ Open your browser to: http://localhost:4000/email-style-guide/templates/b2b/news
 
 ## Testing
 
-We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to check the documentation site for broken links, missing images, etc.
+We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to check the documentation site + templates for broken links, missing images, invalid html, etc.
+
+We currently run these HTMLProofer checks:
+
+* HtmlCheck
+* ImageCheck
+* LinkCheck
+* ScriptCheck
 
 Setup the dependencies:
 
@@ -104,6 +111,12 @@ And then run:
 ```
 $ yarn build
 $ yarn test
+```
+
+Test individual templates:
+
+```
+$ bin/htmlproofer --check-html src/templates/example.html
 ```
 
 ## Releasing
