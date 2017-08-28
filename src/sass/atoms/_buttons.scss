@@ -13,16 +13,22 @@
   font-family: $font-family;
   height: inherit;
   line-height: inherit;
-  // Since buttons need both pareny and child tags to work effectively we define this wrap class for the parent, typically an achor tag
-  &-wrap {
-    box-sizing: border-box;
-    border-collapse: separate !important;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    width: auto;
+  font-size: 18px;
+  line-height: 1.1;
+  box-sizing: border-box;
+  border-collapse: separate !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  width: auto;
+
+  // Since buttons need 3 elements to work effectively we define this wrap class for the parent, a td cell within a table
+  &-container {
+    border-radius: 5px;
+    text-align: center;
   }
-  // and this inner class for the child element, typically a span tag
-  &-inner {
+
+  // and this inner class for the lowest element, typically a span tag
+  &-text {
     box-sizing: border-box;
     vertical-align: top;
     mso-table-lspace: 0pt;
@@ -36,19 +42,7 @@
 // Loop through the different button colors we want to support
 @each $color-name, $color in $button-colors {
   .#{$esg-prefix}-button-#{$color-name} {
-    background: #{$color};
-    border: #{$color};
-    @if $color == white {
-      color: map-get($brand-colors, "green");
-      &-inner {
-        background: map-get($text-colors, "white");
-      }
+      background: map-get(map-get($button-colors, $color-name), "background");
+      border: map-get(map-get($button-colors, $color-name), "background");
     }
-    @else {
-      color: map-get($text-colors, "white");
-      &-inner {
-        background: map-get($brand-colors, "green");
-      }
-    }
-  }
 }

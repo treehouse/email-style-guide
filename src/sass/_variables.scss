@@ -23,8 +23,14 @@ $text-colors: (
 
 // Email Button Colors
 $button-colors: (
-  "green": map-get($brand-colors, "green"),
-  "white": map-get($text-colors, "white")
+  "green": (
+    background:  map-get($brand-colors, "green"),
+    color:  map-get($text-colors, "white")
+  ),
+  "white": (
+    background:  map-get($text-colors, "white"),
+    color:  map-get($brand-colors, "green")
+  )
 );
 
 // Gray Colors

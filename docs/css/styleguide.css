@@ -10406,6 +10406,10 @@ a {
   -webkit-text-size-adjust: none;
 }
 
+.esg-preheader {
+  display: none;
+}
+
 /* ESG Atomic Classes */
 .esg-border {
   border: solid 1px #e8ebed !important;
@@ -10545,9 +10549,8 @@ a {
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   height: inherit;
   line-height: inherit;
-}
-
-.esg-button-wrap {
+  font-size: 18px;
+  line-height: 1.1;
   box-sizing: border-box;
   border-collapse: separate !important;
   mso-table-lspace: 0pt;
@@ -10555,7 +10558,12 @@ a {
   width: auto;
 }
 
-.esg-button-inner {
+.esg-button-container {
+  border-radius: 5px;
+  text-align: center;
+}
+
+.esg-button-text {
   box-sizing: border-box;
   vertical-align: top;
   mso-table-lspace: 0pt;
@@ -10566,21 +10574,11 @@ a {
 .esg-button-green {
   background: #5fcf80;
   border: #5fcf80;
-  color: #ffffff;
-}
-
-.esg-button-green-inner {
-  background: #5fcf80;
 }
 
 .esg-button-white {
   background: #ffffff;
   border: #ffffff;
-  color: #5fcf80;
-}
-
-.esg-button-white-inner {
-  background: #ffffff;
 }
 
 .esg-brand-fill-green {
@@ -12798,14 +12796,14 @@ esg-ol {
   border-collapse: collapse;
 }
 
-.card {
+.esg-card {
   max-width: 600px !important;
   background-color: #ffffff;
   text-align: left;
   color: #40484a;
 }
 
-.card-inner {
+.esg-card-inner {
   vertical-align: top;
   border-collapse: collapse;
 }

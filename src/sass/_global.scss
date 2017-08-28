@@ -12,3 +12,6 @@
   font-family: $font-family;
   -webkit-text-size-adjust: none;
 }
+.#{$esg-prefix}-preheader {
+  display: none;
+}
