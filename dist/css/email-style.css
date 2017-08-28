@@ -1871,6 +1871,22 @@
   background-color: #5a6269 !important;
 }
 
+.esg-block {
+  display: block !important;
+}
+
+.esg-hide {
+  display: none !important;
+}
+
+.esg-inline {
+  display: inline !important;
+}
+
+.esg-inline-block {
+  display: inline-block !important;
+}
+
 .esg-m-0 {
   margin: 0px !important;
 }
