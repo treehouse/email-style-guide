@@ -6,7 +6,7 @@ $text-alignments: left, right, center, justify;
 @for $num from 1 through 4 {
   .#{$esg-prefix}-h#{$num} {
     font-size: text-size($num) !important;
-    font-family: $font-family;
+    font-family: $font-family-headings;
     color: map-get($text-colors, dark );
   }
 }

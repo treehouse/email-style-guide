@@ -1,6 +1,23 @@
-h1 { font-size: 36px; }
-h2 { font-size: 28px; }
-h3 { font-size: 20px; }
-h4 { font-size: 18px; }
-h5 { font-size: 16px; }
-h6 { font-size: 14px; }
+.esg-h1 {
+  font-size: font-size: 36px;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
+}
+
+.esg-h2 {
+  font-size: font-size: 28px;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
+}
+
+.esg-h3 {
+  font-size: font-size: 20px;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #40484a;
+}
+
+.esg-h4 {
+  font-size: text-size(4) !important;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: font-size: 18px;
+}
