@@ -104,14 +104,23 @@ gulp.task('docs:templates', () => {
     .pipe(gulp.dest(dest));
 });
 
-gulp.task('jekyll', () => {
-  const jekyll = child.spawn('./bin/jekyll', ['serve',
-    '--source', dir.docs,
-    '--destination', dir.siteRoot
-  ]);
 
-  const logger = (buffer) => {
-    buffer.toString()
+const startJekyll = (command) => {
+  const jekyll = child.spawn('./bin/jekyll',
+    [
+      command,
+      '--source', dir.docs,
+      '--destination', dir.siteRoot
+    ]
+  );
+
+  const handleError = (message) => {
+    logMessage(message);
+    process.exit(1);
+  }
+
+  const logMessage = (message) => {
+    message.toString()
       .split(/\n/)
       .forEach((message) => {
         if(message.length > 0) {
@@ -120,9 +129,12 @@ gulp.task('jekyll', () => {
       });
   };
 
-  jekyll.stdout.on('data', logger);
-  jekyll.stderr.on('data', logger);
-});
+  jekyll.stdout.on('data', logMessage);
+  jekyll.stderr.on('data', handleError);
+}
+
+gulp.task('jekyll:serve', () => { startJekyll('serve') });
+gulp.task('jekyll:build', () => { startJekyll('build') });
 
 gulp.task('watch', () => {
   gulp.watch(dir.src + 'sass/**/*', ['css'])
@@ -130,7 +142,7 @@ gulp.task('watch', () => {
   gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
 });
 
-gulp.task('default', ['src', 'docs', 'jekyll']);
+gulp.task('default', ['src', 'docs', 'jekyll:build']);
 gulp.task('src', ['css', 'templates']);
 gulp.task('docs', ['docs:css', 'docs:js', 'docs:templates']);
-gulp.task('serve', ['jekyll', 'watch']);
+gulp.task('serve', ['jekyll:serve', 'watch']);

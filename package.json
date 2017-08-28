@@ -16,7 +16,8 @@
     "merge-stream": "^1.0.1"
   },
   "scripts": {
-    "build": "gulp src docs",
+    "test": "bin/test",
+    "build": "gulp src docs jekyll:build",
     "serve": "gulp serve"
   },
   "license": "MIT",
