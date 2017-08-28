@@ -109,14 +109,13 @@ $ bin/setup
 And then run:
 
 ```
-$ yarn build
-$ yarn test
+$ yarn build && yarn test
 ```
 
 Test individual templates:
 
 ```
-$ bin/htmlproofer --check-html src/templates/example.html
+$ bin/test src/templates/example.html
 ```
 
 ## Releasing

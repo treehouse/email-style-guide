@@ -1,3 +1,13 @@
 #!/bin/sh
 
-bin/htmlproofer --check-html --url-ignore '/$^/,/invisionapp/,#,{{ unsubscribe_url }}' --url-swap \/email-style-guide: docs/_site
+if [ -n "$1" ]; then
+  path=$1
+else
+  path="docs/_site"
+fi
+
+bin/htmlproofer \
+  --check-html \
+  --url-ignore '/$^/,/invisionapp/,#,{{ unsubscribe_url }}' \
+  --url-swap \/email-style-guide: \
+  $path
