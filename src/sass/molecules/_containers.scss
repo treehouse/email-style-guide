@@ -4,36 +4,19 @@
   width: 100% !important;
   margin: 0;
   padding: 0;
-
-  &-item {
-    vertical-align: top;
-    border-collapse: collapse;
-  }
 }
 
 .#{$esg-prefix}-container {
     max-width: 600px !important;
-    display: block;
+    width: 100%;
+    display: table;
     margin: 0 !important;
+    &-item {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
 }
-.wrap-inner {
-  vertical-align: top;
-  padding-bottom: 15px;
-  border-collapse: collapse;
-}
-.wrap-inner-table {
-  max-width: 600px !important;
-  display: block;
-  margin: 0 !important;
-}
-.wrap-inner-table-wrap {
-  vertical-align: top;
-  border-collapse: collapse;
-}
-.wrap-inner-table-wrap-inner {
-  width: 100%;
-}
-.wrap-logo {
+.#{$esg-prefix}-wrap-logo {
   width: 192px;
   vertical-align: top;
   border-collapse: collapse;

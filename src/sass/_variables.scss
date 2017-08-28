@@ -4,7 +4,7 @@ $esg-prefix: "esg";
 // Type Variables
 $font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 
-$bold: 500;
+$bold: 700;
 
 // Brand Colors
 $brand-colors: (
@@ -30,7 +30,7 @@ $button-colors: (
   "white": (
     background:  map-get($text-colors, "white"),
     color:  map-get($brand-colors, "green")
-  )
+  ),
 );
 
 // Gray Colors
@@ -173,7 +173,8 @@ $spacing: (
   2: 10px,
   3: 15px,
   4: 20px,
-  5: 25px
+  5: 25px,
+  6: 30px
 );
 
 // Spacing Sides

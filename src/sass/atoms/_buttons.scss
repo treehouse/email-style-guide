@@ -4,12 +4,12 @@
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  display: inline;
+  display: block;
   font-size: map-get($text-size, 5 );
   text-transform: capitalize;
   margin: 0;
   padding: 15px;
-  font-weight: bold;
+  font-weight: $bold;
   font-family: $font-family;
   height: inherit;
   line-height: inherit;
@@ -44,5 +44,6 @@
   .#{$esg-prefix}-button-#{$color-name} {
       background: map-get(map-get($button-colors, $color-name), "background");
       border: map-get(map-get($button-colors, $color-name), "background");
+      color: map-get(map-get($button-colors, $color-name), "color");
     }
 }
