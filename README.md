@@ -95,10 +95,10 @@ We use [HTMLProofer](https://github.com/gjtorikian/html-proofer) to check the do
 
 We currently run these HTMLProofer checks:
 
-* HtmlCheck
-* ImageCheck
-* LinkCheck
-* ScriptCheck
+* [HtmlCheck](https://github.com/gjtorikian/html-proofer#html)
+* [ImageCheck](https://github.com/gjtorikian/html-proofer#images)
+* [LinkCheck](https://github.com/gjtorikian/html-proofer#links)
+* [ScriptCheck](https://github.com/gjtorikian/html-proofer#scripts)
 
 Setup the dependencies:
 
