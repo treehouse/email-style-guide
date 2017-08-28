@@ -190,363 +190,363 @@
 }
 
 .esg-brand-fill-green {
-  fill: brand-color("green") !important;
+  fill: #5fcf80 !important;
 }
 
 .esg-brand-stroke-green {
-  stroke: brand-color("green") !important;
+  stroke: #5fcf80 !important;
 }
 
 .esg-brand-color-green {
-  color: brand-color("green") !important;
+  color: #5fcf80 !important;
 }
 
 .esg-brand-border-green {
-  border-color: brand-color("green") !important;
+  border-color: #5fcf80 !important;
 }
 
 .esg-brand-bg-green {
-  background-color: brand-color("green") !important;
+  background-color: #5fcf80 !important;
 }
 
 .esg-brand-fill-gray {
-  fill: brand-color("gray") !important;
+  fill: #3e474f !important;
 }
 
 .esg-brand-stroke-gray {
-  stroke: brand-color("gray") !important;
+  stroke: #3e474f !important;
 }
 
 .esg-brand-color-gray {
-  color: brand-color("gray") !important;
+  color: #3e474f !important;
 }
 
 .esg-brand-border-gray {
-  border-color: brand-color("gray") !important;
+  border-color: #3e474f !important;
 }
 
 .esg-brand-bg-gray {
-  background-color: brand-color("gray") !important;
+  background-color: #3e474f !important;
 }
 
 .esg-fill-blue {
-  fill: ui-color("blue") !important;
+  fill: #3f8abf !important;
 }
 
 .esg-stroke-blue {
-  stroke: ui-color("blue") !important;
+  stroke: #3f8abf !important;
 }
 
 .esg-color-blue {
-  color: ui-color("blue") !important;
+  color: #3f8abf !important;
 }
 
 .esg-border-blue {
-  border-color: ui-color("blue") !important;
+  border-color: #3f8abf !important;
 }
 
 .esg-bg-blue {
-  background-color: ui-color("blue") !important;
+  background-color: #3f8abf !important;
 }
 
 .esg-fill-green {
-  fill: ui-color("green") !important;
+  fill: #36b55c !important;
 }
 
 .esg-stroke-green {
-  stroke: ui-color("green") !important;
+  stroke: #36b55c !important;
 }
 
 .esg-color-green {
-  color: ui-color("green") !important;
+  color: #36b55c !important;
 }
 
 .esg-border-green {
-  border-color: ui-color("green") !important;
+  border-color: #36b55c !important;
 }
 
 .esg-bg-green {
-  background-color: ui-color("green") !important;
+  background-color: #36b55c !important;
 }
 
 .esg-fill-yellow {
-  fill: ui-color("yellow") !important;
+  fill: #ffd466 !important;
 }
 
 .esg-stroke-yellow {
-  stroke: ui-color("yellow") !important;
+  stroke: #ffd466 !important;
 }
 
 .esg-color-yellow {
-  color: ui-color("yellow") !important;
+  color: #ffd466 !important;
 }
 
 .esg-border-yellow {
-  border-color: ui-color("yellow") !important;
+  border-color: #ffd466 !important;
 }
 
 .esg-bg-yellow {
-  background-color: ui-color("yellow") !important;
+  background-color: #ffd466 !important;
 }
 
 .esg-fill-orange {
-  fill: ui-color("orange") !important;
+  fill: #ff9f1f !important;
 }
 
 .esg-stroke-orange {
-  stroke: ui-color("orange") !important;
+  stroke: #ff9f1f !important;
 }
 
 .esg-color-orange {
-  color: ui-color("orange") !important;
+  color: #ff9f1f !important;
 }
 
 .esg-border-orange {
-  border-color: ui-color("orange") !important;
+  border-color: #ff9f1f !important;
 }
 
 .esg-bg-orange {
-  background-color: ui-color("orange") !important;
+  background-color: #ff9f1f !important;
 }
 
 .esg-fill-red {
-  fill: ui-color("red") !important;
+  fill: #ed5a5a !important;
 }
 
 .esg-stroke-red {
-  stroke: ui-color("red") !important;
+  stroke: #ed5a5a !important;
 }
 
 .esg-color-red {
-  color: ui-color("red") !important;
+  color: #ed5a5a !important;
 }
 
 .esg-border-red {
-  border-color: ui-color("red") !important;
+  border-color: #ed5a5a !important;
 }
 
 .esg-bg-red {
-  background-color: ui-color("red") !important;
+  background-color: #ed5a5a !important;
 }
 
 .esg-fill-white {
-  fill: ui-color("white") !important;
+  fill: #ffffff !important;
 }
 
 .esg-stroke-white {
-  stroke: ui-color("white") !important;
+  stroke: #ffffff !important;
 }
 
 .esg-color-white {
-  color: ui-color("white") !important;
+  color: #ffffff !important;
 }
 
 .esg-border-white {
-  border-color: ui-color("white") !important;
+  border-color: #ffffff !important;
 }
 
 .esg-bg-white {
-  background-color: ui-color("white") !important;
+  background-color: #ffffff !important;
 }
 
 .fill-gray-darker {
-  fill: gray-color("gray-darker") !important;
+  fill: #2d3339 !important;
 }
 
 .stroke-gray-darker {
-  stroke: gray-color("gray-darker") !important;
+  stroke: #2d3339 !important;
 }
 
 .color-gray-darker {
-  color: gray-color("gray-darker") !important;
+  color: #2d3339 !important;
 }
 
 .esg-border-gray-darker {
-  border-color: gray-color("gray-darker") !important;
+  border-color: #2d3339 !important;
 }
 
 .esg-bg-gray-darker {
-  background-color: gray-color("gray-darker") !important;
+  background-color: #2d3339 !important;
 }
 
 .fill-gray-dark {
-  fill: gray-color("gray-dark") !important;
+  fill: #3f4850 !important;
 }
 
 .stroke-gray-dark {
-  stroke: gray-color("gray-dark") !important;
+  stroke: #3f4850 !important;
 }
 
 .color-gray-dark {
-  color: gray-color("gray-dark") !important;
+  color: #3f4850 !important;
 }
 
 .esg-border-gray-dark {
-  border-color: gray-color("gray-dark") !important;
+  border-color: #3f4850 !important;
 }
 
 .esg-bg-gray-dark {
-  background-color: gray-color("gray-dark") !important;
+  background-color: #3f4850 !important;
 }
 
 .fill-gray {
-  fill: gray-color("gray") !important;
+  fill: #c6ccd2 !important;
 }
 
 .stroke-gray {
-  stroke: gray-color("gray") !important;
+  stroke: #c6ccd2 !important;
 }
 
 .color-gray {
-  color: gray-color("gray") !important;
+  color: #c6ccd2 !important;
 }
 
 .esg-border-gray {
-  border-color: gray-color("gray") !important;
+  border-color: #c6ccd2 !important;
 }
 
 .esg-bg-gray {
-  background-color: gray-color("gray") !important;
+  background-color: #c6ccd2 !important;
 }
 
 .fill-gray-light {
-  fill: gray-color("gray-light") !important;
+  fill: #edeff0 !important;
 }
 
 .stroke-gray-light {
-  stroke: gray-color("gray-light") !important;
+  stroke: #edeff0 !important;
 }
 
 .color-gray-light {
-  color: gray-color("gray-light") !important;
+  color: #edeff0 !important;
 }
 
 .esg-border-gray-light {
-  border-color: gray-color("gray-light") !important;
+  border-color: #edeff0 !important;
 }
 
 .esg-bg-gray-light {
-  background-color: gray-color("gray-light") !important;
+  background-color: #edeff0 !important;
 }
 
 .fill-gray-lighter {
-  fill: gray-color("gray-lighter") !important;
+  fill: #f9fafa !important;
 }
 
 .stroke-gray-lighter {
-  stroke: gray-color("gray-lighter") !important;
+  stroke: #f9fafa !important;
 }
 
 .color-gray-lighter {
-  color: gray-color("gray-lighter") !important;
+  color: #f9fafa !important;
 }
 
 .esg-border-gray-lighter {
-  border-color: gray-color("gray-lighter") !important;
+  border-color: #f9fafa !important;
 }
 
 .esg-bg-gray-lighter {
-  background-color: gray-color("gray-lighter") !important;
+  background-color: #f9fafa !important;
 }
 
 .esg-text-fill-dark {
-  fill: text-color("dark") !important;
+  fill: #40484a !important;
 }
 
 .esg-text-stroke-dark {
-  stroke: text-color("dark") !important;
+  stroke: #40484a !important;
 }
 
 .esg-text-color-dark {
-  color: text-color("dark") !important;
+  color: #40484a !important;
 }
 
 .esg-text-border-dark {
-  border-color: text-color("dark") !important;
+  border-color: #40484a !important;
 }
 
 .esg-text-bg-dark {
-  background-color: text-color("dark") !important;
+  background-color: #40484a !important;
 }
 
 .esg-text-fill-medium {
-  fill: text-color("medium") !important;
+  fill: #4b5658 !important;
 }
 
 .esg-text-stroke-medium {
-  stroke: text-color("medium") !important;
+  stroke: #4b5658 !important;
 }
 
 .esg-text-color-medium {
-  color: text-color("medium") !important;
+  color: #4b5658 !important;
 }
 
 .esg-text-border-medium {
-  border-color: text-color("medium") !important;
+  border-color: #4b5658 !important;
 }
 
 .esg-text-bg-medium {
-  background-color: text-color("medium") !important;
+  background-color: #4b5658 !important;
 }
 
 .esg-text-fill-base {
-  fill: text-color("base") !important;
+  fill: #576366 !important;
 }
 
 .esg-text-stroke-base {
-  stroke: text-color("base") !important;
+  stroke: #576366 !important;
 }
 
 .esg-text-color-base {
-  color: text-color("base") !important;
+  color: #576366 !important;
 }
 
 .esg-text-border-base {
-  border-color: text-color("base") !important;
+  border-color: #576366 !important;
 }
 
 .esg-text-bg-base {
-  background-color: text-color("base") !important;
+  background-color: #576366 !important;
 }
 
 .esg-text-fill-light {
-  fill: text-color("light") !important;
+  fill: #7b8b8e !important;
 }
 
 .esg-text-stroke-light {
-  stroke: text-color("light") !important;
+  stroke: #7b8b8e !important;
 }
 
 .esg-text-color-light {
-  color: text-color("light") !important;
+  color: #7b8b8e !important;
 }
 
 .esg-text-border-light {
-  border-color: text-color("light") !important;
+  border-color: #7b8b8e !important;
 }
 
 .esg-text-bg-light {
-  background-color: text-color("light") !important;
+  background-color: #7b8b8e !important;
 }
 
 .esg-text-fill-white {
-  fill: text-color("white") !important;
+  fill: #ffffff !important;
 }
 
 .esg-text-stroke-white {
-  stroke: text-color("white") !important;
+  stroke: #ffffff !important;
 }
 
 .esg-text-color-white {
-  color: text-color("white") !important;
+  color: #ffffff !important;
 }
 
 .esg-text-border-white {
-  border-color: text-color("white") !important;
+  border-color: #ffffff !important;
 }
 
 .esg-text-bg-white {
-  background-color: text-color("white") !important;
+  background-color: #ffffff !important;
 }
 
 .esg-topic-fill-html-light {
