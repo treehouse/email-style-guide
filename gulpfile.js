@@ -44,7 +44,7 @@ gulp.task('templates', () => {
   const docsDest = dir.docs + 'templates/';
 
   return gulp.src(src)
-    .pipe(inlineCss())
+    .pipe(inlineCss({preserveMediaQueries: true}))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(dest))
     .pipe(gulp.dest(docsDest));

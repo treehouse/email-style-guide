@@ -42,7 +42,7 @@ $properties: fill stroke color border-color background-color;
     // Else just use the regular property name
     @if $property == background-color {
       .#{$esg-prefix}-bg-#{$color-name} {
-        #{$property}: map-get($ui-colors, $color-name) !important;
+        #{$property}: map-get($ui-colors, $color-name);
       }
     }
     @else if $property == border-color {
@@ -71,7 +71,7 @@ $properties: fill stroke color border-color background-color;
     // Else just use the regular property name
     @if $property == background-color {
       .#{$esg-prefix}-bg-#{$color-name} {
-        #{$property}: map-get($gray-colors, $color-name) !important;
+        #{$property}: map-get($gray-colors, $color-name);
       }
     }
     @else if $property == border-color {
@@ -81,7 +81,7 @@ $properties: fill stroke color border-color background-color;
     }
     @else {
       .#{$property}-#{$color-name} {
-        #{$property}: map-get($gray-colors, $color-name) !important;
+        #{$property}: map-get($gray-colors, $color-name);
       }
     }
   }
@@ -110,7 +110,7 @@ $properties: fill stroke color border-color background-color;
     }
     @else {
       .#{$esg-prefix}-text-#{$property}-#{$color-name} {
-        #{$property}: map-get($text-colors, $color-name) !important;
+        #{$property}: map-get($text-colors, $color-name);
       }
     }
   }

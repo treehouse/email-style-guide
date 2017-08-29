@@ -4,7 +4,16 @@
                 font-family: sans-serif !important;
             }
         </style>
-    <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!--><!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> --><!--<![endif]--><!-- Web Font / @font-face : END --><!-- CSS Reset --><!-- Progressive Enhancements --><!-- What it does: Makes background images in 72ppi Outlook render at correct size. --><!--[if gte mso 9]>
+    <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!--><!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> --><!--<![endif]--><!-- Web Font / @font-face : END --><!-- CSS Reset --><style style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%">@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  .email-container {
+    min-width: 375px !important;
+  }
+}</style><!-- Progressive Enhancements --><style style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%">@media screen and (max-width: 600px) {
+  .email-container p {
+    font-size: 17px !important;
+    line-height: 22px !important;
+  }
+}</style><!-- What it does: Makes background images in 72ppi Outlook render at correct size. --><!--[if gte mso 9]>
   <xml>
     <o:OfficeDocumentSettings>
       <o:AllowPNG/>
