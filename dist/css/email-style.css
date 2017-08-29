@@ -2545,11 +2545,6 @@ esg-ol {
   border-collapse: collapse;
 }
 
-.esg-webinar-bg {
-  background-image: url(https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png);
-  background-size: cover;
-}
-
 .esg-image-full,
 .esg-image-full img, .esg-image-inline {
   width: 100%;
