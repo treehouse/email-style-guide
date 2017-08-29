@@ -84,7 +84,6 @@ gulp.task('docs:css', () => {
     .pipe(gulp.dest(dest));
 });
 
-
 gulp.task('docs:js', () => {
   const src = dir.docsSrc + 'js/*.js';
   const dest = dir.docs + 'assets/js/';
@@ -94,16 +93,6 @@ gulp.task('docs:js', () => {
     .pipe(uglify())
     .pipe(gulp.dest(dest));
 });
-
-gulp.task('docs:templates', () => {
-  const src = dir.docsSrc + 'templates/**/*.html';
-  const dest = dir.docs + 'templates/examples/';
-
-  return gulp.src(src)
-    .pipe(inlineCss())
-    .pipe(gulp.dest(dest));
-});
-
 
 const startJekyll = (command) => {
   const jekyll = child.spawn('./bin/jekyll',
@@ -140,9 +129,10 @@ gulp.task('watch', () => {
   gulp.watch(dir.src + 'sass/**/*', ['css'])
   gulp.watch(dir.src + 'templates/**/*.html', ['templates'])
   gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
+  gulp.watch(dir.docsSrc + 'js/**/*', ['docs:js'])
 });
 
 gulp.task('default', ['src', 'docs', 'jekyll:build']);
 gulp.task('src', ['css', 'templates']);
-gulp.task('docs', ['docs:css', 'docs:js', 'docs:templates']);
+gulp.task('docs', ['docs:css', 'docs:js']);
 gulp.task('serve', ['jekyll:serve', 'watch']);
