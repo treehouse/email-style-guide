@@ -1,8 +1,7 @@
 // Basic Button Styling with colors extracted
 .#{$esg-prefix}-button {
-  border: 18px solid #5fcf80;
   font-weight: normal;
-  font-size: 18px;
+  font-size: map-get($text-size, 4);
   line-height: 1.1;
   text-align: center;
   text-decoration: none;
@@ -26,7 +25,7 @@
 @each $color-name, $color in $button-colors {
   .#{$esg-prefix}-button-#{$color-name} {
       background: map-get(map-get($button-colors, $color-name), "background");
-      border: map-get(map-get($button-colors, $color-name), "background");
+      border: 18px solid map-get(map-get($button-colors, $color-name), "background");
       color: map-get(map-get($button-colors, $color-name), "color");
     }
   .#{$esg-prefix}-button-container-#{$color-name} {

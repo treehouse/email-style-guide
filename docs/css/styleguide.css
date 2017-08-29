@@ -10536,26 +10536,13 @@ a {
 }
 
 .esg-button {
-  box-sizing: border-box;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  text-transform: capitalize;
-  margin: 0;
-  padding: 15px;
-  font-weight: 700;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  height: inherit;
-  line-height: inherit;
+  font-weight: normal;
   font-size: 18px;
   line-height: 1.1;
-  box-sizing: border-box;
-  border-collapse: separate !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-  width: auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
 }
 
 .esg-button-container {
@@ -10564,22 +10551,36 @@ a {
 }
 
 .esg-button-text {
-  box-sizing: border-box;
-  vertical-align: top;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-  text-align: center;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 .esg-button-green {
   background: #5fcf80;
-  border: #5fcf80;
+  border: 18px solid #5fcf80;
+  color: #ffffff;
+}
+
+.esg-button-container-green {
+  background: #5fcf80;
+  color: #ffffff;
+}
+
+.esg-button-text-green {
   color: #ffffff;
 }
 
 .esg-button-white {
   background: #ffffff;
-  border: #ffffff;
+  border: 18px solid #ffffff;
+  color: #5fcf80;
+}
+
+.esg-button-container-white {
+  background: #ffffff;
+  color: #5fcf80;
+}
+
+.esg-button-text-white {
   color: #5fcf80;
 }
 
@@ -12701,7 +12702,7 @@ a {
 
 .esg-h1 {
   font-size: 36px !important;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   color: #40484a;
   line-height: 130%;
   font-weight: 700;
@@ -12709,7 +12710,7 @@ a {
 
 .esg-h2 {
   font-size: 28px !important;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   color: #40484a;
   line-height: 130%;
   font-weight: 700;
@@ -12717,7 +12718,7 @@ a {
 
 .esg-h3 {
   font-size: 20px !important;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   color: #40484a;
   line-height: 130%;
   font-weight: 700;
@@ -12725,7 +12726,7 @@ a {
 
 .esg-h4 {
   font-size: 18px !important;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   color: #40484a;
   line-height: 130%;
   font-weight: 700;
@@ -12765,6 +12766,7 @@ a {
 
 .esg-p {
   font-size: 16px;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   line-height: 180%;
 }
 
@@ -12873,6 +12875,11 @@ esg-ol {
 .esg-card-inner {
   vertical-align: top;
   border-collapse: collapse;
+}
+
+.esg-webinar-bg {
+  background-image: url(https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png);
+  background-size: cover;
 }
 
 .esg-image-full,

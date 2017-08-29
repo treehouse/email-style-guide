@@ -144,7 +144,6 @@
 }
 
 .esg-button {
-  border: 18px solid #5fcf80;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.1;
@@ -165,7 +164,7 @@
 
 .esg-button-green {
   background: #5fcf80;
-  border: #5fcf80;
+  border: 18px solid #5fcf80;
   color: #ffffff;
 }
 
@@ -180,7 +179,7 @@
 
 .esg-button-white {
   background: #ffffff;
-  border: #ffffff;
+  border: 18px solid #ffffff;
   color: #5fcf80;
 }
 
