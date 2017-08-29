@@ -6,7 +6,7 @@ $text-alignments: left, right, center, justify;
 @for $num from 1 through 4 {
   .#{$esg-prefix}-h#{$num} {
     font-size: map-get($text-size, $num) !important;
-    font-family: $font-family;
+    font-family: $font-family-headings;
     color: map-get($text-colors, dark );
     line-height: 130%;
     font-weight: $bold;
@@ -26,6 +26,7 @@ $text-alignments: left, right, center, justify;
 // General Text Styles
 .#{$esg-prefix}-p {
   font-size: map-get($text-size, 5 );
+  font-family: $font-family;
   line-height: 180%;
 }
 

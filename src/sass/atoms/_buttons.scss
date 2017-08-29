@@ -1,39 +1,22 @@
 // Basic Button Styling with colors extracted
 .#{$esg-prefix}-button {
-  box-sizing: border-box;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  font-size: map-get($text-size, 5 );
-  text-transform: capitalize;
-  margin: 0;
-  padding: 15px;
-  font-weight: $bold;
-  font-family: $font-family;
-  height: inherit;
-  line-height: inherit;
+  border: 18px solid #5fcf80;
+  font-weight: normal;
   font-size: 18px;
   line-height: 1.1;
-  box-sizing: border-box;
-  border-collapse: separate !important;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-  width: auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
 
-  // Since buttons need 3 elements to work effectively we define this wrap class for the parent, a td cell within a table
+  // Since buttons need 2 elements to work effectively we define this wrap class for the parent, a td cell within a table
   &-container {
     border-radius: 5px;
     text-align: center;
   }
 
-  // and this inner class for the lowest element, typically a span tag
   &-text {
-    box-sizing: border-box;
-    vertical-align: top;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    text-align: center;
+    font-family: $font-family;
   }
 }
 
@@ -44,6 +27,13 @@
   .#{$esg-prefix}-button-#{$color-name} {
       background: map-get(map-get($button-colors, $color-name), "background");
       border: map-get(map-get($button-colors, $color-name), "background");
+      color: map-get(map-get($button-colors, $color-name), "color");
+    }
+  .#{$esg-prefix}-button-container-#{$color-name} {
+      background: map-get(map-get($button-colors, $color-name), "background");
+      color: map-get(map-get($button-colors, $color-name), "color");
+    }
+  .#{$esg-prefix}-button-text-#{$color-name} {
       color: map-get(map-get($button-colors, $color-name), "color");
     }
 }
