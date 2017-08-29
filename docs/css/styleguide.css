@@ -12308,6 +12308,10 @@ a {
   margin: 30px !important;
 }
 
+.esg-m-base {
+  margin: 7% !important;
+}
+
 .esg-m-t-0 {
   margin-top: 0px !important;
 }
@@ -12334,6 +12338,10 @@ a {
 
 .esg-m-t-6 {
   margin-top: 30px !important;
+}
+
+.esg-m-t-base {
+  margin-top: 7% !important;
 }
 
 .esg-m-b-0 {
@@ -12364,6 +12372,10 @@ a {
   margin-bottom: 30px !important;
 }
 
+.esg-m-b-base {
+  margin-bottom: 7% !important;
+}
+
 .esg-m-l-0 {
   margin-left: 0px !important;
 }
@@ -12392,6 +12404,10 @@ a {
   margin-left: 30px !important;
 }
 
+.esg-m-l-base {
+  margin-left: 7% !important;
+}
+
 .esg-m-r-0 {
   margin-right: 0px !important;
 }
@@ -12418,6 +12434,10 @@ a {
 
 .esg-m-r-6 {
   margin-right: 30px !important;
+}
+
+.esg-m-r-base {
+  margin-right: 7% !important;
 }
 
 .esg-m-lr-0 {
@@ -12455,6 +12475,11 @@ a {
   margin-right: 30px !important;
 }
 
+.esg-m-lr-base {
+  margin-left: 7% !important;
+  margin-right: 7% !important;
+}
+
 .esg-m-tb-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -12490,6 +12515,11 @@ a {
   margin-bottom: 30px !important;
 }
 
+.esg-m-tb-base {
+  margin-top: 7% !important;
+  margin-bottom: 7% !important;
+}
+
 .esg-p-0 {
   padding: 0px !important;
 }
@@ -12516,6 +12546,10 @@ a {
 
 .esg-p-6 {
   padding: 30px !important;
+}
+
+.esg-p-base {
+  padding: 7% !important;
 }
 
 .esg-p-t-0 {
@@ -12546,6 +12580,10 @@ a {
   padding-top: 30px !important;
 }
 
+.esg-p-t-base {
+  padding-top: 7% !important;
+}
+
 .esg-p-b-0 {
   padding-bottom: 0px !important;
 }
@@ -12572,6 +12610,10 @@ a {
 
 .esg-p-b-6 {
   padding-bottom: 30px !important;
+}
+
+.esg-p-b-base {
+  padding-bottom: 7% !important;
 }
 
 .esg-p-l-0 {
@@ -12602,6 +12644,10 @@ a {
   padding-left: 30px !important;
 }
 
+.esg-p-l-base {
+  padding-left: 7% !important;
+}
+
 .esg-p-r-0 {
   padding-right: 0px !important;
 }
@@ -12628,6 +12674,10 @@ a {
 
 .esg-p-r-6 {
   padding-right: 30px !important;
+}
+
+.esg-p-r-base {
+  padding-right: 7% !important;
 }
 
 .esg-p-lr-0 {
@@ -12665,6 +12715,11 @@ a {
   padding-right: 30px !important;
 }
 
+.esg-p-lr-base {
+  padding-left: 7% !important;
+  padding-right: 7% !important;
+}
+
 .esg-p-tb-0 {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -12698,6 +12753,11 @@ a {
 .esg-p-tb-6 {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
+}
+
+.esg-p-tb-base {
+  padding-top: 7% !important;
+  padding-bottom: 7% !important;
 }
 
 .esg-h1 {
