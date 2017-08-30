@@ -5,6 +5,18 @@ table {
   mso-table-rspace: 0pt;
 }
 
+/* Trying to fix the Outlook padding issue */
+td {
+  border-collapse: collapse;
+}
+
+/* Override Outlook.com turning dates to blue links
+ * [office365] .esg-outlook-link {
+  color: #fff !important;
+  border-bottom-width :0 !important;
+  border-bottom-style: none !important;
+  }
+*/
 .esg-html {
   -webkit-tap-highlight-color: transparent;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
@@ -2453,11 +2465,11 @@ esg-a {
 }
 
 .esg-link {
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   cursor: pointer;
   transition: color 300ms 0s ease;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 .esg-link-blue {

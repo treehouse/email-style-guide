@@ -45,11 +45,11 @@ $text-alignments: left, right, center, justify;
 }
 
 .#{$esg-prefix}-link {
-  font-family: $font-family;
   cursor: pointer;
   transition: color 300ms 0s ease;
   text-decoration: none;
   font-weight: bold;
+  font-family: $font-family;
   // @include selected {
   //   color: darken(ui-color(blue), 10%);
   // }

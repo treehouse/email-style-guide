@@ -6,33 +6,17 @@
 
   <!-- // Begin Responsive Classes -->
   <style>
-    @media only screen and (min-width: 1px) {
-    /* Trying to fix the Outlook padding issue */
-      td {
-       border-collapse: collapse;
-      }
-    /* Override Outlook.com turning dates to blue links * [office365]  */
-     .esg-outlook-link {
-      color: #fff !important;
-      border-bottom-width :0 !important;
+    /* Override Outlook.com turning dates to blue links */
+    .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
+      border-bottom-width: 0 !important;
       border-bottom-style: none !important;
-      }
-      .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
-        border-bottom-width:0 !important;
-        border-bottom-style:none !important;
-      }
-      /* When an email is pulled into Outlook.com / Hotmail, any style rules present in the email are appended with .ExternalClass. Normalizing a few of these can help create a baseline for you to work from. */
-      .ExternalClass{
-          width:100%;
-      }
-      .ExternalClass,
-      .ExternalClass p,
-      .ExternalClass span,
-      .ExternalClass font,
-      .ExternalClass td,
-      .ExternalClass div{
-          line-height: 100%;
-      }
+    }
+    /* When an email is pulled into Outlook.com / Hotmail, any style rules present in the email are appended with .ExternalClass. Normalizing a few of these can help create a baseline for you to work from. */
+    .ExternalClass {
+      width: 100%;
+    }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
     }
     @media only screen and (max-width: 600px) {
       .esg-bg-gray-light, html {
@@ -58,7 +42,7 @@
       }
     }
   </style>
-  <!-- // End Responsive Classes -->
+<!-- // End Responsive Classes -->
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#edeff0" class="esg-body esg-bg-gray-light">
@@ -97,7 +81,7 @@
                 <!-- // Header Item: Primary Header -->
                 <tr>
                   <td align="left" width="50%" class="esg-wrap-logo esg-p-tb-3">
-                    <a href="http://teamtreehouse.com"><img class="esg-logo esg-logo-business" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/th-business-logo2x.png" alt="Treehouse"></a>
+                    <a href="https://teamtreehouse.com/business"><img class="esg-logo esg-logo-business" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/th-business-logo2x.png" alt="Treehouse"></a>
                   </td>
                   <td align="right" width="50%" class="esg-text-right">
                     <a href="http://wwww.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link mktEditable" id="browser-link" mktoName="Browser Link">View in browser</a>
@@ -133,15 +117,15 @@
                     <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/calendar2x.png" width="55" height="55" alt="Calendar">
                     <p class="esg-p esg-text-color-white esg-text-5-xs mktEditable esg-text-center" id="webinar-label" mktoName="Webinar - Label" color="#ffffff">Webinar</p>
                     <h2 class="esg-text-color-white esg-m-t-0 mktEditable text-center-xs esg-h2" id="webinar-title" mktoName="Webinar - Title" color="#ffffff">How to Build a Successful and Scalable Training Roadmap</h2>
-                    <p class="mktEditable esg-text-color-white esg-text-center esg-m-0" id="webinar-time" mktoname="Webinar - Time" color="#ffffff" style="color: #fff !important;"><span class="esg-text-color-white" style="color: #fff !important;">Join us Monday, August 28th at Xpm PST</span></p>
+                    <p class="mktEditable esg-text-color-white esg-text-center esg-m-0" id="webinar-time" mktoname="Webinar - Time" color="#ffffff" style="color: #fff !important;"><span class="esg-text-color-white esg-outlook-link" style="color: #fff !important;">Join us Monday, August 28th at Xpm PST</span></p>
                   </td>
                 </tr>
 
                 <!-- Container Item: Webinar Content -->
                 <tr>
                   <td class="esg-p-lr-base esg-p-t-base esg-round-b">
-                    <h3 class="esg-h3 esg-m-t-0 esg-text-color-dark">Join Us for this Special Training Event</h3>
-                    <p class="esg-p esg-m-t-0 esg-m-b-0 mktEditable esg-text-color-dark" id="webinar-description" mktoName="Webinar - Description">Connect with the folks on our Business Team for a special webinar where we'll be discussing specific strategies for building a successful and scalable training roadmap for your organization.</p>
+                    <h3 class="esg-h3 esg-m-t-0 esg-text-color-dark mktEditable" id="webinar-subtitle" mktoName="Webinar - Subtitle">Join Us for this Special Training Event</h3>
+                    <p class="esg-p esg-m-t-0 esg-m-b-0 esg-text-color-dark mktEditable" id="webinar-description" mktoName="Webinar - Description">Connect with the folks on our Business Team for a special webinar where we'll be discussing specific strategies for building a successful and scalable training roadmap for your organization.</p>
                   </td>
                 </tr>
 
@@ -152,8 +136,8 @@
                     <!-- Container Button -->
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                       <tr>
-                        <td class="esg-button-container esg-button-container-green">
-                          <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green mktEditable" id="webinar-button" mktoName="Webinar - Button">
+                        <td class="esg-button-container esg-button-container-green mktEditable" id="webinar-button" mktoName="Webinar - Button">
+                          <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green">
                             <span class="esg-button-text-green esg-button-text">Register for the Webinar</span>
                           </a>
                         </td>
@@ -196,7 +180,7 @@
             <!-- // Card Item: Heading -->
             <tr>
               <td class="esg-p-t-base esg-p-lr-base">
-                <h2 class="mktEditable esg-h2 esg-m-t-0 esg-text-color-dark" id="featured-headline" mktoName="Featured - Headline">
+                <h2 class="esg-h2 esg-m-t-0 esg-text-color-dark mktEditable" id="featured-headline" mktoName="Featured - Headline">
                   Custom Tracks &amp; Departments: Working Together in Harmony
                 </h2>
               </td>
@@ -206,9 +190,9 @@
             <tr>
               <td class="esg-p-lr-base">
                 <p class="esg-p mktEditable esg-text-color-dark" id="featured-paragraph" mktoName="Featured - Paragraph">Do you have multiple teams in your account? If so, we'd highly recommend taking advantage of our <a href="http://go.teamtreehouse.com/JW3uK00C1P0st200k000000" target="_blank" class="esg-link esg-link-blue">Departments Feature</a>, which has several benefits that will save you time and make your account more organized:</p>
-                <ul class="esg-ul esg-p esg-m-0">
-                  <li class="esg-text-color-dark"><span class="esg-bold">Account Management</span>: Appoint one or multiple (there's no limit!) Department Admins to <a href="http://go.teamtreehouse.com/p0000K01uP000DsWku00023" target="_blank" class="esg-link esg-link-blue">track progress</a> and oversee their specific teams, taking the onus off of you to manage each person</li>
-                  <li class="esg-text-color-dark"><span class="esg-bold">Customize Tracks</span>: Allow for those Department Admins to <a href="http://go.teamtreehouse.com/iv2K0sW10Eu00k000003P00" target="_blank" class="esg-link esg-link-blue">request and assign Custom Tracks</a> that meet the needs of their members</li>
+                <ul class="esg-ul esg-p esg-m-0 mktEditable" id="featured-list" mktoName="Featured - List">
+                  <li class="esg-text-color-dark esg-p-b-2"><span class="esg-bold">Account Management</span>: Appoint one or multiple (there's no limit!) Department Admins to <a href="http://go.teamtreehouse.com/p0000K01uP000DsWku00023" target="_blank" class="esg-link esg-link-blue">track progress</a> and oversee their specific teams, taking the onus off of you to manage each person</li>
+                  <li class="esg-text-color-dark esg-p-b-2"><span class="esg-bold">Customize Tracks</span>: Allow for those Department Admins to <a href="http://go.teamtreehouse.com/iv2K0sW10Eu00k000003P00" target="_blank" class="esg-link esg-link-blue">request and assign Custom Tracks</a> that meet the needs of their members</li>
                   <li class="esg-text-color-dark"><span class="esg-bold">Create Groups</span>: Segment your members to easily track the most active teams in the <a href="http://go.teamtreehouse.com/b0000kWu2KF0P01w030000s" target="_blank" class="esg-link esg-link-blue">Department Leaderboard</a></li>
                 </ul>
               </td>
@@ -221,8 +205,8 @@
                 <!-- // Container Button -->
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                       <tr>
-                        <td class="esg-button-container esg-button-container-green">
-                          <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="esg-button esg-button-green mktEditable" id="featured-button" mktoName="Featured - Button">
+                        <td class="esg-button-container esg-button-container-green mktEditable" id="featured-button" mktoName="Featured - Button">
+                          <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="esg-button esg-button-green">
                             <span class="esg-button-text-green esg-button-text">View Your Department Dashboard</span>
                           </a>
                         </td>
@@ -241,8 +225,8 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                   <tr>
                     <td class="esg-bg-gray-lighter esg-round esg-p-lr-5 esg-p-tb-2">
-                      <p class="esg-p esg-bold m-0-xs mktEditable esg-text-color-dark" id="callout-headline" mktoName="Callout - Headline">Interested in learning more?</p>
-                      <p class="esg-p mktEditable esg-text-color-dark" id="callout-description" mktoName="Callout - Description">Reply to this email to reach your Customer Success Manager to discuss best practices and create learning paths for each team with <a href="http://go.teamtreehouse.com/c000300K0usW01kPy00H200" target="_blank" class="esg-link esg-link-blue">Custom Tracks!</a></p>
+                      <p class="esg-p esg-bold m-0-xs esg-text-color-dark mktEditable" id="callout-headline" mktoName="Callout - Headline">Interested in learning more?</p>
+                      <p class="esg-p esg-text-color-dark mktEditable" id="callout-description" mktoName="Callout - Description">Reply to this email to reach your Customer Success Manager to discuss best practices and create learning paths for each team with <a href="http://go.teamtreehouse.com/c000300K0usW01kPy00H200" target="_blank" class="esg-link esg-link-blue">Custom Tracks!</a></p>
                     </td>
                   </tr>
                 </table>
@@ -272,32 +256,27 @@
             <!-- // Course List Item: Heading -->
             <tr>
               <td class="esg-p-t-base esg-p-lr-base esg-p-b-3">
-                <h2 class="esg-h2 esg-m-0 esg-text-color-dark">New Courses</h2>
+                <h2 class="esg-h2 esg-m-0 esg-text-color-dark mktEditable" id="courses-headline" mktoName="Callout - Headline">New Courses</h2>
               </td>
             </tr>
 
             <!-- // Course List Item: Course (repeatable) -->
             <tr>
-              <td class="esg-p-lr-base esg-p-b-base">
+              <td class="esg-p-lr-base esg-p-b-base mktoContainer" id="course-container">
 
                 <!-- Course Content -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoContainer" id="course-container">
-                  <!--<tr class="mktoModule" id="hr1" mktoName="HR 1">
-                    <td class="border-t-xs" colspan="2" height="30">
-                    </td>
-                  </tr>-->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule" id="course1" mktoname="Course 1">
                   <tr>
-                    <td colspan="2" class="esg-p-b-3 esg-border-t">
-                      <h4 class="esg-h4 esg-m-t-6 esg-m-b-3 esg-text-color-dark mktEditable" id="course1-headline" mktoName="Course 1 - Headline">Cross-train your Marketers and Designers</h4>
-
-                      <p class="esg-p esg-text-color-dark" id="course1-description" mktoName="Course 1 - Description">Looking to start with the fundamentals of coding? In <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" target="_blank" class="esg-link esg-link-blue">HTML Basics</a>, Guil Hernandez teaches the skills needed in order to rely less on your developers for building landing pages and HTML emails.</p>
+                    <td colspan="2" class="esg-p-b-3 esg-border-t mktEditable" id="course1-headline" mktoName="Course 1 - Description">
+                      <h4 class="esg-h4 esg-m-t-6 esg-m-b-3 esg-text-color-dark">Cross-train your Marketers and Designers</h4>
+                      <p class="esg-p esg-text-color-dark">Looking to start with the fundamentals of coding? In <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" target="_blank" class="esg-link esg-link-blue">HTML Basics</a>, Guil Hernandez teaches the skills needed in order to rely less on your developers for building landing pages and HTML emails.</p>
                     </td>
                   </tr>
 
                   <tr>
-                    <td class="esg-align-middle esg-bg-gray-lighter esg-p-4 esg-round-l" height="50">
-                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" class="esg-m-0 esg-link esg-link-gray esg-text-color-light esg-text-6 esg-block regular mktEditable" id="course1-topic" mktoName="Course 1 - Topic">HTML Course</a>
-                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" class="esg-p-t-2 esg-link esg-link-gray esg-text-color-dark esg-block mktEditable" id="course1-course" mktoName="Course 1 - Course" target="_blank">HTML Basics</a>
+                    <td class="esg-align-middle esg-bg-gray-lighter esg-p-4 esg-round-l mktEditable" height="50" id="course1-course" mktoName="Course 1 - Course">
+                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" class="esg-m-0 esg-link esg-link-gray esg-text-color-light esg-text-6 esg-block regular">HTML Course</a>
+                      <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" class="esg-p-t-2 esg-link esg-link-gray esg-text-color-dark esg-block" target="_blank">HTML Basics</a>
                     </td>
                     <td class="esg-text-right esg-bg-gray-lighter esg-p-4 esg-round-r" height="50">
                         <a href="http://go.teamtreehouse.com/ZWs0001Ak0000000J30uPK2" target="_blank" class="esg-block"><img width="50" height="50" border="0" src="http://business.teamtreehouse.com/rs/793-KWP-630/images/course2x.png" class="content-announcement-icon-wrap-img" alt="Course"></a>
@@ -330,7 +309,7 @@
                     <td colspan="2" class="esg-p-b-3" mc:edit="sign-off">
                       <h3 class="esg-h3 esg-m-0 esg-m-b-3 esg-text-color-dark mktEditable" id="signature-headline" mktoName="Signature - Headline">How can I help you?</h3>
                       <p class="esg-p esg-text-color-dark mktEditable" id="signature-description" mktoName="Signature - Description">I'm excited to partner with you to customize Treehouse for your team. Just respond to this email; I'd love to hear from you!</p>
-                      <p class="esg-p esg-text-color-dark">Cheers,</p>
+                      <p class="esg-p esg-text-color-dark mktEditable" id="signature-signoff" mktoName="Signature - Sign Off">Cheers,</p>
                     </td>
                   </tr>
                   <tr>

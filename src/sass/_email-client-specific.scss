@@ -3,3 +3,16 @@ table {
   mso-table-lspace:0pt; 
   mso-table-rspace:0pt;
 }
+
+/* Trying to fix the Outlook padding issue */
+  td {
+   border-collapse: collapse;
+  }
+
+/* Override Outlook.com turning dates to blue links
+ * [office365] .esg-outlook-link {
+  color: #fff !important;
+  border-bottom-width :0 !important;
+  border-bottom-style: none !important;
+  }
+*/
