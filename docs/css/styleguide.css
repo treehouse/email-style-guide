@@ -12954,14 +12954,6 @@ esg-ol {
   border-collapse: collapse;
 }
 
-<<<<<<< HEAD
-.esg-webinar-bg {
-  background-image: url("https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png");
-  background-size: cover;
-}
-
-=======
->>>>>>> 056f6853fbdba4f9d5df44bf32521c2ab4818818
 .esg-image-full,
 .esg-image-full img, .esg-image-inline {
   width: 100%;
@@ -12988,16 +12980,13 @@ esg-ol {
   padding: 0;
 }
 
-<<<<<<< HEAD
 /* ESG Responsive Classes */
-=======
 /* ESG Layout/Template Styles */
 .esg-webinar-bg {
   background-image: url(https://s3.amazonaws.com/treehouse-email-images/templates/webinar-bg2x.png);
   background-size: cover;
 }
 
->>>>>>> 056f6853fbdba4f9d5df44bf32521c2ab4818818
 code {
   color: #e3116c;
 }
