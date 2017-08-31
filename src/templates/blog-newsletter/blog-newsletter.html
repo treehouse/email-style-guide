@@ -548,14 +548,7 @@
       border-spacing: 0;
     }
 /* Buttons */
-    .button-td {
-      border-radius: 5px;
-      background: #5fcf80;
-      text-align: center;
-    }
-    .button-a {
-      background: #5fcf80;
-      border: 18px solid #5fcf80;
+    .esg-button {
       font-weight: normal;
       font-size: 18px;
       line-height: 1.1;
@@ -564,41 +557,29 @@
       display: block;
       border-radius: 5px;
     }
-    .button-wrap {
-      box-sizing: border-box;
-      border-collapse: separate !important;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
-      width: auto;
-    }
-    .button-wrap-centered {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .button-wrap-inner {
-      box-sizing: border-box;
-      vertical-align: top;
-      mso-table-lspace: 0pt;
-      mso-table-rspace: 0pt;
+
+    .esg-button-container {
       border-radius: 5px;
-      background-color: #5fcf80;
       text-align: center;
     }
-    .button {
-      box-sizing: border-box; color: #ffffff;
-      text-decoration: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 16px;
-      text-transform: capitalize;
-      background-color: #5fcf80;
-      margin: 0;
-      padding: 18px;
-      font-weight: normal;
-      border: 1px solid #5fcf80;
-      font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+    .esg-button-text {
+      font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    }
+
+    .esg-button-green {
+      background: #5fcf80;
+      border: 18px solid #5fcf80;
+      color: #ffffff;
+    }
+
+    .esg-button-container-green {
+      background: #5fcf80;
+      color: #ffffff;
+    }
+
+    .esg-button-text-green {
+      color: #ffffff;
     }
     .author-photo {
       width: 80px;
@@ -681,7 +662,7 @@
                         <a href="http://teamtreehouse.com"><img class="logo" width="191" height="44" src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/c2498666-423f-4b0b-b06e-619d44d9cc4b.png" alt="Treehouse"></a>
                       </td>
                       <td width="50%" class="text-right-xs p-t-2-xs">
-                        <a href="#" class="text-color-light text-7-xs browser-link">View in browser</a>
+                        <a href="#" class="text-color-light text-7-xs browser-link" mc:edit="browser-link">View in browser</a>
                       </td>
                     </tr>
                   </table>
@@ -690,7 +671,7 @@
               </tr>
               <tr>
                 <td width="50%" class="p-t-5-xs p-b-5-xs col-50-xs border-t-mid-xs">
-                  <p class="m-t-0-xs m-b-0-xs text-color-light text-6-xs title">Blog Newsletter</p>
+                  <p class="m-t-0-xs m-b-0-xs text-color-light text-6-xs title" mc:edit="title">Blog Newsletter</p>
                 </td>
                 <td width="50%" class="p-t-5-xs p-b-5-xs col-50-xs text-right-xs border-t-mid-xs">
                   <p class="m-t-0-xs m-b-0-xs text-color-light text-6-xs date text-right-xs" mc:edit="date">June 2017</p>
@@ -719,30 +700,29 @@
                             </td>
                           </tr>
                           <tr>
-                            <td colspan="2" class="body-p-t-0">
+                            <td colspan="2" class="body-p-lr">
                               <p class="block-xs text-color-light text-5-xs m-t-0-xs m-b-0-xs text-left-xs" mc:edit="featured">Most Popular Story</p>
                               <h2 mc:edit="title1">
                                 <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="text-color-dark" target="_blank">Full-time Athlete and Freelance Developer: Elliott Davidson’s Story</a>
                               </h2>
-                              <p class="m-t-0-xs p-b-1-xs m-r-0-xs m-l-0-xs" mc:edit="description1">
+                              <p class="m-t-0-xs p-b-2-xs m-r-0-xs m-l-0-xs" mc:edit="description1">
                                 Coding started as a hobby for Elliott Davidson and led him to chose to study web design and development at university. Elliott needed to fit learning to code into his busy daily routine as a full-time athlete and soon found himself learning more effectively through Treehouse's flexible online courses and decided to drop out of university.
                               </p>
-                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"> <!-- For centered buttons style="margin: auto;"-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class="body-p-t-0" align="center">
+                          <!-- // Container Button -->
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                                 <tr>
-                                  <td class="button-td">
-                                    <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="button-a">
-                                      <span class="text-color-white">Read Elliot's Full Interview</span>
+                                  <td class="esg-button-container esg-button-container-green">
+                                    <a href="http://blog.teamtreehouse.com/elliott-davidson?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green"  mc:edit="story-1-link">
+                                      <span class="esg-button-text-green esg-button-text">Read Elliot's Full Interview</span>
                                     </a>
                                   </td>
                                 </tr>
                               </table>
-                              <!--<table border="0" cellspacing="0" cellpadding="0" class="button-wrap">
-                                <tr>
-                                  <td valign="top" class="button-wrap-inner">
-                                    <a href="#" class="button" mc:edit="button1">Read Elliot's Full Interview</a>
-                                  </td>
-                                </tr>
-                              </table>-->
+                          <!-- // End Container Button -->
                             </td>
                           </tr>
                         </table>
@@ -769,7 +749,7 @@
                       <td align="center" class="container-inner">
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                              <td colspan="2" class="body">
+                              <td colspan="2" class="body-p-b-0">
                                 <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank"><img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/b689c535-f7ff-4550-b4f6-8f69b8f38633.jpg" width="516" class="image-inline" alt="Typing on Laptop with Typewriter" mc:edit="inline-image"></a>
                                 <h2 mc:edit="title2">
                                   <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="text-color-dark" target="_blank">Why Developers Should Focus on Accessibility</a>
@@ -777,15 +757,21 @@
                                 <p class="p-b-3-xs m-r-0-xs m-l-0-xs" mc:edit="description2">
                                   For the majority of you reading this, a world without technology is now unimaginable. It’s at the forefront of our personal lives, essential in our work lives and supports us – in ways we no longer notice – in our day-to-day lives. As technology has evolved, it has also been adopted by a wider audience. these shifts in tech adoption by a wider audience are enabled by one key factor: Accessibility.
                                 </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="body-p-t-0" align="center">
+                              <!-- // Container Button -->
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                                   <tr>
-                                    <td style="border-radius: 5px; background: #5fcf80; text-align: center;" class="button-td">
-                                      <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" style="background: #5fcf80; border: 18px solid #5fcf80; font-weight: normal; font-size: 18px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 5px;" class="button-a">
-                                        <span style="color:#ffffff;" class="button-link">Learn About Accessibility</span>
+                                    <td class="esg-button-container esg-button-container-green">
+                                      <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green" mc:edit="story-2-link">
+                                        <span class="esg-button-text-green esg-button-text">Learn About Accessibility</span>
                                       </a>
                                     </td>
                                   </tr>
                                 </table>
+                                <!-- // End Container Button -->
                               </td>
                             </tr>
                           </table>
@@ -877,19 +863,14 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="body-p-t-0">
-                          <table role="presentation" class="w-full-xs" width="100%">
+                        <td colspan="2" class="body-p-t-0" align="center">
+                        <!-- // Container Button -->
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
-                              <td class="inline-block-xs">
-                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
-                                  <tr>
-                                    <td style="border-radius: 5px; text-align: center;" class="button-td bg-gray-light">
-                                      <a href="https://teamtreehouse.com/subscribe/plans?trial=yes&ref_evt=nav-trial&cid=6912&utm_medium=email&utm_campaign=blog_newsletter" style="background: #5fcf80; border: 18px solid #5fcf80; font-weight: normal; font-size: 18px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 5px;" class="button-a">
-                                        <span style="color:#ffffff;" class="button-link">Start a Free Trial</span>
-                                      </a>
-                                    </td>
-                                  </tr>
-                                </table>
+                              <td class="esg-button-container esg-button-container-green">
+                                <a href="https://teamtreehouse.com/subscribe/plans?trial=yes&ref_evt=nav-trial&cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green" mc:edit="sign-up-link">
+                                  <span class="esg-button-text-green esg-button-text">Start a Free Trial</span>
+                                </a>
                               </td>
                             </tr>
                             <tr>
@@ -898,6 +879,7 @@
                               </td>
                             </tr>
                           </table>
+                          <!-- // End Container Button -->
                         </td>
                       </tr>
                     </table>

@@ -49,7 +49,9 @@ gulp.task('templates', () => {
   const docsDest = dir.docs + 'templates/';
 
   return gulp.src(src)
-    .pipe(inlineCss())
+    /*.pipe(inlineCss({preserveMediaQueries: true}))*/
+    .pipe(inlineCss({removeStyleTags: false}))
+    /*.pipe(inlineCss({extraCss: ".contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {border-bottom-width:0 !important; border-bottom-style:none !important;} .ExternalClass{width:100%;} .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}"}))*/
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(dest))
     .pipe(gulp.dest(docsDest));

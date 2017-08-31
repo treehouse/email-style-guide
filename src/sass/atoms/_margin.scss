@@ -9,12 +9,12 @@
       // let us rename is at "05" in this instance
       @if $unit == 0.5 {
         .#{$esg-prefix}-m-05-#{$suffix} {
-          margin: #{$value} !important;
+          margin: #{$value};
         }
       }
       @else {
         .#{$esg-prefix}-m-#{$unit} {
-          margin: #{$value} !important;
+          margin: #{$value};
         }
       }
     }
@@ -29,19 +29,19 @@
         // the lt and tb case and a single for the others
         @if $type == lr {
           .#{$esg-prefix}-m-#{$type}-05 {
-            margin-left: #{$value} !important;
-            margin-right: #{$value} !important;
+            margin-left: #{$value};
+            margin-right: #{$value};
           }
         }
         @else if $type == tb {
           .#{$esg-prefix}-m-#{$type}-05 {
-            margin-top: #{$value} !important;
-            margin-bottom: #{$value} !important;
+            margin-top: #{$value};
+            margin-bottom: #{$value};
           }
         }
         @else {
           .#{$esg-prefix}-m-#{$type}-05 {
-            margin-#{$side}: #{$value} !important;
+            margin-#{$side}: #{$value};
           }
         }
       }
@@ -50,19 +50,19 @@
         // the lt and tb case and a single for the others
         @if $type == lr {
           .#{$esg-prefix}-m-#{$type}-#{$unit} {
-            margin-left: #{$value} !important;
-            margin-right: #{$value} !important;
+            margin-left: #{$value};
+            margin-right: #{$value};
           }
         }
         @else if $type == tb {
           .#{$esg-prefix}-m-#{$type}-#{$unit} {
-            margin-top: #{$value} !important;
-            margin-bottom: #{$value} !important;
+            margin-top: #{$value};
+            margin-bottom: #{$value};
           }
         }
         @else {
           .#{$esg-prefix}-m-#{$type}-#{$unit} {
-            margin-#{$side}: #{$value} !important;
+            margin-#{$side}: #{$value};
           }
         }
       }

@@ -1,0 +1,37 @@
+// Wrap Styles
+.#{$esg-prefix}-wrapper {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.#{$esg-prefix}-container {
+    max-width: 600px !important;
+    width: 100%;
+    display: table;
+    margin: 0 !important;
+    &-item {
+      vertical-align: top;
+      border-collapse: collapse;
+    }
+}
+.#{$esg-prefix}-wrap-logo {
+  width: 192px;
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+
+
+// Container Styles
+.#{$esg-prefix}-card {
+  max-width: 600px !important;
+  background-color: map-get($ui-colors, "white");
+  text-align: left;
+
+  &-inner {
+    vertical-align: top;
+    border-collapse: collapse;
+  }
+}

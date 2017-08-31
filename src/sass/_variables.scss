@@ -3,8 +3,9 @@ $esg-prefix: "esg";
 
 // Type Variables
 $font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+$font-family-headings: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 
-$bold: 500;
+$bold: 700;
 
 // Brand Colors
 $brand-colors: (
@@ -23,8 +24,14 @@ $text-colors: (
 
 // Email Button Colors
 $button-colors: (
-  "green": map-get($brand-colors, "green"),
-  "white": map-get($text-colors, "white")
+  "green": (
+    background:  map-get($brand-colors, "green"),
+    color:  map-get($text-colors, "white")
+  ),
+  "white": (
+    background:  map-get($text-colors, "white"),
+    color:  map-get($brand-colors, "green")
+  ),
 );
 
 // Gray Colors
@@ -42,7 +49,8 @@ $ui-colors: (
   "green":        #36b55c,
   "yellow":       #ffd466,
   "orange":       #ff9f1f,
-  "red":          #ed5a5a
+  "red":          #ed5a5a,
+  "white":         #ffffff
 );
 
 // Topic Colors
@@ -166,7 +174,9 @@ $spacing: (
   2: 10px,
   3: 15px,
   4: 20px,
-  5: 25px
+  5: 25px,
+  6: 30px,
+  base: 7%
 );
 
 // Spacing Sides
@@ -186,7 +196,9 @@ $text-size: (
   2: 28px,
   3: 20px,
   4: 18px,
-  5: 16px
+  5: 16px,
+  6: 14px,
+  7: 12px
 );
 
 // Global Border Variables
