@@ -45,29 +45,37 @@
   </div>
 
   {% if include.example %}
-    {% include_relative {{ include.example }} %}
+    {% include_relative _includes/{{ include.example }} %}
   {% endif %}
 
   {% if include.html or include.css %}
     <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg m-t-3-xs code-example">
       <ul class="tabs clearfix list-unstyled border-b-mid-xs p-t-2-xs text-6-xs" data-tabgroup="{{ include.id }}-tabs">
+        {% assign active_html = "active" %}
+
+        {% capture active_css %}
+          {%- unless include.html -%}
+            active
+          {%- endunless -%}
+        {% endcapture %}
+
         {% if include.html %}
           <li>
-            <a href="#{{ include.id }}-html" class="active block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a>
+            <a href="#{{ include.id }}-html" class="{{active_html}} block-xs text-center-xs p-lr-1-xs p-b-05-xs">HTML</a>
           </li>
         {% endif %}
 
         {% if include.css %}
-        <li>
-          <a href="#{{ include.id }}-css" class="block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a>
-        </li>
+          <li>
+            <a href="#{{ include.id }}-css" class="{{active_css}} block-xs text-center-xs p-lr-1-xs p-b-05-xs">CSS</a>
+          </li>
         {% endif %}
       </ul>
       <div id="{{ include.id }}-tabs" class="tabgroup">
         {% if include.html %}
           <div id="{{ include.id }}-html">
             <div class="guide-code m-b-3-xs">
-              {% capture code %}{% include_relative {{ include.html }} %}{% endcapture %}
+              {% capture code %}{% include_relative _includes/{{ include.html }} %}{% endcapture %}
               <pre><code class="language-html">{{ code | xml_escape }}</code></pre>
             </div>
           </div>
@@ -76,7 +84,7 @@
         {% if include.css %}
           <div id="{{ include.id }}-css">
             <div class="guide-code m-b-3-xs">
-              {% capture css %}{% include_relative {{ include.css }} %}{% endcapture %}
+              {% capture css %}{% include_relative _includes/{{ include.css }} %}{% endcapture %}
               <pre><code class="language-css">{{ css }}</code></pre>
             </div>
         </div>
@@ -86,6 +94,6 @@
   {% endif %}
 
   {% if include.guidelines %}
-    {% include_relative {{ include.guidelines }} %}
+    {% include_relative _includes/{{ include.guidelines }} %}
   {% endif %}
 </div>

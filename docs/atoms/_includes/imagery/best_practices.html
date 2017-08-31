@@ -1,0 +1,71 @@
+<h4 class="p-b-1-xs">How to choose the best image type</h4>
+<ul>
+  <li class="p-tb-1-xs"><span class="bold">Photography</span>
+    <ul>
+      <li class="p-tb-1-xs"><span class="bold">Use when referring to specific people</span>. This will pull the reader in to feel the human element of the story.</li>
+      <li class="p-b-1-xs"><span class="bold">Use primarily photographs in B2B emails</span>. For B2B emails, use photography over illustrations where possible. Photography communicates more of a professional vibe that resonates more easily with our B2B customers.</li>
+    </ul>
+  </li>
+  <li class="p-b-1-xs"><span class="bold">Illustrations</span>
+    <ul>
+      <li class="p-tb-1-xs"><span class="bold">Use to show concepts</span>. Use illustrations to align the email with the Treehouse brand or to communicate concepts that are often hard or not appropriate to visualize through photography.</li>
+      <li class="p-b-1-xs"><span class="bold">Make them friendly</span>. Illustrations play a big role in the Treehouse brand because they make the courses feel fun and accessible.</li>
+    </ul>
+  </li>
+  <li class="p-b-1-xs"><span class="bold">Animated GIFs</span>
+    <ul>
+      <li class="p-tb-1-xs"><span class="bold">Use GIFs to show product flows</span>. When announcing a new product feature, it's often helpful to show how the feature works. Keep the GIF short so the file size is small. If a longer explanation is needed, use a video.</li>
+      <li class="p-b-1-xs"><span class="bold">Don't include meme GIFs</span>. This makes Treehouse look unprofessional and the GIFs don't conform to our brand guidelines.</li>
+    </ul>
+  </li>
+  <li class="p-b-1-xs"><span class="bold">Videos</span>
+    <ul>
+      <li class="p-tb-1-xs"><span class="bold">Use videos for campaigns or library content</span>. Use videos produced by Treehouse. This can include campaign videos, teasers, course trailers, and the Dev Team Show.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 class="p-t-2-xs p-b-1-xs">Best Practices</h4>
+<h5 class="p-tb-1-xs">Scaling</h5>
+<ul>
+  <li class="p-b-1-xs"><span class="bold">Keep the aspect ratio</span>. Don't warp the images. Constrain proportions to retain the aspect ratio of the original image.</li>
+{% include do_vs_dont.html
+ do_text = "Do - Constrain proportions"
+ do_image = "/assets/img/examples/do-aspect-ratio.png"
+ dont_text = "Don't - Stretch or warp"
+ dont_image = "/assets/img/examples/dont-aspect-ratio.png"
+%}
+</ul>
+<h5 class="p-tb-1-xs">Size</h5>
+<ul>
+  <li class="p-b-1-xs"><span class="bold">Make it retina-ready</span>. Save images at 2x. This ensures retina-ready images. The images will be scaled down to fit. Full width images should be saved at 1200 pixels wide because their max rendered size will be 600 pixels wide. Inline images should be saved at 1032 pixels wide because their max rendered size will be 516 pixels wide.</li>
+  <li class="p-b-1-xs"><span class="bold">Keep image file size as small as possible</span>. Large file sizes take too long to load. Compress images through a tool such as <a href="https://tinypng.com/" target="_blank">TinyPNG</a> (actually accepts .jpgs as well as .pngs).</li>
+  <li class="p-b-1-xs"><span class="bold">Images should be wider than their height</span>. Since the top portion of emails are the most important part of the email, it's important that images don't take up too much vertical space. Keep image height smaller than 516 pixels in height (rendered size; actual retina-ready size is 1032 pixels).</li>
+{% include do_vs_dont.html
+ do_text = "Do - Keep images short"
+ do_image = "/assets/img/examples/do-height.png"
+ dont_text = "Don't - Make images too tall"
+ dont_image = "/assets/img/examples/dont-height.png"
+%}
+</ul>
+<h5 class="p-tb-1-xs">User Experience</h5>
+<ul>
+  <li class="p-b-1-xs"><span class="bold">Provide a fallback for background images</span>. Background images don't work in Microsoft Outlook or in Gmail, so provide a background color which is similar to the overall color in the image.</li>
+  <li class="p-b-1-xs"><span class="bold">Plan for text-only emails</span>. Prepare for the emails to be viewed without images. Include alt text that describes the image. Clients such as Outlook, AOL, and Yahoo have images blocked by default, and in other clients users can turn this on in their preferences.</li>
+{% include do_vs_dont.html
+ do_text = "Do - Plan for blocked images"
+ do_image = "/assets/img/examples/do-images-blocked.png"
+ dont_text = "Don't - Forget to add alt text"
+ dont_image = "/assets/img/examples/dont-images-blocked.png"
+%}
+  <li class="p-b-1-xs"><span class="bold">Don't put text in images</span>. Text is put outside images in order to gain control over readability at small screen sizes. Also, if the user has images blocked in their email client, then they'll miss out on seeing key copy.</li>
+{% include do_vs_dont.html
+ do_text = "Do - Put text outside of images"
+ do_image = "/assets/img/examples/do-image-text.png"
+ dont_text = "Don't - Put text inside images"
+ dont_image = "/assets/img/examples/dont-image-text.png"
+%}
+  <li class="p-b-1-xs"><span class="bold">Make images link to the CTA when possible</span>. If the image is associated with a CTA, make the image a link to the story-—not to the image itself. Images often take up a lot of real estate on the page, so make use of all that clickable space by including a link. People often instinctively try to click images, so make it easy for them to interact with the email.</li>
+</ul>
+
+

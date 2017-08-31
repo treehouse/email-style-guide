@@ -6,13 +6,18 @@
     "bower": "^1.8.0",
     "child_process": "^1.0.2",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-inline-css": "^3.1.0",
     "gulp-sass": "^3.1.0",
-    "gulp-util": "^3.0.8"
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1"
   },
   "scripts": {
-    "build": "gulp src docs",
+    "test": "bin/test",
+    "build": "gulp src docs jekyll:build",
     "serve": "gulp serve"
   },
   "license": "MIT",
