@@ -6,6 +6,11 @@
 
   <!-- // Begin Responsive Classes -->
   <style>
+    /* Prevents avatar from being full width (not downsized to 50% for retina) in MailChimp */
+    .author-photo {
+      width: 80px;
+      height: 80px;
+    }
     /* Override Outlook.com turning dates to blue links */
     .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
       border-bottom-width: 0 !important;
@@ -45,7 +50,7 @@
 <!-- // End Responsive Classes -->
 </head>
 
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#edeff0" class="esg-body esg-bg-gray-light">
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#edeff0" class="esg-bg-gray-light">
   <center>
   <!-- Visually Hidden Preheader Text -->
   <div class="esg-preheader">
@@ -121,13 +126,13 @@
             </tr>
             <tr mc:hideable="">
               <td colspan="2" class="esg-p-lr-base esg-text-right" mc:edit="attribution">
-                <p class="esg-text-color-light esg-text-7 esg-text-right esg-m-b-0">Photo by Daria Nepriakhina / CC0</p>
+                <p class="esg-p esg-m-t-05 esg-text-color-light esg-text-7 esg-text-right esg-m-b-0">Photo by Daria Nepriakhina / CC0</p>
               </td>
             </tr>
             <!-- // Card Item: Heading -->
             <tr>
               <td class="esg-p-t-4 esg-p-lr-base">
-                <p class="esg-text-color-light esg-text-5 esg-m-t-0 esg-m-b-0 esg-text-left" mc:edit="featured">Most Popular Story</p>
+                <p class="esg-p esg-text-color-light esg-text-5 esg-m-t-0 esg-m-b-0 esg-text-left" mc:edit="featured">Most Popular Story</p>
                 <h2 class="esg-h2 esg-m-t-3 esg-m-b-0 esg-text-color-dark" mc:edit="featured-title">
                   Full-time Athlete and Freelance Developer: Elliott Davidson’s Story
                 </h2>
@@ -256,7 +261,7 @@
 
             <tr>
               <td class="esg-p-t-base esg-p-lr-base">
-                <h1 class="esg-h1 esg-m-0 esg-p-b-2 esg-text-color-dark" mc:edit="get-started-title">Ready to code?</h1>
+                <h1 class="esg-h1 esg-m-0 esg-p-b-2 esg-text-color-dark" mc:edit="get-started-title">Ready to Code?</h1>
                 <a href="https://teamtreehouse.com/subscribe/plans?trial=yes&ref_evt=nav-trial&cid=6912&utm_medium=email&utm_campaign=blog_newsletter" target="_blank"><img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/0bd0e888-7e5c-4491-b858-3d73d25209c9.png" width="516" class="esg-image-inline esg-p-b-3" alt="Start Coding" border="0" mc:edit="get-started-image"></a>
                 <p class="esg-p" mc:edit="get-started-description">
                   Treehouse offers a 7-day free trial to our course library! Choose from 1,000s of hours of content, from JavaScript to Python to iOS.
