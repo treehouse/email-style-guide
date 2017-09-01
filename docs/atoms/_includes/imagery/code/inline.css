@@ -1,4 +1,10 @@
-img {
+.image-inline {
+  max-width: 516px;
   width: 100%;
-  max-width: 512px;
+  height: auto;
+  border: 0;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
 }

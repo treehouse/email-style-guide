@@ -2146,6 +2146,13 @@ td {
   margin-bottom: 7%;
 }
 
+.esg-body {
+  padding-bottom: 7%;
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 7%;
+}
+
 .esg-p-0 {
   padding: 0px;
 }
