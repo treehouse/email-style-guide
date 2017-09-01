@@ -19,8 +19,6 @@
   }
 }
 
-
-
 // Loop through the different button colors we want to support
 @each $color-name, $color in $button-colors {
   .#{$esg-prefix}-button-#{$color-name} {
