@@ -4,6 +4,7 @@
   padding-left: 7%;
   padding-top: 7%;
 }
+//Outlook won't render padding if it's followed by !important
 
 // Iterate through each value in $spacing-sides
 @each $type, $side in $spacing-sides {
@@ -12,65 +13,31 @@
   @if $type == all {
     // Iterate through each unit inside our $spacing map
     @each $unit, $value in $spacing {
-      // We don't want a class of "0.5" so we use a conditional to
-      // let us rename is at "05" in this instance
-      @if $unit == 0.5 {
-        .#{$esg-prefix}-p-05-#{$suffix} {
-          padding: #{$value} !important;
-        }
-      }
-      @else {
-        .#{$esg-prefix}-p-#{$unit} {
-          padding: #{$value} !important;
-        }
+      .#{$esg-prefix}-p-#{$unit} {
+        padding: #{$value};
       }
     }
   }
   @else {
     // Iterate through each unit inside our $spacing map
     @each $unit, $value in $spacing {
-      // We don't want a class of "0.5" so we use a conditional to
-      // let us rename is at "05" in this instance
-      @if $unit == 0.5 {
-        // We need to control printing out two properties for
-        // the lt and tb case and a single for the others
-        @if $type == lr {
-          .#{$esg-prefix}-p-#{$type}-05 {
-            padding-left: #{$value} !important;
-            padding-right: #{$value} !important;
-          }
+      // We need to control printing out two properties for
+      // the lt and tb case and a single for the others
+      @if $type == lr {
+        .#{$esg-prefix}-p-#{$type}-#{$unit} {
+          padding-left: #{$value};
+          padding-right: #{$value};
         }
-        @else if $type == tb {
-          .#{$esg-prefix}-p-#{$type}-05 {
-            padding-top: #{$value} !important;
-            padding-bottom: #{$value} !important;
-          }
-        }
-        @else {
-          .#{$esg-prefix}-p-#{$type}-05 {
-            padding-#{$side}: #{$value} !important;
-          }
+      }
+      @else if $type == tb {
+        .#{$esg-prefix}-p-#{$type}-#{$unit} {
+          padding-top: #{$value};
+          padding-bottom: #{$value};
         }
       }
       @else {
-        // We need to control printing out two properties for
-        // the lt and tb case and a single for the others
-        @if $type == lr {
-          .#{$esg-prefix}-p-#{$type}-#{$unit} {
-            padding-left: #{$value} !important;
-            padding-right: #{$value} !important;
-          }
-        }
-        @else if $type == tb {
-          .#{$esg-prefix}-p-#{$type}-#{$unit} {
-            padding-top: #{$value} !important;
-            padding-bottom: #{$value} !important;
-          }
-        }
-        @else {
-          .#{$esg-prefix}-p-#{$type}-#{$unit} {
-            padding-#{$side}: #{$value} !important;
-          }
+        .#{$esg-prefix}-p-#{$type}-#{$unit} {
+          padding-#{$side}: #{$value};
         }
       }
     }

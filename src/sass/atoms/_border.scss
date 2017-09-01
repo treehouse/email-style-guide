@@ -1,3 +1,19 @@
+// This function returns a border variable to be used within a mixin loop
+@function border-var($value) {
+  @if $value == normal {
+    @return $border-color-normal;
+  }
+  @else if $value == dark {
+    @return $border-color-dark;
+  }
+  @else if $value == mid {
+    @return $border-color-mid;
+  }
+  @else if $value == light {
+    @return $border-color-light;
+  }
+}
+
 // Local border variables
 $border-types: (top: t, bottom: b, left: l, right: r);
 $border-values: normal, dark, mid, light;
@@ -48,21 +64,21 @@ $border-values: normal, dark, mid, light;
 
 // Create style for border radius classes
 .#{$esg-prefix}-round {
-  border-radius: $border-radius !important;
+  border-radius: $border-radius;
   &-t {
-    border-radius: $border-radius $border-radius 0 0 !important;
+    border-radius: $border-radius $border-radius 0 0;
   }
 
   &-b {
-    border-radius: 0 0 $border-radius $border-radius !important;
+    border-radius: 0 0 $border-radius $border-radius;
   }
 
   &-l {
-    border-radius: $border-radius 0 0 $border-radius !important;
+    border-radius: $border-radius 0 0 $border-radius;
   }
 
   &-r {
-    border-radius: 0 $border-radius $border-radius 0 !important;
+    border-radius: 0 $border-radius $border-radius 0;
   }
 }
 

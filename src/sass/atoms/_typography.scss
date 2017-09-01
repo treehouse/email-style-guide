@@ -5,9 +5,10 @@ $text-alignments: left, right, center, justify;
 // Headings and text sizes for each header
 @for $num from 1 through 4 {
   .#{$esg-prefix}-h#{$num} {
-    font-size: text-size($num) !important;
+    font-size: map-get($text-size, $num) !important;
     font-family: $font-family-headings;
-    color: map-get($text-colors, dark );
+    line-height: 130%;
+    font-weight: $bold;
   }
 }
 
@@ -24,6 +25,7 @@ $text-alignments: left, right, center, justify;
 // General Text Styles
 .#{$esg-prefix}-p {
   font-size: map-get($text-size, 5 );
+  font-family: $font-family;
   line-height: 180%;
 }
 
@@ -31,8 +33,8 @@ $text-alignments: left, right, center, justify;
   margin: 0 auto;
 }
 
-#{$esg-prefix}-a, .#{$esg-prefix}-link {
-  color: map-get($ui-colors, blue);
+#{$esg-prefix}-a {
+  font-family: $font-family;
   cursor: pointer;
   transition: color 300ms 0s ease;
   text-decoration: none;
@@ -40,6 +42,23 @@ $text-alignments: left, right, center, justify;
   // @include selected {
   //   color: darken(ui-color(blue), 10%);
   // }
+}
+
+.#{$esg-prefix}-link {
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: $font-family;
+  // @include selected {
+  //   color: darken(ui-color(blue), 10%);
+  // }
+  &-blue  {
+    color: map-get($ui-colors, "blue");
+  }
+  &-gray  {
+    color: map-get($text-colors, "light");
+  }
 }
 
 .#{$esg-prefix}-regular {
@@ -88,6 +107,6 @@ $text-alignments: left, right, center, justify;
 // Iterate through align types and create the classes
 @each $type in $text-alignments {
   .#{$esg-prefix}-text-#{$type} {
-    text-align: #{$type} !important;
+    text-align: #{$type};
   }
 }

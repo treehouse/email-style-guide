@@ -1,7 +1,6 @@
 .#{$esg-prefix}-html {
   -webkit-tap-highlight-color: transparent;
   font-family: $font-family;
-  color: #384047;
   background-color: #edeff0;
 }
 .#{$esg-prefix}-body {
@@ -11,4 +10,7 @@
   width: 100% !important;
   font-family: $font-family;
   -webkit-text-size-adjust: none;
+}
+.#{$esg-prefix}-preheader {
+  display: none;
 }
