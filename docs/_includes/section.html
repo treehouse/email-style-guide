@@ -8,7 +8,6 @@
   syntax     - How the atom or molecule is generally used (Optional).
   semantics  - Additional semantic info for the atom or molecule (Optional).
   html       - The relative path to a file containing example HTML code (Optional).
-  css        - The relative path to a file containing example CSS code (Optional).
   example    - The relative path to a file containing an renderered example (Optional).
   guidelines - The relative path to a file containing additional guidelines (Optional).
 -->
@@ -48,20 +47,16 @@
     {% include_relative _includes/{{ include.example }} %}
   {% endif %}
 
-  {% if include.html or include.css %}
+  {% if include.html %}
     <div class="flex-basis-100-xs flex-basis-100-md flex-basis-50-lg m-t-3-xs code-example">
-        {% if include.html %}
-            <p class="p-b-05-xs">HTML</p>
-        {% endif %}
+      <p class="p-b-05-xs">HTML</p>
       <div id="{{ include.id }}-tabs" class="tabgroup">
-        {% if include.html %}
-          <div id="{{ include.id }}-html">
-            <div class="guide-code m-b-3-xs">
-              {% capture code %}{% include_relative _includes/{{ include.html }} %}{% endcapture %}
-              <pre><code class="language-html">{{ code | xml_escape }}</code></pre>
-            </div>
+        <div id="{{ include.id }}-html">
+          <div class="guide-code m-b-3-xs">
+            {% capture code %}{% include_relative _includes/{{ include.html }} %}{% endcapture %}
+            <pre><code class="language-html">{{ code | xml_escape }}</code></pre>
           </div>
-        {% endif %}
+        </div>
       </div>
     </div>
   {% endif %}
