@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const del = require('del');
 const concat = require('gulp-concat');
 const merge = require('merge-stream');
 
@@ -93,6 +94,19 @@ gulp.task('docs:js', () => {
     .pipe(uglify())
     .pipe(gulp.dest(dest));
 });
+
+
+gulp.task('clean:templates', () => {
+  const destTemplates = dir.dest + '/templates/**/*';
+  const docsSite = dir.siteRoot + '**/*';
+  const docsTemplates = dir.docs + '/templates/**/*';
+  const docsTemplatesIndex = dir.docs + '/templates/index.html';
+  const excludeDocsTemplatesIndex = '!' + docsTemplatesIndex;
+
+  return del([destTemplates, docsSite, docsTemplates, excludeDocsTemplatesIndex]);
+});
+
+
 
 const startJekyll = (command) => {
   const jekyll = child.spawn('./bin/jekyll',

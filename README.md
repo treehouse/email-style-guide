@@ -33,6 +33,14 @@ Running `yarn serve` will automatically build assets when they change.  To build
 $ yarn build
 ```
 
+#### Clean Templates
+
+If you ever remove templates, it's a good idea to clean-up the files generated `dist` and `docs` with:
+
+```
+$ yarn clean:templates
+```
+
 ### Directory Structure
 
 ```
