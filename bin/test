@@ -8,6 +8,6 @@ fi
 
 bin/htmlproofer \
   --check-html \
-  --url-ignore '/$^/,/invisionapp/,#,{{ unsubscribe_url }}' \
+  --url-ignore '/$^/,/invisionapp/,/localhost/,#,{{ unsubscribe_url }},*|UNSUB|*' \
   --url-swap \/email-style-guide: \
   $path

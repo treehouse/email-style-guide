@@ -14,9 +14,8 @@ subnav:
   classes = "p-b-5-xs"
   title = "Font Stack"
   vocabulary = "Font Stack"
-  syntax = "Headings all make use of Arial Rounded MT Bold (which is the tortured cousin of Gotham Round) first, then Helvetica Rounded. The fallback fonts for headings are Arial, and Sans-serif. For Paragraph text we use the standard sans-serif font stack which begins with Arial. This ensure optimal readability for text in our emails."
+  syntax = "Headings all make use of Arial Rounded MT Bold (which is the tortured cousin of Gotham Round) first, then Helvetica Rounded. The fallback fonts for headings are Arial, and Sans-serif. For Paragraph text we use the standard sans-serif font stack which begins with Arial. This ensure optimal readability for text in our emails. It looks like this for headings: <code>font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;</code> and like this for paragraph text: <code>font-family: Arial, Helvetica Neue, Helvetica, sans-serif;</code>"
   semantics = "We use this font stack because it provides the optimal level of readability and provides a bit of brand reinforcement."
-  css = "typography/code/font_stack.css"
 %}
 
 {% include section.html
@@ -27,7 +26,6 @@ subnav:
   syntax = "We use headings to emphasize the most important ideas in an email. We do not use them for long sentences or paragraphs. They should be easy to read and help users quickly identify if an email or section of content is something they are interested in reading. Headings are also ranked in order of importance. So an H1 is should represent the most important item in an email. An H6 the opposite."
   semantics = "Headings in emails allow us to add rhythm and order to our content, especially if an email contains a handful of ideas it needs to communicate. We use headings to greet our readers or identify sections of content."
   html = "typography/code/headings.html"
-  css = "typography/code/headings.css"
   example = "typography/examples/headings.html"
 %}
 
@@ -75,7 +73,6 @@ subnav:
   syntax = "We use paragraph tags for words, sentences, paragraphs. This is basically the bread and butter of communication design. A good rule of thumb, if you aren’t sure if it should be a headline, it probably works inside a paragraph."
   semantics = "We use paragraph tags to house paragraphs. Pretty simple. The size and color of our paragraph tags is setup to maintain a certain level of legibility and ease."
   html = "typography/code/paragraph.html"
-  css = "typography/code/paragraph.css"
   example = "typography/examples/paragraph.html"
 %}
 
@@ -87,7 +84,6 @@ subnav:
   syntax = "Bold or Strong tags should be used to make body text stand out."
   semantics = "We use bold tags to emphasize text or section content so that it's easier to parse."
   html = "typography/code/bold.html"
-  css = "typography/code/bold.css"
   example = "typography/examples/bold.html"
 %}
 
@@ -99,6 +95,5 @@ subnav:
   syntax = "Italic text should be used in the contents of another body content type, whether that be headings or paragraph tags. It should not be used on it’s own or outside of those contexts."
   semantics = "We use italic text and emphasis tags to do just that. Emphasize."
   html = "typography/code/italic.html"
-  css = "typography/code/italic.css"
   example = "typography/examples/italic.html"
 %}
