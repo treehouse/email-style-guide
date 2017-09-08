@@ -113,7 +113,7 @@ subnav:
 </ul>
 <p class="p-t-1-xs">To run it, make sure you have the dependencies by running <code>$ bin/setup</code> then run <code>$ yarn build && yarn test</code>. To test individual templates, run <code>$ bin/test src/templates/example.html</code>.</p>
 
-<h3 id="clients" class="m-t-3-xs m-b-3-xs">Tips for ensuring consistent rendering across email clients</h3>
+<h3 id="email-clients" class="m-t-3-xs m-b-3-xs">Tips for ensuring consistent rendering across email clients</h3>
   <ul>
     <li class="m-b-1-xs"><span class="bold">Preventing Date Styling Overrides</span>: Some email clients force dates to be blue, which can at best create an inconsistent link styling and at worse make the text illegable on colored backgrounds. The CSS below is included into the templates and prevents this re-styling from happening on specific email clients.
       <ul>
