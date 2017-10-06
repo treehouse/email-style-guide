@@ -17,6 +17,14 @@ td {
   border-bottom-style: none !important;
   }
 */
+/* Git rid of Gmail auto styling addresses as Google Map links */
+.address {
+  text-decoration: none;
+  color: #7b8b8e;
+  pointer-events: none;
+  cursor: default;
+}
+
 .esg-html {
   -webkit-tap-highlight-color: transparent;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
