@@ -188,6 +188,21 @@ td {
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
+.esg-button-gray {
+  background: #ffffff;
+  border: 18px solid #ffffff;
+  color: #40484a;
+}
+
+.esg-button-container-gray {
+  background: #ffffff;
+  color: #40484a;
+}
+
+.esg-button-text-gray {
+  color: #40484a;
+}
+
 .esg-button-green {
   background: #5fcf80;
   border: 18px solid #5fcf80;
@@ -256,6 +271,26 @@ td {
 
 .esg-brand-bg-gray {
   background-color: #3e474f !important;
+}
+
+.esg-brand-fill-blue {
+  fill: #303853 !important;
+}
+
+.esg-brand-stroke-blue {
+  stroke: #303853 !important;
+}
+
+.esg-brand-color-blue {
+  color: #303853 !important;
+}
+
+.esg-brand-border-blue {
+  border-color: #303853 !important;
+}
+
+.esg-brand-bg-blue {
+  background-color: #303853 !important;
 }
 
 .esg-fill-blue {
@@ -2493,6 +2528,10 @@ esg-a {
 
 .esg-link-gray {
   color: #7b8b8e;
+}
+
+.esg-link-dark-gray {
+  color: #40484a;
 }
 
 .esg-regular {

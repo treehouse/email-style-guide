@@ -10,7 +10,8 @@ $bold: 700;
 // Brand Colors
 $brand-colors: (
   "green": #5fcf80,
-  "gray":  #3e474f
+  "gray":  #3e474f,
+  "blue":  #303853
 );
 
 // Text Colors
@@ -24,6 +25,10 @@ $text-colors: (
 
 // Email Button Colors
 $button-colors: (
+  "gray": (
+    background:  map-get($text-colors, "white"),
+    color:  map-get($text-colors, "dark")
+  ),
   "green": (
     background:  map-get($brand-colors, "green"),
     color:  map-get($text-colors, "white")
