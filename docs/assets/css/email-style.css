@@ -2534,6 +2534,10 @@ esg-a {
   color: #40484a;
 }
 
+.esg-link-white {
+  color: #ffffff;
+}
+
 .esg-regular {
   font-weight: normal !important;
 }

@@ -62,6 +62,9 @@ $text-alignments: left, right, center, justify;
   &-dark-gray  {
     color: map-get($text-colors, "dark");
   }
+  &-white  {
+    color: map-get($text-colors, "white");
+  }
 }
 
 .#{$esg-prefix}-regular {
