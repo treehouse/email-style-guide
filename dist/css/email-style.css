@@ -189,18 +189,33 @@ td {
 }
 
 .esg-button-gray {
-  background: #ffffff;
-  border: 18px solid #ffffff;
+  background: #c6ccd2;
+  border: 18px solid #c6ccd2;
   color: #40484a;
 }
 
 .esg-button-container-gray {
-  background: #ffffff;
+  background: #c6ccd2;
   color: #40484a;
 }
 
 .esg-button-text-gray {
   color: #40484a;
+}
+
+.esg-button-blue {
+  background: #3f8abf;
+  border: 18px solid #3f8abf;
+  color: #ffffff;
+}
+
+.esg-button-container-blue {
+  background: #3f8abf;
+  color: #ffffff;
+}
+
+.esg-button-text-blue {
+  color: #ffffff;
 }
 
 .esg-button-green {
@@ -2499,7 +2514,7 @@ td {
 .esg-p {
   font-size: 16px;
   font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  line-height: 180%;
+  line-height: 150%;
 }
 
 .esg-table {

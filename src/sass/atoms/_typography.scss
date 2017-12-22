@@ -26,7 +26,7 @@ $text-alignments: left, right, center, justify;
 .#{$esg-prefix}-p {
   font-size: map-get($text-size, 5 );
   font-family: $font-family;
-  line-height: 180%;
+  line-height: 150%;
 }
 
 .#{$esg-prefix}-table {

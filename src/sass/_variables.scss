@@ -23,22 +23,6 @@ $text-colors: (
   "white":    #ffffff
 );
 
-// Email Button Colors
-$button-colors: (
-  "gray": (
-    background:  map-get($text-colors, "white"),
-    color:  map-get($text-colors, "dark")
-  ),
-  "green": (
-    background:  map-get($brand-colors, "green"),
-    color:  map-get($text-colors, "white")
-  ),
-  "white": (
-    background:  map-get($text-colors, "white"),
-    color:  map-get($brand-colors, "green")
-  ),
-);
-
 // Gray Colors
 $gray-colors: (
   "gray-darker":  #2d3339,
@@ -56,6 +40,26 @@ $ui-colors: (
   "orange":       #ff9f1f,
   "red":          #ed5a5a,
   "white":         #ffffff
+);
+
+// Email Button Colors
+$button-colors: (
+  "gray": (
+    background:  map-get($gray-colors, "gray"),
+    color:  map-get($text-colors, "dark")
+  ),
+  "blue": (
+    background:   map-get($ui-colors, "blue"),
+    color:    map-get($text-colors, "white")
+  ),
+  "green": (
+    background:  map-get($brand-colors, "green"),
+    color:  map-get($text-colors, "white")
+  ),
+  "white": (
+    background:  map-get($text-colors, "white"),
+    color:  map-get($brand-colors, "green")
+  ),
 );
 
 // Topic Colors
