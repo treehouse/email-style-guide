@@ -6,6 +6,11 @@
 
   <!-- // Begin Responsive Classes -->
   <style>
+    /* Prevents avatar from being full width (not downsized to 50% for retina) in MailChimp */
+    .author-photo {
+      width: 80px;
+      height: 80px;
+    }
     /* Override Outlook.com turning dates to blue links */
     .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
       border-bottom-width: 0 !important;
@@ -27,7 +32,6 @@
       }
       .esg-logo-default {
         width: 149px !important;
-        height: 34px !important;
       }
       .esg-logo-business {
         width: 149px !important;
@@ -81,7 +85,7 @@
                     <a href="https://teamtreehouse.com"><img class="esg-logo esg-logo-default" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/logo2x.png" alt="Treehouse"></a>
                   </td>
                   <td align="right" width="50%" class="esg-text-right">
-                    <a href="http://www.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link">View in browser</a>
+                    <a href="*|ARCHIVE|*" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link" mc:edit="browser-link">View in browser</a>
                   </td>
                 </tr>
 
@@ -102,28 +106,28 @@
             <!-- // Card Item: Hero -->
             <tr>
               <td class="esg-bg-gray-light esg-text-center" align="center">
-                <img src="../../img/buffet-top.png" width="600" class="esg-round-t esg-image-full esg-block" alt="Team Working Together">
+                <img src="https://gallery.mailchimp.com/6cd557f316f6c6b5deccf9bc0/images/0839681f-9cd7-4d03-99d1-cb15b911fc25.png" width="600" class="esg-round-t esg-image-full esg-block" alt="Using Treehouse on a Laptop">
               </td>
             </tr>
 
             <!-- // Card Item: Heading -->
             <tr>
               <td class="esg-p-t-base esg-p-lr-base">
-                <h2 class="esg-h2 esg-m-0 esg-text-color-dark">Team training has its perks.</h2>
+                <h2 class="esg-h2 esg-m-0 esg-text-color-dark" mc:edit="title">Team training has its perks.</h2>
               </td>
             </tr>
 
             <!-- // Card Item: Body -->
             <tr>
               <td class="esg-p-lr-base">
-                <p class="esg-p esg-text-color-dark">You’ve experienced Treehouse for yourself...why not make a new year’s resolution to get training for your whole team?</p>
-                <p class="esg-p esg-text-color-dark">With a Business account, you get the same unlimited access to high-quality content, PLUS:</p>
-                  <ul class="esg-m-b-0">
-                    <li class="esg-m-b-4 esg-text-color-dark">Flexible licensing, so you can transfer seats</li>
-                    <li class="esg-m-b-4 esg-text-color-dark">Custom tracks</li>
-                    <li class="esg-m-b-4 esg-text-color-dark">A dedicated Treehouse success manager</li>
+                <p class="esg-p esg-text-color-dark" mc:edit="paragraph-one">You’ve experienced Treehouse for yourself...why not make a new year’s resolution to get training for your whole team?</p>
+                <p class="esg-p esg-text-color-dark" mc:edit="paragraph-two">With a Business account, you get the same unlimited access to high-quality content, PLUS:</p>
+                  <ul class="esg-m-b-0 esg-p" mc:edit="list">
+                    <li class="esg-m-b-2 esg-text-color-dark">Flexible licensing, so you can transfer seats</li>
+                    <li class="esg-m-b-2 esg-text-color-dark">Custom tracks</li>
+                    <li class="esg-m-b-2 esg-text-color-dark">A dedicated Treehouse success manager</li>
                   </ul>
-                <p class="esg-p esg-text-color-dark"><a href="http://go.teamtreehouse.com/c000300K0usW01kPy00H200" target="_blank" class="esg-link esg-link-blue">Get our plan comparison</a> to see if Treehouse for Business is a good fit for your team.</p>
+                <p class="esg-p esg-text-color-dark" mc:edit="plans-chart"><a href="#" target="_blank" class="esg-link esg-link-blue">Get our plan comparison</a> to see if Treehouse for Business is a good fit for your team.</p>
               </td>
             </tr>
 
@@ -135,7 +139,7 @@
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                       <tr>
                         <td class="esg-button-container esg-button-container-blue">
-                          <a href="#" class="esg-button esg-button-blue">
+                          <a href="#" class="esg-button esg-button-blue" mc:edit="button">
                             <span class="esg-button-text-blue esg-button-text">Read More</span>
                           </a>
                         </td>
@@ -167,11 +171,11 @@
             <tr>
               <td class="contact-info esg-p-t-6">
                   <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">&copy; Treehouse Island Inc</p>
-                  <p class="esg-p-t-1 esg-p-b-3 esg-m-0 esg-text-center esg-text-color-light esg-text-7">
+                  <p class="esg-p esg-p-t-1 esg-p-b-3 esg-m-0 esg-text-center esg-text-color-light esg-text-7">
                     <a href="https://teamtreehouse.com/" rel="nofollow" class="address">3514 N Vancouver Ave, Suite 500, Portland, OR 97227</a>
                   </p>
                   <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">
-                    <a href="mailto:hello@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">hello@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="https://teamtreehouse.com/account/notifications" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Manage Email Notifications</a>  <span class="pipe">|</span>  <a href="{{ unsubscribe_url }}" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Unsubscribe</a>
+                    <a href="mailto:hello@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">hello@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="https://teamtreehouse.com/account/notifications" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Manage Email Notifications</a>  <span class="pipe">|</span>  <a href="*|UNSUB|*" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Unsubscribe</a>
                   </p>
               </td>
             </tr>

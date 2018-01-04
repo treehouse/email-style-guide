@@ -6,6 +6,8 @@
 
   <!-- // Begin Responsive Classes -->
   <style>
+    /* Marketo inserts p (paragraph tags) to elements when they're edited. This overrides the margin that gets added to these p tags. */
+    p {margin: 0px !important;}
     .esg-bg-mid-blue {
       background-color: #454C65;
     }
@@ -22,6 +24,9 @@
       line-height: 100%;
     }
     @media only screen and (max-width: 600px) {
+      .esg-bg-gray-light, html {
+        background-color: #fff !important;
+      }
       .esg-round, .esg-round-t, .esg-round-t img {
         border-top-left-radius: 0px !important;
         border-top-right-radius: 0px !important;
@@ -30,11 +35,9 @@
       }
       .esg-logo-default {
         width: 149px !important;
-        height: 34px !important;
       }
       .esg-logo-business {
         width: 149px !important;
-        height: 37px !important;
       }
       .esg-logo, .esg-browser-link, .esg-title, .esg-date {
         padding-left: 7% !important;
@@ -84,7 +87,7 @@
                     <a href="https://teamtreehouse.com"><img class="esg-logo esg-logo-default" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/logo2x.png" alt="Treehouse"></a>
                   </td>
                   <td align="right" width="50%" class="esg-text-right">
-                    <a href="http://www.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link">View in browser</a>
+                    <!--<a href="http://www.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link">View in browser</a>-->
                   </td>
                 </tr>
 
@@ -105,22 +108,22 @@
             <!-- // Card Item: Hero -->
             <tr>
               <td class="esg-text-center" align="center">
-                <img src="../../img/business-top.png" width="600" class="esg-round-t esg-image-full" alt="Person looking at projects">
+                <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/business-top.png" width="600" class="esg-round-t esg-image-full" alt="Person looking at projects">
               </td>
             </tr>
 
             <!-- // Card Item: Heading -->
             <tr>
               <td class="esg-p-t-base esg-p-lr-base">
-                <h2 class="esg-h2 esg-m-0 esg-text-color-dark">Hi [firstname],</h2>
+                <h2 class="esg-h2 esg-p-b-3 esg-m-0 esg-text-color-dark mktEditable" id="title" mktoName="Title">Hi [firstname],</h2>
               </td>
             </tr>
 
             <!-- // Card Item: Body -->
             <tr>
               <td class="esg-p-lr-base">
-                <p class="esg-p esg-text-color-dark">It’s January, you’re back at the office, and it’s “full steam ahead” for 2018. Amidst all the planning and projects, employee training is a challenge that usually resurfaces around this time of year. And if your team doesn’t have a structured learning program in place, it can be tricky knowing where to start.</p>
-                <p class="esg-p esg-text-color-dark">If you’re in the early stages of formulating a plan, check out our Technical Training Program Worksheet. It’s a handy resource for organizing and collecting info and to sharing with your stakeholders—managers, HR, and learners alike!</p>
+                <p class="esg-p esg-p-b-3 esg-text-color-dark mktEditable" id="paragraph-one" mktoName="Paragraph One">It’s January, you’re back at the office, and it’s “full steam ahead” for 2018. Amidst all the planning and projects, employee training is a challenge that usually resurfaces around this time of year. And if your team doesn’t have a structured learning program in place, it can be tricky knowing where to start.</p>
+                <p class="esg-p esg-text-color-dark esg-p-b-3 mktEditable" id="paragraph-two" mktoName="Paragraph Two">If you’re in the early stages of formulating a plan, check out our Technical Training Program Worksheet. It’s a handy resource for organizing and collecting info and to sharing with your stakeholders—managers, HR, and learners alike!</p>
               </td>
             </tr>
 
@@ -131,7 +134,7 @@
                 <!-- // Container Button -->
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                       <tr>
-                        <td class="esg-button-container esg-button-container-blue">
+                        <td class="esg-button-container esg-button-container-blue mktEditable" id="primary-button" mktoName="Primary Button">
                           <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="esg-button esg-button-blue">
                             <span class="esg-button-text-blue esg-button-text">Get the Worksheet</span>
                           </a>
@@ -167,12 +170,12 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                   <tr>
                     <td class="esg-p-lr-5 esg-p-t-2 esg-p-b-6 esg-bg-gray-lighter esg-round">
-                      <p class="esg-p esg-bold m-0-xs esg-text-color-dark">P.S. Looking for deep-dive content?</p>
-                      <p class="esg-p esg-text-color-dark">Check out our on-demand webinar series, "How to launch a technical training program."</p>
+                      <p class="esg-p esg-bold m-0-xs esg-text-color-dark esg-p-t-3 esg-p-b-2 mktEditable" id="paragraph-three" mktoName="Paragraph Three">P.S. Looking for deep-dive content?</p>
+                      <p class="esg-p esg-text-color-dark esg-p-b-3 mktEditable" id="paragraph-four" mktoName="Paragraph Four">Check out our on-demand webinar series, "How to launch a technical training program."</p>
                       <!-- // Container Button -->
                       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                         <tr>
-                          <td class="esg-button-container esg-button-container-gray">
+                          <td class="esg-button-container esg-button-container-gray mktEditable" id="secondary-button" mktoName="Secondary Button">
                             <a href="#" class="esg-button esg-button-gray">
                               <span class="esg-button-text-gray esg-button-text">Watch Now</span>
                             </a>
@@ -189,7 +192,7 @@
             <!-- // Card Item: Hero -->
             <tr>
               <td class="esg-text-center esg-p-t-5" align="center">
-                <img src="../../img/business-bottom.png" width="600" class="esg-round-b esg-image-full esg-block" alt="Woman Working on Laptop">
+                <img src="http://business.teamtreehouse.com/rs/793-KWP-630/images/business-bottom.png" width="600" class="esg-round-b esg-image-full esg-block" alt="Woman Working on Laptop">
               </td>
             </tr>
           </table>
@@ -213,13 +216,11 @@
           <table class="esg-container footer" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td class="contact-info esg-p-t-6">
-                  <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">&copy; Treehouse Island Inc</p>
-                  <p class="esg-p-t-1 esg-p-b-3 esg-m-0 esg-text-center esg-text-color-light esg-text-7">
-                    <a href="https://teamtreehouse.com/" rel="nofollow" class="address">3514 N Vancouver Ave, Suite 500, Portland, OR 97227</a>
-                  </p>
-                  <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">
-                    <a href="mailto:hello@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">hello@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="https://teamtreehouse.com/account/notifications" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Manage Email Notifications</a>  <span class="pipe">|</span>  <a href="{{ unsubscribe_url }}" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Unsubscribe</a>
-                  </p>
+                <p class="esg-m-0 esg-text-center esg-text-color-light esg-text-6">&copy; Treehouse Island Inc.</p>
+                <p class="esg-p-t-2 esg-m-0 esg-text-center esg-text-color-light esg-text-7"><a href="https://teamtreehouse.com/" rel=”nofollow” class="address">3514 North Vancouver Avenue, Suite 500, Portland OR, 97227</a></p>
+                <p class="esg-p-t-4 esg-m-0 esg-text-center esg-text-color-light esg-text-7">
+                  <!--<a href="mailto:orgs@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">orgs@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="{{system.unsubscribeLink}}" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Unsubscribe</a>-->Reply to this email to unsubscribe
+                </p>
               </td>
             </tr>
             <tr>
