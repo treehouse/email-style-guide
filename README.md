@@ -48,7 +48,6 @@ If you ever remove templates, it's a good idea to clean-up the files generated `
 $ yarn clean:templates
 ```
 
-
 ### Directory Structure
 
 ```
