@@ -16,3 +16,11 @@ table {
   border-bottom-style: none !important;
   }
 */
+
+/* Git rid of Gmail auto styling addresses as Google Map links */
+.address {
+  text-decoration:none;
+  color: map-get($text-colors, "light");
+  pointer-events: none;
+  cursor: default;
+  }

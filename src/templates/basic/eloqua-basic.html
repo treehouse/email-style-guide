@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="esg-html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../../../dist/css/email-style.css">
+
+  <!-- // Begin Responsive Classes -->
+  <style>
+    /* Prevents avatar from being full width (not downsized to 50% for retina) in MailChimp */
+    .author-photo {
+      width: 80px;
+      height: 80px;
+    }
+    /* Override Outlook.com turning dates to blue links */
+    .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
+      border-bottom-width: 0 !important;
+      border-bottom-style: none !important;
+    }
+    /* When an email is pulled into Outlook.com / Hotmail, any style rules present in the email are appended with .ExternalClass. Normalizing a few of these can help create a baseline for you to work from. */
+    .ExternalClass {
+      width: 100%;
+    }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      line-height: 100%;
+    }
+    @media only screen and (max-width: 600px) {
+      .esg-spacer {
+        background-color: #fff !important;
+      }
+      .esg-round, .esg-round-t, .esg-round-t img {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+      }
+      .esg-logo-default {
+        width: 149px !important;
+        height: 34px !important;
+      }
+      .esg-logo-business {
+        width: 149px !important;
+        height: 37px !important;
+      }
+      .esg-logo, .esg-browser-link, .esg-title, .esg-date {
+        padding-left: 7% !important;
+        padding-right: 7% !important;
+      }
+    }
+  </style>
+<!-- // End Responsive Classes -->
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#edeff0" class="esg-bg-gray-light">
+  <center>
+
+  <!-- // Begin Wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#edeff0" class="esg-wrapper esg-bg-gray-light">
+    <tr>
+      <td bgcolor="#edeff0" class="esg-bg-gray-light" align="center">
+
+        <!-- Div to handle responsive styles, need this specifically for Yahoo -->
+        <div class="esg-email-container">
+
+        <!-- MSO tags for Desktop Windows Outlook to enforce a 600px width. -->
+        <!--[if mso]>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+        <tr>
+        <td>
+        <![endif]-->
+
+
+        <!-- // Begin Container -->
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" class="esg-container">
+
+      <!-- // Container Item -->
+      <tr>
+        <td class="esg-bg-gray-light esg-spacer" height="15">
+        </td>
+      </tr>
+      <!-- // End Container Item -->
+
+      <!-- Container Item -->
+      <tr>
+        <td class="esg-container-item">
+
+          <!-- // Begin Secondary Article -->
+          <table class="esg-card esg-round" bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0">
+
+            <tr>
+              <td class="esg-p-t-base esg-p-lr-base">
+                <h2 class="esg-h2 esg-m-0 esg-p-b-2 esg-text-color-dark">Headline</h2>
+                <p class="esg-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat facilisis purus at scelerisque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt porttitor eros, vitae vestibulum dui facilisis eu. Cras eu ipsum lacus. Integer faucibus iaculis lorem, quis pretium leo rhoncus eget. Duis sodales tincidunt est a pretium. Nunc orci nisl, dignissim non pretium sed, fermentum vel purus.
+                </p>
+                <a href="http://teamtreehouse.com" target="_blank"><img src="http://img04.en25.com/EloquaImages/clients/TreehouseIslandInc/%7B0978d0f3-f25e-4717-8e50-9e8f4bc85b13%7D_image-full.png" width="516" class="esg-image-inline esg-p-b-3" alt="Placeholder" border="0"></a>
+              </td>
+            </tr>
+            <!-- // Card Item: Button -->
+            <tr>
+              <td class="esg-p-b-base esg-p-t-4" align="center">
+
+            <!-- // Container Button -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                  <tr>
+                    <td class="esg-button-container esg-button-container-green">
+                      <a href="http://blog.teamtreehouse.com/developers-focus-accessibility?cid=6912&utm_medium=email&utm_campaign=blog_newsletter" class="esg-button esg-button-green" target="_blank">
+                        <span class="esg-button-text-green esg-button-text">Call to Action</span>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+            <!-- // End Container Button -->
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- // End Container Item -->
+
+      <!-- // Container Item -->
+      <tr>
+        <td class="esg-bg-gray-light esg-spacer" height="15">
+        </td>
+      </tr>
+      <!-- // End Container Item -->
+
+      <!--[if mso]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+      </div>
+      <!-- // End Email Responsive Div -->
+
+    </td>
+  </tr>
+</table>
+<!-- // End Wrapper -->
+
+</center>
+</body>
+</html>
