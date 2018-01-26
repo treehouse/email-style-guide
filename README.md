@@ -40,6 +40,15 @@ Command+C
 $ yarn serve
 ```
 
+#### Clean Templates
+
+If you ever remove templates, it's a good idea to clean-up the files generated `dist` and `docs` with:
+
+```
+$ yarn clean:templates
+```
+
+
 ### Directory Structure
 
 ```
