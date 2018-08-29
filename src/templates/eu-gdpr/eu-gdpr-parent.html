@@ -6,8 +6,6 @@
 
   <!-- // Begin Responsive Classes -->
   <style>
-    /* Marketo inserts p (paragraph tags) to elements when they're edited. This overrides the margin that gets added to these p tags. */
-    p {margin: 0px !important;}
     /* Override Outlook.com turning dates to blue links */
     .contextualExtensionHighlight, .ms-font-color-themePrimary, .ms-border-color-themePrimary {
       border-bottom-width: 0 !important;
@@ -21,9 +19,6 @@
       line-height: 100%;
     }
     @media only screen and (max-width: 600px) {
-      .esg-bg-gray-light, html {
-        background-color: #fff !important;
-      }
       .esg-round, .esg-round-t, .esg-round-t img {
         border-top-left-radius: 0px !important;
         border-top-right-radius: 0px !important;
@@ -83,10 +78,10 @@
                 <!-- // Header Item: Primary Header -->
                 <tr>
                   <td align="left" width="50%" class="esg-wrap-logo esg-p-tb-5">
-                    <a href="https://teamtreehouse.com/business"><img class="esg-logo esg-logo-business" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/th-business-logo2x.png" alt="Treehouse"></a>
+                    <a href="https://teamtreehouse.com"><img class="esg-logo esg-logo-default" width="191" border="0" src="https://s3.amazonaws.com/treehouse-email-images/templates/logo2x.png" alt="Treehouse"></a>
                   </td>
                   <td align="right" width="50%" class="esg-text-right">
-                    <!--<a href="http://www.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link mktEditable" id="browser-link" mktoName="Browser Link">View in browser</a>-->
+                    <a href="http://www.teamtreehouse.com" target="_blank" class="esg-text-color-light esg-text-6 esg-link esg-link-gray esg-browser-link">View in browser</a>
                   </td>
                 </tr>
 
@@ -106,22 +101,22 @@
 
             <!-- // Card Item: Hero -->
             <tr>
-              <td class="esg-text-center" align="center">
-                <img src="https://s3.amazonaws.com/treehouse-email-images/templates/office-inside1-1200w.png" width="600" class="esg-round-t mktoImg esg-image-full" id="featured-img" mktoName="Featured - Image" alt="Team Working Together">
+              <td class="esg-p-t-base esg-p-lr-base esg-text-center" align="center">
+                <img src="https://s3.amazonaws.com/treehouse-email-images/templates/parent-unlock.png" width="600" class="esg-round-t esg-image-full" alt="Unlock Treehouse">
               </td>
             </tr>
 
             <!-- // Card Item: Heading -->
             <tr>
               <td class="esg-p-t-base esg-p-lr-base">
-                <h2 class="esg-h2 esg-m-0 esg-text-color-dark mktEditable esg-p-b-3" id="title" mktoName="Title">Title</h2>
+                <h2 class="esg-h2 esg-m-0 esg-text-color-dark">Emilio is requesting your permission to join Treehouse</h2>
               </td>
             </tr>
 
             <!-- // Card Item: Body -->
             <tr>
               <td class="esg-p-lr-base">
-                <p class="esg-p mktEditable esg-text-color-dark" id="paragraph" mktoName="Paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue neque, finibus sit amet metus sit amet, semper sodales dui. Duis auctor nec lectus eu consectetur. Etiam eleifend fermentum mi, a tempus augue molestie non. Quisque odio eros, pretium vitae sollicitudin.</p>
+                <p class="esg-p esg-text-color-dark">Treehouse is an online school for learning how to code. If you'd like to give your child permission to sign up for an account, please click the button below.</p>
               </td>
             </tr>
 
@@ -132,9 +127,9 @@
                 <!-- // Container Button -->
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
                       <tr>
-                        <td class="esg-button-container esg-button-container-green mktEditable" id="button" mktoName="Button">
-                          <a href="http://go.teamtreehouse.com/p0000K01xP000GsWku00023" class="esg-button esg-button-green">
-                            <span class="esg-button-text-green esg-button-text">Button Text</span>
+                        <td class="esg-button-container esg-button-container-blue">
+                          <a href="#" class="esg-button esg-button-blue">
+                            <span class="esg-button-text-blue esg-button-text">Grant Permission</span>
                           </a>
                         </td>
                       </tr>
@@ -152,52 +147,11 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                   <tr>
                     <td class="esg-bg-gray-lighter esg-round esg-p-lr-5 esg-p-tb-2">
-                      <p class="esg-p esg-bold m-0-xs esg-text-color-dark mktEditable" id="callout-subtitle" mktoName="Callout - Subtitle">Call-out Subtitle</p>
-                      <p class="esg-p esg-text-color-dark mktEditable" id="callout-description" mktoName="Callout - Description">Duis auctor nec lectus eu consectetur. Etiam eleifend fermentum mi, a tempus augue lestiea eleifend fermentum <a href="http://go.teamtreehouse.com/c000300K0usW01kPy00H200" target="_blank" class="esg-link esg-link-blue">link</a></p>
+                      <p class="esg-p esg-text-color-dark">If you decide to revoke access in the future, you can do so by logging into the child’s account and choosing “Cancel Subscription” on the Subscription page. Alternatively, you can cancel it by emailing support at <a href="mailto:help@teamtreehouse.com" class="esg-link esg-link-blue">help@teamtreehouse.com</a></p>
                     </td>
                   </tr>
                 </table>
                 <!-- // End Call Out -->
-              </td>
-            </tr>
-          </table>
-
-        </td>
-      </tr>
-      <!-- // End Container Item -->
-
-      <!-- // Container Item -->
-      <tr>
-        <td class="esg-bg-gray-light spacer" height="15">
-        </td>
-      </tr>
-      <!-- // End Container Item -->
-
-      <!-- // Container Item -->
-      <tr>
-        <td class="esg-container-item">
-          <!-- // Signature -->
-          <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="esg-card esg-round" bgcolor="#ffffff" width="100%">
-            <tr>
-              <td class="esg-p-base">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="100%">
-                  <tr>
-                    <td colspan="2" class="esg-p-b-3">
-                      <h3 class="esg-h3 esg-m-0 esg-m-b-3 esg-text-color-dark mktEditable" id="signature-headline" mktoName="Signature - Headline">Farewell Title</h3>
-                      <p class="esg-p esg-text-color-dark mktEditable" id="signature-description" mktoName="Signature - Description">Auctor nec lectus eu consectetur. Etiam eleifend fermentum mi, a tempus augue molestie non. Quisque odio eros, pretium vitae.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="esg-p-r-3" width="95">
-                      <img src="https://s3.amazonaws.com/treehouse-email-images/templates/avatars/avatar-treehouse.png" alt="Treehouse" width="80" height="80" class="mktoImg author-photo" id="signature-portrait" mktoName="Signature - Portrait">
-                    </td>
-                    <td width="406">
-                      <p class="esg-p esg-m-0 esg-bold esg-text-color-dark mktEditable" id="signature-name" mktoName="Signature - Name">Your Name</p>
-                      <p class="esg-p esg-m-0 esg-text-color-light esg-text-6 esg-text-color-dark mktEditable" id="signature-title" mktoName="Signature - Title">Your Title</p>
-                      <p class="esg-p esg-m-0 esg-m-0 esg-text-color-light esg-text-6 esg-text-color-dark mktEditable" id="signature-department" mktoName="Signature - Department">Treehouse for Business</p>
-                    </td>
-                  </tr>
-                </table>
               </td>
             </tr>
           </table>
@@ -221,11 +175,10 @@
           <table class="esg-container footer" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td class="contact-info esg-p-t-6">
-                <p class="esg-m-0 esg-text-center esg-text-color-light esg-text-6">&copy; Treehouse Island Inc.</p>
-                <p class="esg-p-t-2 esg-m-0 esg-text-center esg-text-color-light esg-text-7"><a href="https://teamtreehouse.com/" rel=”nofollow” class="address">3514 North Vancouver Avenue, Suite 500, Portland OR, 97227</a></p>
-                <p class="esg-p-t-4 esg-m-0 esg-text-center esg-text-color-light esg-text-7">
-                  <!--<a href="mailto:orgs@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">orgs@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="{{system.unsubscribeLink}}" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Unsubscribe</a>-->Reply to this email to unsubscribe
-                </p>
+                  <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">&copy; Treehouse Island Inc</p>
+                  <p class="esg-p esg-m-0 esg-text-center esg-text-color-light esg-text-6">
+                    <a href="mailto:hello@teamtreehouse.com" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6">hello@teamtreehouse.com</a>  <span class="pipe">|</span>  <a href="https://teamtreehouse.com/account/notifications" class="esg-bold esg-text-color-light esg-link esg-link-gray esg-text-6" target="_blank">Manage Email Notifications</a>
+                  </p>
               </td>
             </tr>
             <tr>
