@@ -13,6 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "project-leap": "leap#^0.8.6"
+    "project-leap": "leap#^0.10.0"
   }
 }
