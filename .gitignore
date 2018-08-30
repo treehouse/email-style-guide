@@ -8,3 +8,7 @@ docs/_site/
 
 bower_components/
 node_modules/
+
+
+# Use yarn instead of npm
+/package-lock.json
