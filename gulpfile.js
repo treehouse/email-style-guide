@@ -51,7 +51,7 @@ gulp.task('templates', () => {
 
   return gulp.src(src)
     .pipe(inlineCss({removeStyleTags: false}))
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin({collapseWhitespace: false}))
     .pipe(gulp.dest(dest))
     .pipe(gulp.dest(docsDest));
 });
