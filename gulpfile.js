@@ -4,7 +4,7 @@ const concat = require('gulp-concat');
 const merge = require('merge-stream');
 
 const sass = require('gulp-sass');
-const minify = require('gulp-minify-css');
+const minify = require('gulp-clean-css');
 
 const uglify = require('gulp-uglify');
 
@@ -23,7 +23,7 @@ const dir = {
   siteRoot: 'docs/_site/'
 };
 
-gulp.task('css', () => {
+gulp.task('css', (done) => {
   const src = dir.src + 'sass/email-style.sass';
   const dest = dir.dest + 'css/';
   const docsDest = dir.docs + 'assets/css/';
@@ -42,6 +42,7 @@ gulp.task('css', () => {
     .on('error', sass.logError))
     .pipe(gulp.dest(dest))
     .pipe(gulp.dest(docsDest));
+  done();
 });
 
 gulp.task('templates', () => {
@@ -136,17 +137,23 @@ const startJekyll = (command) => {
   jekyll.stderr.on('data', handleError);
 }
 
-gulp.task('jekyll:serve', () => { startJekyll('serve') });
-gulp.task('jekyll:build', () => { startJekyll('build') });
-
-gulp.task('watch', () => {
-  gulp.watch(dir.src + 'sass/**/*', ['css'])
-  gulp.watch(dir.src + 'templates/**/*.html', ['templates'])
-  gulp.watch(dir.docsSrc + 'sass/**/*', ['docs:css'])
-  gulp.watch(dir.docsSrc + 'js/**/*', ['docs:js'])
+gulp.task('jekyll:serve', (done) => {
+  startJekyll('serve');
+  done();
+});
+gulp.task('jekyll:build', (done) => {
+  startJekyll('build');
+  done();
 });
 
-gulp.task('default', ['src', 'docs', 'jekyll:build']);
-gulp.task('src', ['css', 'templates']);
-gulp.task('docs', ['docs:css', 'docs:js']);
-gulp.task('serve', ['jekyll:serve', 'watch']);
+gulp.task('watch', () => {
+  gulp.watch(dir.src + 'sass/**/*', gulp.series('css'))
+  gulp.watch(dir.src + 'templates/**/*.html', gulp.series('templates'))
+  gulp.watch(dir.docsSrc + 'sass/**/*', gulp.series('docs:css'))
+  gulp.watch(dir.docsSrc + 'js/**/*', gulp.series('docs:js'))
+});
+
+gulp.task('src', gulp.series('css', 'templates'));
+gulp.task('docs', gulp.series('docs:css', 'docs:js'));
+gulp.task('default', gulp.series('src', 'docs', 'jekyll:build'));
+gulp.task('serve', gulp.series('jekyll:serve', 'watch'));

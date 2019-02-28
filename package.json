@@ -1,20 +1,21 @@
 {
   "name": "email-style-guide",
   "description": "Treehouse email style guide",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "bower": "^1.8.0",
     "child_process": "^1.0.2",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^3.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-inline-css": "^3.1.2",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
-    "merge-stream": "^1.0.1"
+    "merge-stream": "^1.0.1",
+    "gulp-clean-css": "^4.0.0"
   },
   "scripts": {
     "test": "bin/test",
