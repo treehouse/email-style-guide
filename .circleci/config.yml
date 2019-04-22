@@ -41,6 +41,7 @@ jobs:
           name: yarn
           command: |
             yarn install --frozen-lockfile
+            yarn run bower install
 
       - save_cache:
           name: Save yarn cache
