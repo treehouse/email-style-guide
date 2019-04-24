@@ -1,5 +1,6 @@
 # email-style-guide
-Treehouse's Email Style Guide
+[Treehouse's Email Style Guide](https://treehouse.github.io/email-style-guide/)
+
 
 ## Usage
 
@@ -188,3 +189,8 @@ Update the version number, create a git tag, and push.
 $ yarn version
 $ git push --tags
 ```
+
+## Deploying
+
+This site uses Github Pages and is hosted at https://treehouse.github.io/email-style-guide/.
+When a change is made to master the templates will be build and updated w/i a few minutes.

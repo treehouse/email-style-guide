@@ -1,0 +1,61 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/ruby:2.5.3-node
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-ruby-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-ruby-dependencies-
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-ruby-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - restore_cache:
+          name: Restore yarn cache
+          keys:
+            - v1-js-dependencies-{{ checksum "yarn.lock" }}
+            - v1-js-dependencies-
+
+      - run:
+          name: yarn
+          command: |
+            yarn install --frozen-lockfile
+            yarn run bower install
+
+      - save_cache:
+          name: Save yarn cache
+          key: v1-js-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+            - node_modules
+
+      - run:
+          name: yarn build
+          command: |
+            yarn build
+
+      - run:
+          name: run tests
+          command: |
+            bin/test
