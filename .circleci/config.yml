@@ -58,7 +58,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            bin/
+            bin/test
 
       - run:
           name: run node version
